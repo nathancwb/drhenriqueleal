@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/logo-seal.jpg">
+    <title>Detalhes do Procedimento | Dr. Henrique Leal</title>
+</head>
+
+<body>
+    <!-- ==================== HEADER ==================== -->
+    <header class="header" id="header">
+        <div class="container">
+            <a href="index.html" class="header-logo">
+                <img id="header-logo-img" src="assets/img/logo-marcadagua-colorida.png" alt="Dr. Henrique Leal">
+            </a>
+
+            <nav class="nav">
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="index.html#sobre">Sobre</a>
+                    <a href="index.html#resultados">Resultados</a>
+                    <a href="procedimentos.html" class="active">Procedimentos</a>
+                    <a href="cursos.html">Cursos</a>
+                    <a href="index.html#faq">Dúvidas</a>
+                    <div class="nav-cta">
+                        <a href="https://wa.me/5541988577430?text=Ol%C3%A1%2C+vim+pelo+site+e+gostaria+de+agendar+uma+avalia%C3%A7%C3%A3o+com+o+Dr.+Henrique."
+                            class="btn btn-primary" target="_blank">Agendar Consulta</a>
+                    </div>
+                </div>
+                <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ==================== PROCEDURE DETAILS CONTAINER ==================== -->
+    <section class="section page-procedures-detail">
+        <div class="container" id="procedure-detail-content">
+            <!-- Dynamic Content injected via procedimentos-data.js -->
+            <div class="loading-state" style="text-align:center; padding: 100px 0;">
+                <p>Carregando as informações do procedimento...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="assets/img/logo-marcadagua-branca.png" alt="Dr. Henrique Leal" class="footer-logo">
+                    <p>Biomédico e Dentista especializado em Harmonização Facial. Resultados naturais e elegantes em
+                        Curitiba.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://wa.me/5541988577430" target="_blank">WhatsApp: (41) 98857-7430</a></li>
+                        <li><a href="https://instagram.com/dr.henriqueleal" target="_blank">Instagram:
+                                @dr.henriqueleal</a></li>
+                        <li>Curitiba - PR</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="procedimentos.html">Procedimentos</a></li>
+                        <li><a href="cursos.html">Cursos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Dr. Henrique Leal. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Load main UI logic -->
+    <script src="assets/js/main.js"></script>
+    <!-- Load dynamic procedures content fetcher -->
+    <script src="assets/js/procedimentos-data.js"></script>
+</body>
+
+</html>
