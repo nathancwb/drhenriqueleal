@@ -21,183 +21,164 @@
             <a href="index.html" class="header-logo">
                 <img id="header-logo-img" src="assets/img/logo-marcadagua-colorida.png" alt="Dr. Henrique Leal">
             </a>
-
-            <nav class="nav">
-                <div class="nav-links">
-                    <a href="index.html">Home</a>
-                    <a href="index.html#sobre">Sobre</a>
-                    <a href="index.html#resultados">Resultados</a>
-                    <a href="procedimentos.html" class="active">Procedimentos</a>
-                    <a href="cursos.html">Cursos</a>
-                    <a href="index.html#faq">Dúvidas</a>
-                    <div class="nav-cta">
-                        <a href="https://wa.me/5541988577430?text=Ol%C3%A1%2C+vim+pelo+site+e+gostaria+de+agendar+uma+avalia%C3%A7%C3%A3o+com+o+Dr.+Henrique."
-                            class="btn btn-primary" target="_blank">Agendar Consulta</a>
-                    </div>
-                </div>
-                <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <span class="nav-separator">|</span>
+                <a href="procedimentos.html" class="active">Procedimentos</a>
+                <span class="nav-separator">|</span>
+                <a href="cursos.html">Cursos</a>
+                <span class="nav-separator">|</span>
+                <a href="index.html#sobre">Sobre</a>
+                <span class="nav-separator">|</span>
+                <a href="index.html#faq">Dúvidas</a>
             </nav>
+            <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
 
     <!-- ==================== HERO PROCEDIMENTOS ==================== -->
-    <section class="page-hero">
+    <section class="proc-page-hero">
+        <div class="proc-hero-bg"></div>
         <div class="container">
-            <div class="page-hero-content fade-in">
-                <h1>Nossos Procedimentos</h1>
-                <p>Tecnologia avançada e olhar artístico para realçar sua melhor versão.</p>
+            <div class="proc-hero-content fade-in">
+                <span class="label" style="color: var(--color-accent);">Nossos Procedimentos</span>
+                <h1>Tecnologia e Arte a Favor<br>da Sua <em>Beleza</em></h1>
+                <p>Protocolos personalizados com as técnicas mais avançadas do mercado.<br>Cada procedimento é planejado para realçar o que há de melhor em você.</p>
             </div>
         </div>
     </section>
 
-    <!-- ==================== PROCEDIMENTOS GRID ==================== -->
-    <section class="section" id="procedimentos-list">
-        <div class="container">
-            <div class="procedures-grid-layout fade-in">
+    <!-- ==================== PROCEDIMENTOS — SEÇÕES INDIVIDUAIS ==================== -->
 
-                <!-- ODONTOLOGIA -->
-                <div class="proc-card-full" data-category="Odontologia">
-                    <div class="proc-icon-large">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
-                            <path
-                                d="M12 2C9.5 2 7 4 7 7c0 2-.5 4-1.5 5.5C4 14.5 3 17 4 19s3 3 5 3c1 0 2-.5 3-1 1 .5 2 1 3 1 2 0 4-1 5-3s0-4.5-1.5-6.5C17.5 11 17 9 17 7c0-3-2.5-5-5-5z" />
-                        </svg>
+    <!-- SEÇÃO 1: HARMONIZAÇÃO FACIAL (Destaque principal) -->
+    <section class="section proc-section" id="harmonizacao">
+        <div class="container">
+            <div class="proc-showcase fade-in">
+                <div class="proc-showcase-img">
+                    <img src="assets/img/preenchimento.png" alt="Harmonização Facial">
+                    <div class="proc-showcase-badge">Mais Procurado</div>
+                </div>
+                <div class="proc-showcase-info">
+                    <span class="label">Harmonização Facial</span>
+                    <h2>Rejuvenescimento e Estruturação com Naturalidade</h2>
+                    <p>Protocolos exclusivos de preenchimento, volumização e sustentação para resultados que respeitam a anatomia individual de cada rosto.</p>
+                    <div class="proc-services-grid">
+                        <a href="procedimentos-detalhes.html?id=fios-pdo" class="proc-service-chip">
+                            <span class="proc-chip-icon">⟡</span> Fios de PDO
+                        </a>
+                        <a href="procedimentos-detalhes.html?id=bioestimulador-colageno" class="proc-service-chip">
+                            <span class="proc-chip-icon">⟡</span> Bioestimuladores
+                        </a>
+                        <a href="procedimentos-detalhes.html?id=preenchimento-acido-hialuronico" class="proc-service-chip">
+                            <span class="proc-chip-icon">⟡</span> Preenchimento Full Face
+                        </a>
+                        <a href="procedimentos-detalhes.html?id=botox" class="proc-service-chip">
+                            <span class="proc-chip-icon">⟡</span> Botox®
+                        </a>
                     </div>
-                    <div class="proc-content">
+                    <a href="https://wa.me/5541988577430?text=Olá%2C+gostaria+de+agendar+uma+avaliação+de+harmonização+facial." class="btn btn-primary" target="_blank">Agendar Avaliação</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 2: GRID DE CATEGORIAS -->
+    <section class="section section-alt" id="categorias">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="label">Especialidades</span>
+                <h2>Explore Todas as Áreas</h2>
+                <div class="line-accent"></div>
+            </div>
+
+            <div class="proc-categories-grid fade-in">
+                <!-- Odontologia -->
+                <div class="proc-category-card">
+                    <div class="proc-cat-visual">
+                        <img src="assets/img/botox.png" alt="Odontologia Estética">
+                        <div class="proc-cat-overlay"></div>
                         <h3>Odontologia</h3>
-                        <p class="proc-desc">Cuidados completos para a saúde e estética do seu sorriso.</p>
-                        <ul class="proc-list-preview">
+                    </div>
+                    <div class="proc-cat-details">
+                        <p>Cuidados completos para a saúde e estética do seu sorriso.</p>
+                        <ul>
                             <li>Profilaxia e Limpeza</li>
                             <li>Clareamento Dental</li>
                             <li>Facetas em Porcelana/Resina</li>
                             <li>Gengivectomia</li>
                         </ul>
-                        <a href="procedimentos-detalhes.html?id=odontologia" class="btn-outline-gold"
-                            style="display:inline-block; text-align:center;">
-                            Ver Detalhes
-                        </a>
+                        <a href="procedimentos-detalhes.html?id=odontologia" class="proc-cat-link">Ver detalhes ›</a>
                     </div>
                 </div>
 
-                <!-- HARMONIZAÇÃO FACIAL -->
-                <div class="proc-card-full" data-category="Harmonização Facial">
-                    <div class="proc-icon-large">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
-                            <circle cx="12" cy="8" r="5" />
-                            <path d="M3 21c0-4.4 3.6-8 8-8h2c4.4 0 8 3.6 8 8" />
-                        </svg>
+                <!-- Rejuvenescimento -->
+                <div class="proc-category-card">
+                    <div class="proc-cat-visual">
+                        <img src="assets/img/dr-henrique.png" alt="Rejuvenescimento e Pele">
+                        <div class="proc-cat-overlay"></div>
+                        <h3>Rejuvenescimento<br>e Pele</h3>
                     </div>
-                    <div class="proc-content">
-                        <h3>Harmonização Facial</h3>
-                        <p class="proc-desc">Rejuvenescimento e estruturação facial com naturalidade.</p>
-                        <ul class="proc-list-preview">
-                            <li>Fios de PDO</li>
-                            <li>Bioestimuladores</li>
-                            <li>Preenchimento Labial/Full Face</li>
-                            <li>Botox®</li>
-                        </ul>
-                        <a href="procedimentos-detalhes.html?id=fios-pdo" class="btn-outline-gold"
-                            style="display:inline-block; text-align:center;">
-                            Fios de PDO
-                        </a>
-                        <a href="procedimentos-detalhes.html?id=preenchimento-acido-hialuronico"
-                            class="btn-outline-gold" style="display:inline-block; text-align:center; margin-top:10px;">
-                            Preenchimento Facial
-                        </a>
-                        <a href="procedimentos-detalhes.html?id=botox" class="btn-outline-gold"
-                            style="display:inline-block; text-align:center; margin-top:10px;">
-                            Botox®
-                        </a>
-                    </div>
-                </div>
-
-                <!-- REJUVENESCIMENTO E PELE -->
-                <div class="proc-card-full" data-category="Rejuvenescimento e Pele">
-                    <div class="proc-icon-large">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
-                            <path
-                                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-                        </svg>
-                    </div>
-                    <div class="proc-content">
-                        <h3>Rejuvenescimento e Pele</h3>
-                        <p class="proc-desc">Tratamentos para melhorar a qualidade e textura da pele.</p>
-                        <ul class="proc-list-preview">
+                    <div class="proc-cat-details">
+                        <p>Tratamentos para melhorar a qualidade e textura da pele.</p>
+                        <ul>
                             <li>Peelings Químicos</li>
                             <li>Microagulhamento</li>
-                            <li>Skinbooster/Hidratação</li>
+                            <li>Skinbooster / Hidratação</li>
                             <li>Tratamento de Cicatrizes</li>
                         </ul>
-                        <a href="procedimentos-detalhes.html?id=peeling-quimico" class="btn-outline-gold"
-                            style="display:inline-block; text-align:center;">
-                            Peeling Químico
-                        </a>
-                        <a href="procedimentos-detalhes.html?id=microagulhamento" class="btn-outline-gold"
-                            style="display:inline-block; text-align:center; margin-top:10px;">
-                            Microagulhamento
-                        </a>
+                        <div class="proc-cat-links">
+                            <a href="procedimentos-detalhes.html?id=peeling-quimico" class="proc-cat-link">Peeling ›</a>
+                            <a href="procedimentos-detalhes.html?id=microagulhamento" class="proc-cat-link">Microagulhamento ›</a>
+                        </div>
                     </div>
                 </div>
 
-                <!-- ESTÉTICA CORPORAL -->
-                <div class="proc-card-full" data-category="Estética Corporal">
-                    <div class="proc-icon-large">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
-                            <circle cx="12" cy="5" r="3" />
-                            <path d="M12 8v6M8 21l2-7M16 21l-2-7M8 14h8" />
-                        </svg>
+                <!-- Estética Corporal -->
+                <div class="proc-category-card">
+                    <div class="proc-cat-visual">
+                        <img src="assets/img/bioestimulador.png" alt="Estética Corporal">
+                        <div class="proc-cat-overlay"></div>
+                        <h3>Estética<br>Corporal</h3>
                     </div>
-                    <div class="proc-content">
-                        <h3>Estética Corporal</h3>
-                        <p class="proc-desc">Harmonização e tratamento para o contorno corporal.</p>
-                        <ul class="proc-list-preview">
+                    <div class="proc-cat-details">
+                        <p>Harmonização e tratamento para o contorno corporal.</p>
+                        <ul>
                             <li>Harmonização Glútea</li>
                             <li>Bioestimuladores Corporais</li>
                             <li>Lipo Enzimática</li>
                             <li>Tratamento de Estrias</li>
                         </ul>
-                        <a href="procedimentos-detalhes.html?id=estetica-corporal" class="btn-outline-gold"
-                            style="display:inline-block; text-align:center;">
-                            Estética Corporal
-                        </a>
-                        <a href="procedimentos-detalhes.html?id=bioestimulador-colageno" class="btn-outline-gold"
-                            style="display:inline-block; text-align:center; margin-top:10px;">
-                            Bioestimuladores
-                        </a>
+                        <div class="proc-cat-links">
+                            <a href="procedimentos-detalhes.html?id=estetica-corporal" class="proc-cat-link">Corporal ›</a>
+                            <a href="procedimentos-detalhes.html?id=bioestimulador-colageno" class="proc-cat-link">Bioestimuladores ›</a>
+                        </div>
                     </div>
                 </div>
 
-                <!-- OUTROS TRATAMENTOS -->
-                <div class="proc-card-full" data-category="Outros Tratamentos">
-                    <div class="proc-icon-large">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
-                            <path
-                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-                        </svg>
+                <!-- Outros -->
+                <div class="proc-category-card">
+                    <div class="proc-cat-visual">
+                        <img src="assets/img/pdo.png" alt="Outros Tratamentos">
+                        <div class="proc-cat-overlay"></div>
+                        <h3>Outros<br>Tratamentos</h3>
                     </div>
-                    <div class="proc-content">
-                        <h3>Outros Tratamentos</h3>
-                        <p class="proc-desc">Soluções específicas para necessidades pontuais.</p>
-                        <ul class="proc-list-preview">
+                    <div class="proc-cat-details">
+                        <p>Soluções específicas para necessidades pontuais.</p>
+                        <ul>
                             <li>Terapia Capilar</li>
                             <li>Peeling Íntimo</li>
                             <li>Preenchimentos Específicos</li>
                         </ul>
-                        <a href="procedimentos-detalhes.html?id=terapias-capilares" class="btn-outline-gold"
-                            style="display:inline-block; text-align:center;">
-                            Terapia Capilar
-                        </a>
-                        <a href="procedimentos-detalhes.html?id=estetica-intima" class="btn-outline-gold"
-                            style="display:inline-block; text-align:center; margin-top:10px;">
-                            Estética Íntima
-                        </a>
+                        <div class="proc-cat-links">
+                            <a href="procedimentos-detalhes.html?id=terapias-capilares" class="proc-cat-link">Capilar ›</a>
+                            <a href="procedimentos-detalhes.html?id=estetica-intima" class="proc-cat-link">Íntima ›</a>
+                        </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -219,7 +200,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <img src="assets/img/logo-marcadagua-branca.png" alt="Dr. Henrique Leal" class="footer-logo">
+                    <img src="assets/img/logo-marcadagua-colorida.png" alt="Dr. Henrique Leal" class="footer-logo">
                     <p>Biomédico e Dentista especializado em Harmonização Facial. Resultados naturais e elegantes em
                         Curitiba.</p>
                 </div>

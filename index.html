@@ -304,31 +304,63 @@
         </div>
     </section>
 
-    <!-- ==================== PROCEDIMENTOS (Teaser) ==================== -->
-    <section class="section section-dark" id="procedimentos" style="background-color: #1a1a1a; color: white;">
+    <!-- ==================== PROCEDIMENTOS (Expandable Cards) ==================== -->
+    <section class="section" id="procedimentos">
         <div class="container">
             <div class="section-header fade-in">
-                <span class="label" style="color: var(--color-primary);">Nossos Tratamentos</span>
-                <h2 style="color: white;">Tecnologia e Arte em Favor da Sua Beleza</h2>
-                <p>Do Botox® aos Fios de sustentação, oferecemos um portfólio completo para resultados naturais e
-                    elegantes.</p>
+                <span class="label">Nossos Tratamentos</span>
+                <h2>Tecnologia e Arte em Favor da Sua Beleza</h2>
+                <p>Do Botox® aos Fios de sustentação, oferecemos um portfólio completo para resultados naturais e elegantes.</p>
                 <div class="line-accent"></div>
             </div>
 
-            <div class="procedures-teaser-content" style="max-width: 800px; margin: 0 auto; text-align: center;">
-                <p style="color: #cccccc;">
-                    Cada rosto é único e merece um planejamento exclusivo. Nossos protocolos combinam as técnicas
-                    mais avançadas
-                    para rejuvenescer, harmonizar e realçar seus traços com total segurança.
-                </p>
-                <ul class="teaser-list"
-                    style="color: #f0f0f0; display: inline-block; text-align: left; margin: 0 auto 32px;">
-                    <li><span class="check-icon">✓</span> Harmonização Facial Full Face</li>
-                    <li><span class="check-icon">✓</span> Fios de PDO (Lifting e Estímulo)</li>
-                    <li><span class="check-icon">✓</span> Preenchimentos e Bioestimuladores</li>
-                    <li><span class="check-icon">✓</span> Tecnologias para Qualidade de Pele</li>
-                </ul>
-                <br>
+            <div class="expand-cards fade-in">
+                <!-- Card 1: Harmonização — expanded by default -->
+                <div class="expand-card active" data-expand-card>
+                    <img src="assets/img/preenchimento.png" alt="Harmonização Facial" class="expand-card-bg">
+                    <div class="expand-card-overlay"></div>
+                    <div class="expand-card-content">
+                        <h3 class="expand-card-title">Harmonização Facial</h3>
+                        <p class="expand-card-desc">Protocolos personalizados para realçar sua beleza natural com preenchimentos, contorno e volumização estratégica.</p>
+                        <a href="procedimentos.html" class="expand-card-link">Saiba mais ›</a>
+                    </div>
+                </div>
+
+                <!-- Card 2: Fios de PDO -->
+                <div class="expand-card" data-expand-card>
+                    <img src="assets/img/pdo.png" alt="Fios de PDO" class="expand-card-bg">
+                    <div class="expand-card-overlay"></div>
+                    <div class="expand-card-content">
+                        <h3 class="expand-card-title">Fios de PDO</h3>
+                        <p class="expand-card-desc">Lifting não-cirúrgico que reposiciona e sustenta, com estímulo natural de colágeno. Certificação internacional.</p>
+                        <a href="procedimentos.html" class="expand-card-link">Saiba mais ›</a>
+                    </div>
+                </div>
+
+                <!-- Card 3: Toxina Botulínica -->
+                <div class="expand-card" data-expand-card>
+                    <img src="assets/img/botox.png" alt="Toxina Botulínica" class="expand-card-bg">
+                    <div class="expand-card-overlay"></div>
+                    <div class="expand-card-content">
+                        <h3 class="expand-card-title">Toxina Botulínica</h3>
+                        <p class="expand-card-desc">Suavização de rugas e linhas de expressão com técnica refinada que preserva a naturalidade do movimento facial.</p>
+                        <a href="procedimentos.html" class="expand-card-link">Saiba mais ›</a>
+                    </div>
+                </div>
+
+                <!-- Card 4: Bioestimuladores -->
+                <div class="expand-card" data-expand-card>
+                    <img src="assets/img/bioestimulador.png" alt="Bioestimuladores" class="expand-card-bg">
+                    <div class="expand-card-overlay"></div>
+                    <div class="expand-card-content">
+                        <h3 class="expand-card-title">Bioestimuladores</h3>
+                        <p class="expand-card-desc">Estímulo à produção de colágeno para firmeza e qualidade de pele com resultados progressivos e duradouros.</p>
+                        <a href="procedimentos.html" class="expand-card-link">Saiba mais ›</a>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px;">
                 <a href="procedimentos.html" class="btn btn-primary">Conheça Todos os Procedimentos</a>
             </div>
         </div>
@@ -438,6 +470,32 @@
                             <div class="testimonial-name">Roberto L.</div>
                             <div class="testimonial-role">Paciente, 47 anos</div>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Testimonials -->
+            <div class="video-testimonials-header fade-in">
+                <h3>Veja o que nossos pacientes dizem</h3>
+                <p>Depoimentos reais em vídeo de quem já passou pelos nossos cuidados.</p>
+            </div>
+
+            <div class="video-testimonial-grid">
+                <div class="video-testimonial-card fade-in">
+                    <div class="video-wrapper">
+                        <video controls playsinline preload="metadata" poster="">
+                            <source src="assets/videos/depoimento-1.mp4" type="video/mp4">
+                            Seu navegador não suporta vídeos HTML5.
+                        </video>
+                    </div>
+                </div>
+
+                <div class="video-testimonial-card fade-in">
+                    <div class="video-wrapper">
+                        <video controls playsinline preload="metadata" poster="">
+                            <source src="assets/videos/depoimento-2.mp4" type="video/mp4">
+                            Seu navegador não suporta vídeos HTML5.
+                        </video>
                     </div>
                 </div>
             </div>

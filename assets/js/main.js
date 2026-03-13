@@ -345,4 +345,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
     }
 
+    // --- Expandable Procedure Cards ---
+    const expandCards = document.querySelectorAll('[data-expand-card]');
+    if (expandCards.length > 0) {
+        expandCards.forEach(card => {
+            // Desktop: hover to expand
+            card.addEventListener('mouseenter', () => {
+                expandCards.forEach(c => c.classList.remove('active'));
+                card.classList.add('active');
+            });
+
+            // Mobile: click/tap to expand
+            card.addEventListener('click', (e) => {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    expandCards.forEach(c => c.classList.remove('active'));
+                    card.classList.add('active');
+                }
+            });
+        });
+    }
+
 });
