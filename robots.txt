@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://drhenriqueleal.com.br/sitemap.xml
