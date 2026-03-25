@@ -43,10 +43,11 @@ const proceduresData = {
         description: "Procedimentos voltados para o rejuvenescimento, clareamento e harmonização da região íntima, promovendo melhoria estética, funcional e elevando a autoestima dos pacientes.",
         benefitsTitle: "Nossos protocolos incluem:",
         benefits: [
-            "Peeling íntimo",
-            "Preenchimento peniano",
-            "Preenchimento vaginal",
-            "Botox íntimo"
+            "<strong>Preenchimento Íntimo com Ácido Hialurônico:</strong> Procedimento que utiliza uma substância já presente no organismo para melhorar volume, contorno e proporção da região íntima, contribuindo para estética e autoestima.",
+            "<strong>Bioestimulador de Colágeno Íntimo:</strong> Atua estimulando a produção natural de colágeno, promovendo melhora da firmeza, textura e qualidade da pele ao longo do tempo.",
+            "<strong>Peelings Íntimos:</strong> Podem ser realizados na região pubiana, vaginal, anal e escrotal, com o objetivo de clarear, uniformizar o tom da pele e melhorar a textura.",
+            "<strong>Botox Anal (Antox):</strong> Aplicação de toxina botulínica para relaxamento da musculatura anal, auxiliando em casos de fissuras, desconfortos e podendo proporcionar mais conforto em determinadas situações.",
+            "<strong>Botox no Saco Escrotal:</strong> Promove relaxamento da musculatura, melhora do conforto local, aspecto estético mais harmônico e pode auxiliar na redução da sudorese da região."
         ],
         image: "assets/img/dr-henrique.png"
     },
@@ -142,6 +143,21 @@ const proceduresData = {
             "Procedimento rápido e seguro"
         ],
         image: "assets/img/botox.png"
+    },
+
+    // 10. Odontologia
+    "odontologia": {
+        title: "Odontologia Estética",
+        subtitle: "Estética e Saúde Dental",
+        description: "Cuidados completos para a saúde e estética do seu sorriso, assegurando harmonia do rosto com intervenções precisas e tecnologias avançadas.",
+        benefitsTitle: "Nossos tratamentos incluem:",
+        benefits: [
+            "Profilaxia e Limpeza",
+            "Clareamento Dental",
+            "Facetas em Porcelana ou Resina",
+            "Gengivectomia"
+        ],
+        image: "assets/img/henrique-clinic.jpg"
     }
 };
 

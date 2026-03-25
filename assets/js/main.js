@@ -219,57 +219,59 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- Results Carousel Navigation ---
-    const resultsCarousel = document.querySelector('.ba-carousel');
-    const prevBtn = document.querySelector('.carousel-nav.prev');
-    const nextBtn = document.querySelector('.carousel-nav.next');
+    // --- Carousels Navigation ---
+    const carouselWrappers = document.querySelectorAll('.carousel-wrapper');
+    
+    carouselWrappers.forEach(wrapper => {
+        const carousel = wrapper.querySelector('.ba-carousel, .depoimentos-carousel');
+        const prevBtn = wrapper.querySelector('.carousel-nav.prev');
+        const nextBtn = wrapper.querySelector('.carousel-nav.next');
+        
+        if (carousel && prevBtn && nextBtn) {
+            let autoScrollInterval;
+            
+            // Manual Navigation
+            prevBtn.addEventListener('click', () => {
+                const scrollAmount = carousel.clientWidth * 0.8;
+                carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+                resetAutoScroll();
+            });
 
-    if (resultsCarousel && prevBtn && nextBtn) {
-        const scrollAmount = 450; // Approx card width (420px) + gap (30px)
-        let autoScrollInterval;
-
-        // Manual Navigation
-        prevBtn.addEventListener('click', () => {
-            resultsCarousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
-            resetAutoScroll();
-        });
-
-        nextBtn.addEventListener('click', () => {
-            // Check if near end
-            if (resultsCarousel.scrollLeft + resultsCarousel.clientWidth >= resultsCarousel.scrollWidth - 10) {
-                // Loop back to start
-                resultsCarousel.scrollTo({ left: 0, behavior: 'smooth' });
-            } else {
-                resultsCarousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-            }
-            resetAutoScroll();
-        });
-
-        // Auto Scroll Function
-        const startAutoScroll = () => {
-            autoScrollInterval = setInterval(() => {
-                // Check if we reached the end
-                if (resultsCarousel.scrollLeft + resultsCarousel.clientWidth >= resultsCarousel.scrollWidth - 10) {
-                    // Loop back to start
-                    resultsCarousel.scrollTo({ left: 0, behavior: 'smooth' });
+            nextBtn.addEventListener('click', () => {
+                const scrollAmount = carousel.clientWidth * 0.8;
+                if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - 10) {
+                    carousel.scrollTo({ left: 0, behavior: 'smooth' });
                 } else {
-                    resultsCarousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+                    carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
                 }
-            }, 2500); // 2.5 seconds interval
-        };
+                resetAutoScroll();
+            });
 
-        const resetAutoScroll = () => {
-            clearInterval(autoScrollInterval);
+            // Auto Scroll Function
+            const startAutoScroll = () => {
+                autoScrollInterval = setInterval(() => {
+                    const scrollAmount = carousel.clientWidth * 0.8;
+                    if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - 10) {
+                        carousel.scrollTo({ left: 0, behavior: 'smooth' });
+                    } else {
+                        carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+                    }
+                }, 3000); 
+            };
+
+            const resetAutoScroll = () => {
+                clearInterval(autoScrollInterval);
+                startAutoScroll();
+            };
+
+            // Pause on hover
+            carousel.addEventListener('mouseenter', () => clearInterval(autoScrollInterval));
+            carousel.addEventListener('mouseleave', startAutoScroll);
+
+            // Start initially
             startAutoScroll();
-        };
-
-        // Pause on hover
-        resultsCarousel.addEventListener('mouseenter', () => clearInterval(autoScrollInterval));
-        resultsCarousel.addEventListener('mouseleave', startAutoScroll);
-
-        // Start initially
-        startAutoScroll();
-    }
+        }
+    });
 
     // --- Procedures Carousel Auto-Scroll (Gentle Movement) ---
     const procCarousel = document.querySelector('.proc-carousel');
@@ -362,6 +364,35 @@ document.addEventListener('DOMContentLoaded', () => {
                     expandCards.forEach(c => c.classList.remove('active'));
                     card.classList.add('active');
                 }
+            });
+        });
+    }
+
+    // --- Procedures Grid Filtering ---
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const procItems = document.querySelectorAll('.proc-glass-item');
+
+    if (filterBtns.length > 0 && procItems.length > 0) {
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filterValue = btn.getAttribute('data-filter');
+
+                procItems.forEach(item => {
+                    if (filterValue === 'all') {
+                        item.classList.remove('hidden');
+                    } else {
+                        const categories = item.getAttribute('data-category').split(' ');
+                        if (categories.includes(filterValue)) {
+                            item.classList.remove('hidden');
+                        } else {
+                            item.classList.add('hidden');
+                        }
+                    }
+                });
             });
         });
     }

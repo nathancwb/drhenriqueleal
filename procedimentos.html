@@ -49,160 +49,140 @@
                 <span></span>
             </button>
         </div>
-    </header>
-
-    <!-- ==================== HERO PROCEDIMENTOS ==================== -->
-    <section class="proc-page-hero">
-        <div class="proc-hero-bg"></div>
-        <div class="container">
-            <div class="proc-hero-content fade-in">
-                <span class="label" style="color: var(--color-accent);">Nossos Procedimentos</span>
-                <h1>Tecnologia e Arte a Favor<br>da Sua <em>Beleza</em></h1>
-                <p>Protocolos personalizados com as técnicas mais avançadas do mercado.<br>Cada procedimento é planejado para realçar o que há de melhor em você.</p>
+    </head    <!-- ==================== PREMIUM HERO PROCEDIMENTOS ==================== -->
+    <section class="premium-hero">
+        <div class="premium-hero-bg">
+            <img src="assets/img/henrique-clinic.jpg" alt="Clínica Dr. Henrique Leal">
+            <div class="premium-overlay"></div>
+        </div>
+        <div class="container relative" style="position: relative; z-index: 2;">
+            <div class="premium-hero-content fade-in">
+                <span class="gold-label">Excelência em Estética</span>
+                <h1>Tratamentos <em>Exclusivos</em></h1>
+                <p>Navegue pelo nosso portfólio de procedimentos avançados para estética facial, corporal e íntima.</p>
             </div>
         </div>
     </section>
 
-    <!-- ==================== PROCEDIMENTOS — SEÇÕES INDIVIDUAIS ==================== -->
-
-    <!-- SEÇÃO 1: HARMONIZAÇÃO FACIAL (Destaque principal) -->
-    <section class="section proc-section" id="harmonizacao">
+    <!-- ==================== PROCEDURES GRID & FILTERS ==================== -->
+    <section class="section proc-portfolio">
         <div class="container">
-            <div class="proc-showcase fade-in">
-                <div class="proc-showcase-img">
-                    <img src="assets/img/preenchimento.png" alt="Harmonização Facial">
-                    <div class="proc-showcase-badge">Mais Procurado</div>
-                </div>
-                <div class="proc-showcase-info">
-                    <span class="label">Harmonização Facial</span>
-                    <h2>Rejuvenescimento e Estruturação com Naturalidade</h2>
-                    <p>Protocolos exclusivos de preenchimento, volumização e sustentação para resultados que respeitam a anatomia individual de cada rosto.</p>
-                    <div class="proc-services-grid">
-                        <a href="procedimentos-detalhes.html?id=fios-pdo" class="proc-service-chip">
-                            <span class="proc-chip-icon">⟡</span> Fios de PDO
-                        </a>
-                        <a href="procedimentos-detalhes.html?id=bioestimulador-colageno" class="proc-service-chip">
-                            <span class="proc-chip-icon">⟡</span> Bioestimuladores
-                        </a>
-                        <a href="procedimentos-detalhes.html?id=preenchimento-acido-hialuronico" class="proc-service-chip">
-                            <span class="proc-chip-icon">⟡</span> Preenchimento Full Face
-                        </a>
-                        <a href="procedimentos-detalhes.html?id=botox" class="proc-service-chip">
-                            <span class="proc-chip-icon">⟡</span> Botox®
-                        </a>
-                    </div>
-                    <a href="https://wa.me/5541988577430?text=Olá%2C+gostaria+de+agendar+uma+avaliação+de+harmonização+facial." class="btn btn-primary" target="_blank">Agendar Avaliação</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SEÇÃO 2: GRID DE CATEGORIAS -->
-    <section class="section section-alt" id="categorias">
-        <div class="container">
-            <div class="section-header fade-in">
-                <span class="label">Especialidades</span>
-                <h2>Explore Todas as Áreas</h2>
-                <div class="line-accent"></div>
+            <!-- Filters -->
+            <div class="proc-filters fade-in">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="facial">Facial</button>
+                <button class="filter-btn" data-filter="corporal">Corporal</button>
+                <button class="filter-btn" data-filter="intima">Íntima</button>
+                <button class="filter-btn" data-filter="capilar">Capilar</button>
+                <button class="filter-btn" data-filter="sorriso">Sorriso</button>
             </div>
 
-            <div class="proc-categories-grid fade-in">
-                <!-- Odontologia -->
-                <div class="proc-category-card">
-                    <div class="proc-cat-visual">
-                        <img src="assets/img/botox.png" alt="Odontologia Estética">
-                        <div class="proc-cat-overlay"></div>
-                        <h3>Odontologia</h3>
-                    </div>
-                    <div class="proc-cat-details">
-                        <p>Cuidados completos para a saúde e estética do seu sorriso.</p>
-                        <ul>
-                            <li>Profilaxia e Limpeza</li>
-                            <li>Clareamento Dental</li>
-                            <li>Facetas em Porcelana/Resina</li>
-                            <li>Gengivectomia</li>
-                        </ul>
-                        <a href="procedimentos-detalhes.html?id=odontologia" class="proc-cat-link">Ver detalhes ›</a>
+            <!-- Grid -->
+            <div class="proc-glass-grid fade-in">
+                
+                <!-- Harmonização Facial (Facial) -->
+                <div class="proc-glass-item" data-category="facial" onclick="window.location.href='procedimentos-detalhes.html?id=preenchimento-acido-hialuronico'">
+                    <img src="assets/img/preenchimento.png" class="glass-bg-img" alt="Preenchimento Facial">
+                    <div class="glass-overlay"></div>
+                    <div class="glass-content">
+                        <h3>Preenchimento Facial</h3>
+                        <p>Reposição de volume facial e definição de contornos com ácido hialurônico de alta tecnologia.</p>
+                        <span class="glass-btn">Ver Detalhes ›</span>
                     </div>
                 </div>
 
-                <!-- Rejuvenescimento -->
-                <div class="proc-category-card">
-                    <div class="proc-cat-visual">
-                        <img src="assets/img/dr-henrique.png" alt="Rejuvenescimento e Pele">
-                        <div class="proc-cat-overlay"></div>
-                        <h3>Rejuvenescimento<br>e Pele</h3>
-                    </div>
-                    <div class="proc-cat-details">
-                        <p>Tratamentos para melhorar a qualidade e textura da pele.</p>
-                        <ul>
-                            <li>Peelings Químicos</li>
-                            <li>Microagulhamento</li>
-                            <li>Skinbooster / Hidratação</li>
-                            <li>Tratamento de Cicatrizes</li>
-                        </ul>
-                        <div class="proc-cat-links">
-                            <a href="procedimentos-detalhes.html?id=peeling-quimico" class="proc-cat-link">Peeling ›</a>
-                            <a href="procedimentos-detalhes.html?id=microagulhamento" class="proc-cat-link">Microagulhamento ›</a>
-                        </div>
+                <!-- Botox (Facial) -->
+                <div class="proc-glass-item" data-category="facial" onclick="window.location.href='procedimentos-detalhes.html?id=botox'">
+                    <img src="assets/img/botox.png" class="glass-bg-img" alt="Toxina Botulínica">
+                    <div class="glass-overlay"></div>
+                    <div class="glass-content">
+                        <h3>Toxina Botulínica</h3>
+                        <p>Prevenção e suavização de linhas de expressão dinâmicas para um olhar mais leve e descansado.</p>
+                        <span class="glass-btn">Ver Detalhes ›</span>
                     </div>
                 </div>
 
-                <!-- Estética Corporal -->
-                <div class="proc-category-card">
-                    <div class="proc-cat-visual">
-                        <img src="assets/img/bioestimulador.png" alt="Estética Corporal">
-                        <div class="proc-cat-overlay"></div>
-                        <h3>Estética<br>Corporal</h3>
-                    </div>
-                    <div class="proc-cat-details">
-                        <p>Harmonização e tratamento para o contorno corporal.</p>
-                        <ul>
-                            <li>Harmonização Glútea</li>
-                            <li>Bioestimuladores Corporais</li>
-                            <li>Lipo Enzimática</li>
-                            <li>Tratamento de Estrias</li>
-                        </ul>
-                        <div class="proc-cat-links">
-                            <a href="procedimentos-detalhes.html?id=estetica-corporal" class="proc-cat-link">Corporal ›</a>
-                            <a href="procedimentos-detalhes.html?id=bioestimulador-colageno" class="proc-cat-link">Bioestimuladores ›</a>
-                        </div>
+                <!-- Bioestimuladores (Facial, Corporal) -->
+                <div class="proc-glass-item" data-category="facial corporal" onclick="window.location.href='procedimentos-detalhes.html?id=bioestimulador-colageno'">
+                    <img src="assets/img/bioestimulador.png" class="glass-bg-img" alt="Bioestimuladores">
+                    <div class="glass-overlay"></div>
+                    <div class="glass-content">
+                        <h3>Bioestimuladores</h3>
+                        <p>Firmeza e rejuvenescimento estrutural progressivo com estímulo natural de colágeno.</p>
+                        <span class="glass-btn">Ver Detalhes ›</span>
                     </div>
                 </div>
 
-                <!-- Outros -->
-                <div class="proc-category-card">
-                    <div class="proc-cat-visual">
-                        <img src="assets/img/pdo.png" alt="Outros Tratamentos">
-                        <div class="proc-cat-overlay"></div>
-                        <h3>Outros<br>Tratamentos</h3>
+                <!-- Fios de PDO (Facial) -->
+                <div class="proc-glass-item" data-category="facial" onclick="window.location.href='procedimentos-detalhes.html?id=fios-pdo'">
+                    <img src="assets/img/pdo.png" class="glass-bg-img" alt="Fios de PDO">
+                    <div class="glass-overlay"></div>
+                    <div class="glass-content">
+                        <h3>Fios de PDO</h3>
+                        <p>Lifting sem cirurgia e intensa bioestimulação com fios absorvíveis.</p>
+                        <span class="glass-btn">Ver Detalhes ›</span>
                     </div>
-                    <div class="proc-cat-details">
-                        <p>Soluções específicas para necessidades pontuais.</p>
-                        <ul>
-                            <li>Terapia Capilar</li>
-                            <li>Peeling Íntimo</li>
-                            <li>Preenchimentos Específicos</li>
-                        </ul>
-                        <div class="proc-cat-links">
-                            <a href="procedimentos-detalhes.html?id=terapias-capilares" class="proc-cat-link">Capilar ›</a>
-                            <a href="procedimentos-detalhes.html?id=estetica-intima" class="proc-cat-link">Íntima ›</a>
-                        </div>
+                </div>
+
+                <!-- Estética Íntima (Íntima) -->
+                <div class="proc-glass-item" data-category="intima" onclick="window.location.href='procedimentos-detalhes.html?id=estetica-intima'">
+                    <img src="assets/img/dr-henrique.png" class="glass-bg-img" alt="Estética Íntima">
+                    <div class="glass-overlay"></div>
+                    <div class="glass-content">
+                        <h3>Estética Íntima</h3>
+                        <p>Preenchimentos, bioestimuladores e peelings para conforto, bem-estar e estética íntima.</p>
+                        <span class="glass-btn">Ver Detalhes ›</span>
+                    </div>
+                </div>
+
+                <!-- Estética Corporal (Corporal) -->
+                <div class="proc-glass-item" data-category="corporal" onclick="window.location.href='procedimentos-detalhes.html?id=estetica-corporal'">
+                    <img src="assets/img/foto-fios-nova.jpg" class="glass-bg-img" alt="Estética Corporal">
+                    <div class="glass-overlay"></div>
+                    <div class="glass-content">
+                        <h3>Estética Corporal</h3>
+                        <p>Alta performance no contorno, tratamento de flacidez corporal e definição muscular.</p>
+                        <span class="glass-btn">Ver Detalhes ›</span>
+                    </div>
+                </div>
+
+                <!-- Peeling Químico (Facial) -->
+                <div class="proc-glass-item" data-category="facial" onclick="window.location.href='procedimentos-detalhes.html?id=peeling-quimico'">
+                    <img src="assets/img/dr-henrique.png" class="glass-bg-img" alt="Peeling Químico">
+                    <div class="glass-overlay"></div>
+                    <div class="glass-content">
+                        <h3>Peeling Químico</h3>
+                        <p>Renovação celular e uniformidade para sua pele, combatendo manchas e texturas irregulares.</p>
+                        <span class="glass-btn">Ver Detalhes ›</span>
+                    </div>
+                </div>
+
+                <!-- Terapias Capilares (Capilar) -->
+                <div class="proc-glass-item" data-category="capilar" onclick="window.location.href='procedimentos-detalhes.html?id=terapias-capilares'">
+                    <img src="assets/img/henrique-portrait.jpg" class="glass-bg-img" alt="Terapias Capilares">
+                    <div class="glass-overlay"></div>
+                    <div class="glass-content">
+                        <h3>Terapia Capilar</h3>
+                        <p>Tratamentos avançados para saúde, nutrição capilar e fortalecimento dos fios e couro cabeludo.</p>
+                        <span class="glass-btn">Ver Detalhes ›</span>
+                    </div>
+                </div>
+
+                <!-- Odontologia Estética (Sorriso) -->
+                <div class="proc-glass-item" data-category="sorriso" onclick="window.location.href='procedimentos-detalhes.html?id=odontologia'">
+                    <img src="assets/img/botox.png" class="glass-bg-img" alt="Odontologia Estética">
+                    <div class="glass-overlay"></div>
+                    <div class="glass-content">
+                        <h3>Odontologia Estética</h3>
+                        <p>Cuidados completos para o sorriso: Clareamento, facetas em porcelana e saúde bucal.</p>
+                        <span class="glass-btn">Ver Detalhes ›</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ==================== CTA SECTION ==================== -->
-    <section class="section section-dark">
-        <div class="container text-center">
-            <h2>Pronto para sua transformação?</h2>
-            <p style="color:var(--color-text-light); max-width:600px; margin: 0 auto 30px;">
-                Agende uma avaliação personalizada e descubra o protocolo ideal para você.
-            </p>
-            <a href="https://wa.me/5541988577430?text=Ol%C3%A1%2C+vi+os+procedimentos+no+site+e+gostaria+de+agendar."
-                class="btn btn-primary" target="_blank">Falar com Dr. Henrique</a>
+n btn-primary" target="_blank">Falar com Dr. Henrique</a>
         </div>
     </section>
 

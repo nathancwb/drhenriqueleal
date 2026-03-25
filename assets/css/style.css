@@ -1374,15 +1374,25 @@ body.splash-active {
     color: var(--color-text-light);
 }
 
-.video-testimonial-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 28px;
-    max-width: 900px;
+.depoimentos-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 24px;
+    padding: 20px 0;
     margin: 0 auto;
+    max-width: 1000px;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.depoimentos-carousel::-webkit-scrollbar {
+    display: none;
 }
 
 .video-testimonial-card {
+    flex: 0 0 calc(33.333% - 16px);
+    scroll-snap-align: start;
     background: var(--color-white);
     border-radius: var(--radius-md);
     overflow: hidden;
@@ -3373,5 +3383,338 @@ body.splash-active {
 
     .proc-detail-text h1 {
         font-size: 2.2rem;
+    }
+}
+
+/* ==================== PREMIUM PROCEDURES PAGE ==================== */
+.premium-hero {
+    position: relative;
+    height: 70vh;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.premium-hero-bg {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 1;
+}
+
+.premium-hero-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.premium-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(10, 17, 26, 0.4) 0%, rgba(10, 17, 26, 0.95) 100%);
+}
+
+.premium-hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 80px 20px 0; 
+}
+
+.gold-label {
+    display: inline-block;
+    color: #c5a47e; 
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.premium-hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 24px;
+    line-height: 1.1;
+    font-family: var(--font-heading);
+}
+
+.premium-hero-content h1 em {
+    font-style: italic;
+    font-weight: 300;
+    color: #c5a47e;
+}
+
+.premium-hero-content p {
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+}
+
+.proc-portfolio {
+    background: #0a111a;
+    padding: 60px 0 120px;
+    min-height: 100vh;
+}
+
+.proc-filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 60px;
+}
+
+.filter-btn {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+    padding: 10px 24px;
+    border-radius: 30px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+    font-family: var(--font-body);
+}
+
+.filter-btn:hover, .filter-btn.active {
+    background: #c5a47e;
+    border-color: #c5a47e;
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(197, 164, 126, 0.3); 
+}
+
+.proc-glass-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.proc-glass-item {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 420px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+    background: #111;
+}
+
+.proc-glass-item.hidden {
+    display: none;
+}
+
+.proc-glass-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.glass-bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.7s ease;
+}
+
+.proc-glass-item:hover .glass-bg-img {
+    transform: scale(1.08);
+}
+
+.glass-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(10,17,26,1) 0%, rgba(10,17,26,0.4) 60%, transparent 100%);
+    transition: opacity 0.4s ease;
+}
+
+.glass-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px;
+    color: #fff;
+    z-index: 2;
+    transform: translateY(20px);
+    transition: transform 0.4s ease;
+}
+
+.proc-glass-item:hover .glass-content {
+    transform: translateY(0);
+}
+
+.glass-content h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+    color: #fff;
+}
+
+.glass-content p {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.7);
+    line-height: 1.5;
+    margin-bottom: 20px;
+    opacity: 0;
+    transition: opacity 0.4s ease 0.1s;
+}
+
+.proc-glass-item:hover .glass-content p {
+    opacity: 1;
+}
+
+.glass-btn {
+    display: inline-block;
+    color: #c5a47e;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0;
+    transition: opacity 0.4s ease 0.2s, color 0.3s ease;
+}
+
+.proc-glass-item:hover .glass-btn {
+    opacity: 1;
+}
+
+.glass-btn:hover {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .premium-hero {
+        height: 60vh;
+        min-height: 400px;
+    }
+    .premium-hero-content h1 {
+        font-size: 2.5rem;
+    }
+    .premium-hero-content p {
+        font-size: 1rem;
+    }
+    .proc-glass-item {
+        height: 380px;
+    }
+    .glass-content {
+        transform: translateY(0);
+    }
+    .glass-content p, .glass-btn {
+        opacity: 1;
+    }
+}
+
+/* ==================== PREMIUM CONSULTA ==================== */
+.premium-consulta {
+    padding: 100px 0;
+    overflow: hidden;
+}
+
+.premium-consulta-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.15fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.premium-consulta-image {
+    position: relative;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.premium-consulta-image .image-wrapper {
+    position: relative;
+    border-radius: 20px;
+    z-index: 2;
+}
+
+.premium-consulta-image img {
+    width: 100%;
+    border-radius: 20px;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.gold-accent-frame {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: 20px;
+    bottom: 20px;
+    border: 2px solid var(--color-accent);
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.premium-consulta-content h2 {
+    font-size: 2.8rem;
+    line-height: 1.2;
+    margin-bottom: 24px;
+    font-family: var(--font-heading);
+}
+
+.consulta-intro {
+    font-size: 1.15rem;
+    color: var(--color-text-light);
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.consulta-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.consulta-features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.icon-box {
+    width: 60px;
+    height: 60px;
+    background: rgba(197, 164, 126, 0.1); 
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-accent);
+    flex-shrink: 0;
+}
+
+.icon-box svg {
+    width: 30px;
+    height: 30px;
+}
+
+.feature-text h4 {
+    font-size: 1.3rem;
+    margin-bottom: 6px;
+    color: var(--color-text);
+}
+
+.feature-text p {
+    font-size: 0.95rem;
+    color: var(--color-text-light);
+    line-height: 1.5;
+    margin: 0;
+}
+
+@media (max-width: 992px) {
+    .premium-consulta-grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
     }
 }
