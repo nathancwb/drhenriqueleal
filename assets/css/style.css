@@ -1420,6 +1420,14 @@ body.splash-active {
     display: block;
 }
 
+.video-wrapper video:-webkit-full-screen {
+    object-fit: contain;
+}
+
+.video-wrapper video:fullscreen {
+    object-fit: contain;
+}
+
 /* --- Expandable Procedure Cards --- */
 .expand-cards {
     display: flex;
@@ -3617,7 +3625,9 @@ body.splash-active {
 
 .premium-consulta-grid {
     display: grid;
-    grid-template-columns: 1fr 1.15fr;
+    grid-template-columns: 1fr;
+    max-width: 900px;
+    margin: 0 auto;
     gap: 80px;
     align-items: center;
 }
@@ -3670,16 +3680,33 @@ body.splash-active {
 .consulta-features {
     list-style: none;
     padding: 0;
-    margin: 0 0 40px 0;
-    display: flex;
-    flex-direction: column;
+    margin: 40px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+    text-align: left;
 }
 
 .consulta-features li {
+    background: var(--color-white);
+    padding: 35px 25px;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-card);
+    border-top: 3px solid var(--color-accent);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
-    align-items: flex-start;
-    gap: 20px;
+    flex-direction: column;
+}
+
+.consulta-features li:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+@media (max-width: 768px) {
+    .consulta-features {
+        grid-template-columns: 1fr;
+    }
 }
 
 .icon-box {
