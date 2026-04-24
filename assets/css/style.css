@@ -3505,12 +3505,16 @@ body.splash-active {
 
 .proc-glass-item {
     position: relative;
-    border-radius: 20px;
+    border-radius: var(--radius-lg);
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.08);
     overflow: hidden;
-    height: 420px;
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    height: auto;
+    min-height: 260px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease, background 0.4s ease;
     cursor: pointer;
-    background: #111;
+    display: flex;
+    flex-direction: column;
 }
 
 .proc-glass-item.hidden {
@@ -3518,80 +3522,49 @@ body.splash-active {
 }
 
 .proc-glass-item:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
-}
-
-.glass-bg-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.7s ease;
-}
-
-.proc-glass-item:hover .glass-bg-img {
-    transform: scale(1.08);
-}
-
-.glass-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to top, rgba(10,17,26,1) 0%, rgba(10,17,26,0.4) 60%, transparent 100%);
-    transition: opacity 0.4s ease;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-color: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.02);
 }
 
 .glass-content {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 30px;
+    position: relative;
+    padding: 35px 30px;
     color: #fff;
     z-index: 2;
-    transform: translateY(20px);
-    transition: transform 0.4s ease;
-}
-
-.proc-glass-item:hover .glass-content {
-    transform: translateY(0);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .glass-content h3 {
     font-family: var(--font-heading);
-    font-size: 1.5rem;
-    margin-bottom: 12px;
+    font-size: 1.45rem;
+    margin-bottom: 16px;
     color: #fff;
+    font-weight: 500;
 }
 
 .glass-content p {
-    font-size: 0.9rem;
-    color: rgba(255,255,255,0.7);
-    line-height: 1.5;
-    margin-bottom: 20px;
-    opacity: 0;
-    transition: opacity 0.4s ease 0.1s;
-}
-
-.proc-glass-item:hover .glass-content p {
-    opacity: 1;
+    font-size: 0.95rem;
+    color: rgba(255,255,255,0.65);
+    line-height: 1.6;
+    margin-bottom: 30px;
+    flex-grow: 1;
 }
 
 .glass-btn {
     display: inline-block;
     color: #c5a47e;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    opacity: 0;
-    transition: opacity 0.4s ease 0.2s, color 0.3s ease;
+    letter-spacing: 1.5px;
+    transition: color 0.3s ease;
 }
 
 .proc-glass-item:hover .glass-btn {
-    opacity: 1;
-}
-
-.glass-btn:hover {
     color: #fff;
 }
 
@@ -3607,13 +3580,7 @@ body.splash-active {
         font-size: 1rem;
     }
     .proc-glass-item {
-        height: 380px;
-    }
-    .glass-content {
-        transform: translateY(0);
-    }
-    .glass-content p, .glass-btn {
-        opacity: 1;
+        min-height: 240px;
     }
 }
 
@@ -3988,59 +3955,66 @@ body.splash-active {
 }
 
 .bioforce-card {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: var(--radius-lg);
-    padding: 48px 40px;
-    backdrop-filter: blur(10px);
-    text-align: center;
+    background: transparent;
+    border: none;
+    padding: 0;
+    backdrop-filter: none;
+    text-align: left;
+    border-left: 1px solid rgba(255,255,255,0.1);
+    padding-left: 60px;
 }
 
 .bioforce-logo-text {
     font-family: var(--font-heading);
-    font-size: 3.5rem;
-    font-weight: 700;
+    font-size: 2.8rem;
+    font-weight: 300;
     color: #fff;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     line-height: 1;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
 }
 
 .bioforce-logo-sub {
     font-size: 0.8rem;
-    color: rgba(255,255,255,0.5);
+    color: rgba(255,255,255,0.4);
     text-transform: uppercase;
     letter-spacing: 3px;
-    margin-bottom: 32px;
+    margin-bottom: 40px;
     display: block;
 }
 
 .bioforce-stats {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
 }
 
 .bioforce-stat {
-    background: rgba(255,255,255,0.06);
-    border-radius: var(--radius-md);
-    padding: 20px 16px;
-    text-align: center;
+    background: transparent;
+    border-radius: 0;
+    padding: 24px 0;
+    text-align: left;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    display: flex;
+    align-items: center;
+    gap: 24px;
 }
 
 .bioforce-stat strong {
-    display: block;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     color: #7cb9f0;
     font-family: var(--font-heading);
-    margin-bottom: 4px;
+    font-weight: 300;
+    min-width: 80px;
+    margin-bottom: 0;
 }
 
 .bioforce-stat span {
-    font-size: 0.78rem;
-    color: rgba(255,255,255,0.55);
-    line-height: 1.3;
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.6);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.4;
 }
 
 @media (max-width: 992px) {
