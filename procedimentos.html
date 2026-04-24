@@ -33,7 +33,7 @@
                 <img id="header-logo-img" src="assets/img/logo-marcadagua-colorida.png" alt="Dr. Henrique Leal">
             </a>
             <nav class="nav-links" id="navLinks">
-                <a href="/">Home</a>
+                <a href="index.html">Home</a>
                 <span class="nav-separator">|</span>
                 <a href="procedimentos.html" class="active">Procedimentos</a>
                 <span class="nav-separator">|</span>
@@ -49,7 +49,9 @@
                 <span></span>
             </button>
         </div>
-    </head    <!-- ==================== PREMIUM HERO PROCEDIMENTOS ==================== -->
+    </header>
+
+    <!-- ==================== PREMIUM HERO PROCEDIMENTOS ==================== -->
     <section class="premium-hero">
         <div class="premium-hero-bg">
             <img src="assets/img/henrique-clinic.jpg" alt="Clínica Dr. Henrique Leal">
@@ -63,6 +65,56 @@
             </div>
         </div>
     </section>
+
+    <!-- ==================== PROTOCOLO BIOFORCE ==================== -->
+    <section class="bioforce-section" id="bioforce">
+        <div class="container">
+            <div class="bioforce-inner">
+                <!-- Content -->
+                <div class="bioforce-content fade-in">
+                    <span class="bioforce-badge">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        Regeneração Inteligente e Natural
+                    </span>
+                    <h2>Protocolo <em>Bioforce</em></h2>
+                    <p>O Protocolo Bioforce combina dois bioestimuladores de colágeno, incluindo ativos à base de peptídeos ligados à estética regenerativa, promovendo estímulo profundo e melhora real da qualidade da pele.</p>
+                    <p>Totalmente personalizado, é desenvolvido de acordo com as necessidades de cada paciente, utilizando exclusivamente produtos importados de alta performance.</p>
+                    <p>Um protocolo pensado para quem busca rejuvenescimento com naturalidade, elegância e resultados duradouros.</p>
+                    <a href="https://wa.me/5541988577430?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20Protocolo%20Bioforce."
+                        class="btn btn-primary" target="_blank" rel="noopener" style="margin-top: 24px;">
+                        Agendar Avaliação
+                    </a>
+                </div>
+
+                <!-- Visual Card -->
+                <div class="bioforce-visual fade-in-right">
+                    <div class="bioforce-card">
+                        <div class="bioforce-logo-text">BIOFORCE</div>
+                        <span class="bioforce-logo-sub">Protocolo Exclusivo · Dr. Henrique Leal</span>
+                        <div class="bioforce-stats">
+                            <div class="bioforce-stat">
+                                <strong>2</strong>
+                                <span>Bioestimuladores</span>
+                            </div>
+                            <div class="bioforce-stat">
+                                <strong>100%</strong>
+                                <span>Personalizado</span>
+                            </div>
+                            <div class="bioforce-stat">
+                                <strong>Alta</strong>
+                                <span>Performance</span>
+                            </div>
+                            <div class="bioforce-stat">
+                                <strong>+</strong>
+                                <span>Qualidade da Pele</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- ==================== PROCEDURES GRID & FILTERS ==================== -->
     <section class="section proc-portfolio">
@@ -80,9 +132,9 @@
             <!-- Grid -->
             <div class="proc-glass-grid fade-in">
                 
-                <!-- Harmonização Facial (Facial) -->
-                <div class="proc-glass-item" data-category="facial" onclick="window.location.href='procedimentos-detalhes.html?id=preenchimento-acido-hialuronico'">
-                    <img src="assets/img/preenchimento.png" class="glass-bg-img" alt="Preenchimento Facial">
+                <!-- Preenchimento Facial (Facial) -->
+                <div class="proc-glass-item" data-category="facial" onclick="window.location.href='procedimentos-detalhes.html?id=preenchimento'">
+                    <img src="assets/img/harmonizacao-facial-nova.jpg" class="glass-bg-img" alt="Preenchimento Facial">
                     <div class="glass-overlay"></div>
                     <div class="glass-content">
                         <h3>Preenchimento Facial</h3>
@@ -104,7 +156,7 @@
 
                 <!-- Bioestimuladores (Facial, Corporal) -->
                 <div class="proc-glass-item" data-category="facial corporal" onclick="window.location.href='procedimentos-detalhes.html?id=bioestimulador-colageno'">
-                    <img src="assets/img/bioestimulador.png" class="glass-bg-img" alt="Bioestimuladores">
+                    <img src="assets/img/bioestimulador-de-colageno.jpg" class="glass-bg-img" alt="Bioestimuladores">
                     <div class="glass-overlay"></div>
                     <div class="glass-content">
                         <h3>Bioestimuladores</h3>
@@ -126,11 +178,11 @@
 
                 <!-- Estética Íntima (Íntima) -->
                 <div class="proc-glass-item" data-category="intima" onclick="window.location.href='procedimentos-detalhes.html?id=estetica-intima'">
-                    <img src="assets/img/dr-henrique.png" class="glass-bg-img" alt="Estética Íntima">
+                    <img src="assets/img/intimos-nova.jpg" class="glass-bg-img" alt="Estética Íntima">
                     <div class="glass-overlay"></div>
                     <div class="glass-content">
                         <h3>Estética Íntima</h3>
-                        <p>Preenchimentos, bioestimuladores e peelings para conforto, bem-estar e estética íntima.</p>
+                        <p>Preenchimentos, bioestimuladores e peelings para conforto, bem-estar e estética íntima masculina e feminina.</p>
                         <span class="glass-btn">Ver Detalhes ›</span>
                     </div>
                 </div>
@@ -146,9 +198,20 @@
                     </div>
                 </div>
 
+                <!-- Microagulhamento (Facial, Corporal) -->
+                <div class="proc-glass-item" data-category="facial corporal" onclick="window.location.href='procedimentos-detalhes.html?id=microagulhamento'">
+                    <img src="assets/img/harmonizacao-facial.jpg" class="glass-bg-img" alt="Microagulhamento">
+                    <div class="glass-overlay"></div>
+                    <div class="glass-content">
+                        <h3>Microagulhamento</h3>
+                        <p>Estimulação profunda do colágeno com microagulhas de precisão. Indicado para rejuvenescimento, cicatrizes e melhora de textura facial e corporal.</p>
+                        <span class="glass-btn">Ver Detalhes ›</span>
+                    </div>
+                </div>
+
                 <!-- Peeling Químico (Facial) -->
                 <div class="proc-glass-item" data-category="facial" onclick="window.location.href='procedimentos-detalhes.html?id=peeling-quimico'">
-                    <img src="assets/img/dr-henrique.png" class="glass-bg-img" alt="Peeling Químico">
+                    <img src="assets/img/botox-nova.jpg" class="glass-bg-img" alt="Peeling Químico">
                     <div class="glass-overlay"></div>
                     <div class="glass-content">
                         <h3>Peeling Químico</h3>
@@ -159,7 +222,7 @@
 
                 <!-- Terapias Capilares (Capilar) -->
                 <div class="proc-glass-item" data-category="capilar" onclick="window.location.href='procedimentos-detalhes.html?id=terapias-capilares'">
-                    <img src="assets/img/henrique-portrait.jpg" class="glass-bg-img" alt="Terapias Capilares">
+                    <img src="assets/img/foto-fios-nova.jpg" class="glass-bg-img" alt="Terapias Capilares">
                     <div class="glass-overlay"></div>
                     <div class="glass-content">
                         <h3>Terapia Capilar</h3>
@@ -170,7 +233,7 @@
 
                 <!-- Odontologia Estética (Sorriso) -->
                 <div class="proc-glass-item" data-category="sorriso" onclick="window.location.href='procedimentos-detalhes.html?id=odontologia'">
-                    <img src="assets/img/botox.png" class="glass-bg-img" alt="Odontologia Estética">
+                    <img src="assets/img/henrique-clinic.jpg" class="glass-bg-img" alt="Odontologia Estética">
                     <div class="glass-overlay"></div>
                     <div class="glass-content">
                         <h3>Odontologia Estética</h3>
@@ -182,7 +245,18 @@
         </div>
     </section>
 
-n btn-primary" target="_blank">Falar com Dr. Henrique</a>
+    <!-- ==================== CTA FINAL ==================== -->
+    <section class="cta-section">
+        <div class="container fade-in">
+            <h2>Pronto para Dar o Próximo Passo?</h2>
+            <p>Agende sua avaliação personalizada e descubra o protocolo ideal para você.</p>
+            <div class="cta-buttons">
+                <a href="https://wa.me/5541988577430?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." class="btn btn-primary" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" /></svg>
+                    Agendar pelo WhatsApp
+                </a>
+                <a href="/" class="btn btn-white">← Voltar ao Início</a>
+            </div>
         </div>
     </section>
 

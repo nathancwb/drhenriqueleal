@@ -10,49 +10,59 @@ document.addEventListener('DOMContentLoaded', () => {
     const headerLogoImg = document.getElementById('header-logo-img');
 
     if (splashScreen && splashLogo && headerLogoImg) {
-        document.body.classList.add('splash-active');
+        // Check if splash has already played in this session
+        const splashPlayed = sessionStorage.getItem('splashPlayed');
 
-        // Wait for logo image to load
-        const startSplash = () => {
-            // Hold for 1.5 seconds
-            setTimeout(() => {
-                // Get positions for FLIP
-                const splashRect = splashLogo.getBoundingClientRect();
-                const headerRect = headerLogoImg.getBoundingClientRect();
+        if (!splashPlayed) {
+            // First time: run animation
+            sessionStorage.setItem('splashPlayed', 'true');
+            document.body.classList.add('splash-active');
 
-                // Calculate scale ratio
-                const scaleX = headerRect.width / splashRect.width;
-                const scaleY = headerRect.height / splashRect.height;
-                const scale = Math.min(scaleX, scaleY);
-
-                // Calculate translation (center of splash logo to center of header logo)
-                const splashCenterX = splashRect.left + splashRect.width / 2;
-                const splashCenterY = splashRect.top + splashRect.height / 2;
-                const headerCenterX = headerRect.left + headerRect.width / 2;
-                const headerCenterY = headerRect.top + headerRect.height / 2;
-
-                const dx = headerCenterX - splashCenterX;
-                const dy = headerCenterY - splashCenterY;
-
-                // Apply FLIP transform
-                splashLogo.style.transform = `translate(${dx}px, ${dy}px) scale(${scale})`;
-
-                // After animation, fade out splash
+            // Wait for logo image to load
+            const startSplash = () => {
+                // Hold for 1.5 seconds
                 setTimeout(() => {
-                    splashScreen.classList.add('fade-out');
+                    // Get positions for FLIP
+                    const splashRect = splashLogo.getBoundingClientRect();
+                    const headerRect = headerLogoImg.getBoundingClientRect();
 
+                    // Calculate scale ratio
+                    const scaleX = headerRect.width / splashRect.width;
+                    const scaleY = headerRect.height / splashRect.height;
+                    const scale = Math.min(scaleX, scaleY);
+
+                    // Calculate translation (center of splash logo to center of header logo)
+                    const splashCenterX = splashRect.left + splashRect.width / 2;
+                    const splashCenterY = splashRect.top + splashRect.height / 2;
+                    const headerCenterX = headerRect.left + headerRect.width / 2;
+                    const headerCenterY = headerRect.top + headerRect.height / 2;
+
+                    const dx = headerCenterX - splashCenterX;
+                    const dy = headerCenterY - splashCenterY;
+
+                    // Apply FLIP transform
+                    splashLogo.style.transform = `translate(${dx}px, ${dy}px) scale(${scale})`;
+
+                    // After animation, fade out splash
                     setTimeout(() => {
-                        splashScreen.remove();
-                        document.body.classList.remove('splash-active');
-                    }, 600);
-                }, 1200);
-            }, 1500);
-        };
+                        splashScreen.classList.add('fade-out');
 
-        if (splashLogo.complete) {
-            startSplash();
+                        setTimeout(() => {
+                            splashScreen.remove();
+                            document.body.classList.remove('splash-active');
+                        }, 600);
+                    }, 1200);
+                }, 1500);
+            };
+
+            if (splashLogo.complete) {
+                startSplash();
+            } else {
+                splashLogo.addEventListener('load', startSplash);
+            }
         } else {
-            splashLogo.addEventListener('load', startSplash);
+            // Already played: remove splash immediately
+            splashScreen.remove();
         }
     }
 
