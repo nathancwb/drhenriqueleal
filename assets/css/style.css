@@ -3780,13 +3780,14 @@ body.splash-active {
 .credential-item {
     display: flex;
     align-items: flex-start;
-    gap: 14px;
-    padding: 16px 20px;
-    background: var(--color-white);
-    border-radius: var(--radius-md);
-    border: 1px solid var(--color-border);
-    border-left: 3px solid var(--color-accent);
-    box-shadow: var(--shadow-sm);
+    gap: 16px;
+    padding: 16px 0;
+    background: transparent;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.credential-item:last-child {
+    border-bottom: none;
 }
 
 .credential-item svg {
@@ -3802,11 +3803,11 @@ body.splash-active {
     font-size: 0.95rem;
     color: var(--color-primary);
     font-weight: 600;
-    margin-bottom: 3px;
+    margin-bottom: 4px;
 }
 
 .credential-item span {
-    font-size: 0.82rem;
+    font-size: 0.85rem;
     color: var(--color-text-light);
     line-height: 1.4;
 }
@@ -3816,6 +3817,12 @@ body.splash-active {
     color: var(--color-text-light);
     line-height: 1.75;
     margin-bottom: 22px;
+}
+
+.authority-bio:first-of-type {
+    font-size: 1.15rem;
+    color: var(--color-primary);
+    font-weight: 500;
 }
 
 .authority-cert-title {
@@ -3835,26 +3842,28 @@ body.splash-active {
 
 .cert-item {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 18px;
-    padding: 18px 24px;
-    background: var(--color-white);
-    border-radius: var(--radius-md);
-    border: 1px solid var(--color-border);
+    padding: 16px 0;
+    background: transparent;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
     transition: var(--transition);
-    box-shadow: var(--shadow-sm);
+}
+
+.cert-item:last-child {
+    border-bottom: none;
 }
 
 .cert-item:hover {
-    border-color: var(--color-accent);
     transform: translateX(4px);
-    box-shadow: var(--shadow-md);
 }
 
-.cert-flag {
-    font-size: 2rem;
-    line-height: 1;
+.cert-icon {
+    width: 20px;
+    height: 20px;
+    color: var(--color-accent);
     flex-shrink: 0;
+    margin-top: 2px;
 }
 
 .cert-info {
@@ -3870,9 +3879,9 @@ body.splash-active {
 }
 
 .cert-info span {
-    font-size: 0.83rem;
+    font-size: 0.85rem;
     color: var(--color-text-light);
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 @media (max-width: 992px) {
