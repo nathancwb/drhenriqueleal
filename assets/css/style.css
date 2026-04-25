@@ -2448,6 +2448,10 @@ body.splash-active {
         position: static;
         max-height: 400px;
     }
+    
+    .faq-image img {
+        object-position: center top !important;
+    }
 
     .procedure-detail {
         grid-template-columns: 1fr;
@@ -3911,6 +3915,7 @@ body.splash-active {
     }
     .authority-photo-wrap img {
         aspect-ratio: 4 / 3;
+        object-position: center top;
     }
 }
 
