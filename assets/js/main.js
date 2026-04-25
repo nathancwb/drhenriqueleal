@@ -266,7 +266,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     } else {
                         carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
                     }
-                }, 3000); 
+                }, 4000); // Increased time slightly for better readability
             };
 
             const resetAutoScroll = () => {
@@ -277,6 +277,20 @@ document.addEventListener('DOMContentLoaded', () => {
             // Pause on hover
             carousel.addEventListener('mouseenter', () => clearInterval(autoScrollInterval));
             carousel.addEventListener('mouseleave', startAutoScroll);
+
+            // Stop auto-scroll if a video is playing inside this carousel
+            const videos = carousel.querySelectorAll('video');
+            videos.forEach(video => {
+                video.addEventListener('play', () => {
+                    clearInterval(autoScrollInterval);
+                });
+                video.addEventListener('pause', () => {
+                    startAutoScroll();
+                });
+                video.addEventListener('ended', () => {
+                    startAutoScroll();
+                });
+            });
 
             // Start initially
             startAutoScroll();

@@ -796,13 +796,16 @@ body.splash-active {
 .ba-carousel {
     display: flex;
     overflow-x: auto;
-    scroll-snap-type: x mandatory;
     gap: 30px;
     padding: 20px 0;
     -ms-overflow-style: none;
     /* IE and Edge */
     scrollbar-width: none;
     /* Firefox */
+}
+
+.ba-carousel::-webkit-scrollbar {
+    display: none;
 }
 
 .carousel-wrapper {
@@ -1377,7 +1380,6 @@ body.splash-active {
 .depoimentos-carousel {
     display: flex;
     overflow-x: auto;
-    scroll-snap-type: x mandatory;
     gap: 24px;
     padding: 20px 0;
     margin: 0 auto;
@@ -2674,7 +2676,6 @@ body.splash-active {
     overflow-x: auto;
     gap: 20px;
     padding: 10px 4px 30px 4px;
-    scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
     /* Firefox */
@@ -2891,7 +2892,7 @@ body.splash-active {
     }
 }
 
-/* --- MOBILE CAROUSEL OVERRIDES (Ensuring 2-column + Scrollbar + No Arrows) --- */
+/* --- MOBILE CAROUSEL OVERRIDES (Ensuring Scrollbar Hidden + No Arrows) --- */
 @media (max-width: 768px) {
 
     /* Hide navigation arrows explicitly */
@@ -2904,10 +2905,10 @@ body.splash-active {
         pointer-events: none !important;
     }
 
-    /* Results Carousel - 2 items */
+    /* Results Carousel - 1.5 items */
     .ba-carousel {
         display: flex !important;
-        gap: 12px !important;
+        gap: 16px !important;
         padding-bottom: 20px !important;
         overflow-x: auto !important;
         -webkit-overflow-scrolling: touch;
@@ -2915,15 +2916,31 @@ body.splash-active {
     }
 
     .ba-card {
-        flex: 0 0 calc(50% - 6px) !important;
-        width: calc(50% - 6px) !important;
-        min-width: calc(50% - 6px) !important;
+        flex: 0 0 calc(85% - 16px) !important;
+        width: calc(85% - 16px) !important;
+        min-width: calc(85% - 16px) !important;
     }
 
-    /* Procedures Carousel - 2 items */
+    /* Depoimentos (Videos) Carousel - 1.2 items */
+    .depoimentos-carousel {
+        display: flex !important;
+        gap: 16px !important;
+        padding-bottom: 20px !important;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+    }
+
+    .video-testimonial-card {
+        flex: 0 0 calc(85% - 16px) !important;
+        width: calc(85% - 16px) !important;
+        min-width: calc(85% - 16px) !important;
+    }
+
+    /* Procedures Carousel - 1.5 items */
     .proc-carousel {
         display: flex !important;
-        gap: 12px !important;
+        gap: 16px !important;
         padding-bottom: 20px !important;
         padding-left: 10px !important;
         padding-right: 10px !important;
@@ -2933,32 +2950,17 @@ body.splash-active {
     }
 
     .proc-card-simple {
-        flex: 0 0 calc(50% - 6px) !important;
-        width: calc(50% - 6px) !important;
-        min-width: calc(50% - 6px) !important;
+        flex: 0 0 calc(75% - 16px) !important;
+        width: calc(75% - 16px) !important;
+        min-width: calc(75% - 16px) !important;
         margin-right: 0 !important;
     }
 
-    /* FORCE Scrollbar visibility on mobile */
+    /* Hide Scrollbar visibility on mobile for clean look */
     .ba-carousel::-webkit-scrollbar,
-    .proc-carousel::-webkit-scrollbar {
-        height: 6px !important;
-        display: block !important;
-        -webkit-appearance: none !important;
-    }
-
-    .ba-carousel::-webkit-scrollbar-track,
-    .proc-carousel::-webkit-scrollbar-track {
-        background: #f1f1f1 !important;
-        border-radius: 4px;
-    }
-
-    .ba-carousel::-webkit-scrollbar-thumb,
-    .proc-carousel::-webkit-scrollbar-thumb {
-        background-color: var(--color-primary) !important;
-        border-radius: 4px;
-        border: 1px solid #fff;
-        /* Contrast */
+    .proc-carousel::-webkit-scrollbar,
+    .depoimentos-carousel::-webkit-scrollbar {
+        display: none !important;
     }
 }
 
