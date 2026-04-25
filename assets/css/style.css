@@ -822,6 +822,11 @@ body.splash-active {
     border: 1px solid var(--color-border);
     scroll-snap-align: start;
     transition: var(--transition);
+    
+    /* Alignment fix */
+    display: flex;
+    flex-direction: column;
+    height: auto;
 }
 
 .ba-card:hover {
@@ -830,8 +835,11 @@ body.splash-active {
 }
 
 .ba-procedure {
-    display: block;
-    padding: 14px 20px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 14px;
     font-size: 0.85rem;
     font-weight: 600;
     color: var(--color-primary);
@@ -839,6 +847,7 @@ body.splash-active {
     letter-spacing: 1px;
     border-bottom: 1px solid var(--color-border);
     text-align: center;
+    min-height: 80px;
 }
 
 .ba-images {
