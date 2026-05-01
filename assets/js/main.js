@@ -440,16 +440,49 @@ document.addEventListener('DOMContentLoaded', () => {
     const baImages = document.querySelectorAll('.ba-image img');
 
     if (lightboxModal && lightboxImg) {
-        // Open lightbox on image click (direct attachment for better iOS support)
+        // Open lightbox — uses touch events to avoid carousel scroll eating clicks
         const baImageContainers = document.querySelectorAll('.ba-image');
+        
+        const openLightboxFor = (container) => {
+            const img = container.querySelector('img');
+            if (img && img.src) {
+                lightboxImg.src = img.src;
+                lightboxModal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        };
+
         baImageContainers.forEach(container => {
             container.style.cursor = 'pointer';
+            
+            // Track touch to distinguish tap vs scroll
+            let touchStartX = 0;
+            let touchStartY = 0;
+            let touchStartTime = 0;
+
+            container.addEventListener('touchstart', (e) => {
+                touchStartX = e.touches[0].clientX;
+                touchStartY = e.touches[0].clientY;
+                touchStartTime = Date.now();
+            }, { passive: true });
+
+            container.addEventListener('touchend', (e) => {
+                const touch = e.changedTouches[0];
+                const dx = Math.abs(touch.clientX - touchStartX);
+                const dy = Math.abs(touch.clientY - touchStartY);
+                const dt = Date.now() - touchStartTime;
+                
+                // Only open if it was a tap (small movement, quick touch)
+                if (dx < 15 && dy < 15 && dt < 500) {
+                    e.preventDefault();
+                    openLightboxFor(container);
+                }
+            });
+
+            // Desktop: normal click
             container.addEventListener('click', (e) => {
-                const img = container.querySelector('img');
-                if (img && img.src) {
-                    lightboxImg.src = img.src;
-                    lightboxModal.classList.add('active');
-                    document.body.style.overflow = 'hidden'; // Prevent scrolling
+                if (window.innerWidth > 768) {
+                    openLightboxFor(container);
                 }
             });
         });
