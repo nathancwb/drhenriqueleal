@@ -381,12 +381,24 @@ document.addEventListener('DOMContentLoaded', () => {
                 card.classList.add('active');
             });
 
-            // Mobile: click/tap to expand
+            // Mobile & Desktop Click Logic
+            card.style.cursor = 'pointer';
             card.addEventListener('click', (e) => {
+                // If clicked on the actual link, let it happen naturally
+                if (e.target.classList.contains('expand-card-link')) {
+                    return;
+                }
+                
                 if (window.innerWidth <= 768) {
-                    e.preventDefault();
-                    expandCards.forEach(c => c.classList.remove('active'));
-                    card.classList.add('active');
+                    if (!card.classList.contains('active')) {
+                        e.preventDefault();
+                        expandCards.forEach(c => c.classList.remove('active'));
+                        card.classList.add('active');
+                    } else {
+                        window.location.href = 'procedimentos.html';
+                    }
+                } else {
+                    window.location.href = 'procedimentos.html';
                 }
             });
         });
@@ -428,13 +440,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const baImages = document.querySelectorAll('.ba-image img');
 
     if (lightboxModal && lightboxImg) {
-        // Open lightbox on image click
-        baImages.forEach(img => {
-            img.addEventListener('click', () => {
-                lightboxImg.src = img.src;
-                lightboxModal.classList.add('active');
-                document.body.style.overflow = 'hidden'; // Prevent scrolling
-            });
+        // Open lightbox on image click using delegation to handle ba-label clicks too
+        document.body.addEventListener('click', (e) => {
+            if (e.target.matches('.ba-image img') || e.target.closest('.ba-image')) {
+                const img = e.target.matches('img') ? e.target : e.target.closest('.ba-image').querySelector('img');
+                if (img && img.src) {
+                    lightboxImg.src = img.src;
+                    lightboxModal.classList.add('active');
+                    document.body.style.overflow = 'hidden'; // Prevent scrolling
+                }
+            }
         });
 
         // Close lightbox
