@@ -440,16 +440,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const baImages = document.querySelectorAll('.ba-image img');
 
     if (lightboxModal && lightboxImg) {
-        // Open lightbox on image click using delegation to handle ba-label clicks too
-        document.body.addEventListener('click', (e) => {
-            if (e.target.matches('.ba-image img') || e.target.closest('.ba-image')) {
-                const img = e.target.matches('img') ? e.target : e.target.closest('.ba-image').querySelector('img');
+        // Open lightbox on image click (direct attachment for better iOS support)
+        const baImageContainers = document.querySelectorAll('.ba-image');
+        baImageContainers.forEach(container => {
+            container.style.cursor = 'pointer';
+            container.addEventListener('click', (e) => {
+                const img = container.querySelector('img');
                 if (img && img.src) {
                     lightboxImg.src = img.src;
                     lightboxModal.classList.add('active');
                     document.body.style.overflow = 'hidden'; // Prevent scrolling
                 }
-            }
+            });
         });
 
         // Close lightbox

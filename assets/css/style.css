@@ -859,6 +859,10 @@ body.splash-active {
     position: relative;
     overflow: hidden;
     aspect-ratio: 3 / 4;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
 }
 
 .ba-image img {
