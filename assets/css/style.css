@@ -870,6 +870,11 @@ body.splash-active {
     height: 100%;
     object-fit: cover;
     transition: var(--transition-slow);
+    pointer-events: none; /* Impede o iOS de selecionar/salvar a imagem, forçando o clique no container */
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
 }
 
 .ba-card:hover .ba-image img {
@@ -882,6 +887,7 @@ body.splash-active {
     left: 50%;
     transform: translateX(-50%);
     padding: 4px 14px;
+    pointer-events: none; /* Garante que a etiqueta não bloqueie o clique no container */
     border-radius: 20px;
     font-size: 0.7rem;
     font-weight: 700;
