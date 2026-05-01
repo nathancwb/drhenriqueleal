@@ -433,82 +433,80 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- Lightbox para Antes e Depois ---
-    const lightboxModal = document.getElementById('image-lightbox');
-    const lightboxImg = document.getElementById('lightbox-img');
-    const lightboxClose = document.querySelector('.lightbox-close');
-    const baImages = document.querySelectorAll('.ba-image img');
+    // --- Card Lightbox para Antes e Depois ---
+    const cardLightbox = document.getElementById('card-lightbox');
+    const cardLightboxBody = document.getElementById('card-lightbox-body');
+    const cardLightboxClose = document.querySelector('.card-lightbox-close');
 
-    if (lightboxModal && lightboxImg) {
-        // Open lightbox — uses touch events to avoid carousel scroll eating clicks
-        const baImageContainers = document.querySelectorAll('.ba-image');
+    if (cardLightbox && cardLightboxBody) {
+        const baCards = document.querySelectorAll('.ba-card');
         
-        const openLightboxFor = (container) => {
-            const img = container.querySelector('img');
-            if (img && img.src) {
-                lightboxImg.src = img.src;
-                lightboxModal.classList.add('active');
-                document.body.style.overflow = 'hidden';
-            }
+        const openCardLightbox = (card) => {
+            // Clone the card's inner content (procedure name + images)
+            cardLightboxBody.innerHTML = '';
+            const clone = card.cloneNode(true);
+            // Remove the fade-in class to avoid animation conflicts
+            clone.classList.remove('fade-in');
+            cardLightboxBody.appendChild(clone);
+            cardLightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
         };
 
-        baImageContainers.forEach(container => {
-            container.style.cursor = 'pointer';
-            
-            // Track touch to distinguish tap vs scroll
+        const closeCardLightbox = () => {
+            cardLightbox.classList.remove('active');
+            document.body.style.overflow = '';
+            setTimeout(() => { cardLightboxBody.innerHTML = ''; }, 300);
+        };
+
+        baCards.forEach(card => {
+            card.style.cursor = 'pointer';
+
+            // Mobile: touchstart/touchend to detect taps vs scrolls
             let touchStartX = 0;
             let touchStartY = 0;
             let touchStartTime = 0;
 
-            container.addEventListener('touchstart', (e) => {
+            card.addEventListener('touchstart', (e) => {
                 touchStartX = e.touches[0].clientX;
                 touchStartY = e.touches[0].clientY;
                 touchStartTime = Date.now();
             }, { passive: true });
 
-            container.addEventListener('touchend', (e) => {
+            card.addEventListener('touchend', (e) => {
                 const touch = e.changedTouches[0];
                 const dx = Math.abs(touch.clientX - touchStartX);
                 const dy = Math.abs(touch.clientY - touchStartY);
                 const dt = Date.now() - touchStartTime;
-                
+
                 // Only open if it was a tap (small movement, quick touch)
-                if (dx < 15 && dy < 15 && dt < 500) {
+                if (dx < 15 && dy < 15 && dt < 400) {
                     e.preventDefault();
-                    openLightboxFor(container);
+                    openCardLightbox(card);
                 }
             });
 
             // Desktop: normal click
-            container.addEventListener('click', (e) => {
+            card.addEventListener('click', () => {
                 if (window.innerWidth > 768) {
-                    openLightboxFor(container);
+                    openCardLightbox(card);
                 }
             });
         });
 
-        // Close lightbox
-        const closeLightbox = () => {
-            lightboxModal.classList.remove('active');
-            document.body.style.overflow = '';
-            setTimeout(() => { lightboxImg.src = ''; }, 300); // clear after transition
-        };
-
-        if (lightboxClose) {
-            lightboxClose.addEventListener('click', closeLightbox);
+        // Close handlers
+        if (cardLightboxClose) {
+            cardLightboxClose.addEventListener('click', closeCardLightbox);
         }
 
-        // Close when clicking outside the image
-        lightboxModal.addEventListener('click', (e) => {
-            if (e.target === lightboxModal) {
-                closeLightbox();
+        cardLightbox.addEventListener('click', (e) => {
+            if (e.target === cardLightbox) {
+                closeCardLightbox();
             }
         });
-        
-        // Close on Escape key
+
         document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && lightboxModal.classList.contains('active')) {
-                closeLightbox();
+            if (e.key === 'Escape' && cardLightbox.classList.contains('active')) {
+                closeCardLightbox();
             }
         });
     }
