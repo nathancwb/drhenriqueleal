@@ -1459,7 +1459,8 @@ body.splash-active {
 
 .premium-video-card {
     width: 100%;
-    max-width: 400px;
+    max-width: 280px;
+    margin: 0 auto;
     background: var(--color-white);
     border-radius: var(--radius-lg);
     overflow: hidden;
