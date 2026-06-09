@@ -796,6 +796,7 @@ body.splash-active {
 .ba-carousel {
     display: flex;
     overflow-x: auto;
+    overflow-y: hidden;
     gap: 30px;
     padding: 20px 0;
     -ms-overflow-style: none;
@@ -1399,6 +1400,7 @@ body.splash-active {
 .depoimentos-carousel {
     display: flex;
     overflow-x: auto;
+    overflow-y: hidden;
     gap: 24px;
     padding: 20px 0;
     margin: 0 auto;
