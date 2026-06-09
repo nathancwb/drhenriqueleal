@@ -1,0 +1,1446 @@
+/* ==========================================================================
+   DR. HENRIQUE LEAL — LANDING PAGE DE CURSOS VIP (SCROLLYTELLING ENGINE)
+   CSS unificado e isolado focado em altíssimo padrão de luxo clínico.
+   ========================================================================== */
+
+.lp-cursos-page {
+    --color-accent: #2A7DE1;
+    --color-bg-dark: #071324;
+    --color-gold: #c5a47e;
+    --color-gold-hover: #b3926c;
+    background-color: var(--color-bg-dark) !important;
+    color: #ffffff;
+    font-family: 'Inter', -apple-system, sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* Força contrastes de texto claros na página inteira de cursos */
+.lp-cursos-page h1,
+.lp-cursos-page h2,
+.lp-cursos-page h3,
+.lp-cursos-page h4,
+.lp-cursos-page p,
+.lp-cursos-page label,
+.lp-cursos-page span {
+    color: #ffffff;
+}
+
+.lp-cursos-page em {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    color: var(--color-gold);
+    font-weight: 400;
+    font-size: 1.18em;
+    line-height: 0.8;
+}
+
+.lp-cursos-page .line-accent {
+    background: var(--color-gold) !important;
+}
+
+/* ==================== ESTRUTURA DO MOTOR DE SCROLLYTELLING ==================== */
+.scrolly-container {
+    position: relative;
+    height: 200vh; /* Espaço de scroll necessário para as animações */
+    width: 100%;
+}
+
+.scrolly-container-long {
+    position: relative;
+    height: auto; /* Dynamically sized by scrollable right column to prevent empty spaces */
+    width: 100%;
+}
+
+.scrolly-sticky {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 5;
+    will-change: opacity;
+}
+
+/* ==================== BLOCO 1: HERO CINEMATOGRÁFICO ==================== */
+.hero-parallax-bg {
+    position: absolute;
+    inset: 0;
+    background-image: url('../img/henrique-hero.webp');
+    background-size: cover;
+    background-position: center 22%;
+    z-index: 0;
+    opacity: 0.6;
+    transform: scale(1.02);
+    /* Bind de scroll feito via JS no transform scale */
+    mask-image: linear-gradient(to bottom, black 65%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 65%, transparent 100%);
+}
+
+.hero-light-leak {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 10% 20%, rgba(197, 164, 126, 0.08) 0%, transparent 45%),
+                radial-gradient(circle at 90% 80%, rgba(42, 125, 225, 0.08) 0%, transparent 45%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.hero-scrollytelling-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 24px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-phase {
+    position: absolute;
+    width: 100%;
+    max-width: 720px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.4s cubic-bezier(0.25, 1, 0.5, 1), transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    pointer-events: none;
+}
+
+.hero-phase.active {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.lp-hero-tagline {
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--color-gold);
+    margin-bottom: 20px;
+}
+
+.lp-hero-subtitle {
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.scroll-instruction {
+    display: block;
+    margin-top: 40px;
+    font-size: 0.72rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+    animation: pulse-scroll 2s infinite;
+}
+
+@keyframes pulse-scroll {
+    0% { transform: translateY(0); opacity: 0.4; }
+    50% { transform: translateY(6px); opacity: 1; color: var(--color-gold); }
+    100% { transform: translateY(0); opacity: 0.4; }
+}
+
+.lp-entrance-glass-card {
+    background: rgba(11, 28, 52, 0.55);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(197, 164, 126, 0.18);
+    border-radius: 24px;
+    padding: 60px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+    text-align: left;
+    width: 100%;
+}
+
+.lp-entrance-glass-card h2 {
+    font-size: 2.2rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.lp-entrance-glass-card p {
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+/* ==================== BLOCO 2: PÚBLICO-ALVO (HORIZONTAL FADES) ==================== */
+.publico-bg-glow {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 50% 50%, rgba(27, 58, 92, 0.28) 0%, transparent 70%);
+}
+
+#block-publico {
+    height: 350vh; /* Slower, more immersive scroll transition */
+}
+
+.publico-scrollytelling-viewport {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    height: 55vh;
+}
+
+.publico-scrollytelling-track {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 100%;
+    gap: 4vw; /* premium spacing between cards */
+    padding-left: calc((100vw - 45vw) / 2); /* centers first card precisely */
+    padding-right: calc((100vw - 45vw) / 2); /* balances scroll track end */
+    transition: transform 0.15s cubic-bezier(0.25, 1, 0.5, 1);
+    will-change: transform;
+}
+
+.publico-card-container {
+    width: 45vw; /* elegant compact width */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+.publico-card-container .lp-glass-card {
+    width: 100%;
+    max-width: 580px; /* compact premium sizing, prevents stretching */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.lp-glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 55px 45px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: var(--transition);
+}
+
+.lp-glass-card.hover-glow:hover {
+    border-color: var(--color-gold);
+    box-shadow: 0 15px 45px rgba(197, 164, 126, 0.15);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.lp-card-icon {
+    width: 56px;
+    height: 56px;
+    background: rgba(197, 164, 126, 0.15);
+    border: 1px solid rgba(197, 164, 126, 0.35);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px;
+    color: var(--color-gold);
+}
+
+.lp-card-icon svg {
+    width: 26px;
+    height: 26px;
+    stroke: var(--color-gold);
+}
+
+.lp-glass-card h3 {
+    font-size: 1.7rem;
+    color: var(--color-gold) !important;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+.lp-glass-card p {
+    color: rgba(255, 255, 255, 0.8) !important;
+    line-height: 1.75;
+    font-size: 1.05rem;
+}
+
+/* ==================== BLOCO 3: MENU DE MENTORIAS SPLIT-SCREEN ==================== */
+#block-mentorias {
+    display: flex;
+    position: relative;
+    width: 100%;
+    will-change: opacity;
+}
+
+.scrolly-sticky-left {
+    position: sticky;
+    top: 0;
+    width: 45%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at 30% 50%, rgba(197, 164, 126, 0.08) 0%, var(--color-bg-dark) 70%) !important;
+    z-index: 4;
+    border-right: 1px solid rgba(255, 255, 255, 0.04);
+    overflow: hidden;
+}
+
+/* Ambient Backdrop Glow (kills flat black photo backgrounds) */
+.ambient-backdrop-blur {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.ambient-blur-img {
+    position: absolute;
+    inset: -10%;
+    width: 120%;
+    height: 120%;
+    object-fit: cover;
+    opacity: 0;
+    filter: blur(75px) saturate(1.8) brightness(0.6);
+    transition: opacity 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.ambient-blur-img.active {
+    opacity: 0.22; /* delicate luxury glowing aura */
+}
+
+.scrolly-left-frame {
+    position: relative;
+    width: 82%;
+    height: 70vh;
+    border-radius: 24px;
+    border: 1px solid rgba(197, 164, 126, 0.2);
+    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.5), 0 0 40px rgba(197, 164, 126, 0.04);
+    overflow: hidden;
+    z-index: 2;
+    background: rgba(11, 28, 52, 0.4);
+}
+
+.scrolly-image-swap {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transform: scale(1.08);
+    transition: opacity 0.8s ease-in-out, transform 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.scrolly-image-swap.active {
+    opacity: 0.85; /* more intense and premium visibility */
+    transform: scale(1);
+}
+
+.lp-left-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 75%, var(--color-bg-dark) 100%);
+    pointer-events: none;
+}
+
+.scrolly-scroll-right {
+    width: 55%;
+    padding: 0 80px 0 40px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 5;
+    /* Clean flat modern aesthetic, no 3D warp perspective */
+}
+
+.right-column-spacer {
+    height: 45vh;
+}
+
+.lp-mentoria-detail-card {
+    background: rgba(11, 28, 52, 0.45);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 28px;
+    padding: 55px 45px;
+    margin-bottom: 25vh;
+    color: #ffffff;
+    opacity: 0.15;
+    max-width: 760px; /* Prevents excessive stretching on ultra-wide screens */
+    width: 100%;
+    transform: translateY(40px) scale(0.96); /* Ultra-clean, premium slide-scale */
+    transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.lp-mentoria-detail-card.active {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    border-color: var(--color-gold);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.45), 0 0 30px rgba(197, 164, 126, 0.12);
+}
+
+.lp-mentoria-detail-card h2 {
+    color: #ffffff !important;
+    font-size: 2.1rem;
+    margin-top: 12px;
+    margin-bottom: 24px;
+    font-weight: 500;
+}
+
+.lp-mentoria-detail-card p {
+    color: rgba(255, 255, 255, 0.85) !important;
+    line-height: 1.8;
+    font-size: 1.02rem;
+    margin-bottom: 24px;
+}
+
+.lp-mentoria-detail-card .lp-list-luxury {
+    margin: 25px 0 35px 0;
+}
+
+/* ==================== BLOCO 4: PROGRESSO METODOLOGIA ==================== */
+.metodologia-bg {
+    position: absolute;
+    inset: 0;
+    background-image: url('../img/henrique-clinic.webp');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.08;
+    filter: grayscale(1);
+}
+
+.metodologia-split-box {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 60px;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    margin-top: 30px;
+}
+
+.metodologia-tracker-left {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-left: 30px;
+}
+
+.vertical-steps-line-container {
+    position: absolute;
+    left: 45px; /* Alinha com o meio do node-num de 32px */
+    top: 15px;
+    bottom: 15px;
+    width: 2px;
+    background: rgba(255, 255, 255, 0.05);
+    z-index: 1;
+}
+
+.vertical-steps-line-fill {
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(to bottom, var(--color-accent), var(--color-gold));
+    box-shadow: 0 0 10px var(--color-gold);
+    transition: height 0.1s ease-out;
+}
+
+.vertical-step-node {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    z-index: 2;
+    opacity: 0.35;
+    transition: opacity 0.4s ease;
+}
+
+.vertical-step-node.active {
+    opacity: 1;
+}
+
+.vertical-step-node .node-num {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #071324;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.4);
+    font-family: var(--font-heading);
+    font-size: 0.95rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+
+.vertical-step-node.active .node-num {
+    border-color: var(--color-gold);
+    color: var(--color-gold);
+    box-shadow: 0 0 15px rgba(197, 164, 126, 0.4);
+    background-color: #0c203b;
+}
+
+.vertical-step-node .node-text {
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 0.4s ease;
+}
+
+.vertical-step-node.active .node-text {
+    color: var(--color-gold);
+}
+
+.metodologia-cards-right {
+    position: relative;
+    height: 340px; /* Altura ideal garantida para evitar corte em qualquer tela */
+    width: 100%;
+}
+
+.metodologia-card-item {
+    position: absolute;
+    inset: 0;
+    background: rgba(11, 28, 52, 0.5);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(197, 164, 126, 0.15);
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transform: translateY(30px) scale(0.96);
+    transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.metodologia-card-item.active {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    pointer-events: auto;
+    border-color: var(--color-gold);
+    box-shadow: 0 20px 50px rgba(197, 164, 126, 0.18);
+}
+
+.card-step-num {
+    font-size: 0.72rem;
+    letter-spacing: 3px;
+    color: var(--color-gold);
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.metodologia-card-item h3 {
+    font-size: 1.8rem !important;
+    color: #ffffff !important;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+.metodologia-card-item p {
+    font-size: 0.98rem !important;
+    color: rgba(255, 255, 255, 0.85) !important;
+    line-height: 1.75;
+}
+
+@media (max-width: 992px) {
+    .metodologia-split-box {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-top: 20px;
+    }
+    
+    .metodologia-tracker-left {
+        display: none !important;
+    }
+    
+    .metodologia-cards-right {
+        height: auto !important;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    
+    .metodologia-card-item {
+        position: relative !important;
+        opacity: 1 !important;
+        transform: none !important;
+        pointer-events: auto !important;
+        background: rgba(11, 28, 52, 0.7) !important;
+        padding: 35px 25px !important;
+    }
+}
+
+/* ==================== BLOCO 5: TIMELINE & PORTAL DE CANDIDATURA ==================== */
+.timeline-bg {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 10% 80%, rgba(197, 164, 126, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 90% 20%, rgba(42, 125, 225, 0.05) 0%, transparent 50%);
+}
+
+.lp-candidatura-split {
+    display: grid;
+    grid-template-columns: 1fr 1.15fr;
+    gap: 60px;
+    align-items: center;
+    width: 100%;
+}
+
+.lp-mentor-candidatura-info {
+    color: #ffffff;
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: opacity 0.8s, transform 0.8s;
+}
+
+.lp-mentor-candidatura-info.revealed {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.lp-mentor-candidatura-info h2 {
+    color: #ffffff !important;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.cert-timeline-lp {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.timeline-item-lp {
+    border-left: 2px solid var(--color-gold);
+    padding-left: 20px;
+    position: relative;
+}
+
+.timeline-item-lp::before {
+    content: '';
+    position: absolute;
+    left: -7px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--color-gold);
+    box-shadow: 0 0 10px var(--color-gold);
+}
+
+.timeline-item-lp strong {
+    display: block;
+    color: var(--color-gold);
+    font-size: 1rem;
+    margin-bottom: 4px;
+}
+
+.lp-glass-candidatura-card {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 55px;
+    border-radius: 24px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+    opacity: 0;
+    transform: translateX(40px);
+    transition: opacity 0.8s, transform 0.8s;
+}
+
+.lp-glass-candidatura-card.revealed {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.lp-glass-candidatura-card h3 {
+    color: #ffffff !important;
+    font-size: 1.7rem;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+@media (max-width: 992px) {
+    .lp-candidatura-split {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .lp-glass-candidatura-card {
+        padding: 35px 25px;
+    }
+    .lp-mentor-candidatura-info, .lp-glass-candidatura-card {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* ==================== BARRA LATERAL LP DOTS ==================== */
+.lp-scroll-dots {
+    position: fixed;
+    right: 35px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    z-index: 1000;
+}
+
+.lp-scroll-dots .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(0,0,0,0.5);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.lp-scroll-dots .dot:hover,
+.lp-scroll-dots .dot.active {
+    background-color: var(--color-gold);
+    transform: scale(1.35);
+    box-shadow: 0 0 10px var(--color-gold);
+}
+
+@media (max-width: 768px) {
+    .lp-scroll-dots {
+        display: none;
+    }
+}
+
+/* Responsive / Layout Clears (Mobile & Tablet Refinements under 992px) */
+@media (max-width: 992px) {
+    /* 1. Reset Scrolly Container heights to prevent blank sticky scrolling on mobile */
+    .scrolly-container,
+    .scrolly-container-long,
+    #b4,
+    #block-candidatura,
+    #lp-static-info {
+        height: auto !important;
+        position: relative !important;
+        display: block !important;
+        background-color: var(--color-bg-dark) !important; /* solid background covers fixed parallax image */
+        z-index: 2 !important;
+        padding: 60px 16px !important;
+        box-sizing: border-box !important;
+    }
+
+    .scrolly-sticky {
+        position: relative !important;
+        top: 0 !important;
+        height: auto !important;
+        padding: 0 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        overflow: visible !important;
+        background: transparent !important;
+    }
+
+    /* 2. Hero Mobile Layout: Fixed Parallax Background & Merged Stack */
+    .hero-parallax-bg {
+        position: fixed !important;
+        inset: 0 !important;
+        height: 100vh !important;
+        width: 100vw !important;
+        z-index: 0 !important;
+        opacity: 0.32 !important; /* Elegant lower opacity to protect text readability */
+        transform: none !important;
+        background-attachment: scroll !important;
+        background-position: center 25% !important;
+        mask-image: none !important;
+        -webkit-mask-image: none !important;
+    }
+
+    .hero-scrollytelling-content {
+        display: flex !important;
+        flex-direction: column !important;
+        height: auto !important;
+        justify-content: flex-start !important;
+        padding: 0 !important;
+        z-index: 2 !important;
+    }
+
+    .hero-phase {
+        position: relative !important;
+        opacity: 1 !important;
+        transform: none !important;
+        pointer-events: auto !important;
+        max-width: 100% !important;
+        margin-bottom: 0 !important;
+        text-align: center !important;
+    }
+
+    /* Hide redundant elements on stacked mobile Hero opening */
+    .lp-hero-subtitle,
+    .scroll-instruction {
+        display: none !important;
+    }
+
+    .lp-hero-tagline {
+        font-size: 0.68rem !important;
+        letter-spacing: 2px !important;
+        margin-bottom: 12px !important;
+    }
+
+    .hero-scrollytelling-content h1 {
+        font-size: 1.85rem !important;
+        line-height: 1.25 !important;
+        margin-top: 0 !important;
+        margin-bottom: 24px !important;
+        font-weight: 500 !important;
+    }
+
+    .hero-scrollytelling-content h1 em {
+        font-size: 1.05em !important;
+    }
+
+    #hero-phase-2 {
+        opacity: 1 !important;
+        transform: none !important;
+        margin-top: 0 !important;
+    }
+
+    .lp-entrance-glass-card {
+        padding: 28px 20px !important;
+        border-radius: 16px !important;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3) !important;
+        background: rgba(11, 28, 52, 0.72) !important;
+        border: 1px solid rgba(197, 164, 126, 0.15) !important;
+    }
+
+    .lp-entrance-glass-card h2 {
+        font-size: 1.35rem !important;
+        font-weight: 500 !important;
+        color: var(--color-gold) !important;
+        margin-top: 0 !important;
+        margin-bottom: 12px !important;
+    }
+
+    .lp-entrance-glass-card p {
+        font-size: 0.88rem !important;
+        line-height: 1.65 !important;
+        margin-bottom: 24px !important;
+    }
+
+    .hero-buttons {
+        flex-direction: column !important;
+        gap: 12px !important;
+        width: 100% !important;
+    }
+
+    .hero-buttons .btn {
+        width: 100% !important;
+        text-align: center !important;
+        box-sizing: border-box !important;
+        padding: 14px 20px !important;
+        font-size: 0.95rem !important;
+    }
+
+    /* 3. Target Public Mobile Layout (stack cards vertically) */
+    .publico-scrollytelling-viewport {
+        height: auto !important;
+        overflow: visible !important;
+        display: block !important;
+        margin-top: 24px !important;
+    }
+    
+    .publico-scrollytelling-track {
+        width: 100% !important;
+        flex-direction: column !important;
+        transform: none !important;
+        gap: 20px !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    
+    .publico-card-container {
+        width: 100% !important;
+        height: auto !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    .lp-glass-card {
+        padding: 30px 20px !important;
+        border-radius: 16px !important;
+        text-align: left !important;
+    }
+
+    .lp-card-icon {
+        width: 48px !important;
+        height: 48px !important;
+        margin: 0 0 16px 0 !important;
+    }
+
+    .lp-card-icon svg {
+        width: 22px !important;
+        height: 22px !important;
+    }
+
+    .lp-glass-card h3 {
+        font-size: 1.35rem !important;
+        margin-top: 0 !important;
+        margin-bottom: 8px !important;
+    }
+
+    .lp-glass-card p {
+        font-size: 0.88rem !important;
+        line-height: 1.6 !important;
+    }
+
+    /* 4. Mentorias Mobile Layout resets */
+    #block-mentorias {
+        display: block !important;
+    }
+
+    .scrolly-sticky-left {
+        display: none !important;
+    }
+
+    .scrolly-scroll-right {
+        width: 100% !important;
+        padding: 0 !important;
+    }
+
+    .lp-mentoria-detail-card {
+        opacity: 1 !important;
+        transform: none !important;
+        background: rgba(11, 28, 52, 0.72) !important;
+        border: 1px solid rgba(255, 255, 255, 0.05) !important;
+        margin-bottom: 24px !important;
+        padding: 30px 20px !important;
+        border-radius: 16px !important;
+    }
+
+    .lp-mentoria-detail-card h2 {
+        font-size: 1.45rem !important;
+        margin-top: 4px !important;
+        margin-bottom: 12px !important;
+    }
+
+    .lp-mentoria-detail-card p {
+        font-size: 0.88rem !important;
+        line-height: 1.6 !important;
+        margin-bottom: 16px !important;
+    }
+
+    .lp-mentoria-detail-card .lp-list-luxury {
+        margin: 16px 0 24px 0 !important;
+        padding-left: 0 !important;
+    }
+
+    .lp-mentoria-detail-card .lp-list-luxury li {
+        font-size: 0.85rem !important;
+        line-height: 1.52 !important;
+        margin-bottom: 8px !important;
+    }
+
+    .right-column-spacer {
+        display: none !important;
+    }
+
+    /* 5. Metodologia Mobile adjustments */
+    #b4-vp {
+        padding: 0 !important;
+    }
+    #b4p0, #b4p1, #b4p2 {
+        padding: 24px 20px !important;
+        border-radius: 16px !important;
+        border: 1px solid rgba(197, 164, 126, 0.15) !important;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2) !important;
+        box-sizing: border-box !important;
+    }
+    #b4p0 p, #b4p1 p, #b4p2 p {
+        font-size: 0.88rem !important;
+        line-height: 1.6 !important;
+    }
+
+    /* 6. Candidatura Mobile adjustments */
+    .lp-mentor-candidatura-info {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+    .lp-mentor-candidatura-info h2 {
+        font-size: 1.85rem !important;
+        line-height: 1.25 !important;
+        margin-bottom: 12px !important;
+    }
+    .lp-mentor-candidatura-info p {
+        font-size: 0.88rem !important;
+        line-height: 1.65 !important;
+    }
+    .timeline-item-lp strong {
+        font-size: 0.9rem !important;
+    }
+    .timeline-item-lp span {
+        font-size: 0.8rem !important;
+    }
+    .lp-glass-candidatura-card {
+        padding: 30px 20px !important;
+        border-radius: 16px !important;
+        border: 1px solid rgba(255, 255, 255, 0.08) !important;
+        opacity: 1 !important;
+        transform: none !important;
+        margin-top: 15px !important;
+    }
+    .lp-glass-candidatura-card h3 {
+        font-size: 1.35rem !important;
+        margin-bottom: 10px !important;
+    }
+
+    /* 7. FAQ collapsed grid for mobile (resolves squeezed 2-column bug) */
+    .faq-layout {
+        grid-template-columns: 1fr !important;
+        gap: 24px !important;
+        margin-bottom: 40px !important;
+    }
+    .faq-image {
+        height: 280px !important;
+    }
+    .faq-image img {
+        height: 280px !important;
+        border-radius: 12px !important;
+    }
+    .faq-question {
+        padding: 16px 14px !important;
+        font-size: 1rem !important;
+    }
+    .faq-answer {
+        padding: 0 14px 16px !important;
+        font-size: 0.88rem !important;
+        line-height: 1.6 !important;
+    }
+}
+
+/* ==========================================================================
+   IMMERSIVE WEB SKILL — INTEGRATION & LUXURY MICRO-ANIMATIONS
+   ========================================================================== */
+
+
+
+/* 2. AMBIENT PARTICLE FIELD */
+.particle-field {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.lp-particle {
+    position: absolute;
+    border-radius: 50%;
+    background-color: var(--color-gold);
+    opacity: 0;
+    will-change: transform, opacity;
+    animation: float-up-particle linear infinite;
+}
+
+@keyframes float-up-particle {
+    0% {
+        transform: translateY(110vh) translateX(0) scale(0.5);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.25;
+    }
+    90% {
+        opacity: 0.15;
+    }
+    100% {
+        transform: translateY(-10vh) translateX(var(--drift)) scale(1.1);
+        opacity: 0;
+    }
+}
+
+/* 3. MAGNETIC BUTTONS HELPER */
+.magnetic {
+    display: inline-block;
+    transition: transform 0.2s cubic-bezier(0.25, 1, 0.5, 1);
+    will-change: transform;
+}
+
+/* 4. 3D CARD PERSPECTIVE TILT */
+.publico-scrollytelling-content {
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+}
+
+.card-3d {
+    transform-style: preserve-3d;
+    transition: transform 0.15s cubic-bezier(0.25, 1, 0.5, 1), border-color 0.4s, box-shadow 0.4s;
+    will-change: transform;
+}
+
+.card-3d > * {
+    transform: translateZ(20px);
+    transition: transform 0.15s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.card-3d .lp-card-icon {
+    transform: translateZ(40px);
+}
+
+.card-3d h3 {
+    transform: translateZ(30px);
+}
+
+/* 5. PREFERS REDUCED MOTION FALLBACK */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.001ms !important;
+        transition-duration: 0.001ms !important;
+        transform: none !important;
+    }
+    .cursor-dot, .cursor-ring, .particle-field {
+        display: none !important;
+    }
+}
+
+/* ==========================================================================
+   FORM GLASSMORPHIC OVERRIDES & ADDRESS BOX GLOW VISIBILITY
+   ========================================================================== */
+
+/* 1. DARK GLASSMORPHIC FORM INPUTS & SELECTS */
+.lp-glass-candidatura-card form .form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.lp-glass-candidatura-card form label {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8) !important;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+.lp-glass-candidatura-card form input[type="text"],
+.lp-glass-candidatura-card form input[type="tel"],
+.lp-glass-candidatura-card form select {
+    width: 100% !important;
+    background: rgba(5, 13, 24, 0.6) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: #ffffff !important;
+    padding: 14px 18px !important;
+    border-radius: 12px !important;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 0.95rem !important;
+    transition: all 0.3s ease !important;
+    box-sizing: border-box !important;
+}
+
+.lp-glass-candidatura-card form input::placeholder {
+    color: rgba(255, 255, 255, 0.35) !important;
+}
+
+.lp-glass-candidatura-card form input:focus,
+.lp-glass-candidatura-card form select:focus {
+    outline: none !important;
+    border-color: var(--color-gold) !important;
+    box-shadow: 0 0 12px rgba(197, 164, 126, 0.25) !important;
+    background: rgba(5, 13, 24, 0.8) !important;
+}
+
+/* Style select dropdown arrow and popup window options */
+.lp-glass-candidatura-card form select {
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%23c5a47e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m4 6 4 4 4-4'/%3E%3C/svg%3E") !important;
+    background-repeat: no-repeat !important;
+    background-position: right 18px center !important;
+    background-size: 14px !important;
+    padding-right: 45px !important;
+}
+
+.lp-glass-candidatura-card form select option {
+    background-color: var(--color-bg-dark) !important;
+    color: #ffffff !important;
+    padding: 12px !important;
+}
+
+/* 2. DARK GLASS ADDRESS CAPSULE OVERRIDE (ELIMINATES LIGHT BACKGROUND CONTRAST ISSUE) */
+.lp-cursos-page .address-box {
+    background: rgba(255, 255, 255, 0.03) !important;
+    border: 1px solid rgba(197, 164, 126, 0.3) !important;
+    color: #ffffff !important;
+    padding: 14px 28px !important;
+    border-radius: 50px !important;
+    display: inline-block !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    font-weight: 500 !important;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25) !important;
+    margin-top: 25px !important;
+}
+
+.lp-cursos-page .address-box span {
+    color: var(--color-gold) !important;
+    font-weight: 600;
+}
+
+/* ==================== RESPONSIVE OVERRIDES FOR B4 METODOLOGIA BLOCK ==================== */
+@media (max-width: 992px) {
+    #b4 {
+        height: auto !important;
+    }
+    #b4-vp {
+        position: relative !important;
+        top: 0 !important;
+        height: auto !important;
+        overflow: visible !important;
+        padding: 60px 0 !important;
+        background: #050d18 !important;
+    }
+    #b4-inner {
+        position: relative !important;
+        inset: auto !important;
+        padding: 0 16px !important;
+        display: block !important;
+    }
+    #b4-row {
+        flex-direction: column !important;
+        gap: 24px !important;
+        align-items: stretch !important;
+        width: 100% !important;
+    }
+    #b4p0, #b4p1, #b4p2 {
+        opacity: 1 !important;
+        transform: none !important;
+        margin-top: 0 !important;
+        width: 100% !important;
+        flex: none !important;
+    }
+    #b4-lw, #b4-line {
+        display: none !important;
+    }
+    #b4-h, #b4-lbl {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+}
+
+/* ==================== HERO TRANSLUCENT OUTLINE BUTTON READABILITY OVERRIDE ==================== */
+.lp-cursos-page .hero-buttons .btn-outline {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.25) !important;
+    color: #ffffff !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    transition: all 0.3s ease !important;
+    padding: 12px 28px !important;
+    border-radius: 50px !important;
+    display: inline-block !important;
+}
+
+.lp-cursos-page .hero-buttons .btn-outline:hover {
+    background: rgba(255, 255, 255, 0.18) !important;
+    border-color: var(--color-gold) !important;
+    color: var(--color-gold) !important;
+    box-shadow: 0 0 15px rgba(197, 164, 126, 0.15) !important;
+}
+
+/* ==================== MOBILE-ONLY MENTORIAS CTA TOGGLE ==================== */
+.mobile-only-candidatura-cta {
+    display: none !important;
+}
+
+@media (max-width: 992px) {
+    .lp-mentoria-detail-card .select-mentoria-btn {
+        display: none !important; /* Hide repetitive button on individual stacked cards */
+    }
+    
+    .mobile-only-candidatura-cta {
+        display: block !important;
+        width: 100% !important;
+        margin-top: 15px !important;
+        margin-bottom: 24px !important;
+        box-sizing: border-box !important;
+    }
+}
+
+/* ==================== FAQ ACCORDION PREMIUM STYLING ==================== */
+.lp-cursos-page .faq-item {
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    background: rgba(255, 255, 255, 0.02) !important;
+    margin-bottom: 16px !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    transition: all 0.3s ease !important;
+}
+
+.lp-cursos-page .faq-item.active {
+    border-color: var(--color-gold) !important;
+    background: rgba(11, 28, 52, 0.45) !important;
+    box-shadow: 0 10px 25px rgba(197, 164, 126, 0.08) !important;
+}
+
+.lp-cursos-page .faq-question {
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    padding: 22px 24px !important;
+    font-family: var(--font-heading) !important;
+    font-size: 1.12rem !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    background: transparent !important;
+    border: none !important;
+    text-align: left !important;
+    cursor: pointer !important;
+}
+
+.lp-cursos-page .faq-item.active .faq-question {
+    color: var(--color-gold) !important;
+}
+
+.lp-cursos-page .faq-answer {
+    max-height: 0 !important;
+    overflow: hidden !important;
+    transition: max-height 0.4s cubic-bezier(0.25, 1, 0.5, 1) !important;
+    padding: 0 !important; /* Absolute collapse: removes double-padding visual bug */
+}
+
+.lp-cursos-page .faq-item.active .faq-answer {
+    max-height: 350px !important;
+}
+
+.lp-cursos-page .faq-answer-inner {
+    padding: 0 24px 22px !important;
+    color: rgba(255, 255, 255, 0.85) !important;
+    font-size: 0.96rem !important;
+    line-height: 1.75 !important;
+}
+
+.mentorias-bottom-spacer {
+    height: 40vh;
+}
+
+/* ==================== DESKTOP HIDES FOR MOBILE TABS & IMAGES ==================== */
+.mentorias-mobile-tabs,
+.mentoria-card-mobile-img {
+    display: none !important;
+}
+
+/* ==================== MOBILE & TABLET CURSOS SWITCHER TAB LAYOUT ==================== */
+@media (max-width: 992px) {
+    /* 1. Show dynamic horizontal scroll tab-bar */
+    .mentorias-mobile-tabs {
+        display: flex !important;
+        gap: 8px !important;
+        overflow-x: auto !important;
+        padding: 8px 4px 16px 4px !important;
+        margin-bottom: 24px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+        scrollbar-width: none !important; /* Hide scrollbar Firefox */
+        -webkit-overflow-scrolling: touch !important;
+        z-index: 5 !important;
+    }
+    
+    .mentorias-mobile-tabs::-webkit-scrollbar {
+        display: none !important; /* Hide scrollbar Webkit */
+    }
+
+    .mentoria-tab-btn {
+        flex-shrink: 0 !important;
+        background: rgba(255, 255, 255, 0.03) !important;
+        border: 1px solid rgba(255, 255, 255, 0.08) !important;
+        color: rgba(255, 255, 255, 0.6) !important;
+        padding: 10px 18px !important;
+        border-radius: 50px !important;
+        font-size: 0.82rem !important;
+        font-weight: 500 !important;
+        cursor: pointer !important;
+        transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1) !important;
+        font-family: 'Inter', sans-serif !important;
+    }
+
+    .mentoria-tab-btn.active {
+        background: rgba(197, 164, 126, 0.15) !important;
+        border-color: var(--color-gold) !important;
+        color: var(--color-gold) !important;
+        box-shadow: 0 0 12px rgba(197, 164, 126, 0.15) !important;
+        font-weight: 600 !important;
+    }
+
+    /* 2. Show Mobile brochure card images */
+    .mentoria-card-mobile-img {
+        display: block !important;
+        width: 100% !important;
+        height: 250px !important; /* Beautiful portrait aspect ratio for mobile viewports */
+        border-radius: 12px !important;
+        overflow: hidden !important;
+        margin-bottom: 24px !important;
+        border: 1px solid rgba(197, 164, 126, 0.18) !important;
+    }
+
+    .mentoria-card-mobile-img img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        object-position: top center !important; /* Forces framing alignment to the top to show the doctor's face */
+    }
+
+    /* 3. Hide non-active detail cards to compress layout */
+    .lp-mentoria-detail-card {
+        display: none !important; /* Collapse vertical layout */
+        opacity: 0 !important;
+        transition: opacity 0.4s ease !important;
+        margin-bottom: 20px !important;
+    }
+
+    .lp-mentoria-detail-card.mobile-active {
+        display: block !important; /* Only display active chosen program */
+        opacity: 1 !important;
+        transform: none !important;
+    }
+
+    .mentorias-bottom-spacer {
+        display: none !important;
+    }
+}
+
+

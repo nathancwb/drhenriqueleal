@@ -13,7 +13,7 @@ const proceduresData = {
             "Fortalecimento capilar",
             "Nutrição capilar"
         ],
-        image: "assets/img/henrique-clinic.jpg" // Placeholder if distinct images are needed
+        image: "assets/img/henrique-clinic.webp" // Placeholder if distinct images are needed
     },
 
     // 2. Estética Corporal
@@ -33,7 +33,7 @@ const proceduresData = {
             "<strong>Gordura Localizada:</strong> Lipo enzimática corporal de alta performance",
             "<strong>Pele Corporal:</strong> Tratamento de cicatrizes, estrias e manchas"
         ],
-        image: "assets/img/bioestimulador.png"
+        image: "assets/img/bioestimulador.webp"
     },
 
     // 3. Estética Íntima
@@ -49,7 +49,7 @@ const proceduresData = {
             "<strong>Botox Anal (Antox):</strong> Aplicação de toxina botulínica para relaxamento da musculatura anal, auxiliando em casos de fissuras, desconfortos e podendo proporcionar mais conforto em determinadas situações.",
             "<strong>Botox no Saco Escrotal:</strong> Promove relaxamento da musculatura, melhora do conforto local, aspecto estético mais harmônico e pode auxiliar na redução da sudorese da região."
         ],
-        image: "assets/img/dr-henrique.png"
+        image: "assets/img/dr-henrique.webp"
     },
 
     // 4. Preenchimento (Ácido Hialurônico)
@@ -65,7 +65,7 @@ const proceduresData = {
             "Hidratação profunda da pele",
             "Resultados imediatos e naturais"
         ],
-        image: "assets/img/preenchimento.png"
+        image: "assets/img/preenchimento.webp"
     },
 
     // 5. Bioestimulador de Colágeno
@@ -80,7 +80,7 @@ const proceduresData = {
             "Rejuvenescimento progressivo",
             "Resultados duradouros"
         ],
-        image: "assets/img/bioestimulador.png"
+        image: "assets/img/bioestimulador.webp"
     },
 
     // 6. Fios de PDO
@@ -95,7 +95,7 @@ const proceduresData = {
             "Estímulo de colágeno prolongado",
             "Tratamento da flacidez"
         ],
-        image: "assets/img/pdo.png"
+        image: "assets/img/pdo.webp"
     },
 
     // 7. Peeling Químico
@@ -111,7 +111,7 @@ const proceduresData = {
             "Uniformização do tom da pele",
             "Estímulo superficial de colágeno"
         ],
-        image: "assets/img/dr-henrique.png"
+        image: "assets/img/dr-henrique.webp"
     },
 
     // 8. Microagulhamento
@@ -127,7 +127,7 @@ const proceduresData = {
             "Suavização de rugas finas",
             "Melhora da textura e viço da pele"
         ],
-        image: "assets/img/henrique-clinic.jpg"
+        image: "assets/img/henrique-clinic.webp"
     },
 
     // 9. Botox (Toxina Botulínica)
@@ -142,7 +142,7 @@ const proceduresData = {
             "Resultado natural e harmonioso",
             "Procedimento rápido e seguro"
         ],
-        image: "assets/img/botox.png"
+        image: "assets/img/botox.webp"
     },
 
     // 10. Odontologia
@@ -157,7 +157,7 @@ const proceduresData = {
             "Facetas em Porcelana ou Resina",
             "Gengivectomia"
         ],
-        image: "assets/img/henrique-clinic.jpg"
+        image: "assets/img/henrique-clinic.webp"
     }
 };
 
