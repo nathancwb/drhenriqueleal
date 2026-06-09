@@ -1449,6 +1449,48 @@ body.splash-active {
     object-fit: contain;
 }
 
+/* --- Premium Video Section --- */
+.video-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.premium-video-card {
+    width: 100%;
+    max-width: 400px;
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--color-border);
+    transition: var(--transition);
+}
+
+.premium-video-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(15, 40, 71, 0.1);
+}
+
+.premium-video-card .video-info {
+    padding: 24px;
+    text-align: center;
+}
+
+.premium-video-card .video-info h3 {
+    color: var(--color-primary);
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    font-family: var(--font-heading);
+}
+
+.premium-video-card .video-info p {
+    color: var(--color-text-light);
+    font-size: 0.95rem;
+    margin: 0;
+}
+
 /* --- Expandable Procedure Cards --- */
 .expand-cards {
     display: flex;
