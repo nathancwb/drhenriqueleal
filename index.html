@@ -11,6 +11,9 @@
         content="Harmonização Facial com naturalidade e sofisticação em Curitiba. Especialista em Fios de PDO, Botox, Preenchimento e Bioestimuladores. Resultados elegantes sem exageros.">
     <meta name="keywords"
         content="harmonização facial curitiba, fios de pdo, botox curitiba, preenchimento labial, bioestimuladores, dr henrique leal">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
         
     <!-- Open Graph / Social Media -->
     <meta property="og:title" content="Dr. Henrique Leal | Harmonização Facial e Corporal">
@@ -250,21 +253,21 @@
                     </div>
                 </div>
 
-                <!-- Image Container (Carousel) -->
+                <!-- Image Container (Swiper Cards) -->
                 <div class="diferenciais-image fade-in-right">
-                    <div class="cert-carousel-wrapper">
-                        <div class="cert-carousel">
-                            <div class="cert-slide">
+                    <div class="cert-swiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
                                 <img src="assets/img/certificado.webp"
                                     alt="Harmonização Facial e Certificação Dr Henrique Leal" loading="lazy" >
                                 <span class="diferenciais-image-caption">Certificação Internacional — K-Club Unique 2025, Coreia do Sul</span>
                             </div>
-                            <div class="cert-slide">
+                            <div class="swiper-slide">
                                 <img src="assets/img/certificado-2.webp"
                                     alt="Participação em Evento Internacional" loading="lazy" >
                                 <span class="diferenciais-image-caption">Participação Internacional em Congresso de Harmonização Facial</span>
                             </div>
-                            <div class="cert-slide">
+                            <div class="swiper-slide">
                                 <img src="assets/img/certificado-3.webp"
                                     alt="Prêmio Full Face" loading="lazy" >
                                 <span class="diferenciais-image-caption">Reconhecimento Internacional e Aprimoramento Constante</span>
@@ -1125,7 +1128,26 @@
         </a>
     </div>
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js?v=1.5"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const certSwiper = new Swiper('.cert-swiper', {
+                effect: 'cards',
+                grabCursor: true,
+                loop: true,
+                cardsEffect: {
+                    slideShadows: false,
+                    rotate: false,
+                },
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+            });
+        });
+    </script>
 </body>
 
 </html>

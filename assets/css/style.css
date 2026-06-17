@@ -785,33 +785,31 @@ body.splash-active {
     outline: 1px solid var(--color-border);
 }
 
-.cert-carousel-wrapper {
+.cert-swiper {
     width: 100%;
-    position: relative;
+    max-width: 320px;
+    padding-bottom: 20px;
+    overflow: visible;
 }
 
-.cert-carousel {
-    display: flex;
-    overflow-x: auto;
-    overflow-y: hidden;
-    gap: 20px;
-    padding-bottom: 15px;
-    scroll-snap-type: x mandatory;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
-.cert-carousel::-webkit-scrollbar {
-    display: none;
-}
-
-.cert-slide {
-    flex: 0 0 100%;
-    scroll-snap-align: center;
+.cert-swiper .swiper-slide {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 12px;
+    background: transparent;
+    border-radius: var(--radius-md);
+}
+
+.diferenciais-image-caption {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    text-align: center;
+    margin-top: 10px;
+    background: var(--color-bg);
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    width: 100%;
 }
 
 .diferenciais-image-caption {
