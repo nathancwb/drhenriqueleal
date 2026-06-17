@@ -273,6 +273,8 @@
                                 <span class="diferenciais-image-caption">Reconhecimento Internacional e Aprimoramento Constante</span>
                             </div>
                         </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </div>
@@ -1138,12 +1140,18 @@
                 grabCursor: true,
                 loop: true,
                 cardsEffect: {
-                    slideShadows: false,
-                    rotate: false,
+                    slideShadows: true,
+                    rotate: true,
+                    perSlideOffset: 12,
+                    perSlideRotate: 4,
                 },
                 autoplay: {
-                    delay: 3000,
+                    delay: 3500,
                     disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
                 },
             });
         });

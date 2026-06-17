@@ -788,7 +788,7 @@ body.splash-active {
 .cert-swiper {
     width: 100%;
     max-width: 320px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     overflow: visible;
 }
 
@@ -796,8 +796,14 @@ body.splash-active {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: transparent;
+    background: var(--color-white);
     border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    padding: 12px;
+}
+
+.cert-swiper .swiper-pagination {
+    bottom: -10px;
 }
 
 .diferenciais-image-caption {
