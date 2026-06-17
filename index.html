@@ -1131,7 +1131,7 @@
             const certSwiper = new Swiper('.cert-swiper', {
                 effect: 'cards',
                 grabCursor: true,
-                loop: true,
+                loop: false,
                 cardsEffect: {
                     slideShadows: true,
                     rotate: true,
@@ -1146,6 +1146,14 @@
                     el: '.swiper-pagination',
                     clickable: true,
                 },
+                on: {
+                    reachEnd: function () {
+                        setTimeout(() => {
+                            this.slideTo(0);
+                            this.autoplay.start();
+                        }, 2500);
+                    }
+                }
             });
         });
     </script>
