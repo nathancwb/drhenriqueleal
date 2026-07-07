@@ -365,16 +365,11 @@
                     </div>
 
                     <!-- Pair NEW: Harmonização Facial Completa -->
-                    <div class="ba-card fade-in">
+                    <div class="ba-card ba-card-single fade-in">
                         <span class="ba-procedure">Harmonização Facial Completa</span>
-                        <div class="ba-images">
+                        <div class="ba-images ba-images-single">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/facial-completo-antes.webp" alt="Antes — Harmonização Facial Completa" loading="lazy" >
-                                <span class="ba-label ba-antes">Antes</span>
-                            </div>
-                            <div class="ba-image">
-                                <img src="assets/img/resultados/facial-completo-depois.webp" alt="Depois — Harmonização Facial Completa" loading="lazy" >
-                                <span class="ba-label ba-depois">Depois</span>
+                                <img src="assets/img/resultados/facial-completo.webp" alt="Harmonização Facial Completa — Antes e Depois" loading="lazy" >
                             </div>
                         </div>
                     </div>
@@ -1200,8 +1195,30 @@
         </div>
     </dialog>
 
-    <!-- Mobile Overrides (Injected for specific targeting) -->
+    <!-- Injected overrides (Preventing cached CSS issues) -->
     <style>
+        /* Video Carousel styling */
+        .video-carousel {
+            display: flex !important;
+            overflow-x: auto !important;
+            overflow-y: hidden !important;
+            gap: 30px !important;
+            padding: 20px 0 !important;
+            margin-top: 40px !important;
+            -ms-overflow-style: none !important;
+            scrollbar-width: none !important;
+        }
+        .video-carousel::-webkit-scrollbar {
+            display: none !important;
+        }
+        .video-carousel .premium-video-card {
+            flex: 0 0 280px !important;
+            width: 280px !important;
+            min-width: 280px !important;
+            scroll-snap-align: start !important;
+            margin: 0 !important;
+        }
+
         @media (max-width: 768px) {
 
             /* NUKE THE ARROWS */
@@ -1218,7 +1235,8 @@
             /* FORCE SCROLLBARS & 2-COLUMNS */
             .ba-carousel,
             .proc-carousel,
-            .depoimentos-carousel {
+            .depoimentos-carousel,
+            .video-carousel {
                 display: flex !important;
                 gap: 12px !important;
                 padding-bottom: 15px !important;
@@ -1230,7 +1248,8 @@
             /* 2 VISIBLE CARDS */
             .ba-card,
             .proc-card-simple,
-            .video-testimonial-card {
+            .video-testimonial-card,
+            .video-carousel .premium-video-card {
                 flex: 0 0 calc(50% - 6px) !important;
                 width: calc(50% - 6px) !important;
                 min-width: calc(50% - 6px) !important;
@@ -1240,7 +1259,8 @@
             /* OBVIOUS SCROLLBAR STYLING */
             .ba-carousel::-webkit-scrollbar,
             .proc-carousel::-webkit-scrollbar,
-            .depoimentos-carousel::-webkit-scrollbar {
+            .depoimentos-carousel::-webkit-scrollbar,
+            .video-carousel::-webkit-scrollbar {
                 height: 8px !important;
                 /* Thicker */
                 display: block !important;
@@ -1250,7 +1270,8 @@
 
             .ba-carousel::-webkit-scrollbar-thumb,
             .proc-carousel::-webkit-scrollbar-thumb,
-            .depoimentos-carousel::-webkit-scrollbar-thumb {
+            .depoimentos-carousel::-webkit-scrollbar-thumb,
+            .video-carousel::-webkit-scrollbar-thumb {
                 background-color: #c5a47e !important;
                 /* Correct Gold Color */
                 border-radius: 4px !important;
@@ -1259,7 +1280,8 @@
 
             .ba-carousel::-webkit-scrollbar-track,
             .proc-carousel::-webkit-scrollbar-track,
-            .depoimentos-carousel::-webkit-scrollbar-track {
+            .depoimentos-carousel::-webkit-scrollbar-track,
+            .video-carousel::-webkit-scrollbar-track {
                 background-color: #f0f0f0 !important;
             }
         }
