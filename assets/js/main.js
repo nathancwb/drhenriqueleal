@@ -233,7 +233,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const carouselWrappers = document.querySelectorAll('.carousel-wrapper');
     
     carouselWrappers.forEach(wrapper => {
-        const carousel = wrapper.querySelector('.ba-carousel, .depoimentos-carousel');
+        const carousel = wrapper.querySelector('.ba-carousel, .depoimentos-carousel, .video-carousel');
         const prevBtn = wrapper.querySelector('.carousel-nav.prev');
         const nextBtn = wrapper.querySelector('.carousel-nav.next');
         

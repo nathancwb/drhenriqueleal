@@ -1501,19 +1501,25 @@ body.splash-active {
     object-fit: contain;
 }
 
-/* --- Premium Video Section --- */
-.video-grid {
+/* --- Premium Video Section (Carousel) --- */
+.video-carousel {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    overflow-x: auto;
+    overflow-y: hidden;
     gap: 30px;
+    padding: 20px 0;
     margin-top: 40px;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.video-carousel::-webkit-scrollbar {
+    display: none;
 }
 
 .premium-video-card {
-    width: 100%;
-    max-width: 280px;
-    margin: 0 auto;
+    flex: 0 0 280px;
+    scroll-snap-align: start;
     background: var(--color-white);
     border-radius: var(--radius-lg);
     overflow: hidden;
@@ -3041,7 +3047,7 @@ body.splash-active {
     }
 
     /* Depoimentos (Videos) Carousel - 1.2 items */
-    .depoimentos-carousel {
+    .depoimentos-carousel, .video-carousel {
         display: flex !important;
         gap: 16px !important;
         padding-bottom: 20px !important;
@@ -3050,7 +3056,7 @@ body.splash-active {
         scroll-snap-type: x mandatory;
     }
 
-    .video-testimonial-card {
+    .video-testimonial-card, .video-carousel .premium-video-card {
         flex: 0 0 calc(85% - 16px) !important;
         width: calc(85% - 16px) !important;
         min-width: calc(85% - 16px) !important;
@@ -3078,7 +3084,8 @@ body.splash-active {
     /* Hide Scrollbar visibility on mobile for clean look */
     .ba-carousel::-webkit-scrollbar,
     .proc-carousel::-webkit-scrollbar,
-    .depoimentos-carousel::-webkit-scrollbar {
+    .depoimentos-carousel::-webkit-scrollbar,
+    .video-carousel::-webkit-scrollbar {
         display: none !important;
     }
 }
