@@ -511,4 +511,92 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // --- Dynamic Watermark Injection & Anti-Copy Protection ---
+    
+    // Inject watermark overlay divs into all before/after images
+    const injectWatermarks = () => {
+        const containers = document.querySelectorAll('.ba-image');
+        containers.forEach(container => {
+            if (!container.querySelector('.watermark-overlay')) {
+                const overlay = document.createElement('div');
+                overlay.className = 'watermark-overlay';
+                container.appendChild(overlay);
+            }
+        });
+    };
+    
+    // Inject immediately on load
+    injectWatermarks();
+    
+    // Re-run inject when lightbox dynamic content is loaded/updated
+    if (cardLightbox) {
+        const observer = new MutationObserver(() => {
+            injectWatermarks();
+        });
+        observer.observe(cardLightboxBody, { childList: true, subtree: true });
+    }
+
+    // Disable right-click context menu on protected images/overlays
+    document.addEventListener('contextmenu', (e) => {
+        const isProtected = e.target.classList.contains('watermark-overlay') || 
+                            e.target.closest('.ba-image') || 
+                            e.target.closest('.ba-card');
+        if (isProtected) {
+            e.preventDefault();
+            showCopyrightToast();
+        }
+    });
+
+    // Prevent dragging on images
+    document.addEventListener('dragstart', (e) => {
+        if (e.target.tagName === 'IMG' && (e.target.closest('.ba-card') || e.target.closest('#card-lightbox-body'))) {
+            e.preventDefault();
+        }
+    });
+
+    // Custom Toast Notification with Gold Accent (matching Dr. Henrique Leal VIP branding)
+    function showCopyrightToast() {
+        let toast = document.getElementById('copyright-toast');
+        if (!toast) {
+            toast = document.createElement('div');
+            toast.id = 'copyright-toast';
+            toast.style.cssText = `
+                position: fixed;
+                bottom: 30px;
+                left: 50%;
+                transform: translateX(-50%) translateY(100px);
+                background-color: #0b1528; /* deep midnight blue */
+                color: #FFFFFF;
+                padding: 14px 28px;
+                border-radius: 8px;
+                font-family: 'Inter', sans-serif;
+                font-size: 0.85rem;
+                font-weight: 500;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+                z-index: 20000;
+                transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s;
+                opacity: 0;
+                pointer-events: none;
+                text-align: center;
+                border-left: 4px solid #D4AF37; /* Gold accent */
+                border-right: 1px solid rgba(212, 175, 55, 0.1);
+                border-top: 1px solid rgba(212, 175, 55, 0.1);
+                border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+                max-width: 90%;
+                line-height: 1.4;
+            `;
+            toast.innerHTML = '⚖️ Uso não autorizado das imagens de pacientes é proibido por lei (Direitos Autorais)';
+            document.body.appendChild(toast);
+        }
+        
+        toast.style.opacity = '1';
+        toast.style.transform = 'translateX(-50%) translateY(0)';
+        
+        clearTimeout(toast.timeoutId);
+        toast.timeoutId = setTimeout(() => {
+            toast.style.opacity = '0';
+            toast.style.transform = 'translateX(-50%) translateY(100px)';
+        }, 3000);
+    }
+
 });
