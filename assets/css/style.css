@@ -4481,3 +4481,8 @@ body.splash-active {
     opacity: 1 !important;
     transform: none !important;
 }
+
+/* Custom aspect ratio for vertical composites (like 9:16 cell phone camera layout) to prevent cropping faces and labels */
+.ba-images-portrait .ba-image {
+    aspect-ratio: 9 / 16 !important;
+}
