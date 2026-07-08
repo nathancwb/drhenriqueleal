@@ -842,26 +842,54 @@ body.splash-active {
     letter-spacing: 0.3px;
 }
 
-/* --- Resultados (Antes e Depois) --- */
-.ba-carousel {
-    display: flex;
-    overflow-x: auto;
-    overflow-y: hidden;
-    gap: 30px;
-    padding: 20px 0;
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */
-}
-
-.ba-carousel::-webkit-scrollbar {
-    display: none;
-}
-
-.carousel-wrapper {
-    position: relative;
+/* --- Resultados (Antes e Depois) - Carrossel Contínuo (Marquee) --- */
+.ba-marquee-container {
+    overflow: hidden;
     width: 100%;
+    position: relative;
+    padding: 20px 0;
+}
+
+.ba-marquee-track {
+    display: flex;
+    width: max-content;
+}
+
+.ba-marquee-group {
+    display: flex;
+    gap: 30px;
+    padding-right: 30px;
+    flex-shrink: 0;
+}
+
+.marquee-scroll-left {
+    animation: marquee-left 60s linear infinite;
+}
+
+.marquee-scroll-right {
+    animation: marquee-right 60s linear infinite;
+}
+
+.ba-marquee-container:hover .ba-marquee-track {
+    animation-play-state: paused;
+}
+
+@keyframes marquee-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes marquee-right {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 .ba-card {
@@ -3030,20 +3058,20 @@ body.splash-active {
         pointer-events: none !important;
     }
 
-    /* Results Carousel - 1.5 items */
-    .ba-carousel {
-        display: flex !important;
+    /* Results Carousel - Marquee Mobile */
+    .ba-marquee-container {
+        padding: 10px 0 !important;
+    }
+
+    .ba-marquee-group {
         gap: 16px !important;
-        padding-bottom: 20px !important;
-        overflow-x: auto !important;
-        -webkit-overflow-scrolling: touch;
-        scroll-snap-type: x mandatory;
+        padding-right: 16px !important;
     }
 
     .ba-card {
-        flex: 0 0 calc(85% - 16px) !important;
-        width: calc(85% - 16px) !important;
-        min-width: calc(85% - 16px) !important;
+        flex: 0 0 280px !important;
+        width: 280px !important;
+        min-width: 280px !important;
     }
 
     /* Depoimentos (Videos) Carousel - 1.2 items */
