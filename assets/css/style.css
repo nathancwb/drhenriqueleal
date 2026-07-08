@@ -4475,3 +4475,9 @@ body.splash-active {
         font-size: 0.8rem;
     }
 }
+
+/* Override fade-in animations for cards inside marquee to prevent them being hidden (opacity 0) */
+.ba-marquee-container .ba-card {
+    opacity: 1 !important;
+    transform: none !important;
+}
