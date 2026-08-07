@@ -2612,6 +2612,11 @@ body.splash-active {
     }
 }
 
+.carousel-wrapper {
+    position: relative;
+    width: 100%;
+}
+
 .carousel-nav {
     position: absolute;
     top: 50%;
