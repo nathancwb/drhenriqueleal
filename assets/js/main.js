@@ -239,6 +239,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         if (carousel && prevBtn && nextBtn) {
             let autoScrollInterval;
+            let isVideoPlaying = false;
             
             // Manual Navigation
             prevBtn.addEventListener('click', () => {
@@ -259,7 +260,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Auto Scroll Function
             const startAutoScroll = () => {
+                if (isVideoPlaying) return;
                 autoScrollInterval = setInterval(() => {
+                    if (isVideoPlaying) return;
                     const scrollAmount = carousel.clientWidth * 0.8;
                     if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - 10) {
                         carousel.scrollTo({ left: 0, behavior: 'smooth' });
@@ -282,12 +285,15 @@ document.addEventListener('DOMContentLoaded', () => {
             const videos = carousel.querySelectorAll('video');
             videos.forEach(video => {
                 video.addEventListener('play', () => {
+                    isVideoPlaying = true;
                     clearInterval(autoScrollInterval);
                 });
                 video.addEventListener('pause', () => {
+                    isVideoPlaying = false;
                     startAutoScroll();
                 });
                 video.addEventListener('ended', () => {
+                    isVideoPlaying = false;
                     startAutoScroll();
                 });
             });
