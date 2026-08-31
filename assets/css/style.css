@@ -923,6 +923,10 @@ body.splash-active {
     align-items: center;
 }
 
+.diferenciais-mobile-desc {
+    display: none;
+}
+
 /* --- Diferenciais (Editorial Clean Split) --- */
 .diferenciais-cards {
     display: flex;
@@ -2925,11 +2929,24 @@ body.splash-active {
 
     .diferenciais-layout {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 20px;
     }
 
-    .diferenciais-image {
-        order: -1;
+    .diferenciais-cards {
+        display: none !important;
+    }
+
+    .diferenciais-mobile-desc {
+        display: block !important;
+        text-align: center;
+        color: #5A6E85;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-top: 24px;
+        max-width: 340px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 8px;
     }
 
     .grid-4 {

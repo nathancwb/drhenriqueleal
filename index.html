@@ -14,12 +14,31 @@
         .ba-tab-btn.active { color: var(--color-primary, #1B3A5C) !important; font-weight: 700 !important; background: transparent !important; border: none !important; }
         .ba-tab-btn.active::after { content: '' !important; position: absolute !important; bottom: -11px !important; left: 0 !important; right: 0 !important; height: 2.5px !important; background: var(--color-primary, #1B3A5C) !important; border-radius: 2px !important; }
 
+        .diferenciais-mobile-desc {
+            display: none;
+        }
+
         @media (max-width: 768px) {
             html, body {
                 overflow-x: hidden !important;
             }
             .authority-credentials-grid {
                 display: none !important;
+            }
+            .diferenciais-cards {
+                display: none !important;
+            }
+            .diferenciais-mobile-desc {
+                display: block !important;
+                text-align: center !important;
+                color: #5A6E85 !important;
+                font-size: 0.95rem !important;
+                line-height: 1.6 !important;
+                margin-top: 24px !important;
+                max-width: 340px !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+                padding: 0 8px !important;
             }
             .diferenciais-layout,
             .cert-swiper {
@@ -1220,6 +1239,11 @@
                         <!-- Add Pagination -->
                         <div class="swiper-pagination"></div>
                     </div>
+
+                    <!-- Texto Corrido Curto no Mobile (Abaixo das Fotos) -->
+                    <p class="diferenciais-mobile-desc">
+                        Com técnicas internacionais aperfeiçoadas na Coreia do Sul e em Dubai, o Dr. Henrique alia ciência, precisão anatômica e atendimento humanizado para entregar resultados elegantes, seguros e com máxima naturalidade.
+                    </p>
                 </div>
             </div>
         </div>
