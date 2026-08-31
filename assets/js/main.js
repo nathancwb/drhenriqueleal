@@ -589,10 +589,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 opacity: 0;
                 pointer-events: none;
                 text-align: center;
-                border-left: 4px solid #D4AF37; /* Gold accent */
-                border-right: 1px solid rgba(212, 175, 55, 0.1);
-                border-top: 1px solid rgba(212, 175, 55, 0.1);
-                border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+                border-left: 4px solid #2A7DE1; /* Gold accent */
+                border-right: 1px solid rgba(42, 125, 225, 0.15);
+                border-top: 1px solid rgba(42, 125, 225, 0.15);
+                border-bottom: 1px solid rgba(42, 125, 225, 0.15);
                 max-width: 90%;
                 line-height: 1.4;
             `;

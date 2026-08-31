@@ -3871,7 +3871,7 @@ body.splash-active {
 
 .gold-label {
     display: inline-block;
-    color: #c5a47e; 
+    color: #2A7DE1; 
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 0.85rem;
@@ -3889,7 +3889,7 @@ body.splash-active {
 .premium-hero-content h1 em {
     font-style: italic;
     font-weight: 300;
-    color: #c5a47e;
+    color: #2A7DE1;
 }
 
 .premium-hero-content p {
@@ -3926,10 +3926,10 @@ body.splash-active {
 }
 
 .filter-btn:hover, .filter-btn.active {
-    background: #c5a47e;
-    border-color: #c5a47e;
+    background: #2A7DE1;
+    border-color: #2A7DE1;
     color: #fff;
-    box-shadow: 0 4px 15px rgba(197, 164, 126, 0.3); 
+    box-shadow: 0 4px 15px rgba(42, 125, 225, 0.3); 
 }
 
 .proc-glass-grid {
@@ -3991,7 +3991,7 @@ body.splash-active {
 
 .glass-btn {
     display: inline-block;
-    color: #c5a47e;
+    color: #2A7DE1;
     font-size: 0.8rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -4363,7 +4363,7 @@ body.splash-active {
 
 .editorial-proc-row:hover {
     transform: translateY(-3px);
-    border-color: rgba(212, 175, 55, 0.4);
+    border-color: rgba(42, 125, 225, 0.4);
     box-shadow: 0 15px 35px rgba(15, 40, 71, 0.06);
 }
 
@@ -4930,7 +4930,7 @@ body.splash-active {
     height: 42px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid rgba(212, 175, 55, 0.3);
+    border: 2px solid rgba(42, 125, 225, 0.3);
     display: block;
 }
 
@@ -4945,7 +4945,7 @@ body.splash-active {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid rgba(212, 175, 55, 0.3);
+    border: 2px solid rgba(42, 125, 225, 0.3);
 }
 
 .reviewer-name {
@@ -5190,7 +5190,7 @@ body.splash-active {
     height: 100%;
     pointer-events: none;
     border-radius: inherit;
-    background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(212, 175, 55, 0.22) 0%, transparent 60%);
+    background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(42, 125, 225, 0.15) 0%, transparent 60%);
     opacity: 0;
     transition: opacity 0.3s ease;
     mix-blend-mode: overlay;
@@ -5659,4 +5659,14 @@ body.splash-active {
         height: 38px;
         font-size: 13px;
     }
+}
+
+/* Global Author Avatar Circle */
+.author-img-circle {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2.5px solid #2A7DE1 !important;
+    box-shadow: 0 4px 14px rgba(27, 58, 92, 0.12);
 }

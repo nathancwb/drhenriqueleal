@@ -721,7 +721,7 @@ DR_HENRIQUE_ARTICLE_CSS = """
             height: 58px;
             border-radius: 50%;
             object-fit: cover;
-            border: 2px solid var(--color-accent);
+            border: 2.5px solid #2A7DE1 !important;
             box-shadow: 0 4px 14px rgba(27, 58, 92, 0.12);
         }
         .author-name-title {
