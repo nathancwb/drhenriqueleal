@@ -1,0 +1,351 @@
+- generic [active] [ref=f2e1]:
+  - banner [ref=f2e3]:
+    - generic [ref=f2e4]:
+      - link [ref=f2e5] [cursor=pointer]:
+        - /url: /
+      - navigation [ref=f2e6]:
+        - link "Quem Somos" [ref=f2e7] [cursor=pointer]:
+          - /url: /quem-somos/
+        - link "Soluções" [ref=f2e9] [cursor=pointer]:
+          - /url: /solucoes/
+        - link "Time" [ref=f2e12] [cursor=pointer]:
+          - /url: /time/
+        - link "Cases" [ref=f2e13] [cursor=pointer]:
+          - /url: /cases/
+        - link "Blog" [ref=f2e14] [cursor=pointer]:
+          - /url: /insights/
+        - link "Agendar diagnóstico" [ref=f2e15] [cursor=pointer]:
+          - /url: /diagnostico/
+  - generic [ref=f2e16]:
+    - generic "Simulação 3D Interativa"
+    - generic [ref=f2e18]:
+      - generic [ref=f2e19]: São Carlos / SP · Atuação Regional Presencial
+      - heading "Decisões melhores constroem empresas mais lucrativas, organizadas e previsíveis." [level=1] [ref=f2e20]
+      - paragraph [ref=f2e21]: Consultoria executiva conduzida diretamente por 4 consultores seniores com 20 a 30 anos de vivência real de mercado. Sem analistas juniores intermediando sua mesa de decisões.
+      - generic [ref=f2e22]:
+        - link "Solicitar Diagnóstico Preliminar" [ref=f2e23] [cursor=pointer]:
+          - /url: /diagnostico/
+        - link "Identificar Gargalos da Minha Empresa" [ref=f2e24] [cursor=pointer]:
+          - /url: "#sinais"
+      - generic [ref=f2e25]:
+        - generic [ref=f2e26]:
+          - strong [ref=f2e27]: 18 Anos
+          - generic [ref=f2e28]: de mercado (desde 2007)
+        - generic [ref=f2e30]:
+          - strong [ref=f2e31]: 4 Consultores
+          - generic [ref=f2e32]: seniores direto no projeto
+        - generic [ref=f2e34]:
+          - strong [ref=f2e35]: Quinzenal
+          - generic [ref=f2e36]: presencial na sua empresa
+  - generic [ref=f2e39]:
+    - generic [ref=f2e41]:
+      - img "Consultoria executiva presencial com empresários em São Carlos" [ref=f2e42]
+      - generic [ref=f2e44]:
+        - generic [ref=f2e45]: Diagnóstico Executivo
+        - heading "O que está travando o crescimento da sua empresa hoje?" [level=2] [ref=f2e46]
+        - paragraph [ref=f2e47]: "A maioria das PMEs cresce em faturamento, mas perde controle nas margens, na rotina dos sócios e na previsibilidade de vendas. Identifique seu momento operacional:"
+    - generic [ref=f2e48]:
+      - generic [ref=f2e50]:
+        - generic [ref=f2e51]: Finanças & Caixa
+        - heading "O faturamento sobe, mas o caixa continua no limite" [level=3] [ref=f2e52]
+        - paragraph [ref=f2e53]: Falta de visibilidade da margem de contribuição por produto, descontrole de prazos médios de recebimento e capital de giro travado em estoque sem liquidez.
+        - link "Ver Solução de Finanças & Caixa →" [ref=f2e54] [cursor=pointer]:
+          - /url: /solucoes/financeiro/
+      - generic [ref=f2e56]:
+        - generic [ref=f2e57]: Gestão & Governança
+        - heading "Toda decisão operacional depende exclusivamente do fundador" [level=3] [ref=f2e58]
+        - paragraph [ref=f2e59]: Centralização excessiva, ausência de matriz de responsabilidades (RACI) e líderes que levam problemas em vez de soluções para a mesa.
+        - link "Ver Solução de Gestão Empresarial →" [ref=f2e60] [cursor=pointer]:
+          - /url: /solucoes/gestao-empresarial/
+      - generic [ref=f2e62]:
+        - generic [ref=f2e63]: Vendas & Comercial
+        - heading "Vendas inconstantes e excessivamente dependentes de indicação" [level=3] [ref=f2e64]
+        - paragraph [ref=f2e65]: Falta de rotina de prospecção ativa B2B, comercial sem metas e funil estruturados e ausência de previsibilidade de receita mês a mês.
+        - link "Ver Solução de Canais de Vendas →" [ref=f2e66] [cursor=pointer]:
+          - /url: /solucoes/canais-de-vendas/
+  - generic [ref=f2e69]:
+    - generic [ref=f2e70]:
+      - heading "+0" [level=3] [ref=f2e71]
+      - paragraph [ref=f2e72]: Anos de história (desde 2007)
+    - generic [ref=f2e73]:
+      - heading "+0" [level=3] [ref=f2e74]
+      - paragraph [ref=f2e75]: Projetos de consultoria executados
+    - generic [ref=f2e76]:
+      - heading "+0" [level=3] [ref=f2e77]
+      - paragraph [ref=f2e78]: Segmentos atendidos na indústria e comércio
+    - generic [ref=f2e79]:
+      - heading "+0" [level=3] [ref=f2e80]
+      - paragraph [ref=f2e81]: Empresas transformadas regionalmente
+  - generic [ref=f2e83]:
+    - generic [ref=f2e84]:
+      - generic [ref=f2e85]: Especialidades Integradas
+      - heading "Oito frentes de atuação integradas na realidade da sua empresa" [level=2] [ref=f2e86]
+      - paragraph [ref=f2e87]: Atuação consultiva sob medida para alinhar finanças, comercial, governança e chão de fábrica.
+    - generic [ref=f2e88]:
+      - generic [ref=f2e89]:
+        - generic [ref=f2e90]:
+          - generic [ref=f2e91]: Finanças & Governança
+          - heading "Gestão, Estratégia & Caixa" [level=3] [ref=f2e92]
+        - generic [ref=f2e93]:
+          - link "Gestão Empresarial & Planejamento →" [ref=f2e94] [cursor=pointer]:
+            - /url: /solucoes/gestao-empresarial/
+            - heading "Gestão Empresarial & Planejamento" [level=4] [ref=f2e96]
+            - generic [ref=f2e97]: →
+          - link "Controle Financeiro & Caixa →" [ref=f2e98] [cursor=pointer]:
+            - /url: /solucoes/financeiro/
+            - heading "Controle Financeiro & Caixa" [level=4] [ref=f2e100]
+            - generic [ref=f2e101]: →
+          - link "Gestão de Crédito e Cobrança →" [ref=f2e102] [cursor=pointer]:
+            - /url: /solucoes/credito-e-cobranca/
+            - heading "Gestão de Crédito e Cobrança" [level=4] [ref=f2e104]
+            - generic [ref=f2e105]: →
+      - generic [ref=f2e106]:
+        - generic [ref=f2e107]:
+          - generic [ref=f2e108]: Mercado & Receita
+          - heading "Vendas, Marca & Expansão" [level=3] [ref=f2e109]
+        - generic [ref=f2e110]:
+          - link "Estruturação de Canais de Vendas →" [ref=f2e111] [cursor=pointer]:
+            - /url: /solucoes/canais-de-vendas/
+            - heading "Estruturação de Canais de Vendas" [level=4] [ref=f2e113]
+            - generic [ref=f2e114]: →
+          - link "Marketing & Posicionamento →" [ref=f2e115] [cursor=pointer]:
+            - /url: /solucoes/marketing/
+            - heading "Marketing & Posicionamento" [level=4] [ref=f2e117]
+            - generic [ref=f2e118]: →
+          - link "Franquias & Expansão de Rede →" [ref=f2e119] [cursor=pointer]:
+            - /url: /solucoes/franquias/
+            - heading "Franquias & Expansão de Rede" [level=4] [ref=f2e121]
+            - generic [ref=f2e122]: →
+      - generic [ref=f2e123]:
+        - generic [ref=f2e124]:
+          - generic [ref=f2e125]: Operação & Liderança
+          - heading "Pessoas & Chão de Fábrica" [level=3] [ref=f2e126]
+        - generic [ref=f2e127]:
+          - link "RH & Desenvolvimento de Liderança →" [ref=f2e128] [cursor=pointer]:
+            - /url: /solucoes/rh/
+            - heading "RH & Desenvolvimento de Liderança" [level=4] [ref=f2e130]
+            - generic [ref=f2e131]: →
+          - link "Produção, Estoque & Eficiência Industrial →" [ref=f2e132] [cursor=pointer]:
+            - /url: /solucoes/producao-e-industrias/
+            - heading "Produção, Estoque & Eficiência Industrial" [level=4] [ref=f2e134]
+            - generic [ref=f2e135]: →
+  - generic [ref=f2e137]:
+    - generic [ref=f2e138]:
+      - generic [ref=f2e139]: Senioridade Sem Intermediários
+      - heading "Quatro Consultores Seniores. Zero Analistas Juniores." [level=2] [ref=f2e140]
+      - paragraph [ref=f2e141]: Conheça a bagagem de quem senta à sua mesa para diagnosticar e transformar o seu negócio.
+    - generic [ref=f2e142]:
+      - button "Ver perfil de Marcio Fantini" [expanded] [ref=f2e143] [cursor=pointer]:
+        - generic [ref=f2e144]:
+          - generic [ref=f2e145]: Estratégia & Advisory
+          - heading "Marcio Fantini" [level=3] [ref=f2e146]
+          - generic [ref=f2e147]: 25 anos de experiência executiva · ESPM
+          - paragraph [ref=f2e148]: Especialista em estratégia comercial B2B, estruturação de canais de vendas, formatação de franquias e aconselhamento direto de fundadores e conselhos de administração.
+          - link "Ver Bio & Cases de Marcio →" [ref=f2e149]:
+            - /url: /time/marcio-fantini/
+      - button "Ver perfil de Rodrigo Manzini" [ref=f2e150] [cursor=pointer]:
+        - generic: Rodrigo Manzini · Processos & Finanças
+      - button "Ver perfil de Decio Martinez" [ref=f2e151] [cursor=pointer]:
+        - generic: Decio Martinez · Pessoas & Governança
+      - button "Ver perfil de Priscila Casagrande" [ref=f2e152] [cursor=pointer]:
+        - generic: Priscila Casagrande · Marca & Marketing
+    - link "Conhecer Todo o Time de Consultores" [ref=f2e154] [cursor=pointer]:
+      - /url: /time/
+  - generic [ref=f2e156]:
+    - generic [ref=f2e157]:
+      - generic [ref=f2e158]: Método Proprietário
+      - heading "Metodologia de Atuação Neonova" [level=2] [ref=f2e159]
+      - paragraph [ref=f2e160]: Como transformamos o improviso do dia a dia em um negócio previsível, lucrativo e autônomo.
+    - generic [ref=f2e163]:
+      - generic [ref=f2e164]:
+        - generic [ref=f2e165]: "01"
+        - heading "Imersão & Diagnóstico" [level=3] [ref=f2e167]
+      - generic [ref=f2e168]:
+        - generic [ref=f2e169]: "02"
+        - heading "Plano de Ação & Priorização" [level=3] [ref=f2e171]
+      - generic [ref=f2e172]:
+        - generic [ref=f2e173]: "03"
+        - heading "Execução & Acompanhamento Quinzenal" [level=3] [ref=f2e175]
+      - generic [ref=f2e176]:
+        - generic [ref=f2e177]: "04"
+        - heading "Governança & Resultados Contínuos" [level=3] [ref=f2e179]
+    - link "Entenda Nossa Metodologia na Prática →" [ref=f2e181] [cursor=pointer]:
+      - /url: /quem-somos/#metodologia
+  - generic [ref=f2e183]:
+    - generic [ref=f2e184]:
+      - generic [ref=f2e185]: Prova Social & Resultados Reais
+      - heading "Transformações Concretas em Empresas Regionais" [level=2] [ref=f2e186]
+      - paragraph [ref=f2e187]: Resultados mensuráveis e comprovados alcançados através da consultoria sênior da Neonova.
+    - generic [ref=f2e188]:
+      - article [ref=f2e189]:
+        - img "Lupetec Equipamentos para Laboratório" [ref=f2e191]
+        - generic [ref=f2e192]:
+          - heading "Estruturação Comercial e Organização Operacional" [level=3] [ref=f2e193]
+          - paragraph [ref=f2e194]: Reestruturação do chão de fábrica, organização comercial B2B e autonomia de canais de venda.
+          - generic [ref=f2e195]:
+            - generic [ref=f2e196]: +32% Margem EBITDA
+            - generic [ref=f2e197]: Redução de Prazos em 40% & Autonomia Comercial
+          - link "Ver Estudo de Caso da Lupetec →" [ref=f2e198] [cursor=pointer]:
+            - /url: /cases/equipamentos-laboratorio/
+      - article [ref=f2e199]:
+        - img "Tríplos Tecnologia" [ref=f2e201]
+        - generic [ref=f2e202]:
+          - heading "Organização de Processos e Expansão de Modelo" [level=3] [ref=f2e203]
+          - paragraph [ref=f2e204]: Padronização de rotinas técnicas operacionais, controles financeiros e formatação de expansão.
+          - generic [ref=f2e205]:
+            - generic [ref=f2e206]: 2x Contratos Recorrentes
+            - generic [ref=f2e207]: Formatação de Franquias & Manuais Operacionais
+          - link "Ver Estudo de Caso da Tríplos →" [ref=f2e208] [cursor=pointer]:
+            - /url: /cases/consultoria-ambiental/
+      - article [ref=f2e209]:
+        - img "Marciano Indústria e Comércio" [ref=f2e211]
+        - generic [ref=f2e212]:
+          - heading "Profissionalização da Gestão e Governança" [level=3] [ref=f2e213]
+          - paragraph [ref=f2e214]: Procedimentos operacionais, alinhamento diretivo de metas e estruturação da governança.
+          - generic [ref=f2e215]:
+            - generic [ref=f2e216]: <1.5% Inadimplência
+            - generic [ref=f2e217]: KPIs Operacionais & Comitê Periódico de Resultados
+          - link "Ver Estudo de Caso da Marciano →" [ref=f2e218] [cursor=pointer]:
+            - /url: /cases/extracao-madeira/
+    - link "Explorar Detalhes de Todos os Cases de Sucesso →" [ref=f2e220] [cursor=pointer]:
+      - /url: /cases/
+  - generic [ref=f2e222]:
+    - generic [ref=f2e223]:
+      - generic [ref=f2e224]: Conteúdo Prático & Newsletter
+      - heading "Insights de Gestão para o Empresário" [level=2] [ref=f2e225]
+      - paragraph [ref=f2e226]: Leituras rápidas com orientações e metodologias aplicáveis à rotina de quem gerencia empresas.
+    - generic [ref=f2e227]:
+      - generic [ref=f2e228]:
+        - img "Fechamento do primeiro semestre" [ref=f2e230]
+        - generic [ref=f2e231]:
+          - generic [ref=f2e232]: "Newsletter #01 · Finanças"
+          - 'heading "Fechamento do primeiro semestre: o que revisar antes de avançar" [level=3] [ref=f2e233]'
+          - paragraph [ref=f2e234]: Pontos de controle essenciais para avaliar o caixa, margens de contribuição e metas de vendas no meio do ano.
+          - link "Ler artigo completo →" [ref=f2e235] [cursor=pointer]:
+            - /url: /insights/fechamento-primeiro-semestre/
+      - generic [ref=f2e236]:
+        - img "Indicadores para tomada de decisão" [ref=f2e238]
+        - generic [ref=f2e239]:
+          - generic [ref=f2e240]: "Newsletter #02 · Indicadores"
+          - heading "Indicadores que realmente ajudam na tomada de decisão" [level=3] [ref=f2e241]
+          - paragraph [ref=f2e242]: Como fugir das métricas de vaidade e focar no EBITDA real, Giro de Estoque, Prazos Médios e CAC.
+          - link "Ler artigo completo →" [ref=f2e243] [cursor=pointer]:
+            - /url: /insights/indicadores-tomada-de-decisao/
+      - generic [ref=f2e244]:
+        - img "Inteligência Artificial na consultoria" [ref=f2e246]
+        - generic [ref=f2e247]:
+          - generic [ref=f2e248]: "Newsletter #03 · Estratégia"
+          - 'heading "Inteligência Artificial na consultoria: o que realmente cria valor?" [level=3] [ref=f2e249]'
+          - paragraph [ref=f2e250]: A tecnologia substitui tarefas operacionais, mas a experiência e o pensamento crítico continuam insubstituíveis.
+          - link "Ler artigo completo →" [ref=f2e251] [cursor=pointer]:
+            - /url: /insights/inteligencia-artificial-na-consultoria/
+    - generic [ref=f2e252]:
+      - generic [ref=f2e253]:
+        - generic [ref=f2e254]: Newsletter Quinzenal
+        - heading "Receba nossas análises e planilhas de gestão no seu e-mail" [level=3] [ref=f2e255]
+        - paragraph [ref=f2e256]: "Sem spam: apenas artigos práticos de finanças, processos e liderança para diretores e empresários."
+      - generic [ref=f2e257]:
+        - textbox "Seu e-mail corporativo" [ref=f2e258]
+        - button "Assinar Newsletter" [ref=f2e259] [cursor=pointer]
+  - generic [ref=f2e262]:
+    - generic [ref=f2e263]: Próximo Passo
+    - heading "Decidir sem diagnóstico é assumir riscos desnecessários." [level=2] [ref=f2e264]
+    - paragraph [ref=f2e265]: Solicite uma reunião de diagnóstico com um dos nossos consultores sócios em São Carlos/SP ou formato remoto para mapear as prioridades da sua empresa.
+    - generic [ref=f2e266]:
+      - generic [ref=f2e267]:
+        - generic [ref=f2e268]:
+          - generic [ref=f2e269]: Seu Nome *
+          - textbox "Seu Nome *" [ref=f2e270]:
+            - /placeholder: Carlos Silva
+        - generic [ref=f2e271]:
+          - generic [ref=f2e272]: Sua Empresa *
+          - textbox "Sua Empresa *" [ref=f2e273]:
+            - /placeholder: Silva Comércio
+        - generic [ref=f2e274]:
+          - generic [ref=f2e275]: E-mail Corporativo *
+          - textbox "E-mail Corporativo *" [ref=f2e276]:
+            - /placeholder: carlos@empresa.com.br
+        - generic [ref=f2e277]:
+          - generic [ref=f2e278]: WhatsApp *
+          - textbox "WhatsApp *" [ref=f2e279]:
+            - /placeholder: (16) 99999-9999
+      - generic [ref=f2e280]:
+        - generic [ref=f2e281]: Qual é o principal desafio atual da empresa? *
+        - textbox "Qual é o principal desafio atual da empresa? *" [ref=f2e282]:
+          - /placeholder: "Ex: Falta de visibilidade de caixa, inconstância nas vendas..."
+      - button "Solicitar Reunião de Diagnóstico" [ref=f2e283] [cursor=pointer]
+  - contentinfo [ref=f2e284]:
+    - generic [ref=f2e285]:
+      - generic [ref=f2e286]:
+        - generic [ref=f2e287]:
+          - img "Neonova" [ref=f2e288]
+          - paragraph [ref=f2e289]: Gestão estruturada e proximidade executiva para empresários e diretores de PMEs em São Carlos/SP e região.
+          - generic [ref=f2e290]: Fundada em 2007 · São Carlos / SP
+        - generic [ref=f2e291]:
+          - heading "Soluções" [level=4] [ref=f2e292]
+          - list [ref=f2e293]:
+            - listitem [ref=f2e294]:
+              - link "Gestão Empresarial" [ref=f2e295] [cursor=pointer]:
+                - /url: /solucoes/gestao-empresarial/
+            - listitem [ref=f2e296]:
+              - link "Financeiro & Caixa" [ref=f2e297] [cursor=pointer]:
+                - /url: /solucoes/financeiro/
+            - listitem [ref=f2e298]:
+              - link "Crédito e Cobrança" [ref=f2e299] [cursor=pointer]:
+                - /url: /solucoes/credito-e-cobranca/
+            - listitem [ref=f2e300]:
+              - link "Canais de Vendas" [ref=f2e301] [cursor=pointer]:
+                - /url: /solucoes/canais-de-vendas/
+            - listitem [ref=f2e302]:
+              - link "Marketing & Posicionamento" [ref=f2e303] [cursor=pointer]:
+                - /url: /solucoes/marketing/
+            - listitem [ref=f2e304]:
+              - link "Franquias & Expansão" [ref=f2e305] [cursor=pointer]:
+                - /url: /solucoes/franquias/
+            - listitem [ref=f2e306]:
+              - link "RH & Liderança" [ref=f2e307] [cursor=pointer]:
+                - /url: /solucoes/rh/
+            - listitem [ref=f2e308]:
+              - link "Produção & Indústrias" [ref=f2e309] [cursor=pointer]:
+                - /url: /solucoes/producao-e-industrias/
+        - generic [ref=f2e310]:
+          - heading "Institucional" [level=4] [ref=f2e311]
+          - list [ref=f2e312]:
+            - listitem [ref=f2e313]:
+              - link "Quem Somos" [ref=f2e314] [cursor=pointer]:
+                - /url: /quem-somos/
+            - listitem [ref=f2e315]:
+              - link "Metodologia" [ref=f2e316] [cursor=pointer]:
+                - /url: /quem-somos/#metodologia
+            - listitem [ref=f2e317]:
+              - link "Time de Consultores" [ref=f2e318] [cursor=pointer]:
+                - /url: /time/
+            - listitem [ref=f2e319]:
+              - link "Cases de Sucesso" [ref=f2e320] [cursor=pointer]:
+                - /url: /cases/
+            - listitem [ref=f2e321]:
+              - link "Insights & Artigos" [ref=f2e322] [cursor=pointer]:
+                - /url: /insights/
+            - listitem [ref=f2e323]:
+              - link "Diagnóstico Gratuito" [ref=f2e324] [cursor=pointer]:
+                - /url: /diagnostico/
+            - listitem [ref=f2e325]:
+              - link "Fale Conosco" [ref=f2e326] [cursor=pointer]:
+                - /url: /contato/
+        - generic [ref=f2e327]:
+          - heading "Contato" [level=4] [ref=f2e328]
+          - paragraph [ref=f2e329]:
+            - strong [ref=f2e330]: São Carlos / SP
+            - text: Atendimento presencial regional e remoto nacional.
+          - link "Falar pelo WhatsApp" [ref=f2e331] [cursor=pointer]:
+            - /url: https://wa.me/5516992953211
+      - generic [ref=f2e332]:
+        - generic [ref=f2e333]: © 2026 Neonova Consultoria em Negócios. Todos os direitos reservados.
+        - generic [ref=f2e334]:
+          - link "Privacidade" [ref=f2e335] [cursor=pointer]:
+            - /url: /politica-de-privacidade/
+          - link "Termos de Uso" [ref=f2e336] [cursor=pointer]:
+            - /url: /termos-de-uso/
+  - link "Falar pelo WhatsApp" [ref=f2e337] [cursor=pointer]:
+    - /url: https://wa.me/5516992953211
+    - generic [ref=f2e340]: Falar com Consultor

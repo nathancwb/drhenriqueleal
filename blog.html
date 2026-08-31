@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css?v=11.0">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png?v=3">
+    <link rel="apple-touch-icon" href="assets/img/favicon.png?v=3">
+    <title>Blog & Artigos Clínicos | Dr. Henrique Leal Rosa em Curitiba</title>
+    <meta name="description" content="Artigos educativos sobre Harmonização Facial, Botox, Fios de PDO, Bioestimuladores e Estética Avançada em Curitiba com o Dr. Henrique Leal Rosa.">
+    <link rel="canonical" href="https://drhenriqueleal.com.br/blog.html">
+    
+    <style>
+        .blog-hero {
+            padding: 150px 0 35px;
+            background: #FAFBFD;
+            text-align: center;
+            border-bottom: 1px solid rgba(27, 58, 92, 0.06);
+        }
+        .blog-hero-label {
+            font-size: 0.82rem;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--color-accent);
+            display: block;
+            margin-bottom: 12px;
+        }
+        .blog-hero-title {
+            font-family: var(--font-heading);
+            font-size: clamp(2.2rem, 4vw, 3.4rem);
+            color: var(--color-primary);
+            margin-bottom: 14px;
+            font-weight: 700;
+        }
+        .blog-hero-desc {
+            font-size: 1.1rem;
+            color: #64748B;
+            max-width: 680px;
+            margin: 0 auto 30px;
+            line-height: 1.7;
+        }
+        
+        .blog-filter-bar {
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+            padding: 0 10px;
+        }
+        .blog-filter-btn {
+            background: #FFFFFF;
+            color: #475569;
+            border: 1px solid rgba(27, 58, 92, 0.12);
+            padding: 7px 16px;
+            border-radius: 30px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.25s ease;
+        }
+        .blog-filter-btn:hover, .blog-filter-btn.active {
+            background: var(--color-primary);
+            color: #FFFFFF;
+            border-color: var(--color-primary);
+            box-shadow: 0 4px 14px rgba(27, 58, 92, 0.15);
+        }
+        
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 26px;
+            margin-bottom: 60px;
+        }
+        .blog-card {
+            background: #FFFFFF;
+            border-radius: 18px;
+            border: 1px solid rgba(27, 58, 92, 0.08);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 6px 20px rgba(27, 58, 92, 0.04);
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 16px 36px rgba(27, 58, 92, 0.09);
+        }
+        .blog-card-img-wrap {
+            width: 100%;
+            height: 190px;
+            overflow: hidden;
+            position: relative;
+        }
+        .blog-card-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .blog-card:hover .blog-card-img {
+            transform: scale(1.06);
+        }
+        .blog-card-badge {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background: rgba(15, 40, 71, 0.85);
+            backdrop-filter: blur(4px);
+            color: #FFFFFF;
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            padding: 4px 10px;
+            border-radius: 20px;
+        }
+        
+        .blog-card-body {
+            padding: 22px 20px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        .blog-card-meta {
+            font-size: 0.78rem;
+            color: #94A3B8;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+        .blog-card-title {
+            font-family: var(--font-heading);
+            font-size: 1.18rem;
+            color: var(--color-primary);
+            line-height: 1.35;
+            margin: 0 0 10px 0;
+            font-weight: 700;
+        }
+        .blog-card-excerpt {
+            font-size: 0.88rem;
+            color: #64748B;
+            line-height: 1.6;
+            margin-bottom: 16px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .blog-card-footer {
+            margin-top: auto;
+            padding-top: 12px;
+            border-top: 1px solid rgba(27, 58, 92, 0.06);
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .read-more-link {
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: var(--color-accent);
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            transition: transform 0.2s ease;
+        }
+        .blog-card:hover .read-more-link {
+            transform: translateX(3px);
+        }
+        
+        .blog-cta-box {
+            background: linear-gradient(135deg, #0F2847 0%, #1B3A5C 100%);
+            border-radius: 24px;
+            padding: 50px 40px;
+            text-align: center;
+            color: #FFFFFF;
+            margin-bottom: 70px;
+        }
+        .blog-cta-title {
+            font-family: var(--font-heading);
+            font-size: clamp(1.8rem, 3vw, 2.4rem);
+            margin-bottom: 14px;
+            color: #FFFFFF;
+        }
+        .blog-cta-text {
+            font-size: 1.05rem;
+            color: rgba(255, 255, 255, 0.88);
+            max-width: 600px;
+            margin: 0 auto 28px;
+            line-height: 1.6;
+        }
+        
+        @media (max-width: 992px) {
+            .blog-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 640px) {
+            .blog-grid { grid-template-columns: 1fr; }
+            .blog-hero { padding: 130px 0 25px; }
+            .blog-card-body { padding: 18px 16px; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ==================== HEADER ==================== -->
+    <header class="header" id="header">
+        <div class="container">
+            <a href="index.html" class="header-logo">
+                <img src="assets/img/logo-simbolo.webp" alt="Símbolo Dr. Henrique Leal" class="logo-symbol" id="header-logo-img">
+                <img src="assets/img/logo-texto.webp" alt="Dr. Henrique Leal Rosa" class="logo-text">
+            </a>
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html#resultados">Resultados</a>
+                <a href="procedimentos.html">Procedimentos</a>
+                <a href="sobre.html">Dr. Henrique</a>
+                <a href="index.html#localizacao">Consultório</a>
+                <a href="index.html#faq">Dúvidas</a>
+                <a href="blog.html" style="color: #ffffff; font-weight: 700;">Blog</a>
+            </nav>
+            <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ==================== HERO BLOG ==================== -->
+    <section class="blog-hero">
+        <div class="container">
+            <span class="blog-hero-label">Blog & Artigos Clínicos</span>
+            <h1 class="blog-hero-title">Ciência, Estética e Cuidados em Curitiba</h1>
+            <p class="blog-hero-desc">
+                Orientações práticas, dúvidas frequentes e artigos sobre tratamentos faciais e corporais, com foco em segurança e naturalidade.
+            </p>
+            
+            <!-- Category Filter Bar -->
+            <div class="blog-filter-bar" id="categoryFilterBar">
+                <button class="blog-filter-btn active" data-category="ALL">Todos os Artigos (20)</button>
+                <button class="blog-filter-btn" data-category="Bioestimuladores">Bioestimuladores (2)</button>
+                <button class="blog-filter-btn" data-category="Estética Íntima">Estética Íntima (2)</button>
+                <button class="blog-filter-btn" data-category="Fios de PDO">Fios de PDO (2)</button>
+                <button class="blog-filter-btn" data-category="Harmonização Facial">Harmonização Facial (2)</button>
+                <button class="blog-filter-btn" data-category="Ozonioterapia">Ozonioterapia (2)</button>
+                <button class="blog-filter-btn" data-category="Preenchimento Labial">Preenchimento Labial (2)</button>
+                <button class="blog-filter-btn" data-category="Protocolo Bioforce">Protocolo Bioforce (2)</button>
+                <button class="blog-filter-btn" data-category="Rinomodelação">Rinomodelação (2)</button>
+                <button class="blog-filter-btn" data-category="Terapia Capilar">Terapia Capilar (2)</button>
+                <button class="blog-filter-btn" data-category="Toxina Botulínica">Toxina Botulínica (2)</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== BLOG POSTS CONTAINER ==================== -->
+    <section style="padding: 40px 0 80px; background: #FFFFFF;">
+        <div class="container">
+            
+            <!-- Posts Grid -->
+            <div class="blog-grid" id="blogGrid">
+
+                <a href="harmonizacao-facial-mitos-e-verdades-curitiba.html" class="blog-card" data-category="Harmonização Facial">
+                    <div class="blog-card-img-wrap">
+                        <img src="assets/img/harmonizacao-facial-nova.webp" alt="Harmonização Facial em Curitiba: 7 Mitos e Verdades que Você Precisa Saber" class="blog-card-img" loading="lazy">
+                        <span class="blog-card-badge">Harmonização Facial</span>
+                    </div>
+                    <div class="blog-card-body">
+                        <div class="blog-card-meta">
+                            <span>15 de agosto de 2026</span> · <span>5 min</span>
+                        </div>
+                        <h3 class="blog-card-title">Harmonização Facial em Curitiba: 7 Mitos e Verdades que Você Precisa Saber</h3>
+                        <p class="blog-card-excerpt">Descubra o que é verdade e o que é mito sobre a harmonização facial. Entenda como o procedimento preserva a naturalidade e valoriza seus traços em Curitiba.</p>
+                        <div class="blog-card-footer">
+                            <span class="read-more-link">Ler artigo completo ↗</span>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="harmonizacao-facial-masculina-guia-curitiba.html" class="blog-card" data-category="Harmonização Facial">
+                    <div class="blog-card-img-wrap">
+                        <img src="assets/img/resultados/slider-caso-masculino-depois.webp" alt="Harmonização Facial Masculina: Como Definir Mandíbula e Queixo sem Perder a Naturalidade" class="blog-card-img" loading="lazy">
+                        <span class="blog-card-badge">Harmonização Facial</span>
+                    </div>
+                    <div class="blog-card-body">
+                        <div class="blog-card-meta">
+                            <span>10 de agosto de 2026</span> · <span>6 min</span>
+                        </div>
+                        <h3 class="blog-card-title">Harmonização Facial Masculina: Como Definir Mandíbula e Queixo sem Perder a Naturalidade</h3>
+                        <p class="blog-card-excerpt">Guia completo sobre a estruturação mandibular e do mento masculino. Linhas firmes, ângulo reto e sofisticação no consultório do Dr. Henrique Leal em Curitiba.</p>
+                        <div class="blog-card-footer">
+                            <span class="read-more-link">Ler artigo completo ↗</span>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="botox-preventivo-quando-comecar-curitiba.html" class="blog-card" data-category="Toxina Botulínica">
+                    <div class="blog-card-img-wrap">
+                        <img src="assets/img/botox-nova.webp" alt="Botox Preventivo em Curitiba: Qual a Idade Certa para Começar?" class="blog-card-img" loading="lazy">
+                        <span class="blog-card-badge">Toxina Botulínica</span>
+                    </div>
+                    <div class="blog-card-body">
+                        <div class="blog-card-meta">
+                            <span>4 de agosto de 2026</span> · <span>4 min</span>
+                        </div>
+                        <h3 class="blog-card-title">Botox Preventivo em Curitiba: Qual a Idade Certa para Começar?</h3>
+                        <p class="blog-card-excerpt">Entenda o conceito de toxina botulínica preventiva, como evitar que rugas de expressão se tornem marcas profundas na pele e os cuidados essenciais.</p>
+                        <div class="blog-card-footer">
+                            <span class="read-more-link">Ler artigo completo ↗</span>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="quanto-tempo-dura-o-botox-curitiba.html" class="blog-card" data-category="Toxina Botulínica">
+                    <div class="blog-card-img-wrap">
+                        <img src="assets/img/resultados/botox-testa-depois.webp" alt="Quanto Tempo Dura o Botox na Testa e Olhos? Dicas para Prolongar o Efeito" class="blog-card-img" loading="lazy">
+                        <span class="blog-card-badge">Toxina Botulínica</span>
+                    </div>
+                    <div class="blog-card-body">
+                        <div class="blog-card-meta">
+                            <span>28 de julho de 2026</span> · <span>5 min</span>
+                        </div>
+                        <h3 class="blog-card-title">Quanto Tempo Dura o Botox na Testa e Olhos? Dicas para Prolongar o Efeito</h3>
+                        <p class="blog-card-excerpt">Descubra fatores que influenciam na durabilidade da toxina botulínica e como manter seu rosto descansado e sem rugas por mais tempo em Curitiba.</p>
+                        <div class="blog-card-footer">
+                            <span class="read-more-link">Ler artigo completo ↗</span>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="fios-de-pdo-lifting-sem-cirurgia-curitiba.html" class="blog-card" data-category="Fios de PDO">
+                    <div class="blog-card-img-wrap">
+                        <img src="assets/img/foto-fios-nova.webp" alt="Fios de PDO em Curitiba: Como Funciona o Lifting Facial sem Cortes" class="blog-card-img" loading="lazy">
+                        <span class="blog-card-badge">Fios de PDO</span>
+                    </div>
+                    <div class="blog-card-body">
+                        <div class="blog-card-meta">
+                            <span>20 de julho de 2026</span> · <span>6 min</span>
+                        </div>
+                        <h3 class="blog-card-title">Fios de PDO em Curitiba: Como Funciona o Lifting Facial sem Cortes</h3>
+                        <p class="blog-card-excerpt">Conheça a tecnologia dos fios de polidioxanona (PDO), técnica internacional aprendida na Coreia do Sul para reposicionar tecidos e estimular colágeno.</p>
+                        <div class="blog-card-footer">
+                            <span class="read-more-link">Ler artigo completo ↗</span>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="fios-de-pdo-ou-bioestimulador-qual-escolher.html" class="blog-card" data-category="Fios de PDO">
+                    <div class="blog-card-img-wrap">
+                        <img src="assets/img/bioestimulador-de-colageno.webp" alt="Fios de PDO ou Bioestimulador de Colágeno: Qual o Ideal para o Seu Rosto?" class="blog-card-img" loading="lazy">
+                        <span class="blog-card-badge">Fios de PDO</span>
+                    </div>
+                    <div class="blog-card-body">
+                        <div class="blog-card-meta">
+                            <span>14 de julho de 2026</span> · <span>5 min</span>
+                        </div>
+                        <h3 class="blog-card-title">Fios de PDO ou Bioestimulador de Colágeno: Qual o Ideal para o Seu Rosto?</h3>
+                        <p class="blog-card-excerpt">Comparativo completo entre fios de tração e bioestimuladores injetáveis para tratar flacidez e perda de contorno facial em Curitiba.</p>
+                        <div class="blog-card-footer">
+                            <span class="read-more-link">Ler artigo completo ↗</span>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="sculptra-radiesse-elleva-comparativo-curitiba.html" class="blog-card" data-category="Bioestimuladores">
+                    <div class="blog-card-img-wrap">
+                        <img src="assets/img/bioestimulador.webp" alt="Sculptra, Radiesse e Elleva: Diferenças entre os Melhores Bioestimuladores de Colágeno" class="blog-card-img" loading="lazy">
+                        <span class="blog-card-badge">Bioestimuladores</span>
+                    </div>
+                    <div class="blog-card-body">
+                        <div class="blog-card-meta">
+                            <span>5 de julho de 2026</span> · <span>6 min</span>
+                        </div>
+                        <h3 class="blog-card-title">Sculptra, Radiesse e Elleva: Diferenças entre os Melhores Bioestimuladores de Colágeno</h3>
+                        <p class="blog-card-excerpt">Análise comparativa das principais marcas de bioestimuladores de colágeno do mercado. Saiba como escolher o melhor tratamento em Curitiba.</p>
+                        <div class="blog-card-footer">
+                            <span class="read-more-link">Ler artigo completo ↗</span>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="como-tratar-flacidez-facial-pescoco-curitiba.html" class="blog-card" data-category="Bioestimuladores">
+                    <div class="blog-card-img-wrap">
+                        <img src="assets/img/resultados/slider-caso-rejuvenescimento-depois.webp" alt="Como Tratar Flacidez no Rosto e Pescoço com Bioestimuladores em Curitiba" class="blog-card-img" loading="lazy">
+                        <span class="blog-card-badge">Bioestimuladores</span>
+                    </div>
+                    <div class="blog-card-body">
+                        <div class="blog-card-meta">
+                            <span>28 de junho de 2026</span> · <span>5 min</span>
+                        </div>
+                        <h3 class="blog-card-title">Como Tratar Flacidez no Rosto e Pescoço com Bioestimuladores em Curitiba</h3>
+                        <p class="blog-card-excerpt">Dicas clínicas e protocolos modernos para recuperar a firmeza do pescoço, papada e contorno facial sem cirurgia.</p>
+                        <div class="blog-card-footer">
+                            <span class="read-more-link">Ler artigo completo ↗</span>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="preenchimento-labial-natural-lips-curitiba.html" class="blog-card" data-category="Preenchimento Labial">
+                    <div class="blog-card-img-wrap">
+                        <img src="assets/img/preenchimento-labial-depois-clean.webp" alt="Preenchimento Labial Natural Lips em Curitiba: Lábios Hidratados e sem Exageros" class="blog-card-img" loading="lazy">
+                        <span class="blog-card-badge">Preenchimento Labial</span>
+                    </div>
+                    <div class="blog-card-body">
+                        <div class="blog-card-meta">
+                            <span>20 de junho de 2026</span> · <span>4 min</span>
+                        </div>
+                        <h3 class="blog-card-title">Preenchimento Labial Natural Lips em Curitiba: Lábios Hidratados e sem Exageros</h3>
+                        <p class="blog-card-excerpt">Descubra a técnica Natural Lips do Dr. Henrique Leal: contorno sutil, hidratação profunda e respeito à anatomia da sua boca.</p>
+                        <div class="blog-card-footer">
+                            <span class="read-more-link">Ler artigo completo ↗</span>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="cuidados-pos-preenchimento-labial-guia.html" class="blog-card" data-category="Preenchimento Labial">
+                    <div class="blog-card-img-wrap">
+                        <img src="assets/img/resultados/labio-resultado-4.webp" alt="Cuidados Pós-Preenchimento Labial: Recuperação, Inchaço e Duração" class="blog-card-img" loading="lazy">
+                        <span class="blog-card-badge">Preenchimento Labial</span>
+                    </div>
+                    <div class="blog-card-body">
+                        <div class="blog-card-meta">
+                            <span>12 de junho de 2026</span> · <span>4 min</span>
+                        </div>
+                        <h3 class="blog-card-title">Cuidados Pós-Preenchimento Labial: Recuperação, Inchaço e Duração</h3>
+                        <p class="blog-card-excerpt">O que fazer e o que evitar nos primeiros dias após o preenchimento labial para garantir uma cicatrização perfeita.</p>
+                        <div class="blog-card-footer">
+                            <span class="read-more-link">Ler artigo completo ↗</span>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="rinomodelacao-com-acido-hialuronico-curitiba.html" class="blog-card" data-category="Rinomodelação">
+                    <div class="blog-card-img-wrap">
+                        <img src="assets/img/resultados/upnose-depois.webp" alt="Rinomodelação em Curitiba: Como Empinar e Alinhar o Nariz sem Cirurgia" class="blog-card-img" loading="lazy">
+                        <span class="blog-card-badge">Rinomodelação</span>
+                    </div>
+                    <div class="blog-card-body">
+                        <div class="blog-card-meta">
+                            <span>4 de junho de 2026</span> · <span>5 min</span>
+                        </div>
+                        <h3 class="blog-card-title">Rinomodelação em Curitiba: Como Empinar e Alinhar o Nariz sem Cirurgia</h3>
+                        <p class="blog-card-excerpt">Procedimento rápido e seguro para corrigir pequenas imperfeições no dorso nasal e levantar a ponta caída em Curitiba.</p>
+                        <div class="blog-card-footer">
+                            <span class="read-more-link">Ler artigo completo ↗</span>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="rinomodelacao-doi-cuidados-e-duracao.html" class="blog-card" data-category="Rinomodelação">
+                    <div class="blog-card-img-wrap">
+                        <img src="assets/img/resultados/caso-rinomodelacao-perfil-1-depois.webp" alt="Rinomodelação Dói? Riscos, Tempo de Recuperação e Durabilidade" class="blog-card-img" loading="lazy">
+                        <span class="blog-card-badge">Rinomodelação</span>
+                    </div>
+                    <div class="blog-card-body">
+                        <div class="blog-card-meta">
+                            <span>28 de maio de 2026</span> · <span>4 min</span>
+                        </div>
+                        <h3 class="blog-card-title">Rinomodelação Dói? Riscos, Tempo de Recuperação e Durabilidade</h3>
+                        <p class="blog-card-excerpt">Tudo sobre o nível de dor, anestesia local, cuidados essenciais e tempo de durabilidade da rinomodelação.</p>
+                        <div class="blog-card-footer">
+                            <span class="read-more-link">Ler artigo completo ↗</span>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="estetica-intima-preenchimento-acido-hialuronico-curitiba.html" class="blog-card" data-category="Estética Íntima">
+                    <div class="blog-card-img-wrap">
+                        <img src="assets/img/intimos-nova.webp" alt="Preenchimento Íntimo Feminino em Curitiba: Como o Ácido Hialurônico Devolve Firmeza e Conforto" class="blog-card-img" loading="lazy">
+                        <span class="blog-card-badge">Estética Íntima</span>
+                    </div>
+                    <div class="blog-card-body">
+                        <div class="blog-card-meta">
+                            <span>20 de maio de 2026</span> · <span>5 min</span>
+                        </div>
+                        <h3 class="blog-card-title">Preenchimento Íntimo Feminino em Curitiba: Como o Ácido Hialurônico Devolve Firmeza e Conforto</h3>
+                        <p class="blog-card-excerpt">Procedimento médico-estético delicado para recuperação de volume, hidratação e firmeza dos grandes lábios com total sigilo e conforto.</p>
+                        <div class="blog-card-footer">
+                            <span class="read-more-link">Ler artigo completo ↗</span>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="rejuvenescimento-intimo-beneficios-e-autoestima.html" class="blog-card" data-category="Estética Íntima">
+                    <div class="blog-card-img-wrap">
+                        <img src="assets/img/intimos.webp" alt="Rejuvenescimento Íntimo: Procedimentos Modernos para Saúde e Autoestima da Mulher" class="blog-card-img" loading="lazy">
+                        <span class="blog-card-badge">Estética Íntima</span>
+                    </div>
+                    <div class="blog-card-body">
+                        <div class="blog-card-meta">
+                            <span>12 de maio de 2026</span> · <span>5 min</span>
+                        </div>
+                        <h3 class="blog-card-title">Rejuvenescimento Íntimo: Procedimentos Modernos para Saúde e Autoestima da Mulher</h3>
+                        <p class="blog-card-excerpt">Bioestimuladores, hidratação e fios na estética íntima: conheça os tratamentos que unem bem-estar, função e beleza.</p>
+                        <div class="blog-card-footer">
+                            <span class="read-more-link">Ler artigo completo ↗</span>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="protocolo-bioforce-regeneracao-celular-curitiba.html" class="blog-card" data-category="Protocolo Bioforce">
+                    <div class="blog-card-img-wrap">
+                        <img src="assets/img/7G1A9991.webp" alt="Protocolo Bioforce: O Tratamento Assinatura para Regeneração Facial Profunda" class="blog-card-img" loading="lazy">
+                        <span class="blog-card-badge">Protocolo Bioforce</span>
+                    </div>
+                    <div class="blog-card-body">
+                        <div class="blog-card-meta">
+                            <span>4 de maio de 2026</span> · <span>5 min</span>
+                        </div>
+                        <h3 class="blog-card-title">Protocolo Bioforce: O Tratamento Assinatura para Regeneração Facial Profunda</h3>
+                        <p class="blog-card-excerpt">Associação exclusiva de bioestimuladores de última geração e peptídeos bioativos desenvolvida pelo Dr. Henrique Leal em Curitiba.</p>
+                        <div class="blog-card-footer">
+                            <span class="read-more-link">Ler artigo completo ↗</span>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="peptideos-bioativos-e-antiaging-avancado.html" class="blog-card" data-category="Protocolo Bioforce">
+                    <div class="blog-card-img-wrap">
+                        <img src="assets/img/henrique-portrait.webp" alt="Peptídeos Bioativos na Estética Avançada: Como Estimular a Juventude da Pele" class="blog-card-img" loading="lazy">
+                        <span class="blog-card-badge">Protocolo Bioforce</span>
+                    </div>
+                    <div class="blog-card-body">
+                        <div class="blog-card-meta">
+                            <span>26 de abril de 2026</span> · <span>4 min</span>
+                        </div>
+                        <h3 class="blog-card-title">Peptídeos Bioativos na Estética Avançada: Como Estimular a Juventude da Pele</h3>
+                        <p class="blog-card-excerpt">A ciência por trás dos peptídeos sinalizadores e como eles reprogramam a síntese de colágeno nas células da pele.</p>
+                        <div class="blog-card-footer">
+                            <span class="read-more-link">Ler artigo completo ↗</span>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="ozonioterapia-beneficios-estetica-saude-curitiba.html" class="blog-card" data-category="Ozonioterapia">
+                    <div class="blog-card-img-wrap">
+                        <img src="assets/img/henrique-clinic.webp" alt="Ozonioterapia em Curitiba: Benefícios do Ozônio Medicinal para Pele e Inflamação" class="blog-card-img" loading="lazy">
+                        <span class="blog-card-badge">Ozonioterapia</span>
+                    </div>
+                    <div class="blog-card-body">
+                        <div class="blog-card-meta">
+                            <span>18 de abril de 2026</span> · <span>5 min</span>
+                        </div>
+                        <h3 class="blog-card-title">Ozonioterapia em Curitiba: Benefícios do Ozônio Medicinal para Pele e Inflamação</h3>
+                        <p class="blog-card-excerpt">Como o gás ozônio atua na oxigenação celular, combate a radicais livres e potencialização de resultados estéticos em Curitiba.</p>
+                        <div class="blog-card-footer">
+                            <span class="read-more-link">Ler artigo completo ↗</span>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="ozonioterapia-para-rejuvenescimento-e-cicatrizacao.html" class="blog-card" data-category="Ozonioterapia">
+                    <div class="blog-card-img-wrap">
+                        <img src="assets/img/henrique-faq-new.webp" alt="Ozonioterapia no Pós-Procedimento: Aceleração da Cicatrização e Oxigenação Tecidual" class="blog-card-img" loading="lazy">
+                        <span class="blog-card-badge">Ozonioterapia</span>
+                    </div>
+                    <div class="blog-card-body">
+                        <div class="blog-card-meta">
+                            <span>10 de abril de 2026</span> · <span>4 min</span>
+                        </div>
+                        <h3 class="blog-card-title">Ozonioterapia no Pós-Procedimento: Aceleração da Cicatrização e Oxigenação Tecidual</h3>
+                        <p class="blog-card-excerpt">Entenda por que o ozônio medicinal é utilizado para acelerar a recuperação de procedimentos estéticos e reduzir edemas.</p>
+                        <div class="blog-card-footer">
+                            <span class="read-more-link">Ler artigo completo ↗</span>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="terapia-capilar-para-queda-de-cabelo-curitiba.html" class="blog-card" data-category="Terapia Capilar">
+                    <div class="blog-card-img-wrap">
+                        <img src="assets/img/resultados/IMG_6808.webp" alt="Terapia Capilar em Curitiba: Como Tratar Queda de Cabelo e Calvície com Tecnologia" class="blog-card-img" loading="lazy">
+                        <span class="blog-card-badge">Terapia Capilar</span>
+                    </div>
+                    <div class="blog-card-body">
+                        <div class="blog-card-meta">
+                            <span>2 de abril de 2026</span> · <span>5 min</span>
+                        </div>
+                        <h3 class="blog-card-title">Terapia Capilar em Curitiba: Como Tratar Queda de Cabelo e Calvície com Tecnologia</h3>
+                        <p class="blog-card-excerpt">Protocolos integrados de estímulo folicular, nutrição capilar e combate à calvície masculina e feminina no Água Verde.</p>
+                        <div class="blog-card-footer">
+                            <span class="read-more-link">Ler artigo completo ↗</span>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="microinfusao-capilar-e-fortalecimento-dos-fios.html" class="blog-card" data-category="Terapia Capilar">
+                    <div class="blog-card-img-wrap">
+                        <img src="assets/img/resultados/caso-harmonizacao-masculina-2.webp" alt="Microinfusão e Fatores de Crescimento Capilar: Fortalecimento desde a Raiz" class="blog-card-img" loading="lazy">
+                        <span class="blog-card-badge">Terapia Capilar</span>
+                    </div>
+                    <div class="blog-card-body">
+                        <div class="blog-card-meta">
+                            <span>24 de março de 2026</span> · <span>4 min</span>
+                        </div>
+                        <h3 class="blog-card-title">Microinfusão e Fatores de Crescimento Capilar: Fortalecimento desde a Raiz</h3>
+                        <p class="blog-card-excerpt">Entenda como a entrega direta de nutrientes no bulbo capilar desacelera o afinamento e estimula novos fios.</p>
+                        <div class="blog-card-footer">
+                            <span class="read-more-link">Ler artigo completo ↗</span>
+                        </div>
+                    </div>
+                </a>
+    
+            </div>
+
+            <!-- CTA Box -->
+            <div class="blog-cta-box">
+                <h2 class="blog-cta-title">Deseja uma avaliação individualizada?</h2>
+                <p class="blog-cta-text">
+                    O Dr. Henrique Leal atende no Edifício Today's Office (Água Verde, Curitiba), com planejamento anatômico exclusivo para você.
+                </p>
+                <a href="https://wa.me/5541988577430?text=Ol%C3%A1%2C%20vi%20o%20blog%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." class="btn btn-primary" target="_blank" rel="noopener">
+                    Agendar pelo WhatsApp ↗
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo-link" style="display: inline-flex; align-items: center; gap: 14px; margin-bottom: 18px; text-decoration: none;">
+                        <img src="assets/img/logo-simbolo.webp" alt="Símbolo Dr. Henrique Leal" style="height: 52px; width: auto; filter: brightness(0) invert(1); opacity: 0.95;">
+                        <img src="assets/img/logo-texto.webp" alt="Dr. Henrique Leal Rosa" style="height: 42px; width: auto; filter: brightness(0) invert(1); opacity: 0.95;">
+                    </a>
+                    <p>Harmonização Facial com naturalidade e sofisticação. Curitiba, PR.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navegação</h4>
+                    <a href="index.html">Início</a>
+                    <a href="procedimentos.html">Procedimentos</a>
+                    <a href="sobre.html">Dr. Henrique</a>
+                    <a href="index.html#localizacao">Consultório</a>
+                    <a href="index.html#faq">Dúvidas</a>
+                    <a href="blog.html">Blog</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Procedimentos</h4>
+                    <a href="fios-de-pdo-curitiba.html">Fios de PDO</a>
+                    <a href="botox-curitiba.html">Toxina Botulínica</a>
+                    <a href="preenchimento-labial-curitiba.html">Preenchimento</a>
+                    <a href="bioestimuladores-de-colageno-curitiba.html">Bioestimuladores</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <a href="https://wa.me/5541988577430" target="_blank" rel="noopener">WhatsApp</a>
+                    <a href="https://maps.google.com/?q=Av.+Rep.+Argentina,+1237+-+Sala+518+-+%C3%81gua+Verde,+Curitiba+-+PR" target="_blank" rel="noopener">Edifício Today's Office · Água Verde</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Dr. Henrique Leal Rosa. Todos os direitos reservados. CRO-PR 31739 · CRBM-PR 8966.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js?v=5.0"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.blog-filter-btn');
+            const cards = document.querySelectorAll('.blog-card');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+
+                    const cat = this.getAttribute('data-category');
+
+                    cards.forEach(card => {
+                        if (cat === 'ALL' || card.getAttribute('data-category') === cat) {
+                            card.style.display = 'flex';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

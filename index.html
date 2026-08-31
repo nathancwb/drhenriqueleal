@@ -4,9 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css?v=1.5">
-    <link rel="icon" href="assets/img/logo-seal.webp">
-    <title>Dr. Henrique Leal | Harmonização Facial com Naturalidade — Curitiba</title>
+    <link rel="stylesheet" href="assets/css/style.css?v=10.0">
+    <style>
+        .google-card-logo { width: 22px !important; height: 22px !important; max-width: 22px !important; min-width: 22px !important; flex-shrink: 0 !important; }
+        .google-review-card { background: #FFFFFF !important; border: 1px solid rgba(27, 58, 92, 0.08) !important; border-radius: 24px !important; padding: 24px 24px 20px !important; height: 250px !important; min-height: 250px !important; max-height: 250px !important; display: flex !important; flex-direction: column !important; justify-content: space-between !important; box-shadow: 0 4px 20px rgba(27, 58, 92, 0.04) !important; box-sizing: border-box !important; overflow: hidden !important; }
+        .google-card-comment { display: -webkit-box !important; -webkit-line-clamp: 4 !important; -webkit-box-orient: vertical !important; overflow: hidden !important; text-overflow: ellipsis !important; }
+        .interactive-ba-tabs { display: flex !important; justify-content: space-around !important; align-items: center !important; gap: 14px !important; margin-bottom: 18px !important; flex-wrap: nowrap !important; white-space: nowrap !important; width: 100% !important; box-sizing: border-box !important; overflow-x: auto !important; border-bottom: 1px solid rgba(27, 58, 92, 0.08) !important; padding: 4px 6px 10px !important; }
+        .ba-tab-btn { background: transparent !important; color: #64748b !important; border: none !important; padding: 6px 2px !important; border-radius: 0 !important; font-size: 0.90rem !important; font-weight: 500 !important; cursor: pointer !important; box-shadow: none !important; position: relative !important; flex-shrink: 0 !important; }
+        .ba-tab-btn.active { color: var(--color-primary, #1B3A5C) !important; font-weight: 700 !important; background: transparent !important; border: none !important; }
+        .ba-tab-btn.active::after { content: '' !important; position: absolute !important; bottom: -11px !important; left: 0 !important; right: 0 !important; height: 2.5px !important; background: var(--color-primary, #1B3A5C) !important; border-radius: 2px !important; }
+    </style>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png?v=3">
+    <link rel="apple-touch-icon" href="assets/img/favicon.png?v=3">
+    <title>Dr. Henrique Leal | Harmonização Facial em Curitiba</title>
     <meta name="description"
         content="Harmonização Facial com naturalidade e sofisticação em Curitiba. Especialista em Fios de PDO, Botox, Preenchimento e Bioestimuladores. Resultados elegantes sem exageros.">
     <meta name="keywords"
@@ -31,31 +41,132 @@
     <!-- Google Site Verification -->
     <meta name="google-site-verification" content="YbxJFgrz6J8cVvCJPENck4cMlSdvN9WGVYaNIHNlz_U" />
 
-    <link rel="stylesheet" href="assets/css/style.css?v=1.5">
+    <!-- Schema.org JSON-LD Structured Data for Local SEO, GEO & Medical Authority -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": ["MedicalBusiness", "Physician", "Dentist"],
+          "@id": "https://drhenriqueleal.com.br/#clinic",
+          "name": "Dr. Henrique Leal Rosa | Harmonização Facial & Estética Avançada",
+          "url": "https://drhenriqueleal.com.br",
+          "logo": "https://drhenriqueleal.com.br/assets/img/logo-sub-colorida.webp",
+          "image": "https://drhenriqueleal.com.br/assets/img/henrique-portrait.webp",
+          "telephone": "+5541988577430",
+          "priceRange": "$$$$",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Av. República Argentina, 1237 - Sala 518",
+            "addressLocality": "Curitiba",
+            "addressRegion": "PR",
+            "postalCode": "80620-010",
+            "addressCountry": "BR"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -25.4529,
+            "longitude": -49.2905
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Curitiba"
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+              "opens": "09:00",
+              "closes": "19:00"
+            }
+          ],
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "reviewCount": "48"
+          },
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Procedimentos de Harmonização Facial e Estética Médica",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "MedicalProcedure",
+                  "name": "Harmonização Facial Masculina e Preenchimento Mandibular",
+                  "description": "Estruturação e definição de mandíbula, queixo (mento) e perfil masculino com ácido hialurônico em Curitiba."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "MedicalProcedure",
+                  "name": "Preenchimento Labial Natural Lips",
+                  "description": "Volumização e contorno labial proporcional sem aspecto artificial."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "MedicalProcedure",
+                  "name": "Toxina Botulínica (Botox Facial)",
+                  "description": "Tratamento de rugas de expressão na testa, glabela e pés de galinha."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "MedicalProcedure",
+                  "name": "Fios de Sustentação de PDO Coreanos",
+                  "description": "Lifting não cirúrgico e estímulo de colágeno."
+                }
+              }
+            ]
+          }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://drhenriqueleal.com.br/#doctor",
+          "name": "Dr. Henrique Leal Rosa",
+          "jobTitle": "Cirurgião Dentista (CRO-PR) & Biomédico (CRBM-PR)",
+          "worksFor": {
+            "@id": "https://drhenriqueleal.com.br/#clinic"
+          },
+          "knowsAbout": [
+            "Harmonização Facial Masculina",
+            "Preenchimento de Mandíbula Masculino",
+            "Preenchimento de Mento e Queixo",
+            "Bioestimuladores de Colágeno",
+            "Toxina Botulínica",
+            "Fios de PDO"
+          ]
+        }
+      ]
+    }
+    </script>
 </head>
 
 <body>
 
     <!-- ==================== SPLASH SCREEN ==================== -->
     <div id="splash-screen">
-        <img id="splash-logo" src="assets/img/logo-marcadagua-colorida.webp" alt="Dr. Henrique Leal Rosa">
+        <img id="splash-logo" src="assets/img/logo-sub-colorida.webp" alt="Dr. Henrique Leal Rosa">
     </div>
 
     <!-- ==================== HEADER ==================== -->
     <header class="header" id="header">
         <div class="container">
-            <a href="/" class="header-logo">
-                <img id="header-logo-img" src="assets/img/logo-marcadagua-colorida.webp" alt="Dr. Henrique Leal">
+            <a href="index.html" class="header-logo">
+                <img src="assets/img/logo-simbolo.webp" alt="Símbolo Dr. Henrique Leal" class="logo-symbol" id="header-logo-img">
+                <img src="assets/img/logo-texto.webp" alt="Dr. Henrique Leal Rosa" class="logo-text">
             </a>
             <nav class="nav-links" id="navLinks">
-                <a href="#diferenciais">Diferenciais</a>
-                <span class="nav-separator">|</span>
-                <a href="procedimentos.html">Procedimentos</a>
-                <span class="nav-separator">|</span>
-
-                <a href="#sobre">Sobre</a>
-                <span class="nav-separator">|</span>
+                <a href="#resultados">Resultados</a>
+                <a href="#procedimentos">Procedimentos</a>
+                <a href="#sobre">Dr. Henrique</a>
+                <a href="#localizacao">Consultório</a>
                 <a href="#faq">Dúvidas</a>
+                <a href="blog.html">Blog</a>
             </nav>
             <button class="menu-toggle" id="menuToggle" aria-label="Menu">
                 <span></span>
@@ -66,16 +177,16 @@
     </header>
 
     <!-- ==================== HERO ==================== -->
+    <!-- ==================== HERO ==================== -->
     <section class="hero" id="hero">
         <div class="hero-bg"></div>
         <div class="hero-pattern"></div>
         <div class="container">
             <div class="hero-content">
-                <div class="hero-label">Harmonização Facial</div>
+                <div class="hero-label">Harmonização Facial em Curitiba</div>
                 <h1>Beleza com <em>Naturalidade</em> e Sofisticação</h1>
                 <p class="hero-subtitle">
-                    Resultados elegantes que respeitam sua identidade. Sem exageros, sem artificialidade — apenas a
-                    melhor versão de você.
+                    Tratamentos faciais pensados para você, com foco em segurança, equilíbrio e resultados leves que valorizam sua beleza.
                 </p>
                 <div class="hero-buttons">
                     <a href="https://wa.me/5541988577430?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o."
@@ -87,215 +198,83 @@
                         </svg>
                         Agendar Avaliação
                     </a>
-                    <a href="procedimentos.html" class="btn btn-outline">
+                    <a href="#procedimentos" class="btn btn-outline">
                         Conheça os Procedimentos
                     </a>
                 </div>
-            </div>
-            <div class="hero-image">
-                <div class="hero-img-wrapper" style="position:relative;">
-                    <img src="assets/img/7G1A9991.webp"
-                        alt="Dr. Henrique Leal - Especialista em Harmonização Facial" class="hero-photo fade-in" fetchpriority="high">
-                    <div class="hero-img-decoration"></div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- ==================== PREMIUM CONSULTA ==================== -->
-    <section class="section premium-consulta" id="consulta">
-        <div class="container">
-            <div class="premium-consulta-grid">
-                
-                <!-- Image Removed -->
-                <!-- Right: Content -->
-                <div class="premium-consulta-content fade-in-right" style="text-align: center;">
-                    <span class="label" style="justify-content: center;">Experiência Exclusiva</span>
-                    <h2>A Primeira Etapa da Sua Transformação</h2>
-                    <p class="consulta-intro" style="margin-bottom: 20px;">A avaliação com o Dr. Henrique Leal vai além de um simples diagnóstico. É uma análise aprofundada que integra estética, função e identidade facial.</p>
-                    <p class="consulta-intro">Com base em ciência, técnica avançada e olhar clínico refinado, cada detalhe é estudado para desenvolver um plano de tratamento personalizado, com precisão, segurança e naturalidade.</p>
-                    
-                    <ul class="consulta-features">
-                        <li>
-                            <div class="icon-box">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                <!-- Hero Social Proof Google Badge -->
+                <div class="hero-social-proof">
+                    <div class="hero-proof-avatars">
+                        <img src="assets/img/resultados/labio-antes-depois-3.webp" alt="Resultado Labial" class="proof-thumb">
+                        <img src="assets/img/resultados/upnose-depois.webp" alt="Resultado Rinomodelação" class="proof-thumb">
+                        <img src="assets/img/resultados/labio-antes-depois-5.webp" alt="Resultado Lábios" class="proof-thumb">
+                        <img src="assets/img/resultados/facial-completo.webp" alt="Resultado Facial" class="proof-thumb">
+                    </div>
+                    <a href="#avaliacoes" class="hero-proof-text" aria-label="Ver avaliações no Google">
+                        <div class="hero-proof-rating-row">
+                            <span class="hero-proof-stars">★★★★★</span>
+                            <span class="hero-proof-score">5.0</span>
+                            <span class="hero-proof-google-tag">
+                                <svg viewBox="0 0 24 24" style="width: 13px; height: 13px; display: inline-block;">
+                                    <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17z"/>
+                                    <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"/>
+                                    <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.97 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/>
+                                    <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
                                 </svg>
-                            </div>
-                            <div class="feature-text">
-                                <h4>Atendimento Exclusivo</h4>
-                                <p>Agenda reservada com 1h a 1h30 de duração para ouvir você, analisar detalhes e planejar sem pressa.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="icon-box">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 5.227 7.917-3.286-.672zM12 2.25V4.5m5.834.166l-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243l-1.59-1.59" />
-                                </svg>
-                            </div>
-                            <div class="feature-text">
-                                <h4>Análise Facial Profunda</h4>
-                                <p>Estudo detalhado de proporções, estrutura óssea, fototipo e envelhecimento natural do rosto.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="icon-box">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" />
-                                </svg>
-                            </div>
-                            <div class="feature-text">
-                                <h4>Planejamento Individualizado</h4>
-                                <p>Um protocolo de tratamento desenhado sob medida para rejuvenescer ou valorizar seus traços de forma elegante.</p>
-                            </div>
-                        </li>
-                    </ul>
-
-                    <a href="https://wa.me/5541988577430?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." class="btn btn-premium" target="_blank" rel="noopener" style="margin-top: 20px;">
-                        Agendar Minha Avaliação
+                                Google
+                            </span>
+                        </div>
+                        <p class="hero-proof-desc">
+                            <strong>+<span data-count-target="1200" data-prefix="" data-suffix="">1.200</span> pacientes</strong> atendidos com naturalidade
+                        </p>
                     </a>
                 </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- ==================== DIFERENCIAIS ==================== -->
-    <section class="section section-alt" id="diferenciais">
-        <div class="container">
-            <div class="section-header fade-in">
-                <span class="label">Por que escolher o Dr. Henrique</span>
-                <h2>Excelência em Cada Detalhe</h2>
-                <p>Técnica refinada, protocolos seguros e uma abordagem que prioriza a naturalidade acima de tudo.</p>
-                <div class="line-accent"></div>
             </div>
 
-            <div class="diferenciais-layout">
-                <!-- Cards Column -->
-                <div class="diferenciais-cards">
-                    <!-- Card 1 -->
-                    <div class="diff-card fade-in">
-                        <div class="diff-card-icon">
-                            <!-- Award Icon -->
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="12" cy="8" r="7" />
-                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
-                            </svg>
-                        </div>
-                        <div class="diff-card-content">
-                            <h3>Certificação Internacional em Fios de PDO</h3>
-                            <p>Formação avançada com referências mundiais. Protocolos utilizados nos principais centros
-                                de
-                                estética da Europa e Ásia.</p>
-                        </div>
+            <!-- First Fold Interactive Before & After Slider -->
+            <div class="hero-interactive-slider">
+                <div class="interactive-ba-wrapper" id="interactive-comparison">
+                    <div class="interactive-ba-tabs" id="baTabs">
+                        <button class="ba-tab-btn active" data-antes="assets/img/resultados/slider-caso-masculino-antes.webp?v=8" data-depois="assets/img/resultados/slider-caso-masculino-depois.webp?v=8" data-title="Harmonização Facial Masculina">Harmonização</button>
+                        <button class="ba-tab-btn" data-antes="assets/img/resultados/slider-caso-rejuvenescimento-antes.webp?v=8" data-depois="assets/img/resultados/slider-caso-rejuvenescimento-depois.webp?v=8" data-title="Rejuvenescimento Facial">Rejuvenescimento</button>
+                        <button class="ba-tab-btn" data-antes="assets/img/resultados/slider-caso-botox-antes.webp?v=8" data-depois="assets/img/resultados/slider-caso-botox-depois.webp?v=8" data-title="Toxina Botulínica (Botox)">Botox</button>
+                        <button class="ba-tab-btn" data-antes="assets/img/resultados/slider-caso-labios-antes.webp?v=8" data-depois="assets/img/resultados/slider-caso-labios-depois.webp?v=8" data-title="Preenchimento Labial">Lábios</button>
                     </div>
 
-                    <!-- Card 2 -->
-                    <div class="diff-card fade-in">
-                        <div class="diff-card-icon">
-                            <!-- Fingerprint Icon -->
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M2 12C2 6.5 6.5 2 12 2a10 10 0 0 1 8 4" />
-                                <path d="M5 19.5C5.5 18 6 15 12 15a7 7 0 0 1 4 2" />
-                                <path d="M12 10a2 2 0 0 0-2 2c0 2 2 2.5 4 4.5" />
-                                <path d="M18 19c-1.5-2.5-4-3-4-3" />
-                                <path d="M21.5 16.5c-.5-3.5-3.5-5.5-5-5.5" />
-                                <path d="M7 12c0-3.5 2-6.5 5-6.5S17 8.5 17 12" />
-                            </svg>
-                        </div>
-                        <div class="diff-card-content">
-                            <h3>Protocolos Personalizados e Seguros</h3>
-                            <p>Cada rosto é único. Protocolos são desenhados individualmente, priorizando a segurança e
-                                o
-                                respeito à anatomia.</p>
-                        </div>
-                    </div>
+                    <div class="ba-compare-container" id="baCompareContainer">
+                        <!-- Before Image (Base layer) -->
+                        <img src="assets/img/resultados/slider-caso-masculino-antes.webp?v=8" alt="Antes da Harmonização: Dr. Henrique Leal" class="ba-compare-img" id="baImgAntes" draggable="false">
+                        <span class="ba-badge ba-badge-antes">Antes</span>
 
-                    <!-- Card 3 -->
-                    <div class="diff-card fade-in">
-                        <div class="diff-card-icon">
-                            <!-- Sparkles Icon -->
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <path
-                                    d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
-                                <path d="M5 3v4" />
-                                <path d="M9 3v4" />
-                                <path d="M3 5h4" />
-                                <path d="M3 9h4" />
-                            </svg>
+                        <!-- After Image (Clipped overlay) -->
+                        <div class="ba-compare-after-wrap" id="baAfterWrap" style="width: 50%;">
+                            <img src="assets/img/resultados/slider-caso-masculino-depois.webp?v=8" alt="Depois da Harmonização: Dr. Henrique Leal" class="ba-compare-img" id="baImgDepois" draggable="false">
                         </div>
-                        <div class="diff-card-content">
-                            <h3>Resultados Naturais e Duradouros</h3>
-                            <p>O objetivo nunca é mudar quem você é — é potencializar sua beleza com elegância, sem que
-                                ninguém
-                                perceba que houve intervenção.</p>
-                        </div>
-                    </div>
+                        <span class="ba-badge ba-badge-depois">Depois</span>
 
-                    <!-- Card 4 -->
-                    <div class="diff-card fade-in">
-                        <div class="diff-card-icon">
-                            <!-- Globe Icon -->
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="12" cy="12" r="10"/>
-                                <line x1="2" y1="12" x2="22" y2="12"/>
-                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-                            </svg>
+                        <!-- Divider & Drag Handle -->
+                        <div class="ba-compare-handle" id="baHandle" style="left: 50%;">
+                            <div class="ba-handle-button">⟨ ⟩</div>
                         </div>
-                        <div class="diff-card-content">
-                            <h3>Reconhecimento Internacional e Atuação Acadêmica</h3>
-                            <p>Participação em congressos nacionais e internacionais, com formações em Lisboa, Dubai e Coreia do Sul. Além da prática clínica, atua como professor na pós-graduação em harmonização orofacial em Curitiba.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Image Container (Swiper Cards) -->
-                <div class="diferenciais-image fade-in-right">
-                    <div class="cert-swiper swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="assets/img/certificado.webp"
-                                    alt="Harmonização Facial e Certificação Dr Henrique Leal" loading="lazy" >
-                                <span class="diferenciais-image-caption">Certificação Internacional — K-Club Unique 2025, Coreia do Sul</span>
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="assets/img/certificado-2.webp"
-                                    alt="Participação em Evento Internacional" loading="lazy" >
-                                <span class="diferenciais-image-caption">Participação Internacional em Congresso de Harmonização Facial</span>
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="assets/img/certificado-3.webp"
-                                    alt="Prêmio Full Face" loading="lazy" >
-                                <span class="diferenciais-image-caption">Reconhecimento Internacional e Aprimoramento Constante</span>
-                            </div>
-                        </div>
-                        <!-- Add Pagination -->
-                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ==================== RESULTADOS (Antes e Depois) ==================== -->
-    <section class="section" id="resultados">
+    <!-- ==================== RESULTADOS & CARROSSEL CONTÍNUO ==================== -->
+    <section class="section" id="resultados" style="padding-top: 50px;">
         <div class="container">
             <div class="section-header fade-in">
-                <span class="label">Resultados Reais</span>
-                <h2>Antes e Depois</h2>
-                <p>Cada resultado reflete um planejamento individualizado, com técnica e cuidado em cada detalhe.</p>
-                <div class="line-accent"></div>
+                <h2>Transformações Reais</h2>
+                <p>Confira alguns dos resultados alcançados em nosso consultório, sempre com foco em harmonia e naturalidade.</p>
             </div>
 
             <!-- Aviso Legal Geral -->
             <div class="legal-notice-banner fade-in">
-                <div class="legal-notice-icon">⚖️</div>
                 <div class="legal-notice-text">
-                    <strong>Aviso Legal:</strong> As imagens dos resultados exibidos neste site constituem propriedade intelectual exclusiva. A cópia, reprodução ou uso não autorizado é estritamente proibida nos termos da Lei de Direitos Autorais (Lei nº 9.610/98), sujeitando o infrator às sanções cíveis e criminais aplicáveis.
+                    ⚖️ <strong>Aviso Legal:</strong> Imagens de caráter demonstrativo. Direitos autorais reservados ao Dr. Henrique Leal Rosa (Lei nº 9.610/98).
                 </div>
             </div>
 
@@ -307,11 +286,11 @@
                         <span class="ba-procedure">Rinomodelação</span>
                         <div class="ba-images">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/upnose-antes.webp" alt="Antes — Rinomodelação" loading="lazy" >
+                                <img src="assets/img/resultados/upnose-antes.webp" alt="Antes: Rinomodelação" loading="lazy" >
                                 <span class="ba-label ba-antes">Antes</span>
                             </div>
                             <div class="ba-image">
-                                <img src="assets/img/resultados/upnose-depois.webp" alt="Depois — Rinomodelação" loading="lazy" >
+                                <img src="assets/img/resultados/upnose-depois.webp" alt="Depois: Rinomodelação" loading="lazy" >
                                 <span class="ba-label ba-depois">Depois</span>
                             </div>
                         </div>
@@ -323,7 +302,7 @@
                         <span class="ba-procedure">Preenchimento Labial</span>
                         <div class="ba-images ba-images-single">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/labio-antes-depois-3.webp" alt="Preenchimento Labial — Antes e Depois" loading="lazy" >
+                                <img src="assets/img/resultados/labio-antes-depois-3.webp" alt="Preenchimento Labial: Antes e Depois" loading="lazy" >
                             </div>
                         </div>
                     </div>
@@ -334,7 +313,7 @@
                         <span class="ba-procedure">Preenchimento Labial</span>
                         <div class="ba-images ba-images-single">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/labio-antes-depois-5.webp" alt="Preenchimento Labial — Antes e Depois" loading="lazy" >
+                                <img src="assets/img/resultados/labio-antes-depois-5.webp" alt="Preenchimento Labial: Antes e Depois" loading="lazy" >
                             </div>
                         </div>
                     </div>
@@ -345,7 +324,7 @@
                         <span class="ba-procedure">Harmonização Facial Completa</span>
                         <div class="ba-images ba-images-single">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/facial-completo.webp" alt="Harmonização Facial Completa — Antes e Depois" loading="lazy" >
+                                <img src="assets/img/resultados/facial-completo.webp" alt="Harmonização Facial Completa: Antes e Depois" loading="lazy" >
                             </div>
                         </div>
                     </div>
@@ -356,11 +335,11 @@
                         <span class="ba-procedure">Preenchimento de Mento</span>
                         <div class="ba-images">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/mento-antes-1.webp" alt="Antes — Preenchimento de Mento" loading="lazy" >
+                                <img src="assets/img/resultados/mento-antes-1.webp" alt="Antes: Preenchimento de Mento" loading="lazy" >
                                 <span class="ba-label ba-antes">Antes</span>
                             </div>
                             <div class="ba-image">
-                                <img src="assets/img/resultados/mento-depois-1.webp" alt="Depois — Preenchimento de Mento" loading="lazy" >
+                                <img src="assets/img/resultados/mento-depois-1.webp" alt="Depois: Preenchimento de Mento" loading="lazy" >
                                 <span class="ba-label ba-depois">Depois</span>
                             </div>
                         </div>
@@ -372,11 +351,11 @@
                         <span class="ba-procedure">Preenchimento Facial</span>
                         <div class="ba-images">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/mento-premaxila-l4-frontal-antes.webp" alt="Antes — Preenchimento Facial Frontal" loading="lazy" >
+                                <img src="assets/img/resultados/mento-premaxila-l4-frontal-antes.webp" alt="Antes: Preenchimento Facial Frontal" loading="lazy" >
                                 <span class="ba-label ba-antes">Antes</span>
                             </div>
                             <div class="ba-image">
-                                <img src="assets/img/resultados/mento-premaxila-l4-frontal-depois.webp" alt="Depois — Preenchimento Facial Frontal" loading="lazy" >
+                                <img src="assets/img/resultados/mento-premaxila-l4-frontal-depois.webp" alt="Depois: Preenchimento Facial Frontal" loading="lazy" >
                                 <span class="ba-label ba-depois">Depois</span>
                             </div>
                         </div>
@@ -388,11 +367,11 @@
                         <span class="ba-procedure">Preenchimento Labial</span>
                         <div class="ba-images">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/labio-antes-1.webp" alt="Antes — Preenchimento Labial" loading="lazy" >
+                                <img src="assets/img/resultados/labio-antes-1.webp" alt="Antes: Preenchimento Labial" loading="lazy" >
                                 <span class="ba-label ba-antes">Antes</span>
                             </div>
                             <div class="ba-image">
-                                <img src="assets/img/resultados/labio-depois-1.webp" alt="Depois — Preenchimento Labial" loading="lazy" >
+                                <img src="assets/img/resultados/labio-depois-1.webp" alt="Depois: Preenchimento Labial" loading="lazy" >
                                 <span class="ba-label ba-depois">Depois</span>
                             </div>
                         </div>
@@ -404,11 +383,11 @@
                         <span class="ba-procedure">Rinomodelação</span>
                         <div class="ba-images">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/rinomodelacao-antes-1.webp" alt="Antes — Rinomodelação" loading="lazy" >
+                                <img src="assets/img/resultados/rinomodelacao-antes-1.webp" alt="Antes: Rinomodelação" loading="lazy" >
                                 <span class="ba-label ba-antes">Antes</span>
                             </div>
                             <div class="ba-image">
-                                <img src="assets/img/resultados/rinomodelacao-depois-1.webp" alt="Depois — Rinomodelação" loading="lazy" >
+                                <img src="assets/img/resultados/rinomodelacao-depois-1.webp" alt="Depois: Rinomodelação" loading="lazy" >
                                 <span class="ba-label ba-depois">Depois</span>
                             </div>
                         </div>
@@ -420,11 +399,11 @@
                         <span class="ba-procedure">Botox</span>
                         <div class="ba-images">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/botox-testa-antes.webp" alt="Antes — Botox Testa" loading="lazy" >
+                                <img src="assets/img/resultados/botox-testa-antes.webp" alt="Antes: Botox Testa" loading="lazy" >
                                 <span class="ba-label ba-antes">Antes</span>
                             </div>
                             <div class="ba-image">
-                                <img src="assets/img/resultados/botox-testa-depois.webp" alt="Depois — Botox Testa" loading="lazy" >
+                                <img src="assets/img/resultados/botox-testa-depois.webp" alt="Depois: Botox Testa" loading="lazy" >
                                 <span class="ba-label ba-depois">Depois</span>
                             </div>
                         </div>
@@ -437,7 +416,7 @@
                         <div class="ba-images ba-images-single">
                             <div class="ba-image">
                                 <img src="assets/img/resultados/gluteo-antes-depois-1.webp"
-                                    alt="Harmonização Glútea — Antes e Depois" loading="lazy" >
+                                    alt="Harmonização Glútea: Antes e Depois" loading="lazy" >
                             </div>
                         </div>
                     </div>
@@ -446,11 +425,11 @@
                         <span class="ba-procedure">Harmonização Glútea</span>
                         <div class="ba-images">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/gluteo-semiperfil-antes.webp" alt="Antes — Harmonização Glútea Semiperfil" loading="lazy" >
+                                <img src="assets/img/resultados/gluteo-semiperfil-antes.webp" alt="Antes: Harmonização Glútea Semiperfil" loading="lazy" >
                                 <span class="ba-label ba-antes">Antes</span>
                             </div>
                             <div class="ba-image">
-                                <img src="assets/img/resultados/gluteo-semiperfil-depois.webp" alt="Depois — Harmonização Glútea Semiperfil" loading="lazy" >
+                                <img src="assets/img/resultados/gluteo-semiperfil-depois.webp" alt="Depois: Harmonização Glútea Semiperfil" loading="lazy" >
                                 <span class="ba-label ba-depois">Depois</span>
                             </div>
                         </div>
@@ -462,11 +441,11 @@
                         <span class="ba-procedure">Harmonização Glútea</span>
                         <div class="ba-images">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/gluteo-posterior-antes.webp" alt="Antes — Harmonização Glútea Posterior" loading="lazy" >
+                                <img src="assets/img/resultados/gluteo-posterior-antes.webp" alt="Antes: Harmonização Glútea Posterior" loading="lazy" >
                                 <span class="ba-label ba-antes">Antes</span>
                             </div>
                             <div class="ba-image">
-                                <img src="assets/img/resultados/gluteo-posterior-depois.webp" alt="Depois — Harmonização Glútea Posterior" loading="lazy" >
+                                <img src="assets/img/resultados/gluteo-posterior-depois.webp" alt="Depois: Harmonização Glútea Posterior" loading="lazy" >
                                 <span class="ba-label ba-depois">Depois</span>
                             </div>
                         </div>
@@ -478,11 +457,11 @@
                         <span class="ba-procedure">Harmonização Facial</span>
                         <div class="ba-images">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/caso-harmonizacao-masculina-2-antes.webp?v=3" alt="Antes — Harmonização Facial" loading="lazy">
+                                <img src="assets/img/resultados/caso-harmonizacao-masculina-2-antes.webp?v=5" alt="Antes: Harmonização Facial" loading="lazy">
                                 <span class="ba-label ba-antes">Antes</span>
                             </div>
                             <div class="ba-image">
-                                <img src="assets/img/resultados/caso-harmonizacao-masculina-2-depois.webp?v=3" alt="Depois — Harmonização Facial" loading="lazy">
+                                <img src="assets/img/resultados/caso-harmonizacao-masculina-2-depois.webp?v=5" alt="Depois: Harmonização Facial" loading="lazy">
                                 <span class="ba-label ba-depois">Depois</span>
                             </div>
                         </div>
@@ -491,11 +470,11 @@
                         <span class="ba-procedure">Harmonização Facial (Perfil)</span>
                         <div class="ba-images">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/caso-harmonizacao-masculina-2-b-antes.webp?v=3" alt="Antes — Harmonização Facial" loading="lazy">
+                                <img src="assets/img/resultados/caso-harmonizacao-masculina-2-b-antes.webp?v=5" alt="Antes: Harmonização Facial" loading="lazy">
                                 <span class="ba-label ba-antes">Antes</span>
                             </div>
                             <div class="ba-image">
-                                <img src="assets/img/resultados/caso-harmonizacao-masculina-2-b-depois.webp?v=3" alt="Depois — Harmonização Facial" loading="lazy">
+                                <img src="assets/img/resultados/caso-harmonizacao-masculina-2-b-depois.webp?v=5" alt="Depois: Harmonização Facial" loading="lazy">
                                 <span class="ba-label ba-depois">Depois</span>
                             </div>
                         </div>
@@ -505,11 +484,11 @@
                         <span class="ba-procedure">Rejuvenescimento Facial</span>
                         <div class="ba-images">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/caso-rejuvenescimento-facial-1-antes.webp?v=3" alt="Antes — Rejuvenescimento Facial" loading="lazy">
+                                <img src="assets/img/resultados/caso-rejuvenescimento-facial-1-antes.webp?v=3" alt="Antes: Rejuvenescimento Facial" loading="lazy">
                                 <span class="ba-label ba-antes">Antes</span>
                             </div>
                             <div class="ba-image">
-                                <img src="assets/img/resultados/caso-rejuvenescimento-facial-1-depois.webp?v=3" alt="Depois — Rejuvenescimento Facial" loading="lazy">
+                                <img src="assets/img/resultados/caso-rejuvenescimento-facial-1-depois.webp?v=3" alt="Depois: Rejuvenescimento Facial" loading="lazy">
                                 <span class="ba-label ba-depois">Depois</span>
                             </div>
                         </div>
@@ -519,11 +498,11 @@
                         <span class="ba-procedure">Contorno Mandibular</span>
                         <div class="ba-images">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/caso-contorno-mandibular-1-antes.webp" alt="Antes — Contorno Mandibular" loading="lazy">
+                                <img src="assets/img/resultados/caso-contorno-mandibular-1-antes.webp" alt="Antes: Contorno Mandibular" loading="lazy">
                                 <span class="ba-label ba-antes">Antes</span>
                             </div>
                             <div class="ba-image">
-                                <img src="assets/img/resultados/caso-contorno-mandibular-1-depois.webp" alt="Depois — Contorno Mandibular" loading="lazy">
+                                <img src="assets/img/resultados/caso-contorno-mandibular-1-depois.webp" alt="Depois: Contorno Mandibular" loading="lazy">
                                 <span class="ba-label ba-depois">Depois</span>
                             </div>
                         </div>
@@ -534,11 +513,11 @@
                         <span class="ba-procedure">Rinomodelação</span>
                         <div class="ba-images">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/upnose-antes.webp" alt="Antes — Rinomodelação" loading="lazy" >
+                                <img src="assets/img/resultados/upnose-antes.webp" alt="Antes: Rinomodelação" loading="lazy" >
                                 <span class="ba-label ba-antes">Antes</span>
                             </div>
                             <div class="ba-image">
-                                <img src="assets/img/resultados/upnose-depois.webp" alt="Depois — Rinomodelação" loading="lazy" >
+                                <img src="assets/img/resultados/upnose-depois.webp" alt="Depois: Rinomodelação" loading="lazy" >
                                 <span class="ba-label ba-depois">Depois</span>
                             </div>
                         </div>
@@ -550,7 +529,7 @@
                         <span class="ba-procedure">Preenchimento Labial</span>
                         <div class="ba-images ba-images-single">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/labio-antes-depois-3.webp" alt="Preenchimento Labial — Antes e Depois" loading="lazy" >
+                                <img src="assets/img/resultados/labio-antes-depois-3.webp" alt="Preenchimento Labial: Antes e Depois" loading="lazy" >
                             </div>
                         </div>
                     </div>
@@ -561,7 +540,7 @@
                         <span class="ba-procedure">Preenchimento Labial</span>
                         <div class="ba-images ba-images-single">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/labio-antes-depois-5.webp" alt="Preenchimento Labial — Antes e Depois" loading="lazy" >
+                                <img src="assets/img/resultados/labio-antes-depois-5.webp" alt="Preenchimento Labial: Antes e Depois" loading="lazy" >
                             </div>
                         </div>
                     </div>
@@ -572,7 +551,7 @@
                         <span class="ba-procedure">Harmonização Facial Completa</span>
                         <div class="ba-images ba-images-single">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/facial-completo.webp" alt="Harmonização Facial Completa — Antes e Depois" loading="lazy" >
+                                <img src="assets/img/resultados/facial-completo.webp" alt="Harmonização Facial Completa: Antes e Depois" loading="lazy" >
                             </div>
                         </div>
                     </div>
@@ -583,11 +562,11 @@
                         <span class="ba-procedure">Preenchimento de Mento</span>
                         <div class="ba-images">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/mento-antes-1.webp" alt="Antes — Preenchimento de Mento" loading="lazy" >
+                                <img src="assets/img/resultados/mento-antes-1.webp" alt="Antes: Preenchimento de Mento" loading="lazy" >
                                 <span class="ba-label ba-antes">Antes</span>
                             </div>
                             <div class="ba-image">
-                                <img src="assets/img/resultados/mento-depois-1.webp" alt="Depois — Preenchimento de Mento" loading="lazy" >
+                                <img src="assets/img/resultados/mento-depois-1.webp" alt="Depois: Preenchimento de Mento" loading="lazy" >
                                 <span class="ba-label ba-depois">Depois</span>
                             </div>
                         </div>
@@ -599,11 +578,11 @@
                         <span class="ba-procedure">Preenchimento Facial</span>
                         <div class="ba-images">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/mento-premaxila-l4-frontal-antes.webp" alt="Antes — Preenchimento Facial Frontal" loading="lazy" >
+                                <img src="assets/img/resultados/mento-premaxila-l4-frontal-antes.webp" alt="Antes: Preenchimento Facial Frontal" loading="lazy" >
                                 <span class="ba-label ba-antes">Antes</span>
                             </div>
                             <div class="ba-image">
-                                <img src="assets/img/resultados/mento-premaxila-l4-frontal-depois.webp" alt="Depois — Preenchimento Facial Frontal" loading="lazy" >
+                                <img src="assets/img/resultados/mento-premaxila-l4-frontal-depois.webp" alt="Depois: Preenchimento Facial Frontal" loading="lazy" >
                                 <span class="ba-label ba-depois">Depois</span>
                             </div>
                         </div>
@@ -615,11 +594,11 @@
                         <span class="ba-procedure">Preenchimento Labial</span>
                         <div class="ba-images">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/labio-antes-1.webp" alt="Antes — Preenchimento Labial" loading="lazy" >
+                                <img src="assets/img/resultados/labio-antes-1.webp" alt="Antes: Preenchimento Labial" loading="lazy" >
                                 <span class="ba-label ba-antes">Antes</span>
                             </div>
                             <div class="ba-image">
-                                <img src="assets/img/resultados/labio-depois-1.webp" alt="Depois — Preenchimento Labial" loading="lazy" >
+                                <img src="assets/img/resultados/labio-depois-1.webp" alt="Depois: Preenchimento Labial" loading="lazy" >
                                 <span class="ba-label ba-depois">Depois</span>
                             </div>
                         </div>
@@ -631,11 +610,11 @@
                         <span class="ba-procedure">Rinomodelação</span>
                         <div class="ba-images">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/rinomodelacao-antes-1.webp" alt="Antes — Rinomodelação" loading="lazy" >
+                                <img src="assets/img/resultados/rinomodelacao-antes-1.webp" alt="Antes: Rinomodelação" loading="lazy" >
                                 <span class="ba-label ba-antes">Antes</span>
                             </div>
                             <div class="ba-image">
-                                <img src="assets/img/resultados/rinomodelacao-depois-1.webp" alt="Depois — Rinomodelação" loading="lazy" >
+                                <img src="assets/img/resultados/rinomodelacao-depois-1.webp" alt="Depois: Rinomodelação" loading="lazy" >
                                 <span class="ba-label ba-depois">Depois</span>
                             </div>
                         </div>
@@ -647,11 +626,11 @@
                         <span class="ba-procedure">Botox</span>
                         <div class="ba-images">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/botox-testa-antes.webp" alt="Antes — Botox Testa" loading="lazy" >
+                                <img src="assets/img/resultados/botox-testa-antes.webp" alt="Antes: Botox Testa" loading="lazy" >
                                 <span class="ba-label ba-antes">Antes</span>
                             </div>
                             <div class="ba-image">
-                                <img src="assets/img/resultados/botox-testa-depois.webp" alt="Depois — Botox Testa" loading="lazy" >
+                                <img src="assets/img/resultados/botox-testa-depois.webp" alt="Depois: Botox Testa" loading="lazy" >
                                 <span class="ba-label ba-depois">Depois</span>
                             </div>
                         </div>
@@ -664,7 +643,7 @@
                         <div class="ba-images ba-images-single">
                             <div class="ba-image">
                                 <img src="assets/img/resultados/gluteo-antes-depois-1.webp"
-                                    alt="Harmonização Glútea — Antes e Depois" loading="lazy" >
+                                    alt="Harmonização Glútea: Antes e Depois" loading="lazy" >
                             </div>
                         </div>
                     </div>
@@ -673,11 +652,11 @@
                         <span class="ba-procedure">Harmonização Glútea</span>
                         <div class="ba-images">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/gluteo-semiperfil-antes.webp" alt="Antes — Harmonização Glútea Semiperfil" loading="lazy" >
+                                <img src="assets/img/resultados/gluteo-semiperfil-antes.webp" alt="Antes: Harmonização Glútea Semiperfil" loading="lazy" >
                                 <span class="ba-label ba-antes">Antes</span>
                             </div>
                             <div class="ba-image">
-                                <img src="assets/img/resultados/gluteo-semiperfil-depois.webp" alt="Depois — Harmonização Glútea Semiperfil" loading="lazy" >
+                                <img src="assets/img/resultados/gluteo-semiperfil-depois.webp" alt="Depois: Harmonização Glútea Semiperfil" loading="lazy" >
                                 <span class="ba-label ba-depois">Depois</span>
                             </div>
                         </div>
@@ -689,11 +668,11 @@
                         <span class="ba-procedure">Harmonização Glútea</span>
                         <div class="ba-images">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/gluteo-posterior-antes.webp" alt="Antes — Harmonização Glútea Posterior" loading="lazy" >
+                                <img src="assets/img/resultados/gluteo-posterior-antes.webp" alt="Antes: Harmonização Glútea Posterior" loading="lazy" >
                                 <span class="ba-label ba-antes">Antes</span>
                             </div>
                             <div class="ba-image">
-                                <img src="assets/img/resultados/gluteo-posterior-depois.webp" alt="Depois — Harmonização Glútea Posterior" loading="lazy" >
+                                <img src="assets/img/resultados/gluteo-posterior-depois.webp" alt="Depois: Harmonização Glútea Posterior" loading="lazy" >
                                 <span class="ba-label ba-depois">Depois</span>
                             </div>
                         </div>
@@ -705,11 +684,11 @@
                         <span class="ba-procedure">Harmonização Facial</span>
                         <div class="ba-images">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/caso-harmonizacao-masculina-2-antes.webp?v=3" alt="Antes — Harmonização Facial" loading="lazy">
+                                <img src="assets/img/resultados/caso-harmonizacao-masculina-2-antes.webp?v=5" alt="Antes: Harmonização Facial" loading="lazy">
                                 <span class="ba-label ba-antes">Antes</span>
                             </div>
                             <div class="ba-image">
-                                <img src="assets/img/resultados/caso-harmonizacao-masculina-2-depois.webp?v=3" alt="Depois — Harmonização Facial" loading="lazy">
+                                <img src="assets/img/resultados/caso-harmonizacao-masculina-2-depois.webp?v=5" alt="Depois: Harmonização Facial" loading="lazy">
                                 <span class="ba-label ba-depois">Depois</span>
                             </div>
                         </div>
@@ -718,11 +697,11 @@
                         <span class="ba-procedure">Harmonização Facial (Perfil)</span>
                         <div class="ba-images">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/caso-harmonizacao-masculina-2-b-antes.webp?v=3" alt="Antes — Harmonização Facial" loading="lazy">
+                                <img src="assets/img/resultados/caso-harmonizacao-masculina-2-b-antes.webp?v=5" alt="Antes: Harmonização Facial" loading="lazy">
                                 <span class="ba-label ba-antes">Antes</span>
                             </div>
                             <div class="ba-image">
-                                <img src="assets/img/resultados/caso-harmonizacao-masculina-2-b-depois.webp?v=3" alt="Depois — Harmonização Facial" loading="lazy">
+                                <img src="assets/img/resultados/caso-harmonizacao-masculina-2-b-depois.webp?v=5" alt="Depois: Harmonização Facial" loading="lazy">
                                 <span class="ba-label ba-depois">Depois</span>
                             </div>
                         </div>
@@ -732,11 +711,11 @@
                         <span class="ba-procedure">Rejuvenescimento Facial</span>
                         <div class="ba-images">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/caso-rejuvenescimento-facial-1-antes.webp?v=3" alt="Antes — Rejuvenescimento Facial" loading="lazy">
+                                <img src="assets/img/resultados/caso-rejuvenescimento-facial-1-antes.webp?v=3" alt="Antes: Rejuvenescimento Facial" loading="lazy">
                                 <span class="ba-label ba-antes">Antes</span>
                             </div>
                             <div class="ba-image">
-                                <img src="assets/img/resultados/caso-rejuvenescimento-facial-1-depois.webp?v=3" alt="Depois — Rejuvenescimento Facial" loading="lazy">
+                                <img src="assets/img/resultados/caso-rejuvenescimento-facial-1-depois.webp?v=3" alt="Depois: Rejuvenescimento Facial" loading="lazy">
                                 <span class="ba-label ba-depois">Depois</span>
                             </div>
                         </div>
@@ -746,11 +725,11 @@
                         <span class="ba-procedure">Contorno Mandibular</span>
                         <div class="ba-images">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/caso-contorno-mandibular-1-antes.webp" alt="Antes — Contorno Mandibular" loading="lazy">
+                                <img src="assets/img/resultados/caso-contorno-mandibular-1-antes.webp" alt="Antes: Contorno Mandibular" loading="lazy">
                                 <span class="ba-label ba-antes">Antes</span>
                             </div>
                             <div class="ba-image">
-                                <img src="assets/img/resultados/caso-contorno-mandibular-1-depois.webp" alt="Depois — Contorno Mandibular" loading="lazy">
+                                <img src="assets/img/resultados/caso-contorno-mandibular-1-depois.webp" alt="Depois: Contorno Mandibular" loading="lazy">
                                 <span class="ba-label ba-depois">Depois</span>
                             </div>
                         </div>
@@ -767,11 +746,11 @@
                         <span class="ba-procedure">Preenchimento Labial</span>
                         <div class="ba-images">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/labio-antes-2.webp" alt="Antes — Preenchimento Labial" loading="lazy" >
+                                <img src="assets/img/resultados/labio-antes-2.webp" alt="Antes: Preenchimento Labial" loading="lazy" >
                                 <span class="ba-label ba-antes">Antes</span>
                             </div>
                             <div class="ba-image">
-                                <img src="assets/img/resultados/labio-depois-2.webp" alt="Depois — Preenchimento Labial" loading="lazy" >
+                                <img src="assets/img/resultados/labio-depois-2.webp" alt="Depois: Preenchimento Labial" loading="lazy" >
                                 <span class="ba-label ba-depois">Depois</span>
                             </div>
                         </div>
@@ -784,7 +763,7 @@
                         <span class="ba-procedure">Preenchimento Labial</span>
                         <div class="ba-images ba-images-single">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/labio-resultado-4.webp" alt="Preenchimento Labial — Resultado" loading="lazy" >
+                                <img src="assets/img/resultados/labio-resultado-4.webp" alt="Preenchimento Labial: Resultado" loading="lazy" >
                             </div>
                         </div>
                     </div>
@@ -795,7 +774,7 @@
                         <span class="ba-procedure">Preenchimento Labial</span>
                         <div class="ba-images ba-images-single">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/labio-resultado-5.webp" alt="Preenchimento Labial — Resultado" loading="lazy" >
+                                <img src="assets/img/resultados/labio-resultado-5.webp" alt="Preenchimento Labial: Resultado" loading="lazy" >
                             </div>
                         </div>
                     </div>
@@ -806,7 +785,7 @@
                         <span class="ba-procedure">Harmonização Facial</span>
                         <div class="ba-images ba-images-single">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/perfil-masculino-antes-depois.webp" alt="Harmonização Facial Masculina — Antes e Depois" loading="lazy" >
+                                <img src="assets/img/resultados/perfil-masculino-antes-depois.webp" alt="Harmonização Facial Masculina: Antes e Depois" loading="lazy" >
                             </div>
                         </div>
                     </div>
@@ -817,11 +796,11 @@
                         <span class="ba-procedure">Preenchimento Facial</span>
                         <div class="ba-images">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/mento-premaxila-l4-perfil-antes.webp" alt="Antes — Preenchimento Facial Perfil" loading="lazy" >
+                                <img src="assets/img/resultados/mento-premaxila-l4-perfil-antes.webp" alt="Antes: Preenchimento Facial Perfil" loading="lazy" >
                                 <span class="ba-label ba-antes">Antes</span>
                             </div>
                             <div class="ba-image">
-                                <img src="assets/img/resultados/mento-premaxila-l4-perfil-depois.webp" alt="Depois — Preenchimento Facial Perfil" loading="lazy" >
+                                <img src="assets/img/resultados/mento-premaxila-l4-perfil-depois.webp" alt="Depois: Preenchimento Facial Perfil" loading="lazy" >
                                 <span class="ba-label ba-depois">Depois</span>
                             </div>
                         </div>
@@ -833,11 +812,11 @@
                         <span class="ba-procedure">Preenchimento Facial</span>
                         <div class="ba-images">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/mento-premaxila-l4-semiperfil-antes.webp" alt="Antes — Preenchimento Facial Semiperfil" loading="lazy" >
+                                <img src="assets/img/resultados/mento-premaxila-l4-semiperfil-antes.webp" alt="Antes: Preenchimento Facial Semiperfil" loading="lazy" >
                                 <span class="ba-label ba-antes">Antes</span>
                             </div>
                             <div class="ba-image">
-                                <img src="assets/img/resultados/mento-premaxila-l4-semiperfil-depois.webp" alt="Depois — Preenchimento Facial Semiperfil" loading="lazy" >
+                                <img src="assets/img/resultados/mento-premaxila-l4-semiperfil-depois.webp" alt="Depois: Preenchimento Facial Semiperfil" loading="lazy" >
                                 <span class="ba-label ba-depois">Depois</span>
                             </div>
                         </div>
@@ -849,11 +828,11 @@
                         <span class="ba-procedure">Preenchimento de Mandíbula</span>
                         <div class="ba-images">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/mandibula-antes-1.webp" alt="Antes — Preenchimento de Mandíbula" loading="lazy" >
+                                <img src="assets/img/resultados/mandibula-antes-1.webp" alt="Antes: Preenchimento de Mandíbula" loading="lazy" >
                                 <span class="ba-label ba-antes">Antes</span>
                             </div>
                             <div class="ba-image">
-                                <img src="assets/img/resultados/mandibula-depois-1.webp" alt="Depois — Preenchimento de Mandíbula" loading="lazy" >
+                                <img src="assets/img/resultados/mandibula-depois-1.webp" alt="Depois: Preenchimento de Mandíbula" loading="lazy" >
                                 <span class="ba-label ba-depois">Depois</span>
                             </div>
                         </div>
@@ -865,11 +844,11 @@
                         <span class="ba-procedure">Botox</span>
                         <div class="ba-images">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/botox-antes-1.webp" alt="Antes — Botox" loading="lazy" >
+                                <img src="assets/img/resultados/botox-antes-1.webp" alt="Antes: Botox" loading="lazy" >
                                 <span class="ba-label ba-antes">Antes</span>
                             </div>
                             <div class="ba-image">
-                                <img src="assets/img/resultados/botox-depois-1.webp" alt="Depois — Botox" loading="lazy" >
+                                <img src="assets/img/resultados/botox-depois-1.webp" alt="Depois: Botox" loading="lazy" >
                                 <span class="ba-label ba-depois">Depois</span>
                             </div>
                         </div>
@@ -881,24 +860,24 @@
                         <span class="ba-procedure">Botox</span>
                         <div class="ba-images">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/botox-glabela-antes.webp" alt="Antes — Botox Glabela" loading="lazy" >
+                                <img src="assets/img/resultados/botox-glabela-antes.webp" alt="Antes: Botox Glabela" loading="lazy" >
                                 <span class="ba-label ba-antes">Antes</span>
                             </div>
                             <div class="ba-image">
-                                <img src="assets/img/resultados/botox-glabela-depois.webp" alt="Depois — Botox Glabela" loading="lazy" >
+                                <img src="assets/img/resultados/botox-glabela-depois.webp" alt="Depois: Botox Glabela" loading="lazy" >
                                 <span class="ba-label ba-depois">Depois</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Harmonização Glútea — cada foto já é um antes e depois -->
+                    <!-- Harmonização Glútea: cada foto já é um antes e depois -->
 
 <div class="ba-card ba-card-single fade-in">
                         <span class="ba-procedure">Harmonização Glútea</span>
                         <div class="ba-images ba-images-single">
                             <div class="ba-image">
                                 <img src="assets/img/resultados/gluteo-antes-depois-2.webp"
-                                    alt="Harmonização Glútea — Antes e Depois" loading="lazy" >
+                                    alt="Harmonização Glútea: Antes e Depois" loading="lazy" >
                             </div>
                         </div>
                     </div>
@@ -909,11 +888,11 @@
                         <span class="ba-procedure">Harmonização Glútea</span>
                         <div class="ba-images">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/gluteo-perfil-antes.webp" alt="Antes — Harmonização Glútea Perfil" loading="lazy" >
+                                <img src="assets/img/resultados/gluteo-perfil-antes.webp" alt="Antes: Harmonização Glútea Perfil" loading="lazy" >
                                 <span class="ba-label ba-antes">Antes</span>
                             </div>
                             <div class="ba-image">
-                                <img src="assets/img/resultados/gluteo-perfil-depois.webp" alt="Depois — Harmonização Glútea Perfil" loading="lazy" >
+                                <img src="assets/img/resultados/gluteo-perfil-depois.webp" alt="Depois: Harmonização Glútea Perfil" loading="lazy" >
                                 <span class="ba-label ba-depois">Depois</span>
                             </div>
                         </div>
@@ -926,12 +905,12 @@
                         <div class="ba-images">
                             <div class="ba-image">
                                 <img src="assets/img/resultados/mento-queixo-antes-1.webp"
-                                    alt="Antes — Preenchimento de Mento e Queixo" loading="lazy" >
+                                    alt="Antes: Preenchimento de Mento e Queixo" loading="lazy" >
                                 <span class="ba-label ba-antes">Antes</span>
                             </div>
                             <div class="ba-image">
                                 <img src="assets/img/resultados/mento-queixo-depois-1.webp"
-                                    alt="Depois — Preenchimento de Mento e Queixo" loading="lazy" >
+                                    alt="Depois: Preenchimento de Mento e Queixo" loading="lazy" >
                                 <span class="ba-label ba-depois">Depois</span>
                             </div>
                         </div>
@@ -943,11 +922,11 @@
                         <span class="ba-procedure">Rinomodelação</span>
                         <div class="ba-images">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/caso-rinomodelacao-perfil-1-antes.webp" alt="Antes — Rinomodelação" loading="lazy">
+                                <img src="assets/img/resultados/caso-rinomodelacao-perfil-1-antes.webp" alt="Antes: Rinomodelação" loading="lazy">
                                 <span class="ba-label ba-antes">Antes</span>
                             </div>
                             <div class="ba-image">
-                                <img src="assets/img/resultados/caso-rinomodelacao-perfil-1-depois.webp" alt="Depois — Rinomodelação" loading="lazy">
+                                <img src="assets/img/resultados/caso-rinomodelacao-perfil-1-depois.webp" alt="Depois: Rinomodelação" loading="lazy">
                                 <span class="ba-label ba-depois">Depois</span>
                             </div>
                         </div>
@@ -958,11 +937,11 @@
                         <span class="ba-procedure">Preenchimento Labial</span>
                         <div class="ba-images">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/labio-antes-2.webp" alt="Antes — Preenchimento Labial" loading="lazy" >
+                                <img src="assets/img/resultados/labio-antes-2.webp" alt="Antes: Preenchimento Labial" loading="lazy" >
                                 <span class="ba-label ba-antes">Antes</span>
                             </div>
                             <div class="ba-image">
-                                <img src="assets/img/resultados/labio-depois-2.webp" alt="Depois — Preenchimento Labial" loading="lazy" >
+                                <img src="assets/img/resultados/labio-depois-2.webp" alt="Depois: Preenchimento Labial" loading="lazy" >
                                 <span class="ba-label ba-depois">Depois</span>
                             </div>
                         </div>
@@ -975,7 +954,7 @@
                         <span class="ba-procedure">Preenchimento Labial</span>
                         <div class="ba-images ba-images-single">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/labio-resultado-4.webp" alt="Preenchimento Labial — Resultado" loading="lazy" >
+                                <img src="assets/img/resultados/labio-resultado-4.webp" alt="Preenchimento Labial: Resultado" loading="lazy" >
                             </div>
                         </div>
                     </div>
@@ -986,7 +965,7 @@
                         <span class="ba-procedure">Preenchimento Labial</span>
                         <div class="ba-images ba-images-single">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/labio-resultado-5.webp" alt="Preenchimento Labial — Resultado" loading="lazy" >
+                                <img src="assets/img/resultados/labio-resultado-5.webp" alt="Preenchimento Labial: Resultado" loading="lazy" >
                             </div>
                         </div>
                     </div>
@@ -997,7 +976,7 @@
                         <span class="ba-procedure">Harmonização Facial</span>
                         <div class="ba-images ba-images-single">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/perfil-masculino-antes-depois.webp" alt="Harmonização Facial Masculina — Antes e Depois" loading="lazy" >
+                                <img src="assets/img/resultados/perfil-masculino-antes-depois.webp" alt="Harmonização Facial Masculina: Antes e Depois" loading="lazy" >
                             </div>
                         </div>
                     </div>
@@ -1008,11 +987,11 @@
                         <span class="ba-procedure">Preenchimento Facial</span>
                         <div class="ba-images">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/mento-premaxila-l4-perfil-antes.webp" alt="Antes — Preenchimento Facial Perfil" loading="lazy" >
+                                <img src="assets/img/resultados/mento-premaxila-l4-perfil-antes.webp" alt="Antes: Preenchimento Facial Perfil" loading="lazy" >
                                 <span class="ba-label ba-antes">Antes</span>
                             </div>
                             <div class="ba-image">
-                                <img src="assets/img/resultados/mento-premaxila-l4-perfil-depois.webp" alt="Depois — Preenchimento Facial Perfil" loading="lazy" >
+                                <img src="assets/img/resultados/mento-premaxila-l4-perfil-depois.webp" alt="Depois: Preenchimento Facial Perfil" loading="lazy" >
                                 <span class="ba-label ba-depois">Depois</span>
                             </div>
                         </div>
@@ -1024,11 +1003,11 @@
                         <span class="ba-procedure">Preenchimento Facial</span>
                         <div class="ba-images">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/mento-premaxila-l4-semiperfil-antes.webp" alt="Antes — Preenchimento Facial Semiperfil" loading="lazy" >
+                                <img src="assets/img/resultados/mento-premaxila-l4-semiperfil-antes.webp" alt="Antes: Preenchimento Facial Semiperfil" loading="lazy" >
                                 <span class="ba-label ba-antes">Antes</span>
                             </div>
                             <div class="ba-image">
-                                <img src="assets/img/resultados/mento-premaxila-l4-semiperfil-depois.webp" alt="Depois — Preenchimento Facial Semiperfil" loading="lazy" >
+                                <img src="assets/img/resultados/mento-premaxila-l4-semiperfil-depois.webp" alt="Depois: Preenchimento Facial Semiperfil" loading="lazy" >
                                 <span class="ba-label ba-depois">Depois</span>
                             </div>
                         </div>
@@ -1040,11 +1019,11 @@
                         <span class="ba-procedure">Preenchimento de Mandíbula</span>
                         <div class="ba-images">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/mandibula-antes-1.webp" alt="Antes — Preenchimento de Mandíbula" loading="lazy" >
+                                <img src="assets/img/resultados/mandibula-antes-1.webp" alt="Antes: Preenchimento de Mandíbula" loading="lazy" >
                                 <span class="ba-label ba-antes">Antes</span>
                             </div>
                             <div class="ba-image">
-                                <img src="assets/img/resultados/mandibula-depois-1.webp" alt="Depois — Preenchimento de Mandíbula" loading="lazy" >
+                                <img src="assets/img/resultados/mandibula-depois-1.webp" alt="Depois: Preenchimento de Mandíbula" loading="lazy" >
                                 <span class="ba-label ba-depois">Depois</span>
                             </div>
                         </div>
@@ -1056,11 +1035,11 @@
                         <span class="ba-procedure">Botox</span>
                         <div class="ba-images">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/botox-antes-1.webp" alt="Antes — Botox" loading="lazy" >
+                                <img src="assets/img/resultados/botox-antes-1.webp" alt="Antes: Botox" loading="lazy" >
                                 <span class="ba-label ba-antes">Antes</span>
                             </div>
                             <div class="ba-image">
-                                <img src="assets/img/resultados/botox-depois-1.webp" alt="Depois — Botox" loading="lazy" >
+                                <img src="assets/img/resultados/botox-depois-1.webp" alt="Depois: Botox" loading="lazy" >
                                 <span class="ba-label ba-depois">Depois</span>
                             </div>
                         </div>
@@ -1072,24 +1051,24 @@
                         <span class="ba-procedure">Botox</span>
                         <div class="ba-images">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/botox-glabela-antes.webp" alt="Antes — Botox Glabela" loading="lazy" >
+                                <img src="assets/img/resultados/botox-glabela-antes.webp" alt="Antes: Botox Glabela" loading="lazy" >
                                 <span class="ba-label ba-antes">Antes</span>
                             </div>
                             <div class="ba-image">
-                                <img src="assets/img/resultados/botox-glabela-depois.webp" alt="Depois — Botox Glabela" loading="lazy" >
+                                <img src="assets/img/resultados/botox-glabela-depois.webp" alt="Depois: Botox Glabela" loading="lazy" >
                                 <span class="ba-label ba-depois">Depois</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Harmonização Glútea — cada foto já é um antes e depois -->
+                    <!-- Harmonização Glútea: cada foto já é um antes e depois -->
 
 <div class="ba-card ba-card-single fade-in">
                         <span class="ba-procedure">Harmonização Glútea</span>
                         <div class="ba-images ba-images-single">
                             <div class="ba-image">
                                 <img src="assets/img/resultados/gluteo-antes-depois-2.webp"
-                                    alt="Harmonização Glútea — Antes e Depois" loading="lazy" >
+                                    alt="Harmonização Glútea: Antes e Depois" loading="lazy" >
                             </div>
                         </div>
                     </div>
@@ -1100,11 +1079,11 @@
                         <span class="ba-procedure">Harmonização Glútea</span>
                         <div class="ba-images">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/gluteo-perfil-antes.webp" alt="Antes — Harmonização Glútea Perfil" loading="lazy" >
+                                <img src="assets/img/resultados/gluteo-perfil-antes.webp" alt="Antes: Harmonização Glútea Perfil" loading="lazy" >
                                 <span class="ba-label ba-antes">Antes</span>
                             </div>
                             <div class="ba-image">
-                                <img src="assets/img/resultados/gluteo-perfil-depois.webp" alt="Depois — Harmonização Glútea Perfil" loading="lazy" >
+                                <img src="assets/img/resultados/gluteo-perfil-depois.webp" alt="Depois: Harmonização Glútea Perfil" loading="lazy" >
                                 <span class="ba-label ba-depois">Depois</span>
                             </div>
                         </div>
@@ -1117,12 +1096,12 @@
                         <div class="ba-images">
                             <div class="ba-image">
                                 <img src="assets/img/resultados/mento-queixo-antes-1.webp"
-                                    alt="Antes — Preenchimento de Mento e Queixo" loading="lazy" >
+                                    alt="Antes: Preenchimento de Mento e Queixo" loading="lazy" >
                                 <span class="ba-label ba-antes">Antes</span>
                             </div>
                             <div class="ba-image">
                                 <img src="assets/img/resultados/mento-queixo-depois-1.webp"
-                                    alt="Depois — Preenchimento de Mento e Queixo" loading="lazy" >
+                                    alt="Depois: Preenchimento de Mento e Queixo" loading="lazy" >
                                 <span class="ba-label ba-depois">Depois</span>
                             </div>
                         </div>
@@ -1134,11 +1113,11 @@
                         <span class="ba-procedure">Rinomodelação</span>
                         <div class="ba-images">
                             <div class="ba-image">
-                                <img src="assets/img/resultados/caso-rinomodelacao-perfil-1-antes.webp" alt="Antes — Rinomodelação" loading="lazy">
+                                <img src="assets/img/resultados/caso-rinomodelacao-perfil-1-antes.webp" alt="Antes: Rinomodelação" loading="lazy">
                                 <span class="ba-label ba-antes">Antes</span>
                             </div>
                             <div class="ba-image">
-                                <img src="assets/img/resultados/caso-rinomodelacao-perfil-1-depois.webp" alt="Depois — Rinomodelação" loading="lazy">
+                                <img src="assets/img/resultados/caso-rinomodelacao-perfil-1-depois.webp" alt="Depois: Rinomodelação" loading="lazy">
                                 <span class="ba-label ba-depois">Depois</span>
                             </div>
                         </div>
@@ -1149,14 +1128,88 @@
         </div>
     </section>
 
+    <!-- ==================== DIFERENCIAIS ==================== -->
+    <section class="section section-alt" id="diferenciais">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Por que Escolher o Dr. Henrique</h2>
+                <p>Cuidado humanizado, atendimento acolhedor e foco total na sua segurança e satisfação.</p>
+            </div>
+
+            <div class="diferenciais-layout">
+                <!-- Cards Column -->
+                <div class="diferenciais-cards">
+                    <!-- Item 1 -->
+                    <div class="diff-card fade-in">
+                        <span class="diff-card-num">01</span>
+                        <div class="diff-card-content">
+                            <h3>Fios de Sustentação Modernos</h3>
+                            <p>Técnicas avançadas aprendidas diretamente na Coreia do Sul.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="diff-card fade-in">
+                        <span class="diff-card-num">02</span>
+                        <div class="diff-card-content">
+                            <h3>Plano Personalizado</h3>
+                            <p>Cada cuidado é planejado respeitando o seu rosto e suas expectativas.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="diff-card fade-in">
+                        <span class="diff-card-num">03</span>
+                        <div class="diff-card-content">
+                            <h3>Naturalidade em Primeiro Lugar</h3>
+                            <p>Valorização sutil e elegante dos seus traços, sem exageros.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="diff-card fade-in">
+                        <span class="diff-card-num">04</span>
+                        <div class="diff-card-content">
+                            <h3>Professor & Especialista</h3>
+                            <p>Docente de pós-graduação, treinando outros profissionais da área.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image Container (Swiper Cards) -->
+                <div class="diferenciais-image fade-in-right">
+                    <div class="cert-swiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="assets/img/certificado.webp"
+                                    alt="Harmonização Facial e Certificação Dr Henrique Leal" loading="lazy">
+                                <span class="diferenciais-image-caption">Certificação Internacional: K-Club Unique 2025 na Coreia do Sul</span>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/certificado-2.webp"
+                                    alt="Participação em Evento Internacional" loading="lazy">
+                                <span class="diferenciais-image-caption">Participação Internacional em Congresso de Harmonização Facial</span>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/certificado-3.webp"
+                                    alt="Prêmio Full Face" loading="lazy">
+                                <span class="diferenciais-image-caption">Reconhecimento Internacional e Aprimoramento Constante</span>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- ==================== RESULTADOS EM VÍDEO ==================== -->
     <section class="section bg-light" id="videos">
         <div class="container">
             <div class="section-header fade-in">
-                <span class="label">Resultados em Movimento</span>
-                <h2>Acompanhe de Perto</h2>
-                <p>Veja em detalhes a naturalidade e a qualidade dos nossos protocolos em formato de vídeo.</p>
-                <div class="line-accent"></div>
+                <h2>Resultados em Vídeo</h2>
+                <p>Veja em detalhes a naturalidade e a qualidade dos nossos protocolos em movimento.</p>
             </div>
             
             <div class="carousel-wrapper">
@@ -1164,7 +1217,7 @@
                     <!-- Video 1 -->
                     <div class="premium-video-card">
                         <div class="video-wrapper">
-                            <video controls playsinline preload="metadata" poster="assets/img/resultados/labio-video-1-poster.webp">
+                            <video controls playsinline preload="none" poster="assets/img/resultados/labio-video-1-poster.webp">
                                 <source src="assets/videos/resultados/labio-video-1.mp4" type="video/mp4">
                                 Seu navegador não suporta vídeos HTML5.
                             </video>
@@ -1178,7 +1231,7 @@
                     <!-- Video 2 -->
                     <div class="premium-video-card">
                         <div class="video-wrapper">
-                            <video controls playsinline preload="metadata" poster="assets/img/resultados/labio-video-2-poster.webp">
+                            <video controls playsinline preload="none" poster="assets/img/resultados/labio-video-2-poster.webp">
                                 <source src="assets/videos/resultados/labio-video-2.mp4" type="video/mp4">
                                 Seu navegador não suporta vídeos HTML5.
                             </video>
@@ -1192,7 +1245,7 @@
                     <!-- Video 3 -->
                     <div class="premium-video-card">
                         <div class="video-wrapper">
-                            <video controls playsinline preload="metadata" poster="assets/img/resultados/labio-video-3-poster.webp">
+                            <video controls playsinline preload="none" poster="assets/img/resultados/labio-video-3-poster.webp">
                                 <source src="assets/videos/resultados/labio-video-3.mp4" type="video/mp4">
                                 Seu navegador não suporta vídeos HTML5.
                             </video>
@@ -1206,7 +1259,7 @@
                     <!-- Video NEW: Caso Clínico Harmonização -->
                     <div class="premium-video-card">
                         <div class="video-wrapper">
-                            <video controls playsinline preload="metadata" poster="assets/img/resultados/caso-harmonizacao-facial-masculina-poster.webp">
+                            <video controls playsinline preload="none" poster="assets/img/resultados/caso-harmonizacao-facial-masculina-poster.webp">
                                 <source src="assets/videos/resultados/caso-harmonizacao-facial-masculina.mp4" type="video/mp4">
                                 Seu navegador não suporta vídeos HTML5.
                             </video>
@@ -1228,70 +1281,66 @@
     <section class="section" id="procedimentos">
         <div class="container">
             <div class="section-header fade-in">
-                <span class="label">Nossos Tratamentos</span>
-                <h2>Tecnologia e Arte em Favor da Sua Beleza</h2>
-                <p>Do Botox® aos Fios de sustentação, oferecemos um portfólio completo para resultados naturais e elegantes.</p>
-                <div class="line-accent"></div>
+                <h2>Procedimentos</h2>
+                <p>Tratamentos modernos e seguros para cuidar da beleza e da saúde do seu rosto com naturalidade.</p>
             </div>
 
             <div class="expand-cards fade-in">
-                <!-- Card 1: Harmonização — expanded by default -->
+                <!-- Card 1: Harmonização: expanded by default -->
                 <div class="expand-card active" data-expand-card>
-                    <img src="assets/img/harmonizacao-facial-nova.webp" alt="Harmonização Facial" class="expand-card-bg" loading="lazy" >
+                    <img src="assets/img/harmonizacao-facial-nova.webp" alt="Harmonização Facial" class="expand-card-bg" loading="lazy">
                     <div class="expand-card-overlay"></div>
                     <div class="expand-card-content">
                         <h3 class="expand-card-title">Harmonização Facial</h3>
-                        <p class="expand-card-desc">Protocolos personalizados para realçar sua beleza natural com preenchimentos, contorno e volumização estratégica.</p>
-                        <a href="procedimentos.html" class="expand-card-link">Saiba mais ›</a>
+                        <p class="expand-card-desc">Equilíbrio e contorno suave para lábios, queixo e mandíbula com harmonia.</p>
+                        <a href="harmonizacao-facial-curitiba.html" class="expand-card-link">Saiba mais ›</a>
                     </div>
                 </div>
 
                 <!-- Card 2: Fios de PDO -->
                 <div class="expand-card" data-expand-card>
-                    <img src="assets/img/foto-fios-nova.webp" alt="Fios de PDO" class="expand-card-bg" loading="lazy" >
+                    <img src="assets/img/foto-fios-nova.webp" alt="Fios de PDO" class="expand-card-bg" loading="lazy">
                     <div class="expand-card-overlay"></div>
                     <div class="expand-card-content">
-                        <h3 class="expand-card-title">Fios de PDO</h3>
-                        <p class="expand-card-desc">Lifting não-cirúrgico que reposiciona e sustenta, com estímulo natural de colágeno. Certificação internacional.</p>
-                        <a href="procedimentos.html" class="expand-card-link">Saiba mais ›</a>
+                        <h3 class="expand-card-title">Fios de Sustentação (PDO)</h3>
+                        <p class="expand-card-desc">Efeito lifting suave que melhora a firmeza e estimula o colágeno da pele.</p>
+                        <a href="fios-de-pdo-curitiba.html" class="expand-card-link">Saiba mais ›</a>
                     </div>
                 </div>
 
                 <!-- Card 3: Toxina Botulínica -->
                 <div class="expand-card" data-expand-card>
-                    <img src="assets/img/botox-nova.webp" alt="Toxina Botulínica" class="expand-card-bg" loading="lazy" >
+                    <img src="assets/img/botox-nova.webp" alt="Toxina Botulínica" class="expand-card-bg" loading="lazy">
                     <div class="expand-card-overlay"></div>
                     <div class="expand-card-content">
-                        <h3 class="expand-card-title">Toxina Botulínica</h3>
-                        <p class="expand-card-desc">Suavização de rugas e linhas de expressão com técnica refinada que preserva a naturalidade do movimento facial.</p>
-                        <a href="procedimentos.html" class="expand-card-link">Saiba mais ›</a>
+                        <h3 class="expand-card-title">Toxina Botulínica (Botox)</h3>
+                        <p class="expand-card-desc">Suaviza marcas de expressão da testa e olhos, mantendo seu rosto leve e natural.</p>
+                        <a href="botox-curitiba.html" class="expand-card-link">Saiba mais ›</a>
                     </div>
                 </div>
 
                 <!-- Card 4: Bioestimuladores -->
                 <div class="expand-card" data-expand-card>
-                    <img src="assets/img/bioestimulador-de-colageno.webp" alt="Bioestimuladores" class="expand-card-bg" loading="lazy" >
+                    <img src="assets/img/bioestimulador-de-colageno.webp" alt="Bioestimuladores" class="expand-card-bg" loading="lazy">
                     <div class="expand-card-overlay"></div>
                     <div class="expand-card-content">
                         <h3 class="expand-card-title">Bioestimuladores</h3>
-                        <p class="expand-card-desc">Estímulo à produção de colágeno para firmeza e qualidade de pele com resultados progressivos e duradouros.</p>
-                        <a href="procedimentos.html" class="expand-card-link">Saiba mais ›</a>
+                        <p class="expand-card-desc">Devolve a firmeza, o viço e a juventude da pele de forma duradoura.</p>
+                        <a href="bioestimuladores-de-colageno-curitiba.html" class="expand-card-link">Saiba mais ›</a>
                     </div>
                 </div>
 
                 <!-- Card 5: Procedimentos Íntimos -->
                 <div class="expand-card" data-expand-card>
-                    <img src="assets/img/intimos-nova.webp" alt="Procedimentos Íntimos" class="expand-card-bg" loading="lazy" >
+                    <img src="assets/img/intimos-nova.webp" alt="Procedimentos Íntimos" class="expand-card-bg" loading="lazy">
                     <div class="expand-card-overlay"></div>
                     <div class="expand-card-content">
                         <h3 class="expand-card-title">Procedimentos Íntimos</h3>
-                        <p class="expand-card-desc">Preenchimento íntimo, bioestimulador, peelings e botox para estética e bem-estar da região íntima masculina e feminina.</p>
-                        <a href="procedimentos.html" class="expand-card-link">Saiba mais ›</a>
+                        <p class="expand-card-desc">Cuidados delicados e modernos para estética, conforto e autoestima.</p>
+                        <a href="estetica-intima-curitiba.html" class="expand-card-link">Saiba mais ›</a>
                     </div>
                 </div>
             </div>
-
-
 
             <div style="text-align: center; margin-top: 40px;">
                 <a href="procedimentos.html" class="btn btn-primary">Conheça Todos os Procedimentos</a>
@@ -1299,66 +1348,59 @@
         </div>
     </section>
 
-
-    <!-- ==================== SOBRE ==================== -->
+    <!-- ==================== SOBRE (EDITORIAL ATELIER) ==================== -->
     <section class="section section-alt" id="sobre">
         <div class="container">
-            <div class="section-header fade-in">
-                <span class="label">Conheça o Especialista</span>
-                <h2>Dr. Henrique Leal Rosa</h2>
-                <p>Dupla formação, atuação acadêmica e reconhecimento internacional — a base de uma prática clínica que prioriza segurança, naturalidade e excelência.</p>
-                <div class="line-accent"></div>
-            </div>
+            <div class="about-authority-editorial fade-in">
 
-            <div class="about-authority-grid fade-in">
-
-                <!-- Coluna: Foto + Formação -->
-                <div class="authority-photo-col">
-                    <div class="authority-photo-wrap">
-                        <img src="assets/img/henrique-portrait.webp" alt="Dr. Henrique Leal Rosa — Biomédico e Dentista" loading="lazy" >
+                <!-- Coluna 1: Retrato de Alto Impacto -->
+                <div class="authority-editorial-media">
+                    <div class="authority-editorial-frame">
+                        <img src="assets/img/henrique-portrait.webp" alt="Dr. Henrique Leal Rosa" loading="lazy">
+                    </div>
+                    <div class="authority-editorial-stamp">
+                        CRO-PR · CRBM-PR · Curitiba
                     </div>
                 </div>
 
-                <!-- Coluna: Texto + Timeline Certificações -->
-                <div class="authority-content-col">
-                    <div class="auth-tags-row">
-                        <span class="auth-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg> Dentista (CRO-PR)</span>
-                        <span class="auth-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg> Biomédico (CRBM-PR)</span>
-                        <span class="auth-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> Prof. Harmonização</span>
+                <!-- Coluna 2: Conteúdo Editorial & Credenciais -->
+                <div class="authority-editorial-content">
+                    <span class="authority-editorial-eyebrow">Conheça o Especialista</span>
+                    <h2 class="authority-editorial-quote">
+                        “A verdadeira beleza não precisa de exageros, apenas cuidado, técnica precisa e respeito aos seus traços.”
+                    </h2>
+                    
+                    <p class="authority-editorial-text">
+                        Com formação em Odontologia e Biomedicina Estética, o <strong>Dr. Henrique Leal Rosa</strong> une estudo constante e um olhar atento a cada detalhe. Como profissional e professor de pós-graduação, seu compromisso é ouvir você com calma, entender suas expectativas e realçar sua beleza com segurança, leveza e naturalidade.
+                    </p>
+
+                    <!-- Grade Editorial de Credenciais -->
+                    <div class="authority-credentials-grid">
+                        <div class="credential-col">
+                            <span class="credential-num">01</span>
+                            <h3 class="credential-title">Dupla Formação</h3>
+                            <p class="credential-desc">Dentista (CRO-PR) & Biomédico (CRBM-PR), unindo saúde e estética facial.</p>
+                        </div>
+                        <div class="credential-col">
+                            <span class="credential-num">02</span>
+                            <h3 class="credential-title">Professor & Mentor</h3>
+                            <p class="credential-desc">Docente de Pós-Graduação, capacitando novos profissionais na área.</p>
+                        </div>
+                        <div class="credential-col">
+                            <span class="credential-num">03</span>
+                            <h3 class="credential-title">Cursos Internacionais</h3>
+                            <p class="credential-desc">Técnicas modernas aperfeiçoadas na Coreia do Sul e em Dubai.</p>
+                        </div>
                     </div>
 
-                    <p class="authority-bio">
-                        Com dupla habilitação — Dentista (CRO) e Biomédico (CRBM) — o Dr. Henrique Leal construiu uma trajetória clínica e acadêmica diferenciada. Além de atender pacientes com foco total em naturalidade e resultado, atua como professor na pós-graduação em Harmonização Orofacial, formando profissionais que buscam excelência técnica.
-                    </p>
-                    <p class="authority-bio">
-                        Sua busca constante por atualização técnica o levou a certificações em três continentes — Europa, Oriente Médio e Ásia — consolidando uma visão clínica global e protocolos que unem o que há de mais avançado no mundo.
-                    </p>
-
-                    <h4 class="authority-cert-title">Certificações Internacionais</h4>
-                    <div class="cert-timeline">
-                        <div class="cert-item">
-                            <span class="cert-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></span>
-                            <div class="cert-info">
-                                <strong>K-Club Unique 2025 — Coreia do Sul</strong>
-                                <span>Certificação exclusiva em técnicas avançadas de Fios de PDO</span>
-                            </div>
-                        </div>
-                        <div class="cert-item">
-                            <span class="cert-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></span>
-                            <div class="cert-info">
-                                <strong>Dubai, Emirados Árabes</strong>
-                                <span>Formação em procedimentos de alta complexidade e bioestimulação</span>
-                            </div>
-                        </div>
-                        <div class="cert-item">
-                            <span class="cert-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></span>
-                            <div class="cert-info">
-                                <strong>Lisboa, Portugal</strong>
-                                <span>Congresso e formação em Harmonização Facial e Estética Avançada</span>
-                            </div>
-                        </div>
+                    <div style="margin-top: 32px;">
+                        <a href="sobre.html" class="btn btn-outline" style="border-color: var(--color-primary); color: var(--color-primary); display: inline-flex; align-items: center; gap: 8px;">
+                            <span>Conhecer a história do Dr. Henrique</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                        </a>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -1367,10 +1409,8 @@
     <section class="section" id="depoimentos">
         <div class="container">
             <div class="section-header fade-in">
-                <span class="label">Depoimentos</span>
-                <h2>Experiências Reais</h2>
+                <h2>Depoimentos</h2>
                 <p>A opinião de quem confiou no Dr. Henrique para cuidar da sua estética facial.</p>
-                <div class="line-accent"></div>
             </div>
 
             <div class="carousel-wrapper">
@@ -1378,7 +1418,7 @@
                     <!-- Feedback 1 -->
                     <div class="video-testimonial-card fade-in">
                         <div class="video-wrapper">
-                            <video controls playsinline preload="metadata" poster="assets/img/posters/feedback-paciente-1-poster.webp">
+                            <video controls playsinline preload="none" poster="assets/img/posters/feedback-paciente-1-poster.webp">
                                 <source src="assets/videos/feedback-paciente-1.mp4" type="video/mp4">
                                 Seu navegador não suporta vídeos HTML5.
                             </video>
@@ -1388,7 +1428,7 @@
                     <!-- Feedback 2 -->
                     <div class="video-testimonial-card fade-in">
                         <div class="video-wrapper">
-                            <video controls playsinline preload="metadata" poster="assets/img/posters/feedback-paciente-2-poster.webp">
+                            <video controls playsinline preload="none" poster="assets/img/posters/feedback-paciente-2-poster.webp">
                                 <source src="assets/videos/feedback-paciente-2.mp4" type="video/mp4">
                                 Seu navegador não suporta vídeos HTML5.
                             </video>
@@ -1397,7 +1437,7 @@
 
                     <div class="video-testimonial-card fade-in">
                         <div class="video-wrapper">
-                            <video controls playsinline preload="metadata" poster="assets/img/posters/depoimento-4.webp">
+                            <video controls playsinline preload="none" poster="assets/img/posters/depoimento-4.webp">
                                 <source src="assets/videos/depoimento-4.mp4#t=1.0" type="video/mp4">
                                 Seu navegador não suporta vídeos HTML5.
                             </video>
@@ -1406,7 +1446,7 @@
 
                     <div class="video-testimonial-card fade-in">
                         <div class="video-wrapper">
-                            <video controls playsinline preload="metadata" poster="assets/img/posters/depoimento-5.webp">
+                            <video controls playsinline preload="none" poster="assets/img/posters/depoimento-5.webp">
                                 <source src="assets/videos/depoimento-5.mp4#t=1.0" type="video/mp4">
                                 Seu navegador não suporta vídeos HTML5.
                             </video>
@@ -1415,7 +1455,7 @@
 
                     <div class="video-testimonial-card fade-in">
                         <div class="video-wrapper">
-                            <video controls playsinline preload="metadata" poster="assets/img/posters/depoimento-6.webp">
+                            <video controls playsinline preload="none" poster="assets/img/posters/depoimento-6.webp">
                                 <source src="assets/videos/depoimento-6.mp4#t=1.0" type="video/mp4">
                                 Seu navegador não suporta vídeos HTML5.
                             </video>
@@ -1431,13 +1471,276 @@
         </div>
     </section>
 
+    <!-- ==================== AVALIAÇÕES GOOGLE & CONSULTÓRIO (1 SEÇÃO UNIFICADA) ==================== -->
+    <section class="section section-location-reviews" id="localizacao">
+        <!-- Hidden anchor for #avaliacoes links compatibility -->
+        <div id="avaliacoes" style="position: relative; top: -80px; visibility: hidden;"></div>
+
+        <div class="container">
+            <div class="section-header fade-in" style="margin-bottom: 24px;">
+                <h2>Avaliações & Consultório</h2>
+                <p>Opiniões de quem já foi atendido e nossa localização no bairro Água Verde em Curitiba.</p>
+            </div>
+
+            <!-- Google Reviews Carousel (Swiper) -->
+            <div class="google-swiper-container fade-in">
+                <div class="swiper google-reviews-swiper">
+                    <div class="swiper-wrapper">
+
+                        <!-- Review 1: Sabrina Toledo -->
+                        <div class="swiper-slide">
+                            <div class="google-review-card">
+                                <div>
+                                    <div class="google-card-header">
+                                        <div class="google-card-user">
+                                            <div class="reviewer-avatar-wrap">
+                                                <img src="https://lh3.googleusercontent.com/a-/ALV-UjXQL9fYt5hLLEzRTRnfGa1fT8CEcCzqS9gI_mW4JPtQlNQ9pTOnWA=w72-h72-p-rp-mo-br100" alt="Sabrina Toledo" class="reviewer-avatar-img" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                                <div class="reviewer-avatar-initial" style="display:none;">S</div>
+                                            </div>
+                                            <div>
+                                                <div class="reviewer-name">Sabrina Toledo <span class="verified-tag">✓</span></div>
+                                                <div class="reviewer-stars">★★★★★ <span class="review-date">9 meses atrás</span></div>
+                                            </div>
+                                        </div>
+                                        <svg viewBox="0 0 24 24" width="22" height="22" class="google-card-logo" style="width: 22px !important; height: 22px !important; min-width: 22px; max-width: 22px; flex-shrink: 0;"><path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17z"/><path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"/><path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.97 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/><path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/></svg>
+                                    </div>
+                                    <p class="google-card-comment">
+                                        “Atendimento impecável e resultado maravilhoso! Desde a primeira consulta me senti segura com o Dr. Henrique. Ele é muito atencioso e entende exatamente o que o paciente deseja. Meu rosto está lindo, com um resultado super discreto e natural.”
+                                    </p>
+                                </div>
+                                <div class="google-card-footer">
+                                    <span>Avaliação no Google</span>
+                                    <span>Paciente Verificado ✓</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Review 2: André Silva -->
+                        <div class="swiper-slide">
+                            <div class="google-review-card">
+                                <div>
+                                    <div class="google-card-header">
+                                        <div class="google-card-user">
+                                            <div class="reviewer-avatar-wrap">
+                                                <img src="https://lh3.googleusercontent.com/a-/ALV-UjXaXTxYwT4SQRTB57RSrBdw_sU1u2dZUAkv8AGvStZjpUXbNCXX=w72-h72-p-rp-mo-ba12-br100" alt="André Silva" class="reviewer-avatar-img" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                                <div class="reviewer-avatar-initial" style="display:none;">A</div>
+                                            </div>
+                                            <div>
+                                                <div class="reviewer-name">André Silva <span class="badge-guide">Local Guide</span></div>
+                                                <div class="reviewer-stars">★★★★★ <span class="review-date">2 meses atrás</span></div>
+                                            </div>
+                                        </div>
+                                        <svg viewBox="0 0 24 24" width="22" height="22" class="google-card-logo" style="width: 22px !important; height: 22px !important; min-width: 22px; max-width: 22px; flex-shrink: 0;"><path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17z"/><path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"/><path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.97 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/><path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/></svg>
+                                    </div>
+                                    <p class="google-card-comment">
+                                        “O Dr Henrique é incrível, o atendimento é fantástico! Eu super indico... trabalho excelente! Fiquei muito satisfeito com todos os procedimentos que fiz. Você não sai de lá sem agendar os próximos de tanta confiança!”
+                                    </p>
+                                </div>
+                                <div class="google-card-footer">
+                                    <span>Avaliação no Google</span>
+                                    <span>Paciente Verificado ✓</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Review 3: Nathan Almeida -->
+                        <div class="swiper-slide">
+                            <div class="google-review-card">
+                                <div>
+                                    <div class="google-card-header">
+                                        <div class="google-card-user">
+                                            <div class="reviewer-avatar-wrap">
+                                                <img src="https://lh3.googleusercontent.com/a/ACg8ocLq2B5NByxVw3Nxif1j1VC7ctf40ERW46p6H25nEhHxL64MhEQEzA=w72-h72-p-rp-mo-ba12-br100" alt="Nathan Almeida" class="reviewer-avatar-img" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                                <div class="reviewer-avatar-initial" style="display:none;">N</div>
+                                            </div>
+                                            <div>
+                                                <div class="reviewer-name">Nathan Almeida <span class="badge-guide">Local Guide</span></div>
+                                                <div class="reviewer-stars">★★★★★ <span class="review-date">6 meses atrás</span></div>
+                                            </div>
+                                        </div>
+                                        <svg viewBox="0 0 24 24" width="22" height="22" class="google-card-logo" style="width: 22px !important; height: 22px !important; min-width: 22px; max-width: 22px; flex-shrink: 0;"><path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17z"/><path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"/><path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.97 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/><path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/></svg>
+                                    </div>
+                                    <p class="google-card-comment">
+                                        “Atendimento e trabalho impecável. O consultório é extremamente acolhedor e a atenção aos detalhes anatômicos faz toda a diferença nos resultados.”
+                                    </p>
+                                </div>
+                                <div class="google-card-footer">
+                                    <span>Avaliação no Google</span>
+                                    <span>Paciente Verificado ✓</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Review 4: Zillene Dantas -->
+                        <div class="swiper-slide">
+                            <div class="google-review-card">
+                                <div>
+                                    <div class="google-card-header">
+                                        <div class="google-card-user">
+                                            <div class="reviewer-avatar-wrap">
+                                                <img src="https://lh3.googleusercontent.com/a-/ALV-UjXH6FYa6xqqdaotBCkG7uCc98HYwyDGLQ-oAnnCeZ64bwyphhaJ=w72-h72-p-rp-mo-br100" alt="Zillene Dantas" class="reviewer-avatar-img" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                                <div class="reviewer-avatar-initial" style="display:none;">Z</div>
+                                            </div>
+                                            <div>
+                                                <div class="reviewer-name">Zillene Dantas <span class="verified-tag">✓</span></div>
+                                                <div class="reviewer-stars">★★★★★ <span class="review-date">6 meses atrás</span></div>
+                                            </div>
+                                        </div>
+                                        <svg viewBox="0 0 24 24" width="22" height="22" class="google-card-logo" style="width: 22px !important; height: 22px !important; min-width: 22px; max-width: 22px; flex-shrink: 0;"><path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17z"/><path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"/><path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.97 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/><path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/></svg>
+                                    </div>
+                                    <p class="google-card-comment">
+                                        “Eu amei a experiência, sou apaixonada pelo trabalho do Dr. Henrique! Na avaliação ele tira todas as dúvidas, explica tudo detalhadamente com calma e segurança.”
+                                    </p>
+                                </div>
+                                <div class="google-card-footer">
+                                    <span>Avaliação no Google</span>
+                                    <span>Paciente Verificado ✓</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Review 5: Diego Rodrigo -->
+                        <div class="swiper-slide">
+                            <div class="google-review-card">
+                                <div>
+                                    <div class="google-card-header">
+                                        <div class="google-card-user">
+                                            <div class="reviewer-avatar-wrap">
+                                                <img src="https://lh3.googleusercontent.com/a/ACg8ocLDlAXjPtrFngnaPPf_zSpe5jvaZEwB9wakMLQVMdKLKjVuY_8=w72-h72-p-rp-mo-br100" alt="Diego Rodrigo" class="reviewer-avatar-img" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                                <div class="reviewer-avatar-initial" style="display:none;">D</div>
+                                            </div>
+                                            <div>
+                                                <div class="reviewer-name">Diego Rodrigo <span class="verified-tag">✓</span></div>
+                                                <div class="reviewer-stars">★★★★★ <span class="review-date">2 meses atrás</span></div>
+                                            </div>
+                                        </div>
+                                        <svg viewBox="0 0 24 24" width="22" height="22" class="google-card-logo" style="width: 22px !important; height: 22px !important; min-width: 22px; max-width: 22px; flex-shrink: 0;"><path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17z"/><path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"/><path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.97 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/><path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/></svg>
+                                    </div>
+                                    <p class="google-card-comment">
+                                        “Conheci o Dr Henrique pelo Instagram, fui fazer uma avaliação e fui tão bem atendido que fiquei impressionado. Além do atendimento, ele é um profissional incrível, me deixou totalmente à vontade!”
+                                    </p>
+                                </div>
+                                <div class="google-card-footer">
+                                    <span>Avaliação no Google</span>
+                                    <span>Paciente Verificado ✓</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Review 6: Patricia Lima -->
+                        <div class="swiper-slide">
+                            <div class="google-review-card">
+                                <div>
+                                    <div class="google-card-header">
+                                        <div class="google-card-user">
+                                            <div class="reviewer-avatar-wrap">
+                                                <img src="https://lh3.googleusercontent.com/a/ACg8ocJ9YU1AufH0py1Q0a0wwayqBxOu8Gfjbuxvy0aJtzRJK8eSOw=w72-h72-p-rp-mo-br100" alt="Patricia Lima" class="reviewer-avatar-img" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                                <div class="reviewer-avatar-initial" style="display:none;">P</div>
+                                            </div>
+                                            <div>
+                                                <div class="reviewer-name">Patricia Lima <span class="verified-tag">✓</span></div>
+                                                <div class="reviewer-stars">★★★★★ <span class="review-date">2 anos atrás</span></div>
+                                            </div>
+                                        </div>
+                                        <svg viewBox="0 0 24 24" width="22" height="22" class="google-card-logo" style="width: 22px !important; height: 22px !important; min-width: 22px; max-width: 22px; flex-shrink: 0;"><path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17z"/><path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"/><path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.97 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/><path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/></svg>
+                                    </div>
+                                    <p class="google-card-comment">
+                                        “O Dr. Henrique é um profissional extremamente cuidadoso e atencioso com seus pacientes! Super indico de olhos fechados pela excelência e naturalidade do resultado.”
+                                    </p>
+                                </div>
+                                <div class="google-card-footer">
+                                    <span>Avaliação no Google</span>
+                                    <span>Paciente Verificado ✓</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Swiper Navigation Buttons & Pagination -->
+                <div class="google-swiper-nav">
+                    <button class="google-nav-btn google-prev" aria-label="Avaliação anterior">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                    </button>
+                    <div class="swiper-pagination google-pagination" style="position: static; width: auto;"></div>
+                    <button class="google-nav-btn google-next" aria-label="Próxima avaliação">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Balanced Location Grid (50/50) inside the SAME section -->
+            <div class="location-balanced-grid fade-in">
+                <!-- Coluna 1: Informações do Consultório -->
+                <div class="clinic-balanced-card">
+                    <div>
+                        <h3 class="clinic-balanced-title">Edifício Today's Office</h3>
+                        
+                        <div class="clinic-detail-list">
+                            <div class="clinic-detail-item">
+                                <div class="detail-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                                </div>
+                                <div>
+                                    <strong>Av. República Argentina, 1237, Sala 518 (5º andar)</strong>
+                                    <span>Bairro Água Verde · Curitiba - PR · CEP 80620-010</span>
+                                </div>
+                            </div>
+
+                            <div class="clinic-detail-item">
+                                <div class="detail-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M9 17V7h4a3 3 0 0 1 0 6H9"/></svg>
+                                </div>
+                                <div>
+                                    <strong>Estacionamento & Acessibilidade</strong>
+                                    <span>Edifício corporativo com manobrista e portaria com segurança 24h.</span>
+                                </div>
+                            </div>
+
+                            <div class="clinic-detail-item">
+                                <div class="detail-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                </div>
+                                <div>
+                                    <strong>Horários de Atendimento</strong>
+                                    <span>Segunda a Sexta-feira, das 09h às 19h (Com horário reservado).</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="clinic-action-buttons">
+                        <a href="https://maps.google.com/?q=Av.+Rep.+Argentina,+1237+-+Sala+518+-+%C3%81gua+Verde,+Curitiba+-+PR" 
+                           class="btn btn-primary" target="_blank" rel="noopener" style="flex: 1; padding: 14px 20px; font-size: 0.88rem;">
+                            Traçar Rota no Waze / Maps ↗
+                        </a>
+                        <a href="https://wa.me/5541988577430?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20localiza%C3%A7%C3%A3o%20do%20consult%C3%B3rio." 
+                           class="btn btn-outline" target="_blank" rel="noopener" style="padding: 14px 20px; font-size: 0.88rem;">
+                            Falar com a Recepção
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Coluna 2: Mapa Interativo com Mesma Altura -->
+                <div class="clinic-map-balanced">
+                    <iframe 
+                        src="https://maps.google.com/maps?q=Av.%20Rep.%20Argentina,%201237,%20Sala%20518,%20%C3%81gua%20Verde,%20Curitiba%20PR&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- ==================== FAQ (Maba-style two-column) ==================== -->
     <section class="section section-alt" id="faq">
         <div class="container">
             <div class="section-header fade-in">
-                <span class="label">Perguntas Frequentes</span>
-                <h2>Tire suas Dúvidas</h2>
-                <div class="line-accent"></div>
+                <h2>Perguntas Frequentes</h2>
+                <p>Esclareça as principais dúvidas sobre nossos procedimentos e atendimento.</p>
             </div>
 
             <div class="faq-layout fade-in">
@@ -1460,9 +1763,7 @@
                         </button>
                         <div class="faq-answer">
                             <div class="faq-answer-inner">
-                                Na maioria dos casos, o desconforto é mínimo. Utilizamos anestésicos tópicos e técnicas
-                                avançadas de aplicação que tornam os procedimentos bastante confortáveis. A maioria dos
-                                pacientes descreve a sensação como leve pressão, sem dor significativa.
+                                Não! Priorizamos o seu conforto do início ao fim, utilizando anestésicos tópicos, anestesia local e técnicas delicadas para que a experiência seja muito tranquila e confortável.
                             </div>
                         </div>
                     </div>
@@ -1478,17 +1779,14 @@
                         </button>
                         <div class="faq-answer">
                             <div class="faq-answer-inner">
-                                Os procedimentos são minimamente invasivos. Para Botox e preenchimento, a recuperação é
-                                praticamente imediata com leve inchaço por 24-48h. Para Fios de PDO, recomendamos 3-5
-                                dias
-                                de cuidados especiais, mas a maioria dos pacientes retorna às atividades em 24 horas.
+                                A recuperação é muito rápida e você pode voltar às suas atividades do dia a dia normalmente. Qualquer marquinha ou inchaço leve costuma passar nos primeiros dias.
                             </div>
                         </div>
                     </div>
 
                     <div class="faq-item">
                         <button class="faq-question">
-                            Os resultados são permanentes?
+                            Qual a durabilidade dos resultados?
                             <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round">
                                 <line x1="12" y1="5" x2="12" y2="19" />
@@ -1497,9 +1795,7 @@
                         </button>
                         <div class="faq-answer">
                             <div class="faq-answer-inner">
-                                A duração varia conforme o procedimento: Botox dura de 4 a 6 meses, preenchimento de 8 a
-                                18 meses, Fios de PDO estimulam colágeno por até 2 anos, e bioestimuladores têm efeito
-                                progressivo que dura até 2-3 anos. Criamos protocolos de manutenção personalizados.
+                                O Botox dura em média de 4 a 6 meses. O preenchimento com ácido hialurônico de 12 a 18 meses, e os bioestimuladores e fios mantêm o estímulo de colágeno por até 2 anos.
                             </div>
                         </div>
                     </div>
@@ -1515,17 +1811,14 @@
                         </button>
                         <div class="faq-answer">
                             <div class="faq-answer-inner">
-                                Sim, quando realizada por profissional qualificado e habilitado. O Dr. Henrique possui
-                                dupla formação (Dentista e Biomédico), certificações internacionais e utiliza apenas
-                                produtos aprovados pela ANVISA em ambiente clínico controlado. A segurança é prioridade
-                                absoluta.
+                                Totalmente seguro. O Dr. Henrique possui dupla formação (Dentista e Biomédico) e utiliza apenas produtos de padrão ouro aprovados pela ANVISA, em um ambiente seguro e acolhedor.
                             </div>
                         </div>
                     </div>
 
                     <div class="faq-item">
                         <button class="faq-question">
-                            Fico com o rosto inchado? E hematomas?
+                            A partir de qual idade posso realizar?
                             <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round">
                                 <line x1="12" y1="5" x2="12" y2="19" />
@@ -1534,30 +1827,7 @@
                         </button>
                         <div class="faq-answer">
                             <div class="faq-answer-inner">
-                                Um leve inchaço é esperado nas primeiras 24-48 horas, mas é discreto na maioria dos
-                                casos.
-                                Hematomas podem ocorrer pontualmente, mas são minimizados com técnica adequada de
-                                aplicação
-                                e cuidados pré e pós-procedimento que orientamos na consulta.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            A partir de qual idade posso fazer?
-                            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <line x1="12" y1="5" x2="12" y2="19" />
-                                <line x1="5" y1="12" x2="19" y2="12" />
-                            </svg>
-                        </button>
-                        <div class="faq-answer">
-                            <div class="faq-answer-inner">
-                                A partir dos 25 anos é possível iniciar protocolos preventivos, como Botox para linhas
-                                de
-                                expressão iniciais e bioestimuladores para manutenção da qualidade da pele. A avaliação
-                                personalizada identifica o momento e procedimento ideal para cada paciente.
+                                A partir dos 20 a 25 anos já é comum iniciar cuidados preventivos ou harmonizar pontos específicos. Na avaliação, conversamos para entender exatamente o que é ideal para o seu momento.
                             </div>
                         </div>
                     </div>
@@ -1569,9 +1839,8 @@
     <!-- ==================== CTA FINAL ==================== -->
     <section class="cta-section">
         <div class="container fade-in">
-            <h2>Pronto para Dar o Próximo Passo?</h2>
-            <p>Agende sua avaliação personalizada e descubra o protocolo ideal para realçar sua beleza com naturalidade.
-            </p>
+            <h2>Agende sua Avaliação</h2>
+            <p>Entre em contato pelo WhatsApp para tirar suas dúvidas e agendar seu horário com o Dr. Henrique.</p>
             <div class="cta-buttons">
                 <a href="https://wa.me/5541988577430?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o."
                     class="btn btn-primary" target="_blank" rel="noopener">
@@ -1594,45 +1863,14 @@
         </div>
     </section>
 
-    <!-- ==================== LOCATION SETION ==================== -->
-    <section class="location-section" id="localizacao">
-        <div class="container fade-in">
-            <div class="location-header text-center">
-                <h2>Como Chegar</h2>
-                <p>Nossa clínica está localizada no coração de Curitiba, oferecendo conforto e exclusividade.</p>
-                <div class="address-box">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                        <circle cx="12" cy="10" r="3" />
-                    </svg>
-                    <strong>Av. Rep. Argentina, 1237 — Edifício Today's Office, Sala 518 (5º andar) — Água Verde, Curitiba/PR</strong>
-                </div>
-            </div>
-            <div class="map-container">
-                <iframe 
-                    width="100%" 
-                    height="100%" 
-                    src="https://maps.google.com/maps?q=Av.%20Rep.%20Argentina,%201237,%20Sala%20518,%20%C3%81gua%20Verde,%20Curitiba%20PR&t=&z=16&ie=UTF8&iwloc=&output=embed" 
-                    frameborder="0" 
-                    scrolling="no" 
-                    marginheight="0" 
-                    marginwidth="0"
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-        </div>
-    </section>
-
     <!-- ==================== FOOTER ==================== -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <a href="/">
-                        <img src="assets/img/logo-sub-colorida.webp" alt="Dr. Henrique Leal Rosa" class="footer-logo" loading="lazy" >
+                    <a href="index.html" class="footer-logo-link" style="display: inline-flex; align-items: center; gap: 14px; margin-bottom: 18px; text-decoration: none;">
+                        <img src="assets/img/logo-simbolo.webp" alt="Símbolo Dr. Henrique Leal" style="height: 52px; width: auto; filter: brightness(0) invert(1); opacity: 0.95;">
+                        <img src="assets/img/logo-texto.webp" alt="Dr. Henrique Leal Rosa" style="height: 42px; width: auto; filter: brightness(0) invert(1); opacity: 0.95;">
                     </a>
                     <p>Harmonização Facial com naturalidade e sofisticação. Curitiba, PR.</p>
                 </div>
@@ -1641,6 +1879,7 @@
                     <a href="#diferenciais">Diferenciais</a>
                     <a href="#procedimentos">Procedimentos</a>
                     <a href="#sobre">Sobre</a>
+                    <a href="blog.html">Blog</a>
                     <a href="#faq">Dúvidas</a>
                 </div>
                 <div class="footer-col">
@@ -1819,15 +2058,32 @@
         </a>
     </div>
 
+    <!-- ==================== MOBILE FLOATING STICKY CTA BAR ==================== -->
+    <div class="mobile-sticky-bar" id="mobileStickyBar">
+        <div class="mobile-sticky-doctor">
+            <img src="assets/img/henrique-portrait.webp" alt="Dr. Henrique Leal">
+            <div class="mobile-sticky-info">
+                <span class="mobile-sticky-name">Dr. Henrique Leal</span>
+                <span class="mobile-sticky-status">Disponível no WhatsApp</span>
+            </div>
+        </div>
+        <a href="https://wa.me/5541988577430?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20o%20Dr.%20Henrique." 
+           class="mobile-sticky-btn" target="_blank" rel="noopener">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            <span>Agendar Consulta</span>
+        </a>
+    </div>
+
+    <!-- Lenis Smooth Scroll -->
+    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="assets/js/main.js?v=1.5"></script>
+    <script src="assets/js/main.js?v=5.0"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const certSwiper = new Swiper('.cert-swiper', {
                 effect: 'cards',
                 grabCursor: true,
-                loop: false,
                 cardsEffect: {
                     slideShadows: true,
                     rotate: true,
@@ -1835,7 +2091,7 @@
                     perSlideRotate: 4,
                 },
                 autoplay: {
-                    delay: 2500,
+                    delay: 2800,
                     disableOnInteraction: false,
                 },
                 pagination: {
@@ -1845,11 +2101,42 @@
                 on: {
                     reachEnd: function () {
                         setTimeout(() => {
-                            this.slideTo(0);
+                            this.slideTo(0, 700);
                             this.autoplay.start();
-                        }, 2500);
+                        }, 2800);
                     }
                 }
+            });
+
+            // Google Reviews Carousel Swiper (Uniform Card Container)
+            const googleSwiper = new Swiper('.google-reviews-swiper', {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                grabCursor: true,
+                loop: true,
+                autoplay: {
+                    delay: 4500,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true,
+                },
+                pagination: {
+                    el: '.google-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.google-next',
+                    prevEl: '.google-prev',
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 24,
+                    },
+                },
             });
         });
     </script>

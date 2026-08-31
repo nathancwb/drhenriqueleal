@@ -1,0 +1,631 @@
+- generic [active] [ref=f10e1]:
+  - img "Dr. Henrique Leal Rosa" [ref=f10e3]
+  - banner [ref=f10e4]:
+    - generic [ref=f10e5]:
+      - link [ref=f10e6] [cursor=pointer]:
+        - /url: /
+        - img "Dr. Henrique Leal" [ref=f10e7]
+      - navigation [ref=f10e8]:
+        - link "Diferenciais" [ref=f10e9] [cursor=pointer]:
+          - /url: "#diferenciais"
+        - generic: "|"
+        - link "Procedimentos" [ref=f10e10] [cursor=pointer]:
+          - /url: procedimentos.html
+        - generic: "|"
+        - link "Sobre" [ref=f10e11] [cursor=pointer]:
+          - /url: "#sobre"
+        - generic: "|"
+        - link "Dúvidas" [ref=f10e12] [cursor=pointer]:
+          - /url: "#faq"
+  - generic [ref=f10e16]:
+    - generic [ref=f10e17]:
+      - generic [ref=f10e18]: Harmonização Facial & Estética Médica
+      - heading [level=1] [ref=f10e19]:
+        - text: Beleza com
+        - emphasis [ref=f10e20]: Naturalidade
+        - text: e Sofisticação
+      - paragraph [ref=f10e21]: Harmonização facial guiada por precisão médica e proporção áurea em Curitiba. Resultados elegantes que valorizam sua melhor versão.
+      - generic [ref=f10e22]:
+        - link "Agendar Avaliação" [ref=f10e23] [cursor=pointer]:
+          - /url: https://wa.me/5541988577430?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.
+        - link "Conheça os Procedimentos" [ref=f10e26] [cursor=pointer]:
+          - /url: procedimentos.html
+    - img "Dr. Henrique Leal - Especialista em Harmonização Facial" [ref=f10e29]
+  - generic [ref=f10e33]:
+    - text: Experiência Exclusiva
+    - heading "A Primeira Etapa da Sua Transformação" [level=2] [ref=f10e34]
+    - paragraph [ref=f10e35]: Uma análise aprofundada que integra proporção áurea, saúde tecidual e planejamento sob medida para resultados seguros e naturais.
+    - list [ref=f10e36]:
+      - listitem [ref=f10e37]:
+        - generic [ref=f10e41]:
+          - heading "Atendimento Exclusivo" [level=4] [ref=f10e42]
+          - paragraph [ref=f10e43]: Horário reservado com tempo integral para ouvir suas expectativas e planejar cada detalhe.
+      - listitem [ref=f10e44]:
+        - generic [ref=f10e48]:
+          - heading "Mapeamento Anatômico 3D" [level=4] [ref=f10e49]
+          - paragraph [ref=f10e50]: Estudo milimétrico de ângulos, sustentação óssea e dinâmica muscular facial.
+      - listitem [ref=f10e51]:
+        - generic [ref=f10e55]:
+          - heading "Protocolo Personalizado" [level=4] [ref=f10e56]
+          - paragraph [ref=f10e57]: Combinação estratégica de técnicas para rejuvenescer e valorizar seus traços com elegância.
+    - link "Agendar Minha Avaliação" [ref=f10e58] [cursor=pointer]:
+      - /url: https://wa.me/5541988577430?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.
+  - generic [ref=f10e60]:
+    - generic [ref=f10e61]:
+      - generic [ref=f10e62]: Por que escolher o Dr. Henrique
+      - heading "Excelência em Cada Detalhe" [level=2] [ref=f10e63]
+      - paragraph [ref=f10e64]: Técnica refinada, protocolos seguros e uma abordagem que prioriza a naturalidade acima de tudo.
+    - generic [ref=f10e65]:
+      - generic [ref=f10e66]:
+        - generic [ref=f10e72]:
+          - heading "Certificação Internacional em Fios de PDO" [level=3] [ref=f10e73]
+          - paragraph [ref=f10e74]: Técnicas avançadas com formação na Coreia do Sul, Europa e principais centros mundiais.
+        - generic [ref=f10e84]:
+          - heading "Protocolos Personalizados e Seguros" [level=3] [ref=f10e85]
+          - paragraph [ref=f10e86]: Tratamentos desenhados sob medida, priorizando a segurança e o respeito à sua anatomia.
+        - generic [ref=f10e91]:
+          - heading "Naturalidade e Elegância" [level=3] [ref=f10e92]
+          - paragraph [ref=f10e93]: O objetivo é potencializar seus traços com discrição e harmonia, sem exageros artificiais.
+        - generic [ref=f10e99]:
+          - heading "Atuação Clínica e Acadêmica" [level=3] [ref=f10e100]
+          - paragraph [ref=f10e101]: Professor em pós-graduação e mentor de profissionais injetores com formação internacional contínua.
+      - generic [ref=f10e103]:
+        - generic:
+          - group "1 / 3":
+            - img "Harmonização Facial e Certificação Dr Henrique Leal"
+            - generic [ref=f10e104]: Certificação Internacional — K-Club Unique 2025, Coreia do Sul
+          - group "2 / 3" [ref=f10e105]:
+            - img "Participação em Evento Internacional" [ref=f10e106]
+            - generic [ref=f10e107]: Participação Internacional em Congresso de Harmonização Facial
+          - group "3 / 3" [ref=f10e108]:
+            - img "Prêmio Full Face" [ref=f10e109]
+            - generic [ref=f10e110]: Reconhecimento Internacional e Aprimoramento Constante
+        - generic [ref=f10e111]:
+          - button "Go to slide 1" [ref=f10e112] [cursor=pointer]
+          - button "Go to slide 2" [ref=f10e113] [cursor=pointer]
+          - button "Go to slide 3" [ref=f10e114] [cursor=pointer]
+  - generic [ref=f10e116]:
+    - generic [ref=f10e117]:
+      - generic [ref=f10e118]: Resultados Reais
+      - heading "Antes e Depois" [level=2] [ref=f10e119]
+      - paragraph [ref=f10e120]: Cada resultado reflete um planejamento individualizado, com técnica e cuidado em cada detalhe.
+    - generic [ref=f10e121]:
+      - generic [ref=f10e122]: ⚖️
+      - generic [ref=f10e123]:
+        - strong [ref=f10e124]: "Aviso Legal:"
+        - text: As imagens dos resultados exibidos neste site constituem propriedade intelectual exclusiva. A cópia, reprodução ou uso não autorizado é estritamente proibida nos termos da Lei de Direitos Autorais (Lei nº 9.610/98), sujeitando o infrator às sanções cíveis e criminais aplicáveis.
+    - generic [ref=f10e126]:
+      - generic [ref=f10e127]:
+        - generic [ref=f10e128] [cursor=pointer]:
+          - generic [ref=f10e129]: Rinomodelação
+          - generic [ref=f10e130]:
+            - generic [ref=f10e131]:
+              - img "Antes — Rinomodelação"
+              - generic: Antes
+            - generic [ref=f10e133]:
+              - img "Depois — Rinomodelação"
+              - generic: Depois
+        - generic [ref=f10e135] [cursor=pointer]:
+          - generic [ref=f10e136]: Preenchimento Labial
+          - generic [ref=f10e138]:
+            - img "Preenchimento Labial — Antes e Depois"
+        - generic [ref=f10e140] [cursor=pointer]:
+          - generic [ref=f10e141]: Preenchimento Labial
+          - generic [ref=f10e143]:
+            - img "Preenchimento Labial — Antes e Depois"
+        - generic [ref=f10e145] [cursor=pointer]:
+          - generic [ref=f10e146]: Harmonização Facial Completa
+          - generic [ref=f10e148]:
+            - img "Harmonização Facial Completa — Antes e Depois"
+        - generic [ref=f10e150] [cursor=pointer]:
+          - generic [ref=f10e151]: Preenchimento de Mento
+          - generic [ref=f10e152]:
+            - generic [ref=f10e153]:
+              - img "Antes — Preenchimento de Mento"
+              - generic: Antes
+            - generic [ref=f10e155]:
+              - img "Depois — Preenchimento de Mento"
+              - generic: Depois
+        - generic [ref=f10e157] [cursor=pointer]:
+          - generic [ref=f10e158]: Preenchimento Facial
+          - generic [ref=f10e159]:
+            - generic [ref=f10e160]:
+              - img "Antes — Preenchimento Facial Frontal"
+              - generic: Antes
+            - generic [ref=f10e162]:
+              - img "Depois — Preenchimento Facial Frontal"
+              - generic: Depois
+        - generic [ref=f10e164] [cursor=pointer]:
+          - generic [ref=f10e165]: Preenchimento Labial
+          - generic [ref=f10e166]:
+            - generic [ref=f10e167]:
+              - img "Antes — Preenchimento Labial"
+              - generic: Antes
+            - generic [ref=f10e169]:
+              - img "Depois — Preenchimento Labial"
+              - generic: Depois
+        - generic [ref=f10e171] [cursor=pointer]:
+          - generic [ref=f10e172]: Rinomodelação
+          - generic [ref=f10e173]:
+            - generic [ref=f10e174]:
+              - img "Antes — Rinomodelação"
+              - generic: Antes
+            - generic [ref=f10e176]:
+              - img "Depois — Rinomodelação"
+              - generic: Depois
+        - generic [ref=f10e178] [cursor=pointer]:
+          - generic [ref=f10e179]: Botox
+          - generic [ref=f10e180]:
+            - generic [ref=f10e181]:
+              - img "Antes — Botox Testa"
+              - generic: Antes
+            - generic [ref=f10e183]:
+              - img "Depois — Botox Testa"
+              - generic: Depois
+        - generic [ref=f10e185] [cursor=pointer]:
+          - generic [ref=f10e186]: Harmonização Glútea
+          - generic [ref=f10e188]:
+            - img "Harmonização Glútea — Antes e Depois"
+        - generic [ref=f10e190] [cursor=pointer]:
+          - generic [ref=f10e191]: Harmonização Glútea
+          - generic [ref=f10e192]:
+            - generic [ref=f10e193]:
+              - img "Antes — Harmonização Glútea Semiperfil"
+              - generic: Antes
+            - generic [ref=f10e195]:
+              - img "Depois — Harmonização Glútea Semiperfil"
+              - generic: Depois
+        - generic [ref=f10e197] [cursor=pointer]:
+          - generic [ref=f10e198]: Harmonização Glútea
+          - generic [ref=f10e199]:
+            - generic [ref=f10e200]:
+              - img "Antes — Harmonização Glútea Posterior"
+              - generic: Antes
+            - generic [ref=f10e202]:
+              - img "Depois — Harmonização Glútea Posterior"
+              - generic: Depois
+        - generic [ref=f10e204] [cursor=pointer]:
+          - generic [ref=f10e205]: Harmonização Facial
+          - generic [ref=f10e206]:
+            - generic [ref=f10e207]:
+              - img "Antes — Harmonização Facial"
+              - generic: Antes
+            - generic [ref=f10e209]:
+              - img "Depois — Harmonização Facial"
+              - generic: Depois
+        - generic [ref=f10e211] [cursor=pointer]:
+          - generic [ref=f10e212]: Harmonização Facial (Perfil)
+          - generic [ref=f10e213]:
+            - generic [ref=f10e214]:
+              - img "Antes — Harmonização Facial"
+              - generic: Antes
+            - generic [ref=f10e216]:
+              - img "Depois — Harmonização Facial"
+              - generic: Depois
+        - generic [ref=f10e218] [cursor=pointer]:
+          - generic [ref=f10e219]: Rejuvenescimento Facial
+          - generic [ref=f10e220]:
+            - generic [ref=f10e221]:
+              - img "Antes — Rejuvenescimento Facial"
+              - generic: Antes
+            - generic [ref=f10e223]:
+              - img "Depois — Rejuvenescimento Facial"
+              - generic: Depois
+        - generic [ref=f10e225] [cursor=pointer]:
+          - generic [ref=f10e226]: Contorno Mandibular
+          - generic [ref=f10e227]:
+            - generic [ref=f10e228]:
+              - img "Antes — Contorno Mandibular"
+              - generic: Antes
+            - generic [ref=f10e230]:
+              - img "Depois — Contorno Mandibular"
+              - generic: Depois
+      - generic [ref=f10e232]:
+        - generic [ref=f10e233] [cursor=pointer]:
+          - generic [ref=f10e234]: Rinomodelação
+          - generic [ref=f10e235]:
+            - generic [ref=f10e236]: Antes
+            - generic [ref=f10e238]: Depois
+        - generic [ref=f10e240] [cursor=pointer]: Preenchimento Labial
+        - generic [ref=f10e245] [cursor=pointer]: Preenchimento Labial
+        - generic [ref=f10e250] [cursor=pointer]: Harmonização Facial Completa
+        - generic [ref=f10e255] [cursor=pointer]:
+          - generic [ref=f10e256]: Preenchimento de Mento
+          - generic [ref=f10e257]:
+            - generic [ref=f10e258]: Antes
+            - generic [ref=f10e260]: Depois
+        - generic [ref=f10e262] [cursor=pointer]:
+          - generic [ref=f10e263]: Preenchimento Facial
+          - generic [ref=f10e264]:
+            - generic [ref=f10e265]: Antes
+            - generic [ref=f10e267]: Depois
+        - generic [ref=f10e269] [cursor=pointer]:
+          - generic [ref=f10e270]: Preenchimento Labial
+          - generic [ref=f10e271]:
+            - generic [ref=f10e272]: Antes
+            - generic [ref=f10e274]: Depois
+        - generic [ref=f10e276] [cursor=pointer]:
+          - generic [ref=f10e277]: Rinomodelação
+          - generic [ref=f10e278]:
+            - generic [ref=f10e279]: Antes
+            - generic [ref=f10e281]: Depois
+        - generic [ref=f10e283] [cursor=pointer]:
+          - generic [ref=f10e284]: Botox
+          - generic [ref=f10e285]:
+            - generic [ref=f10e286]: Antes
+            - generic [ref=f10e288]: Depois
+        - generic [ref=f10e290] [cursor=pointer]: Harmonização Glútea
+        - generic [ref=f10e295] [cursor=pointer]:
+          - generic [ref=f10e296]: Harmonização Glútea
+          - generic [ref=f10e297]:
+            - generic [ref=f10e298]: Antes
+            - generic [ref=f10e300]: Depois
+        - generic [ref=f10e302] [cursor=pointer]:
+          - generic [ref=f10e303]: Harmonização Glútea
+          - generic [ref=f10e304]:
+            - generic [ref=f10e305]: Antes
+            - generic [ref=f10e307]: Depois
+        - generic [ref=f10e309] [cursor=pointer]:
+          - generic [ref=f10e310]: Harmonização Facial
+          - generic [ref=f10e311]:
+            - generic [ref=f10e312]: Antes
+            - generic [ref=f10e314]: Depois
+        - generic [ref=f10e316] [cursor=pointer]:
+          - generic [ref=f10e317]: Harmonização Facial (Perfil)
+          - generic [ref=f10e318]:
+            - generic [ref=f10e319]: Antes
+            - generic [ref=f10e321]: Depois
+        - generic [ref=f10e323] [cursor=pointer]:
+          - generic [ref=f10e324]: Rejuvenescimento Facial
+          - generic [ref=f10e325]:
+            - generic [ref=f10e326]: Antes
+            - generic [ref=f10e328]: Depois
+        - generic [ref=f10e330] [cursor=pointer]:
+          - generic [ref=f10e331]: Contorno Mandibular
+          - generic [ref=f10e332]:
+            - generic [ref=f10e333]: Antes
+            - generic [ref=f10e335]: Depois
+    - generic [ref=f10e338]:
+      - generic [ref=f10e339]:
+        - generic [ref=f10e340] [cursor=pointer]:
+          - generic [ref=f10e341]: Preenchimento Labial
+          - generic [ref=f10e342]:
+            - generic [ref=f10e343]:
+              - img "Antes — Preenchimento Labial"
+              - generic: Antes
+            - generic [ref=f10e345]:
+              - img "Depois — Preenchimento Labial"
+              - generic: Depois
+        - generic [ref=f10e347] [cursor=pointer]:
+          - generic [ref=f10e348]: Preenchimento Labial
+          - generic [ref=f10e350]:
+            - img "Preenchimento Labial — Resultado"
+        - generic [ref=f10e352] [cursor=pointer]:
+          - generic [ref=f10e353]: Preenchimento Labial
+          - generic [ref=f10e355]:
+            - img "Preenchimento Labial — Resultado"
+        - generic [ref=f10e357] [cursor=pointer]:
+          - generic [ref=f10e358]: Harmonização Facial
+          - generic [ref=f10e360]:
+            - img "Harmonização Facial Masculina — Antes e Depois"
+        - generic [ref=f10e362] [cursor=pointer]:
+          - generic [ref=f10e363]: Preenchimento Facial
+          - generic [ref=f10e364]:
+            - generic [ref=f10e365]:
+              - img "Antes — Preenchimento Facial Perfil"
+              - generic: Antes
+            - generic [ref=f10e367]:
+              - img "Depois — Preenchimento Facial Perfil"
+              - generic: Depois
+        - generic [ref=f10e369] [cursor=pointer]:
+          - generic [ref=f10e370]: Preenchimento Facial
+          - generic [ref=f10e371]:
+            - generic [ref=f10e372]:
+              - img "Antes — Preenchimento Facial Semiperfil"
+              - generic: Antes
+            - generic [ref=f10e374]:
+              - img "Depois — Preenchimento Facial Semiperfil"
+              - generic: Depois
+        - generic [ref=f10e376] [cursor=pointer]:
+          - generic [ref=f10e377]: Preenchimento de Mandíbula
+          - generic [ref=f10e378]:
+            - generic [ref=f10e379]:
+              - img "Antes — Preenchimento de Mandíbula"
+              - generic: Antes
+            - generic [ref=f10e381]:
+              - img "Depois — Preenchimento de Mandíbula"
+              - generic: Depois
+        - generic [ref=f10e383] [cursor=pointer]:
+          - generic [ref=f10e384]: Botox
+          - generic [ref=f10e385]:
+            - generic [ref=f10e386]:
+              - img "Antes — Botox"
+              - generic: Antes
+            - generic [ref=f10e388]:
+              - img "Depois — Botox"
+              - generic: Depois
+        - generic [ref=f10e390] [cursor=pointer]:
+          - generic [ref=f10e391]: Botox
+          - generic [ref=f10e392]:
+            - generic [ref=f10e393]:
+              - img "Antes — Botox Glabela"
+              - generic: Antes
+            - generic [ref=f10e395]:
+              - img "Depois — Botox Glabela"
+              - generic: Depois
+        - generic [ref=f10e397] [cursor=pointer]:
+          - generic [ref=f10e398]: Harmonização Glútea
+          - generic [ref=f10e400]:
+            - img "Harmonização Glútea — Antes e Depois"
+        - generic [ref=f10e402] [cursor=pointer]:
+          - generic [ref=f10e403]: Harmonização Glútea
+          - generic [ref=f10e404]:
+            - generic [ref=f10e405]:
+              - img "Antes — Harmonização Glútea Perfil"
+              - generic: Antes
+            - generic [ref=f10e407]:
+              - img "Depois — Harmonização Glútea Perfil"
+              - generic: Depois
+        - generic [ref=f10e409] [cursor=pointer]:
+          - generic [ref=f10e410]: Preenchimento de Mento
+          - generic [ref=f10e411]:
+            - generic [ref=f10e412]:
+              - img "Antes — Preenchimento de Mento e Queixo"
+              - generic: Antes
+            - generic [ref=f10e414]:
+              - img "Depois — Preenchimento de Mento e Queixo"
+              - generic: Depois
+        - generic [ref=f10e416] [cursor=pointer]:
+          - generic [ref=f10e417]: Rinomodelação
+          - generic [ref=f10e418]:
+            - generic [ref=f10e419]:
+              - img "Antes — Rinomodelação"
+              - generic: Antes
+            - generic [ref=f10e421]:
+              - img "Depois — Rinomodelação"
+              - generic: Depois
+      - generic [ref=f10e423]:
+        - generic [ref=f10e424] [cursor=pointer]:
+          - generic [ref=f10e425]: Preenchimento Labial
+          - generic [ref=f10e426]:
+            - generic [ref=f10e427]: Antes
+            - generic [ref=f10e429]: Depois
+        - generic [ref=f10e431] [cursor=pointer]: Preenchimento Labial
+        - generic [ref=f10e436] [cursor=pointer]: Preenchimento Labial
+        - generic [ref=f10e441] [cursor=pointer]: Harmonização Facial
+        - generic [ref=f10e446] [cursor=pointer]:
+          - generic [ref=f10e447]: Preenchimento Facial
+          - generic [ref=f10e448]:
+            - generic [ref=f10e449]: Antes
+            - generic [ref=f10e451]: Depois
+        - generic [ref=f10e453] [cursor=pointer]:
+          - generic [ref=f10e454]: Preenchimento Facial
+          - generic [ref=f10e455]:
+            - generic [ref=f10e456]: Antes
+            - generic [ref=f10e458]: Depois
+        - generic [ref=f10e460] [cursor=pointer]:
+          - generic [ref=f10e461]: Preenchimento de Mandíbula
+          - generic [ref=f10e462]:
+            - generic [ref=f10e463]: Antes
+            - generic [ref=f10e465]: Depois
+        - generic [ref=f10e467] [cursor=pointer]:
+          - generic [ref=f10e468]: Botox
+          - generic [ref=f10e469]:
+            - generic [ref=f10e470]: Antes
+            - generic [ref=f10e472]: Depois
+        - generic [ref=f10e474] [cursor=pointer]:
+          - generic [ref=f10e475]: Botox
+          - generic [ref=f10e476]:
+            - generic [ref=f10e477]: Antes
+            - generic [ref=f10e479]: Depois
+        - generic [ref=f10e481] [cursor=pointer]: Harmonização Glútea
+        - generic [ref=f10e486] [cursor=pointer]:
+          - generic [ref=f10e487]: Harmonização Glútea
+          - generic [ref=f10e488]:
+            - generic [ref=f10e489]: Antes
+            - generic [ref=f10e491]: Depois
+        - generic [ref=f10e493] [cursor=pointer]:
+          - generic [ref=f10e494]: Preenchimento de Mento
+          - generic [ref=f10e495]:
+            - generic [ref=f10e496]: Antes
+            - generic [ref=f10e498]: Depois
+        - generic [ref=f10e500] [cursor=pointer]:
+          - generic [ref=f10e501]: Rinomodelação
+          - generic [ref=f10e502]:
+            - generic [ref=f10e503]: Antes
+            - generic [ref=f10e505]: Depois
+  - generic [ref=f10e508]:
+    - generic [ref=f10e509]:
+      - generic [ref=f10e510]: Resultados em Movimento
+      - heading "Acompanhe de Perto" [level=2] [ref=f10e511]
+      - paragraph [ref=f10e512]: Veja em detalhes a naturalidade e a qualidade dos nossos protocolos em formato de vídeo.
+    - generic [ref=f10e513]:
+      - generic [ref=f10e514]:
+        - generic [ref=f10e515]:
+          - generic [ref=f10e516]: Seu navegador não suporta vídeos HTML5.
+          - generic [ref=f10e518]:
+            - heading "Preenchimento Labial" [level=3] [ref=f10e519]
+            - paragraph [ref=f10e520]: Resultado imediato e harmônico
+        - generic [ref=f10e521]:
+          - generic [ref=f10e522]: Seu navegador não suporta vídeos HTML5.
+          - generic [ref=f10e524]:
+            - heading "Preenchimento Labial" [level=3] [ref=f10e525]
+            - paragraph [ref=f10e526]: Contorno e naturalidade
+        - generic [ref=f10e527]:
+          - generic [ref=f10e528]: Seu navegador não suporta vídeos HTML5.
+          - generic [ref=f10e530]:
+            - heading "Harmonização Completa" [level=3] [ref=f10e531]
+            - paragraph [ref=f10e532]: Fox eyes com fios, mento, mandíbula e bioestimulador
+        - generic [ref=f10e533]:
+          - generic [ref=f10e534]: Seu navegador não suporta vídeos HTML5.
+          - generic [ref=f10e536]:
+            - 'heading "Caso Clínico: Harmonização" [level=3] [ref=f10e537]'
+            - paragraph [ref=f10e538]: Análise detalhada do perfil masculino por Dr. Henrique
+      - button "Anterior" [ref=f10e539] [cursor=pointer]: ❮
+      - button "Próximo" [ref=f10e540] [cursor=pointer]: ❯
+  - generic [ref=f10e542]:
+    - generic [ref=f10e543]:
+      - generic [ref=f10e544]: Nossos Tratamentos
+      - heading "Tecnologia e Arte em Favor da Sua Beleza" [level=2] [ref=f10e545]
+      - paragraph [ref=f10e546]: Do Botox® aos Fios de sustentação, oferecemos um portfólio completo para resultados naturais e elegantes.
+    - generic [ref=f10e547]:
+      - generic [ref=f10e548] [cursor=pointer]:
+        - img "Harmonização Facial" [ref=f10e549]
+        - generic [ref=f10e551]:
+          - heading "Harmonização Facial" [level=3] [ref=f10e552]
+          - paragraph [ref=f10e553]: Contorno mandibular, mento e preenchimento labial com proporção áurea.
+          - link "Saiba mais ›" [ref=f10e554]:
+            - /url: procedimentos.html
+      - generic [ref=f10e555] [cursor=pointer]:
+        - img "Fios de PDO" [ref=f10e556]
+        - generic [ref=f10e558]:
+          - heading "Fios de PDO" [level=3] [ref=f10e559]
+          - paragraph: Lifting não-cirúrgico com estímulo vigoroso de colágeno novo.
+          - link "Saiba mais ›":
+            - /url: procedimentos.html
+      - generic [ref=f10e560] [cursor=pointer]:
+        - img "Toxina Botulínica" [ref=f10e561]
+        - generic [ref=f10e563]:
+          - heading "Toxina Botulínica" [level=3] [ref=f10e564]
+          - paragraph: Suavização milimétrica de rugas preservando a expressividade natural.
+          - link "Saiba mais ›":
+            - /url: procedimentos.html
+      - generic [ref=f10e565] [cursor=pointer]:
+        - img "Bioestimuladores" [ref=f10e566]
+        - generic [ref=f10e568]:
+          - heading "Bioestimuladores" [level=3] [ref=f10e569]
+          - paragraph: Restauração da firmeza e densidade dérmica por até 2 anos.
+          - link "Saiba mais ›":
+            - /url: procedimentos.html
+      - generic [ref=f10e570] [cursor=pointer]:
+        - img "Procedimentos Íntimos" [ref=f10e571]
+        - generic [ref=f10e573]:
+          - heading "Procedimentos Íntimos" [level=3] [ref=f10e574]
+          - paragraph: Estética, rejuvenescimento e bem-estar para a região íntima.
+          - link "Saiba mais ›":
+            - /url: procedimentos.html
+    - link "Conheça Todos os Procedimentos" [ref=f10e576] [cursor=pointer]:
+      - /url: procedimentos.html
+  - generic [ref=f10e579]:
+    - generic [ref=f10e580]:
+      - img "Dr. Henrique Leal Rosa" [ref=f10e582]
+      - generic [ref=f10e583]: CRO-PR · CRBM-PR · Curitiba
+    - generic [ref=f10e584]:
+      - generic [ref=f10e585]: Corpo Clínico & Autoridade
+      - heading "“A beleza não precisa de excessos — apenas de precisão anatômica, ciência regenerativa e sensibilidade estética.”" [level=2] [ref=f10e586]
+      - paragraph [ref=f10e587]:
+        - text: O
+        - strong [ref=f10e588]: Dr. Henrique Leal Rosa
+        - text: integra a precisão cirúrgica odontológica ao conhecimento histológico da biomedicina estética. Docente e mentor clínico, dedica sua prática ao refinamento facial tridimensional com foco absoluto em elegância e naturalidade.
+      - generic [ref=f10e589]:
+        - generic [ref=f10e590]:
+          - generic [ref=f10e591]: "01"
+          - heading "Dupla Formação" [level=3] [ref=f10e592]
+          - paragraph [ref=f10e593]: Dentista (CRO-PR) & Biomédico (CRBM-PR) com visão anatômica completa.
+        - generic [ref=f10e594]:
+          - generic [ref=f10e595]: "02"
+          - heading "Atuação Docente" [level=3] [ref=f10e596]
+          - paragraph [ref=f10e597]: Professor de Pós-Graduação em Harmonização Facial e Mentor Clínico.
+        - generic [ref=f10e598]:
+          - generic [ref=f10e599]: "03"
+          - heading "Chancela Global" [level=3] [ref=f10e600]
+          - paragraph [ref=f10e601]: Certificações avançadas em Seul (Coreia do Sul), Dubai e Lisboa.
+  - generic [ref=f10e603]:
+    - generic [ref=f10e604]:
+      - generic [ref=f10e605]: Depoimentos
+      - heading "Experiências Reais" [level=2] [ref=f10e606]
+      - paragraph [ref=f10e607]: A opinião de quem confiou no Dr. Henrique para cuidar da sua estética facial.
+    - generic [ref=f10e608]:
+      - generic [ref=f10e609]:
+        - generic [ref=f10e610]: Seu navegador não suporta vídeos HTML5.
+        - generic [ref=f10e613]: Seu navegador não suporta vídeos HTML5.
+        - generic [ref=f10e616]: Seu navegador não suporta vídeos HTML5.
+        - generic [ref=f10e619]: Seu navegador não suporta vídeos HTML5.
+        - generic [ref=f10e622]: Seu navegador não suporta vídeos HTML5.
+      - button "Anterior" [ref=f10e625] [cursor=pointer]: ❮
+      - button "Próximo" [ref=f10e626] [cursor=pointer]: ❯
+  - generic [ref=f10e628]:
+    - generic [ref=f10e629]:
+      - generic [ref=f10e630]: Perguntas Frequentes
+      - heading "Tire suas Dúvidas" [level=2] [ref=f10e631]
+    - generic [ref=f10e632]:
+      - generic:
+        - img "Dr. Henrique Leal"
+      - generic [ref=f10e633]:
+        - generic [ref=f10e634]:
+          - button "Os procedimentos doem?" [ref=f10e635] [cursor=pointer]
+          - generic: Não. Utilizamos anestésicos tópicos potentes, anestesia local e microcânulas ultrafinas, proporcionando um procedimento extremamente confortável e seguro.
+        - generic [ref=f10e638]:
+          - button "Quanto tempo dura a recuperação?" [ref=f10e639] [cursor=pointer]
+          - generic: O retorno às atividades é praticamente imediato. Para preenchimento e botox, o inchaço é mínimo nas primeiras 24 horas. Para fios, recomendamos cuidados simples nos primeiros dias.
+        - generic [ref=f10e642]:
+          - button "Qual a durabilidade dos resultados?" [ref=f10e643] [cursor=pointer]
+          - generic: O Botox dura de 4 a 6 meses. O preenchimento com ácido hialurônico de 12 a 18 meses. Os bioestimuladores e fios de PDO mantêm estímulo de colágeno por até 2 anos.
+        - generic [ref=f10e646]:
+          - button "É seguro fazer harmonização facial?" [ref=f10e647] [cursor=pointer]
+          - generic: Sim. O Dr. Henrique possui dupla formação (Dentista e Biomédico) e utiliza exclusivamente produtos aprovados pela ANVISA e FDA em ambiente com padrões rigorosos de biossegurança.
+        - generic [ref=f10e650]:
+          - button "A partir de qual idade posso realizar?" [ref=f10e651] [cursor=pointer]
+          - generic: A partir dos 20-25 anos para prevenção e estruturação de traços. A avaliação tridimensional individualizada indica exatamente o momento e protocolo ideal para cada paciente.
+  - generic [ref=f10e655]:
+    - heading "Pronto para Dar o Próximo Passo?" [level=2] [ref=f10e656]
+    - paragraph [ref=f10e657]: Agende sua avaliação personalizada e descubra o protocolo ideal para realçar sua beleza com naturalidade.
+    - generic [ref=f10e658]:
+      - link "Agendar pelo WhatsApp" [ref=f10e659] [cursor=pointer]:
+        - /url: https://wa.me/5541988577430?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.
+      - link "Ligar Agora" [ref=f10e662] [cursor=pointer]:
+        - /url: tel:+5541988577430
+  - generic [ref=f10e666]:
+    - generic [ref=f10e667]:
+      - heading "Como Chegar" [level=2] [ref=f10e668]
+      - paragraph [ref=f10e669]: Nossa clínica está localizada no coração de Curitiba, oferecendo conforto e exclusividade.
+      - strong [ref=f10e674]: Av. Rep. Argentina, 1237 — Edifício Today's Office, Sala 518 (5º andar) — Água Verde, Curitiba/PR
+    - iframe [ref=f10e676]
+  - contentinfo [ref=f10e677]:
+    - generic [ref=f10e678]:
+      - generic [ref=f10e679]:
+        - generic [ref=f10e680]:
+          - link "Dr. Henrique Leal Rosa":
+            - /url: /
+            - img "Dr. Henrique Leal Rosa"
+          - paragraph [ref=f10e681]: Harmonização Facial com naturalidade e sofisticação. Curitiba, PR.
+        - generic [ref=f10e682]:
+          - heading "Navegação" [level=4] [ref=f10e683]
+          - link "Diferenciais" [ref=f10e684] [cursor=pointer]:
+            - /url: "#diferenciais"
+          - link "Procedimentos" [ref=f10e685] [cursor=pointer]:
+            - /url: "#procedimentos"
+          - link "Sobre" [ref=f10e686] [cursor=pointer]:
+            - /url: "#sobre"
+          - link "Dúvidas" [ref=f10e687] [cursor=pointer]:
+            - /url: "#faq"
+        - generic [ref=f10e688]:
+          - heading "Procedimentos" [level=4] [ref=f10e689]
+          - link "Fios de PDO" [ref=f10e690] [cursor=pointer]:
+            - /url: "#procedimentos"
+          - link "Toxina Botulínica" [ref=f10e691] [cursor=pointer]:
+            - /url: "#procedimentos"
+          - link "Preenchimento" [ref=f10e692] [cursor=pointer]:
+            - /url: "#procedimentos"
+          - link "Bioestimuladores" [ref=f10e693] [cursor=pointer]:
+            - /url: "#procedimentos"
+        - generic [ref=f10e694]:
+          - heading "Contato" [level=4] [ref=f10e695]
+          - link "WhatsApp" [ref=f10e696] [cursor=pointer]:
+            - /url: https://wa.me/5541988577430
+          - link "Instagram" [ref=f10e697] [cursor=pointer]:
+            - /url: https://www.instagram.com/
+          - link "Localização" [ref=f10e698] [cursor=pointer]:
+            - /url: https://maps.google.com/?q=Av.+Rep.+Argentina,+1237+-+Sala+518+-+%C3%81gua+Verde,+Curitiba+-+PR
+      - generic [ref=f10e699]: CRO 31739 odontologia | CRBM 8966 biomédico
+      - generic [ref=f10e700]:
+        - generic [ref=f10e701]: © 2025 Dr. Henrique Leal Rosa. Todos os direitos reservados.
+        - generic [ref=f10e702]:
+          - link "Instagram" [ref=f10e703] [cursor=pointer]:
+            - /url: https://www.instagram.com/
+          - link "YouTube" [ref=f10e707] [cursor=pointer]:
+            - /url: "#"
+          - link "TikTok" [ref=f10e711] [cursor=pointer]:
+            - /url: "#"
+  - link "WhatsApp" [ref=f10e714] [cursor=pointer]:
+    - /url: https://wa.me/5541988577430?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.

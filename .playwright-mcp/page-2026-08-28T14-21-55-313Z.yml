@@ -1,0 +1,231 @@
+- generic [active] [ref=f16e1]:
+  - banner [ref=f16e2]:
+    - generic [ref=f16e3]:
+      - link [ref=f16e4] [cursor=pointer]:
+        - /url: /
+        - img "Neonova Consultoria em Negócios" [ref=f16e5]
+      - navigation [ref=f16e6]:
+        - link "Quem Somos" [ref=f16e7] [cursor=pointer]:
+          - /url: /quem-somos/
+        - link "Soluções" [ref=f16e9] [cursor=pointer]:
+          - /url: /solucoes/
+        - link "Time" [ref=f16e12] [cursor=pointer]:
+          - /url: /time/
+        - link "Cases" [ref=f16e13] [cursor=pointer]:
+          - /url: /cases/
+        - link "Blog" [ref=f16e14] [cursor=pointer]:
+          - /url: /insights/
+        - link "Agendar diagnóstico" [ref=f16e15] [cursor=pointer]:
+          - /url: /diagnostico/
+  - generic [ref=f16e17]:
+    - link "← Voltar para Todas as 8 Soluções" [ref=f16e18] [cursor=pointer]:
+      - /url: /solucoes/
+    - generic [ref=f16e19]:
+      - link "Gestão Empresarial" [ref=f16e20] [cursor=pointer]:
+        - /url: /solucoes/gestao-empresarial/
+      - generic [ref=f16e21]: "|"
+      - link "Canais de Vendas" [ref=f16e22] [cursor=pointer]:
+        - /url: /solucoes/canais-de-vendas/
+      - generic [ref=f16e23]: "|"
+      - link "Financeiro & Caixa" [ref=f16e24] [cursor=pointer]:
+        - /url: /solucoes/financeiro/
+      - generic [ref=f16e25]: "|"
+      - link "RH & Liderança" [ref=f16e26] [cursor=pointer]:
+        - /url: /solucoes/rh/
+      - generic [ref=f16e27]: "|"
+      - link "Marketing & Marca" [ref=f16e28] [cursor=pointer]:
+        - /url: /solucoes/marketing/
+      - generic [ref=f16e29]: "|"
+      - link "Franquias & Redes" [ref=f16e30] [cursor=pointer]:
+        - /url: /solucoes/franquias/
+      - generic [ref=f16e31]: "|"
+      - link "Crédito & Cobrança" [ref=f16e32] [cursor=pointer]:
+        - /url: /solucoes/credito-e-cobranca/
+      - generic [ref=f16e33]: "|"
+      - link "Produção & Indústria" [ref=f16e34] [cursor=pointer]:
+        - /url: /solucoes/producao-e-industrias/
+  - generic [ref=f16e37]:
+    - generic [ref=f16e38]: Jornada Vendas e Marketing
+    - heading "Marketing & Posicionamento" [level=1] [ref=f16e39]
+    - paragraph [ref=f16e40]: Conecte o posicionamento da sua marca à atração contínua de clientes qualificados e fuja da guerra de preços.
+    - generic [ref=f16e41]:
+      - link "Agendar Diagnóstico Gratuito" [ref=f16e42] [cursor=pointer]:
+        - /url: /diagnostico/
+      - link "Ver Entregáveis da Consultoria" [ref=f16e43] [cursor=pointer]:
+        - /url: "#entregaveis"
+  - generic [ref=f16e45]:
+    - generic [ref=f16e46]:
+      - img "Diagnóstico executivo de gargalos" [ref=f16e47]
+      - generic [ref=f16e49]:
+        - generic [ref=f16e50]: Diagnóstico de Gargalos
+        - heading "Quais sintomas indicam que sua empresa precisa desta atuação?" [level=2] [ref=f16e51]
+        - paragraph [ref=f16e52]: Se a sua empresa vivencia um destes cenários, nossa consultoria sênior atua diretamente na causa raiz.
+    - generic [ref=f16e53]:
+      - generic [ref=f16e54]:
+        - generic [ref=f16e55]: "01"
+        - generic [ref=f16e56]:
+          - heading "Percepção de Commodity" [level=3] [ref=f16e57]
+          - paragraph [ref=f16e58]: Os clientes comparam sua empresa apenas pelo preço, sem enxergar os diferenciais técnicos e o valor real da sua entrega.
+      - generic [ref=f16e59]:
+        - generic [ref=f16e60]: "02"
+        - generic [ref=f16e61]:
+          - heading "Marketing Desconectado das Vendas" [level=3] [ref=f16e62]
+          - paragraph [ref=f16e63]: Ações de comunicação que geram métricas de vaidade, mas não alimentam o funil comercial com oportunidades de negócios reais.
+      - generic [ref=f16e64]:
+        - generic [ref=f16e65]: "03"
+        - generic [ref=f16e66]:
+          - heading "Proposta de Valor Fraca (UVP)" [level=3] [ref=f16e67]
+          - paragraph [ref=f16e68]: Dificuldade da equipe em explicar com clareza em 30 segundos por que o cliente deve escolher a sua empresa e não o concorrente.
+  - generic [ref=f16e70]:
+    - generic [ref=f16e71]:
+      - generic [ref=f16e72]: Entregáveis Práticos
+      - heading "O que a Neonova entrega e implementa na prática" [level=2] [ref=f16e73]
+      - paragraph [ref=f16e74]: Não entregamos relatórios teóricos de gaveta. Entregamos ferramentas, parâmetros, rotinas e capacitação para a sua equipe.
+    - generic [ref=f16e75]:
+      - generic [ref=f16e76]:
+        - generic [ref=f16e77]:
+          - generic [ref=f16e78]: 01 / POSICIONAMENTO
+          - heading "Matriz de Posicionamento B2B" [level=3] [ref=f16e79]
+          - paragraph [ref=f16e80]: Definição dos pilares de autoridade, narrativa e proposta única de valor (UVP) da marca.
+        - list [ref=f16e81]:
+          - listitem [ref=f16e82]: — Diferenciais competitivos claros
+          - listitem [ref=f16e83]: — Discurso institucional unificado
+          - listitem [ref=f16e84]: — Arquitetura de produtos e serviços
+      - generic [ref=f16e85]:
+        - generic [ref=f16e86]:
+          - generic [ref=f16e87]: 02 / CONTEÚDO
+          - heading "Estratégia de Autoridade" [level=3] [ref=f16e88]
+          - paragraph [ref=f16e89]: Planejamento de conteúdos técnicos, artigos e materiais ricos que educam o decisor de compras.
+        - list [ref=f16e90]:
+          - listitem [ref=f16e91]: — Matriz T.A.C.O. (Técnico, Autoridade, Conexão, Objeção)
+          - listitem [ref=f16e92]: — Materiais de apoio a vendas (One-Pagers)
+          - listitem [ref=f16e93]: — Casos de estudo e provas sociais
+      - generic [ref=f16e94]:
+        - generic [ref=f16e95]:
+          - generic [ref=f16e96]: 03 / PERCEPÇÃO
+          - heading "Pesquisa de Percepção de Marca" [level=3] [ref=f16e97]
+          - paragraph [ref=f16e98]: Entrevistas diagnósticas com clientes ativos e ex-clientes para entender como a marca é vista.
+        - list [ref=f16e99]:
+          - listitem [ref=f16e100]: — Identificação de pontos fortes e fracos
+          - listitem [ref=f16e101]: — Mapeamento dos reais motivos de compra
+          - listitem [ref=f16e102]: — Plano de ajuste de imagem
+      - generic [ref=f16e103]:
+        - generic [ref=f16e104]:
+          - generic [ref=f16e105]: 04 / ATRAÇÃO
+          - heading "Geração de Demanda Qualificada" [level=3] [ref=f16e106]
+          - paragraph [ref=f16e107]: Estratégia de canais digitais e eventos focada em atrair decisores de empresas no raio regional.
+        - list [ref=f16e108]:
+          - listitem [ref=f16e109]: — Alinhamento de canais (LinkedIn, Google)
+          - listitem [ref=f16e110]: — Materiais de apresentação institucional
+          - listitem [ref=f16e111]: — Estratégia de atração B2B
+  - generic [ref=f16e114]:
+    - img "Priscila Casagrande" [ref=f16e116]
+    - generic [ref=f16e117]:
+      - generic [ref=f16e118]: Senioridade Operacional
+      - heading "Priscila Casagrande" [level=3] [ref=f16e119]
+      - generic [ref=f16e120]: Marca & Marketing · Consultora Sênior
+      - paragraph [ref=f16e121]: Publicitária com MBA em Marketing e 20 anos de experiência orientando mais de 250 marcas em posicionamento e autoridade. Atendimento presencial direto em São Carlos/SP e região, sem intermediários juniores.
+      - generic [ref=f16e122]:
+        - link "Conhecer o Time Completo →" [ref=f16e123] [cursor=pointer]:
+          - /url: /time/
+        - link "Falar pelo WhatsApp" [ref=f16e124] [cursor=pointer]:
+          - /url: https://wa.me/5516992953211
+  - generic [ref=f16e126]:
+    - generic [ref=f16e127]:
+      - generic [ref=f16e128]: Transformação Real
+      - heading "Resultado Medido Nesta Frente" [level=2] [ref=f16e129]
+      - paragraph [ref=f16e130]: Veja a elevação de ticket e autoridade de mercado gerada pela nossa consultoria.
+    - generic [ref=f16e131]:
+      - generic [ref=f16e132]:
+        - generic [ref=f16e133]: Estudo de Caso · Tecnologia & Serviços B2B
+        - heading "Reposicionamento de Marca & Proposta de Valor" [level=3] [ref=f16e134]
+        - paragraph [ref=f16e135]: Redefinição da Proposta Única de Valor (UVP), materiais institucionais de alto nível e alinhamento com clientes corporativos de alto valor.
+        - link "Ver Estudo de Caso Completo →" [ref=f16e136] [cursor=pointer]:
+          - /url: /cases/consultoria-ambiental/
+      - generic [ref=f16e137]:
+        - generic [ref=f16e138]: +45%
+        - generic [ref=f16e139]: Aumento no ticket médio dos novos clientes e eliminação da guerra de descontos por diferenciação clara.
+  - generic [ref=f16e142]:
+    - generic [ref=f16e143]: Próximo Passo
+    - heading "Decidir sem diagnóstico é assumir riscos desnecessários." [level=2] [ref=f16e144]
+    - paragraph [ref=f16e145]: Agende uma reunião inicial de 45 minutos com um dos nossos consultores seniores em São Carlos/SP ou em formato remoto para mapear os gargalos da sua empresa.
+    - generic [ref=f16e146]:
+      - link "Agendar Diagnóstico Gratuito" [ref=f16e147] [cursor=pointer]:
+        - /url: /diagnostico/
+      - link "Falar com Consultor Agora" [ref=f16e148] [cursor=pointer]:
+        - /url: https://wa.me/5516992953211
+  - contentinfo [ref=f16e149]:
+    - generic [ref=f16e150]:
+      - generic [ref=f16e151]:
+        - generic [ref=f16e152]:
+          - img "Neonova" [ref=f16e153]
+          - paragraph [ref=f16e154]: Gestão estruturada e proximidade executiva para empresários e diretores de PMEs em São Carlos/SP e região.
+          - generic [ref=f16e155]: Fundada em 2007 · São Carlos / SP
+        - generic [ref=f16e156]:
+          - heading "Soluções" [level=4] [ref=f16e157]
+          - list [ref=f16e158]:
+            - listitem [ref=f16e159]:
+              - link "Gestão Empresarial" [ref=f16e160] [cursor=pointer]:
+                - /url: /solucoes/gestao-empresarial/
+            - listitem [ref=f16e161]:
+              - link "Financeiro & Caixa" [ref=f16e162] [cursor=pointer]:
+                - /url: /solucoes/financeiro/
+            - listitem [ref=f16e163]:
+              - link "Crédito e Cobrança" [ref=f16e164] [cursor=pointer]:
+                - /url: /solucoes/credito-e-cobranca/
+            - listitem [ref=f16e165]:
+              - link "Canais de Vendas" [ref=f16e166] [cursor=pointer]:
+                - /url: /solucoes/canais-de-vendas/
+            - listitem [ref=f16e167]:
+              - link "Marketing & Posicionamento" [ref=f16e168] [cursor=pointer]:
+                - /url: /solucoes/marketing/
+            - listitem [ref=f16e169]:
+              - link "Franquias & Expansão" [ref=f16e170] [cursor=pointer]:
+                - /url: /solucoes/franquias/
+            - listitem [ref=f16e171]:
+              - link "RH & Liderança" [ref=f16e172] [cursor=pointer]:
+                - /url: /solucoes/rh/
+            - listitem [ref=f16e173]:
+              - link "Produção & Indústrias" [ref=f16e174] [cursor=pointer]:
+                - /url: /solucoes/producao-e-industrias/
+        - generic [ref=f16e175]:
+          - heading "Institucional" [level=4] [ref=f16e176]
+          - list [ref=f16e177]:
+            - listitem [ref=f16e178]:
+              - link "Quem Somos" [ref=f16e179] [cursor=pointer]:
+                - /url: /quem-somos/
+            - listitem [ref=f16e180]:
+              - link "Metodologia" [ref=f16e181] [cursor=pointer]:
+                - /url: /quem-somos/#metodologia
+            - listitem [ref=f16e182]:
+              - link "Time de Consultores" [ref=f16e183] [cursor=pointer]:
+                - /url: /time/
+            - listitem [ref=f16e184]:
+              - link "Cases de Sucesso" [ref=f16e185] [cursor=pointer]:
+                - /url: /cases/
+            - listitem [ref=f16e186]:
+              - link "Insights & Artigos" [ref=f16e187] [cursor=pointer]:
+                - /url: /insights/
+            - listitem [ref=f16e188]:
+              - link "Diagnóstico Gratuito" [ref=f16e189] [cursor=pointer]:
+                - /url: /diagnostico/
+            - listitem [ref=f16e190]:
+              - link "Fale Conosco" [ref=f16e191] [cursor=pointer]:
+                - /url: /contato/
+        - generic [ref=f16e192]:
+          - heading "Contato" [level=4] [ref=f16e193]
+          - paragraph [ref=f16e194]:
+            - strong [ref=f16e195]: São Carlos / SP
+            - text: Atendimento presencial regional e remoto nacional.
+          - link "Falar pelo WhatsApp" [ref=f16e196] [cursor=pointer]:
+            - /url: https://wa.me/5516992953211
+      - generic [ref=f16e197]:
+        - generic [ref=f16e198]: © 2026 Neonova Consultoria em Negócios. Todos os direitos reservados.
+        - generic [ref=f16e199]:
+          - link "Privacidade" [ref=f16e200] [cursor=pointer]:
+            - /url: /politica-de-privacidade/
+          - link "Termos de Uso" [ref=f16e201] [cursor=pointer]:
+            - /url: /termos-de-uso/
+  - link "Falar pelo WhatsApp" [ref=f16e202] [cursor=pointer]:
+    - /url: https://wa.me/5516992953211
+    - generic [ref=f16e205]: Falar com Consultor

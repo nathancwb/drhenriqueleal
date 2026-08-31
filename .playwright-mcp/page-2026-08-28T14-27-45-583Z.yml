@@ -1,0 +1,206 @@
+- generic [active] [ref=f5e1]:
+  - banner [ref=f5e2]:
+    - navigation [ref=f5e3]:
+      - link [ref=f5e4] [cursor=pointer]:
+        - /url: /
+        - img "SA Advogados" [ref=f5e5]
+      - list [ref=f5e7]:
+        - listitem [ref=f5e8]:
+          - link "Escritório " [ref=f5e9] [cursor=pointer]:
+            - /url: "#"
+            - text: Escritório
+            - generic [ref=f5e10]: 
+        - listitem [ref=f5e11]:
+          - link "Conteúdo " [ref=f5e12] [cursor=pointer]:
+            - /url: "#"
+            - text: Conteúdo
+            - generic [ref=f5e13]: 
+        - listitem [ref=f5e14]:
+          - link "Contato" [ref=f5e15] [cursor=pointer]:
+            - /url: "#contato"
+      - text: 
+  - main [ref=f5e16]:
+    - generic [ref=f5e17]:
+      - img "Prédio corporativo em vidro ao entardecer" [ref=f5e19]
+      - generic [ref=f5e23]:
+        - generic [ref=f5e24]: ADVOCACIA E CONSULTORIA ESTRATÉGICA
+        - heading "Rigor técnico e sensibilidade prática." [level=1] [ref=f5e25]
+        - paragraph [ref=f5e26]: Serviços jurídicos de excelência com clareza nas informações, atenção extrema aos detalhes e compromisso inabalável com a demanda apresentada.
+        - link "Falar com Especialista " [ref=f5e27] [cursor=pointer]:
+          - /url: https://api.whatsapp.com/send?phone=5548991381200&text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20um%20advogado%20especialista.%20Pode%20me%20ajudar%3F
+          - text: Falar com Especialista
+          - generic [ref=f5e28]: 
+    - generic [ref=f5e30]:
+      - heading "Valores que moldam nossa atuação" [level=2] [ref=f5e32]
+      - generic [ref=f5e33]:
+        - article [ref=f5e34]:
+          - generic [ref=f5e35]: "01."
+          - heading "Atendimento Personalizado e Humanizado" [level=3] [ref=f5e36]
+          - paragraph [ref=f5e37]: Nosso princípio fundamental é valorizar o humanismo e manter sempre a absoluta transparência com nossos clientes.
+        - article [ref=f5e38]:
+          - generic [ref=f5e39]: "02."
+          - heading "Agilidade e Transparência" [level=3] [ref=f5e40]
+          - paragraph [ref=f5e41]: Respondemos às demandas dos clientes com prontidão, mantendo comunicação clara e transparente em cada etapa do processo, oportuna ao serviço jurídico.
+        - article [ref=f5e42]:
+          - generic [ref=f5e43]: "03."
+          - heading "Qualidade e Discrição" [level=3] [ref=f5e44]
+          - paragraph [ref=f5e45]: Garantimos atuação discreta e firme, preservando a confidencialidade dos clientes e entregando soluções jurídicas com o mais alto padrão técnico e independência.
+    - generic [ref=f5e47]:
+      - generic [ref=f5e48]:
+        - heading "Áreas de Atuação" [level=2] [ref=f5e49]
+        - paragraph [ref=f5e50]: Atuamos com excelência em áreas estratégicas do Direito, oferecendo soluções especializadas para demandas complexas de nossos clientes.
+      - generic [ref=f5e51]:
+        - group [ref=f5e52]:
+          - generic "Direito Tributário " [ref=f5e53] [cursor=pointer]:
+            - generic [ref=f5e54]: Direito Tributário
+            - generic [ref=f5e55]: 
+        - group [ref=f5e56]:
+          - generic "Direito Administrativo e Constitucional " [ref=f5e57] [cursor=pointer]:
+            - generic [ref=f5e58]: Direito Administrativo e Constitucional
+            - generic [ref=f5e59]: 
+        - group [ref=f5e60]:
+          - generic "Direito Médico e da Saúde " [ref=f5e61] [cursor=pointer]:
+            - generic [ref=f5e62]: Direito Médico e da Saúde
+            - generic [ref=f5e63]: 
+        - group [ref=f5e64]:
+          - generic "Direito Empresarial, Contratual e Trabalhista " [ref=f5e65] [cursor=pointer]:
+            - generic [ref=f5e66]: Direito Empresarial, Contratual e Trabalhista
+            - generic [ref=f5e67]: 
+        - group [ref=f5e68]:
+          - generic "Direito Civil " [ref=f5e69] [cursor=pointer]:
+            - generic [ref=f5e70]: Direito Civil
+            - generic [ref=f5e71]: 
+        - group [ref=f5e72]:
+          - generic "Direito Público e Financeiro " [ref=f5e73] [cursor=pointer]:
+            - generic [ref=f5e74]: Direito Público e Financeiro
+            - generic [ref=f5e75]: 
+        - group [ref=f5e76]:
+          - generic "Direito Penal " [ref=f5e77] [cursor=pointer]:
+            - generic [ref=f5e78]: Direito Penal
+            - generic [ref=f5e79]: 
+        - group [ref=f5e80]:
+          - generic "LGPD e Direito Digital " [ref=f5e81] [cursor=pointer]:
+            - generic [ref=f5e82]: LGPD e Direito Digital
+            - generic [ref=f5e83]: 
+        - group [ref=f5e84]:
+          - generic "Compliance e ESG " [ref=f5e85] [cursor=pointer]:
+            - generic [ref=f5e86]: Compliance e ESG
+            - generic [ref=f5e87]: 
+        - group [ref=f5e88]:
+          - generic "Direito Concorrencial " [ref=f5e89] [cursor=pointer]:
+            - generic [ref=f5e90]: Direito Concorrencial
+            - generic [ref=f5e91]: 
+        - group [ref=f5e92]:
+          - generic "Arbitragem e Advocacia em Tribunais " [ref=f5e93] [cursor=pointer]:
+            - generic [ref=f5e94]: Arbitragem e Advocacia em Tribunais
+            - generic [ref=f5e95]: 
+    - generic [ref=f5e96]:
+      - generic [ref=f5e97]:
+        - generic [ref=f5e98]: O ESCRITÓRIO
+        - heading "Saiba um pouco mais sobre nossa História" [level=2] [ref=f5e99]
+        - generic [ref=f5e100]:
+          - paragraph [ref=f5e101]: O escritório SA ADVOGADOS foi fundado com o compromisso de oferecer advocacia de alto padrão, combinando rigor técnico, visão estratégica e atenção personalizada a cada demanda. Atuamos tanto no contencioso quanto na consultoria preventiva, sempre com foco em resultados concretos para nossos clientes.
+          - paragraph [ref=f5e102]: Nossa equipe congrega profissionais com vasta experiência nas esferas pública e privada, promovendo atuação pautada em princípios constitucionais e nas estritas normas éticas da nossa profissão.
+      - generic [ref=f5e104]:
+        - generic [ref=f5e105]:
+          - generic [ref=f5e106]: 
+          - heading "Missão" [level=3] [ref=f5e108]
+          - paragraph [ref=f5e109]: Prestar serviços jurídicos de excelência, transformando demandas complexas em soluções eficazes, com clareza, ética e compromisso inabalável com os interesses dos nossos clientes.
+        - generic [ref=f5e110]:
+          - generic [ref=f5e111]: 
+          - heading "Visão" [level=3] [ref=f5e113]
+          - paragraph [ref=f5e114]: Ser referência nacional em advocacia estratégica, reconhecida pela excelência técnica, pela ética inabalável e pela capacidade de transformar desafios jurídicos em oportunidades para os clientes.
+        - generic [ref=f5e115]:
+          - generic [ref=f5e116]: 
+          - heading "Valores" [level=3] [ref=f5e118]
+          - paragraph [ref=f5e119]: Humanismo, transparência, lealdade irrestrita, compromisso ético, excelência técnica e discrição absoluta em cada atuação.
+      - generic [ref=f5e121]:
+        - generic [ref=f5e122]:
+          - img "Artur Souza" [ref=f5e124]
+          - heading "Artur Souza" [level=3] [ref=f5e125]
+          - paragraph [ref=f5e126]: Advogado. Doutorando em Ciências Jurídicas pela Univali. Mestre em Direito pela UFSC. Professor Titular de Direito Administrativo na UNICESUSC.
+        - generic [ref=f5e127]:
+          - img "Luciana Azevedo" [ref=f5e129]
+          - heading "Luciana Azevedo" [level=3] [ref=f5e130]
+          - paragraph [ref=f5e131]: Advogada. Especialista em Direito Tributário pela FGV. Especialista em Advocacia Pública e Professora de Direito Tributário.
+    - generic [ref=f5e137]:
+      - generic [ref=f5e138]:
+        - generic [ref=f5e139]: Fale Conosco
+        - heading "Segurança jurídica para as suas mais importantes decisões." [level=2] [ref=f5e140]
+        - paragraph [ref=f5e141]: Prefere uma conversa imediata? Clique no botão abaixo para falar direto via WhatsApp ou, se preferir, preencha o formulário ao lado para registrarmos sua demanda de forma estruturada.
+        - link "Falar com Especialista " [ref=f5e142] [cursor=pointer]:
+          - /url: https://api.whatsapp.com/send?phone=5548991381200&text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20um%20advogado%20especialista.%20Pode%20me%20ajudar%3F
+          - text: Falar com Especialista
+          - generic [ref=f5e143]: 
+      - generic [ref=f5e145]:
+        - generic [ref=f5e146]:
+          - generic [ref=f5e147]: Nome Completo
+          - textbox "Nome Completo" [ref=f5e148]:
+            - /placeholder: "Ex: João Silva"
+        - generic [ref=f5e149]:
+          - generic [ref=f5e150]:
+            - generic [ref=f5e151]: E-mail
+            - textbox "E-mail" [ref=f5e152]:
+              - /placeholder: "Ex: joao@empresa.com"
+          - generic [ref=f5e153]:
+            - generic [ref=f5e154]: Telefone / WhatsApp
+            - textbox "Telefone / WhatsApp" [ref=f5e155]:
+              - /placeholder: "Ex: (48) 99138-1200"
+        - generic [ref=f5e156]:
+          - generic [ref=f5e157]: Área de Interesse
+          - combobox "Área de Interesse" [ref=f5e158] [cursor=pointer]:
+            - option "Selecione uma área..." [disabled] [selected]
+            - option "Direito Tributário"
+            - option "Direito Administrativo e Constitucional"
+            - option "Direito Médico e da Saúde"
+            - option "Direito Empresarial, Contratual e Trabalhista"
+            - option "Direito Civil"
+            - option "Direito Público e Financeiro"
+            - option "Direito Penal"
+            - option "LGPD e Direito Digital"
+            - option "Compliance e ESG"
+            - option "Direito Concorrencial"
+            - option "Arbitragem e Advocacia em Tribunais"
+        - generic [ref=f5e159]:
+          - generic [ref=f5e160]: Mensagem / Caso
+          - textbox "Mensagem / Caso" [ref=f5e161]:
+            - /placeholder: Descreva brevemente a sua necessidade jurídica...
+        - button "Enviar Mensagem " [ref=f5e162] [cursor=pointer]:
+          - text: Enviar Mensagem
+          - generic [ref=f5e163]: 
+  - contentinfo [ref=f5e164]:
+    - generic [ref=f5e165]:
+      - generic [ref=f5e166]:
+        - link [ref=f5e167] [cursor=pointer]:
+          - /url: /
+          - img "SA Advogados" [ref=f5e168]
+        - paragraph [ref=f5e169]: Excelência técnica e sensibilidade prática na advocacia de alto padrão.
+      - generic [ref=f5e170]:
+        - heading "Unidades" [level=3] [ref=f5e171]
+        - link [ref=f5e173] [cursor=pointer]:
+          - /url: https://maps.google.com/?q=Av.+Pref.+Osmar+Cunha,+416,+Sala+1108+-+Centro,+Florianopolis+-+SC,+88015-100
+          - strong [ref=f5e174]: Matriz - Florianópolis/SC
+          - text: Av. Pref. Osmar Cunha, 416, Sala 1108 Centro, CEP 88015-100
+        - link [ref=f5e176] [cursor=pointer]:
+          - /url: https://maps.google.com/?q=Av.+Sete+de+Setembro,+1925+-+Nossa+Senhora+das+Gracas,+Porto+Velho+-+RO,+76804-123
+          - strong [ref=f5e177]: Filial - Porto Velho/RO
+          - text: Av. Sete de Setembro, 1925 Nossa Senhora das Graças, CEP 76804-123
+      - generic [ref=f5e178]:
+        - heading "Contato" [level=3] [ref=f5e179]
+        - list [ref=f5e180]:
+          - listitem [ref=f5e181]:
+            - link "(48) 99138-1200" [ref=f5e182] [cursor=pointer]:
+              - /url: tel:+5548991381200
+          - listitem [ref=f5e183]:
+            - link "comercial@saadvogados.com" [ref=f5e184] [cursor=pointer]:
+              - /url: mailto:comercial@saadvogados.com
+        - generic [ref=f5e185]:
+          - link "Instagram" [ref=f5e186] [cursor=pointer]:
+            - /url: https://www.instagram.com/sa.sadvogados
+            - generic [ref=f5e187]: 
+          - link "WhatsApp" [ref=f5e188] [cursor=pointer]:
+            - /url: https://api.whatsapp.com/send?phone=5548991381200
+            - generic [ref=f5e189]: 
+    - paragraph [ref=f5e192]:
+      - text: © 2025 SA Advogados. Todos os direitos reservados.
+      - generic [ref=f5e193]: "Atendimento: Seg à Sex - 08:00h às 18:00h."

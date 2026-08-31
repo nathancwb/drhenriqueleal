@@ -1,0 +1,231 @@
+- generic [active] [ref=f15e1]:
+  - banner [ref=f15e2]:
+    - generic [ref=f15e3]:
+      - link [ref=f15e4] [cursor=pointer]:
+        - /url: /
+        - img "Neonova Consultoria em Negócios" [ref=f15e5]
+      - navigation [ref=f15e6]:
+        - link "Quem Somos" [ref=f15e7] [cursor=pointer]:
+          - /url: /quem-somos/
+        - link "Soluções" [ref=f15e9] [cursor=pointer]:
+          - /url: /solucoes/
+        - link "Time" [ref=f15e12] [cursor=pointer]:
+          - /url: /time/
+        - link "Cases" [ref=f15e13] [cursor=pointer]:
+          - /url: /cases/
+        - link "Blog" [ref=f15e14] [cursor=pointer]:
+          - /url: /insights/
+        - link "Agendar diagnóstico" [ref=f15e15] [cursor=pointer]:
+          - /url: /diagnostico/
+  - generic [ref=f15e17]:
+    - link "← Voltar para Todas as 8 Soluções" [ref=f15e18] [cursor=pointer]:
+      - /url: /solucoes/
+    - generic [ref=f15e19]:
+      - link "Gestão Empresarial" [ref=f15e20] [cursor=pointer]:
+        - /url: /solucoes/gestao-empresarial/
+      - generic [ref=f15e21]: "|"
+      - link "Canais de Vendas" [ref=f15e22] [cursor=pointer]:
+        - /url: /solucoes/canais-de-vendas/
+      - generic [ref=f15e23]: "|"
+      - link "Financeiro & Caixa" [ref=f15e24] [cursor=pointer]:
+        - /url: /solucoes/financeiro/
+      - generic [ref=f15e25]: "|"
+      - link "RH & Liderança" [ref=f15e26] [cursor=pointer]:
+        - /url: /solucoes/rh/
+      - generic [ref=f15e27]: "|"
+      - link "Marketing & Marca" [ref=f15e28] [cursor=pointer]:
+        - /url: /solucoes/marketing/
+      - generic [ref=f15e29]: "|"
+      - link "Franquias & Redes" [ref=f15e30] [cursor=pointer]:
+        - /url: /solucoes/franquias/
+      - generic [ref=f15e31]: "|"
+      - link "Crédito & Cobrança" [ref=f15e32] [cursor=pointer]:
+        - /url: /solucoes/credito-e-cobranca/
+      - generic [ref=f15e33]: "|"
+      - link "Produção & Indústria" [ref=f15e34] [cursor=pointer]:
+        - /url: /solucoes/producao-e-industrias/
+  - generic [ref=f15e37]:
+    - generic [ref=f15e38]: Jornada Gestão e Performance
+    - heading "Gestão Empresarial & Governança" [level=1] [ref=f15e39]
+    - paragraph [ref=f15e40]: Substitua o improviso do dia a dia por processos claros, rotinas de controle e autonomia operacional para o seu time.
+    - generic [ref=f15e41]:
+      - link "Agendar Diagnóstico Gratuito" [ref=f15e42] [cursor=pointer]:
+        - /url: /diagnostico/
+      - link "Ver Entregáveis da Consultoria" [ref=f15e43] [cursor=pointer]:
+        - /url: "#entregaveis"
+  - generic [ref=f15e45]:
+    - generic [ref=f15e46]:
+      - img "Diagnóstico executivo de gargalos" [ref=f15e47]
+      - generic [ref=f15e49]:
+        - generic [ref=f15e50]: Diagnóstico de Gargalos
+        - heading "Quais sintomas indicam que sua empresa precisa desta atuação?" [level=2] [ref=f15e51]
+        - paragraph [ref=f15e52]: Se a sua empresa vivencia um destes cenários, nossa consultoria sênior atua diretamente na causa raiz.
+    - generic [ref=f15e53]:
+      - generic [ref=f15e54]:
+        - generic [ref=f15e55]: "01"
+        - generic [ref=f15e56]:
+          - heading "Centralização Excessiva" [level=3] [ref=f15e57]
+          - paragraph [ref=f15e58]: Toda decisão passa obrigatoriamente pelo dono ou diretor, travando o ritmo de crescimento e sobrecarregando a liderança em urgências operacionais diárias.
+      - generic [ref=f15e59]:
+        - generic [ref=f15e60]: "02"
+        - generic [ref=f15e61]:
+          - heading "Falta de Rituais de Gestão" [level=3] [ref=f15e62]
+          - paragraph [ref=f15e63]: Reuniões sem pauta ou inexistentes, metas esquecidas e ausência de cobrança estruturada dos resultados entre os setores da empresa.
+      - generic [ref=f15e64]:
+        - generic [ref=f15e65]: "03"
+        - generic [ref=f15e66]:
+          - heading "Decisões sem Dados Confiáveis" [level=3] [ref=f15e67]
+          - paragraph [ref=f15e68]: Informações dispersas em planilhas não integradas, impedindo uma visão clara e antecipada do desempenho real do negócio.
+  - generic [ref=f15e70]:
+    - generic [ref=f15e71]:
+      - generic [ref=f15e72]: Entregáveis Práticos
+      - heading "O que a Neonova entrega e implementa na prática" [level=2] [ref=f15e73]
+      - paragraph [ref=f15e74]: Não entregamos relatórios teóricos de gaveta. Entregamos ferramentas, parâmetros, rotinas e capacitação para a sua equipe.
+    - generic [ref=f15e75]:
+      - generic [ref=f15e76]:
+        - generic [ref=f15e77]:
+          - generic [ref=f15e78]: 01 / PROCESSOS
+          - heading "Mapeamento de Processos-Chave" [level=3] [ref=f15e79]
+          - paragraph [ref=f15e80]: Desenho claro dos fluxos operacionais (BPM) para eliminar gargalos e retrabalho.
+        - list [ref=f15e81]:
+          - listitem [ref=f15e82]: — Fluxogramas de ponta a ponta
+          - listitem [ref=f15e83]: — Manuais de procedimentos operacionais
+          - listitem [ref=f15e84]: — Padronização de rotinas diárias
+      - generic [ref=f15e85]:
+        - generic [ref=f15e86]:
+          - generic [ref=f15e87]: 02 / RESPONSABILIDADES
+          - heading "Matriz de Alçadas (RACI)" [level=3] [ref=f15e88]
+          - paragraph [ref=f15e89]: Definição formal de quem executa, aprova, é consultado e informado em cada etapa.
+        - list [ref=f15e90]:
+          - listitem [ref=f15e91]: — Clareza absoluta de papéis
+          - listitem [ref=f15e92]: — Limites de autonomia por cargo
+          - listitem [ref=f15e93]: — Eliminação de sobreposições
+      - generic [ref=f15e94]:
+        - generic [ref=f15e95]:
+          - generic [ref=f15e96]: 03 / INDICADORES
+          - heading "Painel Executivo de KPIs" [level=3] [ref=f15e97]
+          - paragraph [ref=f15e98]: Construção de dashboard com as métricas vitais para tomada de decisão rápida.
+        - list [ref=f15e99]:
+          - listitem [ref=f15e100]: — Indicadores de eficiência e produtividade
+          - listitem [ref=f15e101]: — Metas desdobradas por setor
+          - listitem [ref=f15e102]: — Acompanhamento em tempo real
+      - generic [ref=f15e103]:
+        - generic [ref=f15e104]:
+          - generic [ref=f15e105]: 04 / RITUAIS
+          - heading "Governança & Rituais de Gestão" [level=3] [ref=f15e106]
+          - paragraph [ref=f15e107]: Implantação de rotinas mensais e trimestrais de acompanhamento e correção de rota.
+        - list [ref=f15e108]:
+          - listitem [ref=f15e109]: — Comitê mensal de resultados
+          - listitem [ref=f15e110]: — Atas e planos de ação executivos
+          - listitem [ref=f15e111]: — Cultura de prestação de contas
+  - generic [ref=f15e114]:
+    - img "Marcio Fantini & Rodrigo Manzini" [ref=f15e116]
+    - generic [ref=f15e117]:
+      - generic [ref=f15e118]: Senioridade Operacional
+      - heading "Marcio Fantini & Rodrigo Manzini" [level=3] [ref=f15e119]
+      - generic [ref=f15e120]: Estratégia & Processos · Consultores Seniores
+      - paragraph [ref=f15e121]: União de 25 anos de visão estratégica de mercado (ESPM) com 26 anos de engenharia de processos e finanças (UFSCar/FGV). Atendimento presencial direto em São Carlos/SP e região, sem intermediários juniores.
+      - generic [ref=f15e122]:
+        - link "Conhecer o Time Completo →" [ref=f15e123] [cursor=pointer]:
+          - /url: /time/
+        - link "Falar pelo WhatsApp" [ref=f15e124] [cursor=pointer]:
+          - /url: https://wa.me/5516992953211
+  - generic [ref=f15e126]:
+    - generic [ref=f15e127]:
+      - generic [ref=f15e128]: Transformação Real
+      - heading "Resultado Medido Nesta Frente" [level=2] [ref=f15e129]
+      - paragraph [ref=f15e130]: Veja o impacto operacional e estratégico gerado pela nossa consultoria na prática.
+    - generic [ref=f15e131]:
+      - generic [ref=f15e132]:
+        - generic [ref=f15e133]: Estudo de Caso · Indústria e Tecnologia
+        - heading "Reestruturação Produtiva e Comercial" [level=3] [ref=f15e134]
+        - paragraph [ref=f15e135]: Mapeamento do Fluxo de Valor (VSM), matriz RACI entre departamentos e implantação de DRE por equipamento na Lupetec Tecnologia.
+        - link "Ver Estudo de Caso Completo →" [ref=f15e136] [cursor=pointer]:
+          - /url: /cases/equipamentos-laboratorio/
+      - generic [ref=f15e137]:
+        - generic [ref=f15e138]: +32%
+        - generic [ref=f15e139]: Aumento na Margem EBITDA no primeiro ano e redução de 40% nos prazos médios de entrega.
+  - generic [ref=f15e142]:
+    - generic [ref=f15e143]: Próximo Passo
+    - heading "Diagnóstico Preliminar de Gestão Empresarial" [level=2] [ref=f15e144]
+    - paragraph [ref=f15e145]: Agende uma reunião inicial de 45 minutos com um dos nossos consultores seniores em São Carlos/SP ou em formato remoto para mapear os gargalos da sua empresa.
+    - generic [ref=f15e146]:
+      - link "Agendar Diagnóstico Gratuito" [ref=f15e147] [cursor=pointer]:
+        - /url: /diagnostico/
+      - link "Falar com Consultor Agora" [ref=f15e148] [cursor=pointer]:
+        - /url: https://wa.me/5516992953211
+  - contentinfo [ref=f15e149]:
+    - generic [ref=f15e150]:
+      - generic [ref=f15e151]:
+        - generic [ref=f15e152]:
+          - img "Neonova" [ref=f15e153]
+          - paragraph [ref=f15e154]: Gestão estruturada e proximidade executiva para empresários e diretores de PMEs em São Carlos/SP e região.
+          - generic [ref=f15e155]: Fundada em 2007 · São Carlos / SP
+        - generic [ref=f15e156]:
+          - heading "Soluções" [level=4] [ref=f15e157]
+          - list [ref=f15e158]:
+            - listitem [ref=f15e159]:
+              - link "Gestão Empresarial" [ref=f15e160] [cursor=pointer]:
+                - /url: /solucoes/gestao-empresarial/
+            - listitem [ref=f15e161]:
+              - link "Financeiro & Caixa" [ref=f15e162] [cursor=pointer]:
+                - /url: /solucoes/financeiro/
+            - listitem [ref=f15e163]:
+              - link "Crédito e Cobrança" [ref=f15e164] [cursor=pointer]:
+                - /url: /solucoes/credito-e-cobranca/
+            - listitem [ref=f15e165]:
+              - link "Canais de Vendas" [ref=f15e166] [cursor=pointer]:
+                - /url: /solucoes/canais-de-vendas/
+            - listitem [ref=f15e167]:
+              - link "Marketing & Posicionamento" [ref=f15e168] [cursor=pointer]:
+                - /url: /solucoes/marketing/
+            - listitem [ref=f15e169]:
+              - link "Franquias & Expansão" [ref=f15e170] [cursor=pointer]:
+                - /url: /solucoes/franquias/
+            - listitem [ref=f15e171]:
+              - link "RH & Liderança" [ref=f15e172] [cursor=pointer]:
+                - /url: /solucoes/rh/
+            - listitem [ref=f15e173]:
+              - link "Produção & Indústrias" [ref=f15e174] [cursor=pointer]:
+                - /url: /solucoes/producao-e-industrias/
+        - generic [ref=f15e175]:
+          - heading "Institucional" [level=4] [ref=f15e176]
+          - list [ref=f15e177]:
+            - listitem [ref=f15e178]:
+              - link "Quem Somos" [ref=f15e179] [cursor=pointer]:
+                - /url: /quem-somos/
+            - listitem [ref=f15e180]:
+              - link "Metodologia" [ref=f15e181] [cursor=pointer]:
+                - /url: /quem-somos/#metodologia
+            - listitem [ref=f15e182]:
+              - link "Time de Consultores" [ref=f15e183] [cursor=pointer]:
+                - /url: /time/
+            - listitem [ref=f15e184]:
+              - link "Cases de Sucesso" [ref=f15e185] [cursor=pointer]:
+                - /url: /cases/
+            - listitem [ref=f15e186]:
+              - link "Insights & Artigos" [ref=f15e187] [cursor=pointer]:
+                - /url: /insights/
+            - listitem [ref=f15e188]:
+              - link "Diagnóstico Gratuito" [ref=f15e189] [cursor=pointer]:
+                - /url: /diagnostico/
+            - listitem [ref=f15e190]:
+              - link "Fale Conosco" [ref=f15e191] [cursor=pointer]:
+                - /url: /contato/
+        - generic [ref=f15e192]:
+          - heading "Contato" [level=4] [ref=f15e193]
+          - paragraph [ref=f15e194]:
+            - strong [ref=f15e195]: São Carlos / SP
+            - text: Atendimento presencial regional e remoto nacional.
+          - link "Falar pelo WhatsApp" [ref=f15e196] [cursor=pointer]:
+            - /url: https://wa.me/5516992953211
+      - generic [ref=f15e197]:
+        - generic [ref=f15e198]: © 2026 Neonova Consultoria em Negócios. Todos os direitos reservados.
+        - generic [ref=f15e199]:
+          - link "Privacidade" [ref=f15e200] [cursor=pointer]:
+            - /url: /politica-de-privacidade/
+          - link "Termos de Uso" [ref=f15e201] [cursor=pointer]:
+            - /url: /termos-de-uso/
+  - link "Falar pelo WhatsApp" [ref=f15e202] [cursor=pointer]:
+    - /url: https://wa.me/5516992953211
+    - generic [ref=f15e205]: Falar com Consultor

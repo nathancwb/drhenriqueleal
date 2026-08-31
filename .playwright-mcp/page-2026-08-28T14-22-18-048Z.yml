@@ -1,0 +1,146 @@
+- generic [active] [ref=f18e1]:
+  - banner [ref=f18e2]:
+    - generic [ref=f18e3]:
+      - link [ref=f18e4] [cursor=pointer]:
+        - /url: /
+        - img "Dr. Henrique Leal" [ref=f18e5]
+      - navigation [ref=f18e6]:
+        - link "Home" [ref=f18e7] [cursor=pointer]:
+          - /url: index.html
+        - generic: "|"
+        - link "Procedimentos" [ref=f18e8] [cursor=pointer]:
+          - /url: procedimentos.html
+        - link "Sobre" [ref=f18e9] [cursor=pointer]:
+          - /url: /#sobre
+        - generic: "|"
+        - link "Dúvidas" [ref=f18e10] [cursor=pointer]:
+          - /url: /#faq
+  - generic [ref=f18e12]:
+    - generic [ref=f18e13]: Portfólio Clínico Especializado
+    - heading [level=1] [ref=f18e14]:
+      - text: Tratamentos Guiados pela
+      - emphasis [ref=f18e15]: Excelência Anatômica
+    - paragraph [ref=f18e16]: Protocolos faciais, corporais, íntimos e regenerativos planejados de forma personalizada para realçar sua harmonia natural com máxima segurança.
+  - generic [ref=f18e18]:
+    - generic [ref=f18e19]:
+      - generic [ref=f18e20]:
+        - heading "Harmonização & Terço Facial 01" [level=2] [ref=f18e21]:
+          - text: Harmonização & Terço Facial
+          - generic [ref=f18e22]: "01"
+        - generic [ref=f18e23]: Proporção Áurea & Mapeamento 3D
+      - generic [ref=f18e24]:
+        - link "Preenchimento com Ácido Hialurônico Estruturação de mandíbula, queixo (mento), maçãs do rosto e lábios (Natural Lips) com biocompatibilidade avançada. Consultar ↗" [ref=f18e25] [cursor=pointer]:
+          - /url: https://wa.me/5541988577430?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20Preenchimento%20Facial%20com%20o%20Dr.%20Henrique.
+          - generic [ref=f18e26]: Preenchimento com Ácido Hialurônico
+          - generic [ref=f18e27]: Estruturação de mandíbula, queixo (mento), maçãs do rosto e lábios (Natural Lips) com biocompatibilidade avançada.
+          - generic [ref=f18e28]: Consultar ↗
+        - link "Toxina Botulínica (Botox®) Suavização precisa de linhas de expressão dinâmicas na testa, glabela e olhos, preservando a expressividade natural. Consultar ↗" [ref=f18e29] [cursor=pointer]:
+          - /url: https://wa.me/5541988577430?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20Toxina%20Botul%C3%ADnica%20com%20o%20Dr.%20Henrique.
+          - generic [ref=f18e30]: Toxina Botulínica (Botox®)
+          - generic [ref=f18e31]: Suavização precisa de linhas de expressão dinâmicas na testa, glabela e olhos, preservando a expressividade natural.
+          - generic [ref=f18e32]: Consultar ↗
+        - link "Odontologia Estética do Sorriso Integração do sorriso à moldura facial através de clareamento dental avançado, facetas e refinamento estético funcional. Consultar ↗" [ref=f18e33] [cursor=pointer]:
+          - /url: https://wa.me/5541988577430?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20Odontologia%20Est%C3%A9tica%20com%20o%20Dr.%20Henrique.
+          - generic [ref=f18e34]: Odontologia Estética do Sorriso
+          - generic [ref=f18e35]: Integração do sorriso à moldura facial através de clareamento dental avançado, facetas e refinamento estético funcional.
+          - generic [ref=f18e36]: Consultar ↗
+    - generic [ref=f18e37]:
+      - generic [ref=f18e38]:
+        - heading "Lifting sem Cortes & Bioestímulo 02" [level=2] [ref=f18e39]:
+          - text: Lifting sem Cortes & Bioestímulo
+          - generic [ref=f18e40]: "02"
+        - generic [ref=f18e41]: Firmeza & Estímulo de Colágeno
+      - generic [ref=f18e42]:
+        - link "Fios de Sustentação de PDO Técnica internacional (K-Club Coreia do Sul) para tração e sustentação dos tecidos com estímulo contínuo de colágeno novo. Consultar ↗" [ref=f18e43] [cursor=pointer]:
+          - /url: https://wa.me/5541988577430?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20Fios%20de%20PDO%20com%20o%20Dr.%20Henrique.
+          - generic [ref=f18e44]: Fios de Sustentação de PDO
+          - generic [ref=f18e45]: Técnica internacional (K-Club Coreia do Sul) para tração e sustentação dos tecidos com estímulo contínuo de colágeno novo.
+          - generic [ref=f18e46]: Consultar ↗
+        - link "Bioestimuladores de Colágeno Radiesse, Sculptra e Elleva para redensificação dérmica profunda, tratamento de flacidez e ancoragem tecidual. Consultar ↗" [ref=f18e47] [cursor=pointer]:
+          - /url: https://wa.me/5541988577430?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20Bioestimuladores%20de%20Col%C3%A1geno.
+          - generic [ref=f18e48]: Bioestimuladores de Colágeno
+          - generic [ref=f18e49]: Radiesse, Sculptra e Elleva para redensificação dérmica profunda, tratamento de flacidez e ancoragem tecidual.
+          - generic [ref=f18e50]: Consultar ↗
+        - link "Protocolo Bioforce (Assinatura) Associação exclusiva de bioestimuladores importados e peptídeos bioativos para regeneração celular acelerada. Protocolo VIP ↗" [ref=f18e51] [cursor=pointer]:
+          - /url: https://wa.me/5541988577430?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20Protocolo%20Bioforce.
+          - generic [ref=f18e52]: Protocolo Bioforce (Assinatura)
+          - generic [ref=f18e53]: Associação exclusiva de bioestimuladores importados e peptídeos bioativos para regeneração celular acelerada.
+          - generic [ref=f18e54]: Protocolo VIP ↗
+        - link "Microagulhamento & Peeling Químico Renovação celular dérmica com infusão de ativos, fechamento de poros, clareamento e uniformidade da textura da pele. Consultar ↗" [ref=f18e55] [cursor=pointer]:
+          - /url: https://wa.me/5541988577430?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20Microagulhamento.
+          - generic [ref=f18e56]: Microagulhamento & Peeling Químico
+          - generic [ref=f18e57]: Renovação celular dérmica com infusão de ativos, fechamento de poros, clareamento e uniformidade da textura da pele.
+          - generic [ref=f18e58]: Consultar ↗
+    - generic [ref=f18e59]:
+      - generic [ref=f18e60]:
+        - heading "Regenerativo & Saúde Integrada 03" [level=2] [ref=f18e61]:
+          - text: Regenerativo & Saúde Integrada
+          - generic [ref=f18e62]: "03"
+        - generic [ref=f18e63]: Ozonioterapia & Terapias Avançadas
+      - generic [ref=f18e64]:
+        - link "Ozonioterapia Medicinal & Estética Oxigenação celular profunda, potente ação anti-inflamatória, suporte pós-procedimentos injetáveis e controle de inflamações. Consultar ↗" [ref=f18e65] [cursor=pointer]:
+          - /url: https://wa.me/5541988577430?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20Ozonioterapia%20Medicinal.
+          - generic [ref=f18e66]: Ozonioterapia Medicinal & Estética
+          - generic [ref=f18e67]: Oxigenação celular profunda, potente ação anti-inflamatória, suporte pós-procedimentos injetáveis e controle de inflamações.
+          - generic [ref=f18e68]: Consultar ↗
+        - link "Terapia & Saúde Capilar Nutrição folicular profunda, estímulo à densidade dos fios e fortalecimento do couro cabeludo contra rarefação. Consultar ↗" [ref=f18e69] [cursor=pointer]:
+          - /url: https://wa.me/5541988577430?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20Terapia%20Capilar.
+          - generic [ref=f18e70]: Terapia & Saúde Capilar
+          - generic [ref=f18e71]: Nutrição folicular profunda, estímulo à densidade dos fios e fortalecimento do couro cabeludo contra rarefação.
+          - generic [ref=f18e72]: Consultar ↗
+    - generic [ref=f18e73]:
+      - generic [ref=f18e74]:
+        - heading "Estética Íntima & Corporal 04" [level=2] [ref=f18e75]:
+          - text: Estética Íntima & Corporal
+          - generic [ref=f18e76]: "04"
+        - generic [ref=f18e77]: Privacidade, Conforto & Bem-Estar
+      - generic [ref=f18e78]:
+        - link "Preenchimento & Bioestímulo Íntimo Tratamentos masculinos e femininos para contorno, volumização, melhora da firmeza dérmica e aumento da autoestima. Consultar ↗" [ref=f18e79] [cursor=pointer]:
+          - /url: https://wa.me/5541988577430?text=Ol%C3%A1%2C%20gostaria%20de%20uma%20avalia%C3%A7%C3%A3o%20de%20Est%C3%A9tica%20%C3%8Dntima%20(Masculina%2FFeminina).
+          - generic [ref=f18e80]: Preenchimento & Bioestímulo Íntimo
+          - generic [ref=f18e81]: Tratamentos masculinos e femininos para contorno, volumização, melhora da firmeza dérmica e aumento da autoestima.
+          - generic [ref=f18e82]: Consultar ↗
+        - link "Peelings Íntimos & Toxina Funcional Uniformização de tom para regiões hiperpigmentadas e toxina botulínica para alívio de tensões e sudorese íntima. Consultar ↗" [ref=f18e83] [cursor=pointer]:
+          - /url: https://wa.me/5541988577430?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20Peelings%20e%20Botox%20%C3%8Dntimo.
+          - generic [ref=f18e84]: Peelings Íntimos & Toxina Funcional
+          - generic [ref=f18e85]: Uniformização de tom para regiões hiperpigmentadas e toxina botulínica para alívio de tensões e sudorese íntima.
+          - generic [ref=f18e86]: Consultar ↗
+        - link "Harmonização Glútea & Corporal Projeção, firmeza e volumização estratégica com bioestimuladores de colágeno e ácido hialurônico corporal de alta densidade. Consultar ↗" [ref=f18e87] [cursor=pointer]:
+          - /url: https://wa.me/5541988577430?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20Harmoniza%C3%A7%C3%A3o%20Gl%C3%BAtea.
+          - generic [ref=f18e88]: Harmonização Glútea & Corporal
+          - generic [ref=f18e89]: Projeção, firmeza e volumização estratégica com bioestimuladores de colágeno e ácido hialurônico corporal de alta densidade.
+          - generic [ref=f18e90]: Consultar ↗
+  - generic [ref=f18e92]:
+    - heading "Pronto para Elevar sua Autoestima com Segurança?" [level=2] [ref=f18e93]
+    - paragraph [ref=f18e94]: Agende sua consulta de avaliação no Edifício Today's Office em Curitiba e conheça o plano anatômico ideal para seu objetivo.
+    - generic [ref=f18e95]:
+      - link "Agendar pelo WhatsApp" [ref=f18e96] [cursor=pointer]:
+        - /url: https://wa.me/5541988577430?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20o%20Dr.%20Henrique.
+      - link "← Voltar ao Início" [ref=f18e99] [cursor=pointer]:
+        - /url: index.html
+  - contentinfo [ref=f18e100]:
+    - generic [ref=f18e101]:
+      - generic [ref=f18e102]:
+        - generic [ref=f18e103]:
+          - img "Dr. Henrique Leal" [ref=f18e104]
+          - paragraph [ref=f18e105]: Biomédico e Dentista especializado em Harmonização Facial. Resultados naturais e elegantes em Curitiba.
+        - generic [ref=f18e106]:
+          - heading "Contato" [level=4] [ref=f18e107]
+          - list [ref=f18e108]:
+            - listitem [ref=f18e109]:
+              - 'link "WhatsApp: (41) 98857-7430" [ref=f18e110] [cursor=pointer]':
+                - /url: https://wa.me/5541988577430
+            - listitem [ref=f18e111]:
+              - 'link "Instagram: @dr.henriqueleal" [ref=f18e112] [cursor=pointer]':
+                - /url: https://instagram.com/dr.henriqueleal
+            - listitem [ref=f18e113]: Curitiba - PR
+        - generic [ref=f18e114]:
+          - heading "Links Rápidos" [level=4] [ref=f18e115]
+          - list [ref=f18e116]:
+            - listitem [ref=f18e117]:
+              - link "Home" [ref=f18e118] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f18e119]:
+              - link "Procedimentos" [ref=f18e120] [cursor=pointer]:
+                - /url: procedimentos.html
+      - paragraph [ref=f18e122]: © 2024 Dr. Henrique Leal. Todos os direitos reservados.

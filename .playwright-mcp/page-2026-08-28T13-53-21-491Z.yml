@@ -1,0 +1,151 @@
+- generic [active] [ref=f3e1]:
+  - banner [ref=f3e2]:
+    - generic [ref=f3e3]:
+      - link [ref=f3e4] [cursor=pointer]:
+        - /url: /
+        - img "Dr. Henrique Leal" [ref=f3e5]
+      - navigation [ref=f3e6]:
+        - link "Home" [ref=f3e7] [cursor=pointer]:
+          - /url: index.html
+        - generic: "|"
+        - link "Procedimentos" [ref=f3e8] [cursor=pointer]:
+          - /url: procedimentos.html
+        - link "Sobre" [ref=f3e9] [cursor=pointer]:
+          - /url: /#sobre
+        - generic: "|"
+        - link "Dúvidas" [ref=f3e10] [cursor=pointer]:
+          - /url: /#faq
+  - generic [ref=f3e11]:
+    - img "Clínica Dr. Henrique Leal" [ref=f3e13]
+    - generic [ref=f3e16]:
+      - generic [ref=f3e17]: Excelência em Estética
+      - heading [level=1] [ref=f3e18]:
+        - text: Tratamentos
+        - emphasis [ref=f3e19]: Exclusivos
+      - paragraph [ref=f3e20]: Navegue pelo nosso portfólio de procedimentos avançados para estética facial, corporal e íntima.
+  - generic [ref=f3e23]:
+    - generic [ref=f3e24]:
+      - generic [ref=f3e25]: Regeneração Inteligente e Natural
+      - heading [level=2] [ref=f3e28]:
+        - text: Protocolo
+        - emphasis [ref=f3e29]: Bioforce
+      - paragraph [ref=f3e30]: O Protocolo Bioforce combina dois bioestimuladores de colágeno, incluindo ativos à base de peptídeos ligados à estética regenerativa, promovendo estímulo profundo e melhora real da qualidade da pele.
+      - paragraph [ref=f3e31]: Totalmente personalizado, é desenvolvido de acordo com as necessidades de cada paciente, utilizando exclusivamente produtos importados de alta performance.
+      - paragraph [ref=f3e32]: Um protocolo pensado para quem busca rejuvenescimento com naturalidade, elegância e resultados duradouros.
+      - link "Agendar Avaliação" [ref=f3e33] [cursor=pointer]:
+        - /url: https://wa.me/5541988577430?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20Protocolo%20Bioforce.
+    - generic [ref=f3e35]:
+      - generic [ref=f3e36]: BIOFORCE
+      - generic [ref=f3e37]: Protocolo Exclusivo · Dr. Henrique Leal
+      - generic [ref=f3e38]:
+        - generic [ref=f3e39]:
+          - strong [ref=f3e40]: "2"
+          - generic [ref=f3e41]: Bioestimuladores
+        - generic [ref=f3e42]:
+          - strong [ref=f3e43]: 100%
+          - generic [ref=f3e44]: Personalizado
+        - generic [ref=f3e45]:
+          - strong [ref=f3e46]: Alta
+          - generic [ref=f3e47]: Performance
+        - generic [ref=f3e48]:
+          - strong [ref=f3e49]: +
+          - generic [ref=f3e50]: Qualidade da Pele
+  - generic [ref=f3e53]:
+    - generic [ref=f3e55] [cursor=pointer]:
+      - heading "Preenchimento Facial" [level=3] [ref=f3e56]
+      - paragraph [ref=f3e57]: Reposição de volume facial e definição de contornos com ácido hialurônico de alta tecnologia.
+      - generic [ref=f3e58]: Ver Detalhes ›
+    - generic [ref=f3e60] [cursor=pointer]:
+      - heading "Toxina Botulínica" [level=3] [ref=f3e61]
+      - paragraph [ref=f3e62]: Prevenção e suavização de linhas de expressão dinâmicas para um olhar mais leve e descansado.
+      - generic [ref=f3e63]: Ver Detalhes ›
+    - generic [ref=f3e65] [cursor=pointer]:
+      - heading "Bioestimuladores" [level=3] [ref=f3e66]
+      - paragraph [ref=f3e67]: Firmeza e rejuvenescimento estrutural progressivo com estímulo natural de colágeno.
+      - generic [ref=f3e68]: Ver Detalhes ›
+    - generic [ref=f3e70] [cursor=pointer]:
+      - heading "Fios de PDO" [level=3] [ref=f3e71]
+      - paragraph [ref=f3e72]: Lifting sem cirurgia e intensa bioestimulação com fios absorvíveis.
+      - generic [ref=f3e73]: Ver Detalhes ›
+    - generic [ref=f3e75] [cursor=pointer]:
+      - heading "Preenchimento Íntimo" [level=3] [ref=f3e76]
+      - paragraph [ref=f3e77]: Procedimento com ácido hialurônico (masculino e feminino) para melhorar volume, contorno e proporção, contribuindo para estética e autoestima.
+      - generic [ref=f3e78]: Ver Detalhes ›
+    - generic [ref=f3e80] [cursor=pointer]:
+      - heading "Bioestimulador Íntimo" [level=3] [ref=f3e81]
+      - paragraph [ref=f3e82]: Atua na região masculina e feminina estimulando a produção natural de colágeno, promovendo melhora da firmeza, textura e qualidade da pele ao longo do tempo.
+      - generic [ref=f3e83]: Ver Detalhes ›
+    - generic [ref=f3e85] [cursor=pointer]:
+      - heading "Peelings Íntimos" [level=3] [ref=f3e86]
+      - paragraph [ref=f3e87]: Realizados na região pubiana, vaginal, anal e escrotal, com o objetivo de clarear, uniformizar o tom da pele e melhorar a textura.
+      - generic [ref=f3e88]: Ver Detalhes ›
+    - generic [ref=f3e90] [cursor=pointer]:
+      - heading "Botox Anal (Antox)" [level=3] [ref=f3e91]
+      - paragraph [ref=f3e92]: Aplicação de toxina botulínica para relaxamento da musculatura anal, auxiliando em fissuras, desconfortos e proporcionando mais conforto.
+      - generic [ref=f3e93]: Ver Detalhes ›
+    - generic [ref=f3e95] [cursor=pointer]:
+      - heading "Botox no Saco Escrotal" [level=3] [ref=f3e96]
+      - paragraph [ref=f3e97]: Promove relaxamento da musculatura, melhora do conforto local, aspecto estético mais harmônico e redução da sudorese da região.
+      - generic [ref=f3e98]: Ver Detalhes ›
+    - generic [ref=f3e100] [cursor=pointer]:
+      - heading "Estética Corporal" [level=3] [ref=f3e101]
+      - paragraph [ref=f3e102]: Alta performance no contorno, tratamento de flacidez corporal e definição muscular.
+      - generic [ref=f3e103]: Ver Detalhes ›
+    - generic [ref=f3e105] [cursor=pointer]:
+      - heading "Harmonização Glútea" [level=3] [ref=f3e106]
+      - paragraph [ref=f3e107]: Melhora o contorno, projeção e firmeza com preenchimento, bioestimuladores, fios de PDO e plasma gel. Protocolo personalizado para resultados naturais e seguros.
+      - generic [ref=f3e108]: Ver Detalhes ›
+    - generic [ref=f3e110] [cursor=pointer]:
+      - heading "Microagulhamento Facial e Corporal" [level=3] [ref=f3e111]
+      - paragraph [ref=f3e112]: Técnica avançada com microperfurações e infusão de ativos. Estimula o colágeno, reduz poros, suaviza linhas finas e promove pele firme e revitalizada.
+      - generic [ref=f3e113]: Ver Detalhes ›
+    - generic [ref=f3e115] [cursor=pointer]:
+      - heading "Peeling Químico" [level=3] [ref=f3e116]
+      - paragraph [ref=f3e117]: Renovação celular e uniformidade para sua pele, combatendo manchas e texturas irregulares.
+      - generic [ref=f3e118]: Ver Detalhes ›
+    - generic [ref=f3e120] [cursor=pointer]:
+      - heading "Terapia Capilar" [level=3] [ref=f3e121]
+      - paragraph [ref=f3e122]: Tratamentos avançados para saúde, nutrição capilar e fortalecimento dos fios e couro cabeludo.
+      - generic [ref=f3e123]: Ver Detalhes ›
+    - generic [ref=f3e125] [cursor=pointer]:
+      - heading "Ozonioterapia Medicinal" [level=3] [ref=f3e126]
+      - paragraph [ref=f3e127]: Oxigenação celular, potente ação anti-inflamatória e regeneração tecidual profunda para estética facial, corporal e capilar.
+      - generic [ref=f3e128]: Ver Detalhes ›
+    - generic [ref=f3e130] [cursor=pointer]:
+      - heading "Odontologia Estética" [level=3] [ref=f3e131]
+      - paragraph [ref=f3e132]: "Cuidados completos para o sorriso: Clareamento, facetas em porcelana e saúde bucal."
+      - generic [ref=f3e133]: Ver Detalhes ›
+  - generic [ref=f3e135]:
+    - heading "Pronto para Dar o Próximo Passo?" [level=2] [ref=f3e136]
+    - paragraph [ref=f3e137]: Agende sua avaliação personalizada e descubra o protocolo ideal para você.
+    - generic [ref=f3e138]:
+      - link "Agendar pelo WhatsApp" [ref=f3e139] [cursor=pointer]:
+        - /url: https://wa.me/5541988577430?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.
+      - link "← Voltar ao Início" [ref=f3e142] [cursor=pointer]:
+        - /url: /
+  - contentinfo [ref=f3e143]:
+    - generic [ref=f3e144]:
+      - generic [ref=f3e145]:
+        - generic [ref=f3e146]:
+          - img "Dr. Henrique Leal" [ref=f3e147]
+          - paragraph [ref=f3e148]: Biomédico e Dentista especializado em Harmonização Facial. Resultados naturais e elegantes em Curitiba.
+        - generic [ref=f3e149]:
+          - heading "Contato" [level=4] [ref=f3e150]
+          - list [ref=f3e151]:
+            - listitem [ref=f3e152]:
+              - 'link "WhatsApp: (41) 98857-7430" [ref=f3e153] [cursor=pointer]':
+                - /url: https://wa.me/5541988577430
+            - listitem [ref=f3e154]:
+              - 'link "Instagram: @dr.henriqueleal" [ref=f3e155] [cursor=pointer]':
+                - /url: https://instagram.com/dr.henriqueleal
+            - listitem [ref=f3e156]: Curitiba - PR
+        - generic [ref=f3e157]:
+          - heading "Links Rápidos" [level=4] [ref=f3e158]
+          - list [ref=f3e159]:
+            - listitem [ref=f3e160]:
+              - link "Home" [ref=f3e161] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f3e162]:
+              - link "Procedimentos" [ref=f3e163] [cursor=pointer]:
+                - /url: procedimentos.html
+      - paragraph [ref=f3e165]: © 2024 Dr. Henrique Leal. Todos os direitos reservados.

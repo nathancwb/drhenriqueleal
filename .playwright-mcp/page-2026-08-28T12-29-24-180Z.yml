@@ -1,0 +1,186 @@
+- generic [active] [ref=f11e1]:
+  - banner [ref=f11e2]:
+    - generic [ref=f11e4]:
+      - link [ref=f11e5] [cursor=pointer]:
+        - /url: index.html
+        - img "Dr. Henrique Leal Rosa" [ref=f11e6]
+      - navigation [ref=f11e7]:
+        - link "Início" [ref=f11e8] [cursor=pointer]:
+          - /url: index.html
+        - generic [ref=f11e9]: ·
+        - link "Procedimentos" [ref=f11e10] [cursor=pointer]:
+          - /url: procedimentos.html
+        - generic [ref=f11e11]: ·
+        - link "Resultados" [ref=f11e12] [cursor=pointer]:
+          - /url: resultados.html
+        - generic [ref=f11e13]: ·
+        - link "O Especialista" [ref=f11e14] [cursor=pointer]:
+          - /url: index.html#sobre
+        - generic [ref=f11e15]: ·
+        - link "Clínica" [ref=f11e16] [cursor=pointer]:
+          - /url: index.html#localizacao
+      - link "Agendar Consulta ↗" [ref=f11e18] [cursor=pointer]:
+        - /url: https://wa.me/5541988577430?text=Ol%C3%A1%2C+gostaria+de+agendar+uma+avalia%C3%A7%C3%A3o+com+o+Dr.+Henrique+Leal.
+        - generic [ref=f11e19]: Agendar Consulta
+        - generic [ref=f11e20]: ↗
+  - generic [ref=f11e22]:
+    - generic [ref=f11e23]: Galeria Oficial
+    - heading [level=1] [ref=f11e24]:
+      - text: A Arte da
+      - emphasis [ref=f11e25]: Harmonia
+      - text: em Casos Reais
+    - paragraph [ref=f11e26]: Planejamentos anatômicos individualizados que valorizam a identidade única de cada paciente com elegância e naturalidade.
+  - generic [ref=f11e28]:
+    - generic [ref=f11e29]:
+      - strong [ref=f11e30]: "Aviso Ético e Legal:"
+      - text: Os resultados visuais exibidos representam casos clínicos individuais e servem exclusivamente como portfólio informativo. Cada organismo responde de forma única aos tratamentos. Procedimentos realizados em conformidade com as diretrizes do Conselho de Classe e a Lei de Direitos Autorais (Lei nº 9.610/98).
+    - generic [ref=f11e31]:
+      - generic [ref=f11e32]:
+        - generic [ref=f11e33]:
+          - heading "Rinomodelação UpNose" [level=4] [ref=f11e34]
+          - generic [ref=f11e35]: Perfil & Dorso
+        - generic [ref=f11e36]:
+          - generic [ref=f11e37]:
+            - img "Antes Rinomodelação" [ref=f11e38]
+            - generic [ref=f11e39]: Antes
+          - generic [ref=f11e40]:
+            - img "Depois Rinomodelação" [ref=f11e41]
+            - generic [ref=f11e42]: Depois
+        - paragraph [ref=f11e43]: Elevação da ponta nasal e retificação de dorso com ácido hialurônico de alta sustentação.
+      - generic [ref=f11e44]:
+        - generic [ref=f11e45]:
+          - heading "Preenchimento Labial Natural Lips" [level=4] [ref=f11e46]
+          - generic [ref=f11e47]: Lábios
+        - generic [ref=f11e48]:
+          - generic [ref=f11e49]:
+            - img "Antes Lábios" [ref=f11e50]
+            - generic [ref=f11e51]: Antes
+          - generic [ref=f11e52]:
+            - img "Depois Lábios" [ref=f11e53]
+            - generic [ref=f11e54]: Depois
+        - paragraph [ref=f11e55]: Definição do contorno labial e restauração do turgor com ácido hialurônico maleável.
+      - generic [ref=f11e56]:
+        - generic [ref=f11e57]:
+          - heading "Harmonia e Proporção Áurea Labial" [level=4] [ref=f11e58]
+          - generic [ref=f11e59]: Lábios
+        - img "Resultado Lábios" [ref=f11e62]
+        - paragraph [ref=f11e63]: Volumização refinada preservando os traços originais da paciente sem projeção excessiva.
+      - generic [ref=f11e64]:
+        - generic [ref=f11e65]:
+          - heading "Harmonização Masculina de Mandíbula" [level=4] [ref=f11e66]
+          - generic [ref=f11e67]: Full Face
+        - generic [ref=f11e68]:
+          - generic [ref=f11e69]:
+            - img "Antes Harmonização Masculina" [ref=f11e70]
+            - generic [ref=f11e71]: Antes
+          - generic [ref=f11e72]:
+            - img "Depois Harmonização Masculina" [ref=f11e73]
+            - generic [ref=f11e74]: Depois
+        - paragraph [ref=f11e75]: Definição do ângulo goníaco e queixo estruturado com técnica segura de microcânulas.
+      - generic [ref=f11e76]:
+        - generic [ref=f11e77]:
+          - heading "Lifting Estrutural e Reposicionamento Malar" [level=4] [ref=f11e78]
+          - generic [ref=f11e79]: Full Face
+        - generic [ref=f11e80]:
+          - generic [ref=f11e81]:
+            - img "Antes Harmonização Feminina" [ref=f11e82]
+            - generic [ref=f11e83]: Antes
+          - generic [ref=f11e84]:
+            - img "Depois Harmonização Feminina" [ref=f11e85]
+            - generic [ref=f11e86]: Depois
+        - paragraph [ref=f11e87]: Sustentação do terço médio e amenização de sulcos faciais com pontos estratégicos de ancoragem.
+      - generic [ref=f11e88]:
+        - generic [ref=f11e89]:
+          - heading "Toxina Botulínica de Precisão" [level=4] [ref=f11e90]
+          - generic [ref=f11e91]: Botox
+        - generic [ref=f11e92]:
+          - generic [ref=f11e93]:
+            - img "Antes Botox Testa" [ref=f11e94]
+            - generic [ref=f11e95]: Antes
+          - generic [ref=f11e96]:
+            - img "Depois Botox Testa" [ref=f11e97]
+            - generic [ref=f11e98]: Depois
+        - paragraph [ref=f11e99]: Suavização das rugas dinâmicas da fronte com preservação da expressividade facial natural.
+      - generic [ref=f11e100]:
+        - generic [ref=f11e101]:
+          - heading "Harmonização & Contorno Glúteo" [level=4] [ref=f11e102]
+          - generic [ref=f11e103]: Corporal
+        - generic [ref=f11e104]:
+          - generic [ref=f11e105]:
+            - img "Antes Harmonização Glútea" [ref=f11e106]
+            - generic [ref=f11e107]: Antes
+          - generic [ref=f11e108]:
+            - img "Depois Harmonização Glútea" [ref=f11e109]
+            - generic [ref=f11e110]: Depois
+        - paragraph [ref=f11e111]: Estímulo de colágeno e correção de depressão trocantérica com bioestimuladores de última geração.
+      - generic [ref=f11e112]:
+        - generic [ref=f11e113]:
+          - heading "Separação Nítida de Mandíbula e Pescoço" [level=4] [ref=f11e114]
+          - generic [ref=f11e115]: Contorno
+        - generic [ref=f11e116]:
+          - generic [ref=f11e117]:
+            - img "Antes Mandíbula" [ref=f11e118]
+            - generic [ref=f11e119]: Antes
+          - generic [ref=f11e120]:
+            - img "Depois Mandíbula" [ref=f11e121]
+            - generic [ref=f11e122]: Depois
+        - paragraph [ref=f11e123]: Linha mandibular nítida e refinada promovendo rejuvenescimento óptico imediato.
+  - generic [ref=f11e126]:
+    - generic [ref=f11e127]: Avaliação Médica Personalizada
+    - heading "Deseja Conhecer o Seu Plano de Tratamento?" [level=2] [ref=f11e128]
+    - paragraph [ref=f11e129]: Agende uma consulta com o Dr. Henrique Leal no Edifício Today's Office em Curitiba.
+    - generic [ref=f11e130]:
+      - link "Falar no WhatsApp com a Assessoria ↗" [ref=f11e131] [cursor=pointer]:
+        - /url: https://wa.me/5541988577430?text=Ol%C3%A1%2C+vi+a+galeria+de+resultados+e+gostaria+de+agendar+uma+avalia%C3%A7%C3%A3o.
+        - generic [ref=f11e132]: Falar no WhatsApp com a Assessoria
+        - generic [ref=f11e133]: ↗
+      - link "Ver Procedimentos" [ref=f11e134] [cursor=pointer]:
+        - /url: procedimentos.html
+  - contentinfo [ref=f11e136]:
+    - generic [ref=f11e137]:
+      - generic [ref=f11e138]:
+        - generic [ref=f11e139]:
+          - img "Dr. Henrique Leal Rosa" [ref=f11e140]
+          - paragraph [ref=f11e141]: Clínica de Harmonização Facial e Estética Médica de Alta Performance em Curitiba. Excelência, proporção áurea e respeito à identidade.
+          - paragraph [ref=f11e142]: Dr. Henrique Leal Rosa · Biomédico & Dentista Esteta
+        - generic [ref=f11e143]:
+          - heading "Navegação" [level=5] [ref=f11e144]
+          - list [ref=f11e145]:
+            - listitem [ref=f11e146]:
+              - link "Início" [ref=f11e147] [cursor=pointer]:
+                - /url: index.html
+            - listitem [ref=f11e148]:
+              - link "Procedimentos" [ref=f11e149] [cursor=pointer]:
+                - /url: procedimentos.html
+            - listitem [ref=f11e150]:
+              - link "Resultados" [ref=f11e151] [cursor=pointer]:
+                - /url: resultados.html
+            - listitem [ref=f11e152]:
+              - link "O Especialista" [ref=f11e153] [cursor=pointer]:
+                - /url: index.html#sobre
+        - generic [ref=f11e154]:
+          - heading "Procedimentos" [level=5] [ref=f11e155]
+          - list [ref=f11e156]:
+            - listitem [ref=f11e157]:
+              - link "Harmonização Facial" [ref=f11e158] [cursor=pointer]:
+                - /url: procedimentos-detalhes.html?id=preenchimento-acido-hialuronico
+            - listitem [ref=f11e159]:
+              - link "Fios de PDO" [ref=f11e160] [cursor=pointer]:
+                - /url: procedimentos-detalhes.html?id=fios-pdo
+            - listitem [ref=f11e161]:
+              - link "Bioestimuladores" [ref=f11e162] [cursor=pointer]:
+                - /url: procedimentos-detalhes.html?id=bioestimulador-colageno
+            - listitem [ref=f11e163]:
+              - link "Protocolo Bioforce" [ref=f11e164] [cursor=pointer]:
+                - /url: procedimentos-detalhes.html?id=protocolo-bioforce
+            - listitem [ref=f11e165]:
+              - link "Ozonioterapia" [ref=f11e166] [cursor=pointer]:
+                - /url: procedimentos-detalhes.html?id=ozonioterapia
+        - generic [ref=f11e167]:
+          - heading "Consultório" [level=5] [ref=f11e168]
+          - paragraph [ref=f11e169]: Edifício Today's Office, Sala 518 Av. República Argentina, 1237 — Água Verde, Curitiba/PR
+          - link "(41) 98857-7430" [ref=f11e170] [cursor=pointer]:
+            - /url: https://wa.me/5541988577430
+      - generic [ref=f11e171]:
+        - paragraph [ref=f11e172]: © 2026 Dr. Henrique Leal Rosa. Todos os direitos reservados.
+        - paragraph [ref=f11e173]: Desenvolvido com sofisticação estética.

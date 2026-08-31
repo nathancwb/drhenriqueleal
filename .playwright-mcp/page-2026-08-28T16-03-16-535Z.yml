@@ -1,0 +1,124 @@
+- generic [active] [ref=f10e1]:
+  - banner [ref=f10e2]:
+    - generic [ref=f10e3]:
+      - link [ref=f10e4] [cursor=pointer]:
+        - /url: index.html
+        - img "Dr. Henrique Leal Rosa" [ref=f10e5]
+      - navigation [ref=f10e6]:
+        - link "Início" [ref=f10e7] [cursor=pointer]:
+          - /url: index.html
+        - generic: "|"
+        - link "Procedimentos" [ref=f10e8] [cursor=pointer]:
+          - /url: procedimentos.html
+        - generic: "|"
+        - link "Resultados" [ref=f10e9] [cursor=pointer]:
+          - /url: resultados.html
+        - generic: "|"
+        - link "O Especialista" [ref=f10e10] [cursor=pointer]:
+          - /url: index.html#sobre
+        - generic: "|"
+        - link "Clínica" [ref=f10e11] [cursor=pointer]:
+          - /url: index.html#localizacao
+  - generic [ref=f10e14]:
+    - generic [ref=f10e15]: Curitiba · Água Verde · Procedimento Especializado
+    - heading [level=1] [ref=f10e16]:
+      - text: "Ozonioterapia Medicinal em Curitiba:"
+      - emphasis [ref=f10e17]: Ciência Regenerativa & Oxigenação
+    - paragraph [ref=f10e18]: A ozonioterapia medicinal combina oxigênio e ozônio medicinal puro (O2/O3) para desinflamação tecidual, estímulo imunológico e aceleração da regeneração celular na face, corpo e couro cabeludo.
+    - generic [ref=f10e19]:
+      - link "Agendar Consulta em Curitiba ↗" [ref=f10e20] [cursor=pointer]:
+        - /url: https://wa.me/5541988577430?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20para%20o%20tratamento%20de%20Ozonioterapia%20Medicinal%20&%20Estética%20em%20Curitiba.
+      - link "Ver Todos os Procedimentos" [ref=f10e23] [cursor=pointer]:
+        - /url: procedimentos.html
+  - generic [ref=f10e26]:
+    - generic [ref=f10e27]:
+      - generic [ref=f10e28]: Excelência Técnica
+      - heading "Como Funciona o Tratamento" [level=2] [ref=f10e29]
+      - paragraph [ref=f10e30]: Reconhecida internacionalmente por sua potente ação biológica, a Ozonioterapia atua restabelecendo a oxigenação dos tecidos e neutralizando o estresse oxidativo. No consultório do Dr. Henrique Leal em Curitiba, é aplicada com dosimetria médica precisa tanto para fins estéticos (rejuvenescimento, acne, viço) quanto terapêuticos e pré/pós-procedimentos injetáveis.
+      - heading "Principais Benefícios & Resultados" [level=3] [ref=f10e31]
+      - generic [ref=f10e32]:
+        - generic [ref=f10e33]:
+          - generic [ref=f10e34]: "01"
+          - generic [ref=f10e35]:
+            - strong [ref=f10e36]: Oxigenação Celular Intensa
+            - text: Ativação imediata da microcirculação dérmica e melhora do viço natural da pele.
+        - generic [ref=f10e37]:
+          - generic [ref=f10e38]: "02"
+          - generic [ref=f10e39]:
+            - strong [ref=f10e40]: Ação Anti-inflamatória & Cicatrização
+            - text: Redução acelerada de edemas, suporte na recuperação pós-fios e pós-injetáveis.
+        - generic [ref=f10e41]:
+          - generic [ref=f10e42]: "03"
+          - generic [ref=f10e43]:
+            - strong [ref=f10e44]: Controle de Acne e Micro-organismos
+            - text: Efeito bactericida e fungicida natural que purifica os poros e equilibra a barreira dérmica.
+        - generic [ref=f10e45]:
+          - generic [ref=f10e46]: "04"
+          - generic [ref=f10e47]:
+            - strong [ref=f10e48]: Terapia Capilar Regenerativa
+            - text: Desobstrução do folículo piloso e estímulo bioenergético contra a rarefação dos fios.
+    - generic [ref=f10e50]:
+      - img "Ozonioterapia Medicinal & Estética — Dr. Henrique Leal" [ref=f10e51]
+      - generic [ref=f10e52]: Responsável Técnico
+      - heading "Dr. Henrique Leal Rosa" [level=4] [ref=f10e53]
+      - paragraph [ref=f10e54]: Cirurgião Dentista (CRO-PR) & Biomédico Esteta (CRBM-PR). Professor de pós-graduação e mentor clínico internacional.
+      - generic [ref=f10e55]:
+        - generic [ref=f10e56]: "📍 Consultório em Curitiba:"
+        - generic [ref=f10e57]: Edifício Today's Office, Sala 518 Av. República Argentina, 1237 — Água Verde
+      - link "Falar no WhatsApp" [ref=f10e58] [cursor=pointer]:
+        - /url: https://wa.me/5541988577430?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20para%20o%20tratamento%20de%20Ozonioterapia%20Medicinal%20&%20Estética%20em%20Curitiba.
+  - generic [ref=f10e60]:
+    - generic [ref=f10e61]:
+      - generic [ref=f10e62]: Dúvidas Comuns
+      - heading "Perguntas Frequentes sobre Ozonioterapia Medicinal & Estética" [level=2] [ref=f10e63]
+      - paragraph [ref=f10e64]: Respostas diretas sobre o procedimento realizado em Curitiba.
+    - generic [ref=f10e65]:
+      - generic [ref=f10e66]:
+        - button "Onde fazer Ozonioterapia em Curitiba?" [ref=f10e67] [cursor=pointer]
+        - generic: O Dr. Henrique Leal atende no Edifício Today's Office, Sala 518, no bairro Água Verde em Curitiba/PR, com equipamentos calibrados e padrões rigorosos de biossegurança.
+      - generic [ref=f10e70]:
+        - button "Para que serve a Ozonioterapia na estética?" [ref=f10e71] [cursor=pointer]
+        - generic: Serve para potencializar a oxigenação dos tecidos, acelerar a cicatrização de procedimentos, combater bactérias causadoras de acne e estimular o metabolismo celular.
+      - generic [ref=f10e74]:
+        - button "A aplicação de ozônio medicinal é segura?" [ref=f10e75] [cursor=pointer]
+        - generic: Sim, quando realizada por profissional habilitado com dupla formação (Dentista e Biomédico) e com geradores de ozônio de grau médico aprovados pela ANVISA.
+  - generic [ref=f10e79]:
+    - heading "Agende sua Avaliação de Ozonioterapia Medicinal & Estética em Curitiba" [level=2] [ref=f10e80]
+    - paragraph [ref=f10e81]: Planejamento individualizado e tecnologia de alta performance para valorizar seus traços com segurança e naturalidade.
+    - generic [ref=f10e82]:
+      - link "Agendar pelo WhatsApp" [ref=f10e83] [cursor=pointer]:
+        - /url: https://wa.me/5541988577430?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20para%20o%20tratamento%20de%20Ozonioterapia%20Medicinal%20&%20Estética%20em%20Curitiba.
+      - link "Catálogo Completo" [ref=f10e86] [cursor=pointer]:
+        - /url: procedimentos.html
+  - contentinfo [ref=f10e87]:
+    - generic [ref=f10e88]:
+      - generic [ref=f10e89]:
+        - generic [ref=f10e90]:
+          - img "Dr. Henrique Leal" [ref=f10e91]
+          - paragraph [ref=f10e92]: Biomédico e Dentista especializado em Harmonização Facial e Estética Regenerativa em Curitiba.
+        - generic [ref=f10e93]:
+          - heading "Contato & Consultório" [level=4] [ref=f10e94]
+          - list [ref=f10e95]:
+            - listitem [ref=f10e96]:
+              - 'link "WhatsApp: (41) 98857-7430" [ref=f10e97] [cursor=pointer]':
+                - /url: https://wa.me/5541988577430
+            - listitem [ref=f10e98]:
+              - 'link "Instagram: @dr.henriqueleal" [ref=f10e99] [cursor=pointer]':
+                - /url: https://instagram.com/dr.henriqueleal
+            - listitem [ref=f10e100]: Edifício Today's Office, Sala 518 — Curitiba, PR
+        - generic [ref=f10e101]:
+          - heading "Links Rápidos" [level=4] [ref=f10e102]
+          - list [ref=f10e103]:
+            - listitem [ref=f10e104]:
+              - link "Início" [ref=f10e105] [cursor=pointer]:
+                - /url: index.html
+            - listitem [ref=f10e106]:
+              - link "Procedimentos" [ref=f10e107] [cursor=pointer]:
+                - /url: procedimentos.html
+            - listitem [ref=f10e108]:
+              - link "Resultados" [ref=f10e109] [cursor=pointer]:
+                - /url: resultados.html
+            - listitem [ref=f10e110]:
+              - link "O Especialista" [ref=f10e111] [cursor=pointer]:
+                - /url: index.html#sobre
+      - paragraph [ref=f10e113]: © 2026 Dr. Henrique Leal Rosa. Todos os direitos reservados.

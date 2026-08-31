@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link rel="icon" type="image/png" href="assets/img/favicon.png?v=3">
+    <link rel="apple-touch-icon" href="assets/img/favicon.png?v=3">
+    <title>Harmonização Facial em Curitiba | Dr. Henrique Leal Rosa</title>
+    <meta name="description"
+        content="Harmonização Facial, Fios de PDO e Rejuvenescimento Natural em Curitiba. Agende sua avaliação VIP no Edifício Today's Office direto no WhatsApp.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <!-- Three.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <style>
+        :root {
+            --bg-black: #06090F;
+            --bg-surface: #0B121E;
+            --bg-card: #101A2B;
+            --gold: #C5A880;
+            --gold-light: #E0CEB5;
+            --gold-glow: rgba(197, 168, 128, 0.25);
+            --wpp-green: #25D366;
+            --wpp-green-hover: #1EBE5D;
+            --text-pure: #FFFFFF;
+            --text-body: #CBD5E1;
+            --text-muted: #8E9EB5;
+            --font-sans: 'Plus Jakarta Sans', sans-serif;
+            --font-serif: 'Instrument Serif', Georgia, serif;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            background-color: var(--bg-black);
+            color: var(--text-body);
+            font-family: var(--font-sans);
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* 3D WebGL Canvas */
+        #webgl-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 0;
+            pointer-events: none;
+            opacity: 0.75;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Top Conversion Bar */
+        .top-bar {
+            background: rgba(11, 18, 30, 0.88);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 12px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .top-bar-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .top-logo img {
+            height: 38px;
+            filter: brightness(1.2);
+        }
+        .top-badge {
+            font-size: 0.8rem;
+            color: var(--gold);
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        /* Commercial Buttons */
+        .btn-wpp-commercial {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background: linear-gradient(135deg, #25D366, #1EBE5D);
+            color: #FFFFFF;
+            font-size: 1.12rem;
+            font-weight: 800;
+            text-decoration: none;
+            padding: 18px 38px;
+            border-radius: 9999px;
+            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.45);
+            transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+        .btn-wpp-commercial:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 16px 45px rgba(37, 211, 102, 0.65);
+        }
+        .pulse-anim {
+            animation: pulseCommercial 2.2s infinite ease-in-out;
+        }
+        @keyframes pulseCommercial {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.65); }
+            70% { box-shadow: 0 0 0 20px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+
+        .btn-gold-card {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background: linear-gradient(135deg, var(--gold-light), var(--gold));
+            color: #06090F;
+            font-size: 0.95rem;
+            font-weight: 700;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 9999px;
+            transition: all 0.25s ease;
+        }
+        .btn-gold-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px var(--gold-glow);
+        }
+
+        /* Hero Section */
+        .commercial-hero {
+            padding: 60px 0 70px;
+            position: relative;
+        }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.15fr 0.85fr;
+            gap: 40px;
+            align-items: center;
+        }
+        .hero-urgency-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(197, 168, 128, 0.12);
+            border: 1px solid rgba(197, 168, 128, 0.3);
+            color: var(--gold-light);
+            font-size: 0.82rem;
+            font-weight: 700;
+            padding: 6px 16px;
+            border-radius: 9999px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        .hero-urgency-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--wpp-green);
+            box-shadow: 0 0 10px var(--wpp-green);
+        }
+        .hero-main-title {
+            font-size: clamp(2.5rem, 5vw, 4.2rem);
+            color: var(--text-pure);
+            line-height: 1.1;
+            margin-bottom: 18px;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+        }
+        .hero-main-title em {
+            font-family: var(--font-serif);
+            font-weight: 400;
+            font-style: italic;
+            color: var(--gold);
+        }
+        .hero-lead-text {
+            font-size: 1.18rem;
+            color: var(--text-body);
+            line-height: 1.7;
+            margin-bottom: 32px;
+            max-width: 540px;
+        }
+        .hero-lead-text strong {
+            color: #FFFFFF;
+        }
+
+        /* Doctor Photo with Aura Glow */
+        .hero-photo-container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+        .photo-aura {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 380px;
+            height: 480px;
+            background: radial-gradient(circle, rgba(197, 168, 128, 0.28) 0%, transparent 70%);
+            filter: blur(50px);
+            z-index: 1;
+        }
+        .doctor-hero-cutout {
+            width: 100%;
+            max-width: 440px;
+            height: 520px;
+            object-fit: cover;
+            object-position: top center;
+            border-radius: 20px;
+            position: relative;
+            z-index: 2;
+            border: 1px solid rgba(197, 168, 128, 0.35);
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8);
+        }
+        .floating-social-proof {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            background: rgba(11, 18, 30, 0.94);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(197, 168, 128, 0.3);
+            border-radius: 14px;
+            padding: 14px 18px;
+            z-index: 3;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .floating-social-proof strong {
+            font-size: 0.95rem;
+            color: #FFFFFF;
+            display: block;
+        }
+        .floating-social-proof span {
+            font-size: 0.8rem;
+            color: var(--gold);
+        }
+
+        /* Proof Counters */
+        .proof-counters-row {
+            display: flex;
+            gap: 28px;
+            margin-top: 36px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .proof-counter-item strong {
+            font-size: 1.4rem;
+            color: #FFFFFF;
+            display: block;
+            line-height: 1.2;
+        }
+        .proof-counter-item span {
+            font-size: 0.78rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* Section Commercial Layouts */
+        .section-commercial {
+            padding: 90px 0;
+            position: relative;
+            z-index: 2;
+        }
+        .section-title-wrap {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 48px;
+        }
+        .section-tag {
+            display: inline-block;
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            margin-bottom: 12px;
+        }
+        .section-title-wrap h2 {
+            font-size: clamp(2.2rem, 4vw, 3.2rem);
+            color: #FFFFFF;
+            line-height: 1.2;
+            margin-bottom: 14px;
+        }
+        .section-title-wrap h2 em {
+            font-family: var(--font-serif);
+            font-style: italic;
+            color: var(--gold);
+            font-weight: 400;
+        }
+
+        /* Results Swiper Cards */
+        .results-swiper {
+            padding: 10px 4px 50px !important;
+        }
+        .result-commercial-card {
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 22px;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.3s ease;
+        }
+        .result-commercial-card:hover {
+            border-color: var(--gold);
+            transform: translateY(-6px);
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
+        }
+        .card-header-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 14px;
+        }
+        .card-category-label {
+            font-size: 0.78rem;
+            font-weight: 800;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+        .card-stars {
+            color: var(--gold);
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+        }
+        .result-image-pair-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 14px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .result-img-box {
+            position: relative;
+            height: 220px;
+        }
+        .result-img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .time-label {
+            position: absolute;
+            bottom: 8px;
+            left: 8px;
+            background: rgba(0, 0, 0, 0.85);
+            color: #FFFFFF;
+            font-size: 0.72rem;
+            font-weight: 700;
+            padding: 3px 8px;
+            border-radius: 4px;
+            text-transform: uppercase;
+        }
+        .time-label.gold {
+            background: var(--gold);
+            color: #06090F;
+        }
+        .card-case-title {
+            font-size: 1.2rem;
+            color: #FFFFFF;
+            margin-bottom: 8px;
+        }
+        .card-case-desc {
+            font-size: 0.9rem;
+            color: var(--text-body);
+            line-height: 1.5;
+            margin-bottom: 18px;
+            flex-grow: 1;
+        }
+        .btn-card-wpp {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background: rgba(37, 211, 102, 0.12);
+            border: 1px solid rgba(37, 211, 102, 0.35);
+            color: #25D366;
+            font-size: 0.92rem;
+            font-weight: 700;
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 9999px;
+            transition: all 0.2s ease;
+        }
+        .btn-card-wpp:hover {
+            background: #25D366;
+            color: #FFFFFF;
+        }
+
+        /* 3 Pillars / Step Process */
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+        .step-card {
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 36px 28px;
+            position: relative;
+        }
+        .step-num {
+            font-family: var(--font-serif);
+            font-size: 2.5rem;
+            color: var(--gold);
+            line-height: 1;
+            margin-bottom: 16px;
+        }
+        .step-card h3 {
+            font-size: 1.35rem;
+            color: #FFFFFF;
+            margin-bottom: 12px;
+        }
+        .step-card p {
+            font-size: 0.95rem;
+            color: var(--text-body);
+            line-height: 1.65;
+        }
+
+        /* Doctor Authority Section */
+        .doctor-commercial-section {
+            background: var(--bg-surface);
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 80px 0;
+        }
+        .doctor-commercial-grid {
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        .doctor-portrait-frame {
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid rgba(197, 168, 128, 0.35);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+        }
+        .doctor-portrait-frame img {
+            width: 100%;
+            height: 480px;
+            object-fit: cover;
+            object-position: top center;
+        }
+        .doctor-commercial-content h2 {
+            font-size: clamp(2rem, 3.5vw, 2.8rem);
+            color: #FFFFFF;
+            margin-bottom: 6px;
+        }
+        .doctor-specialty-sub {
+            font-size: 1.1rem;
+            color: var(--gold);
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
+        .doc-check-list {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin-bottom: 36px;
+        }
+        .doc-check-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            font-size: 1rem;
+            color: var(--text-body);
+        }
+        .doc-check-item::before {
+            content: '✓';
+            color: var(--gold);
+            font-weight: 800;
+            font-size: 1.1rem;
+        }
+
+        /* Fast FAQ */
+        .faq-commercial-wrap {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .faq-card-item {
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .faq-question-btn {
+            width: 100%;
+            padding: 22px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.08rem;
+            font-weight: 700;
+            color: #FFFFFF;
+            background: none;
+            border: none;
+            text-align: left;
+            cursor: pointer;
+        }
+        .faq-question-btn:hover {
+            color: var(--gold-light);
+        }
+        .faq-plus-icon {
+            font-size: 1.4rem;
+            color: var(--gold);
+            transition: transform 0.3s ease;
+        }
+        .faq-card-item.active .faq-plus-icon {
+            transform: rotate(45deg);
+        }
+        .faq-answer-collapse {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease;
+        }
+        .faq-answer-content {
+            padding: 0 24px 22px;
+            font-size: 0.95rem;
+            color: var(--text-body);
+            line-height: 1.7;
+        }
+
+        /* Final Big Conversion Section */
+        .final-cta-section {
+            padding: 90px 0 120px;
+            text-align: center;
+        }
+        .final-cta-box {
+            background: radial-gradient(circle at 50% 30%, rgba(197, 168, 128, 0.18) 0%, var(--bg-card) 85%);
+            border: 1px solid rgba(197, 168, 128, 0.35);
+            border-radius: 24px;
+            padding: 80px 40px;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7);
+        }
+        .final-cta-box h2 {
+            font-size: clamp(2.4rem, 4.5vw, 3.6rem);
+            color: #FFFFFF;
+            margin-bottom: 16px;
+        }
+        .final-cta-box p {
+            font-size: 1.2rem;
+            color: var(--text-body);
+            max-width: 580px;
+            margin: 0 auto 36px;
+        }
+
+        /* Floating WhatsApp Button */
+        .floating-wpp-btn {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: #25D366;
+            color: #FFFFFF;
+            font-size: 1rem;
+            font-weight: 800;
+            text-decoration: none;
+            padding: 16px 26px;
+            border-radius: 9999px;
+            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.5);
+            transition: all 0.3s ease;
+        }
+        .floating-wpp-btn:hover {
+            transform: translateY(-4px) scale(1.05);
+            box-shadow: 0 16px 45px rgba(37, 211, 102, 0.7);
+        }
+
+        .wpp-svg {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+        }
+
+        @media (max-width: 900px) {
+            .hero-grid,
+            .doctor-commercial-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            .hero-photo-container {
+                order: -1;
+            }
+            .steps-grid {
+                grid-template-columns: 1fr;
+            }
+            .floating-wpp-btn span {
+                display: none;
+            }
+            .floating-wpp-btn {
+                padding: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 3D Three.js Background Canvas -->
+    <div id="webgl-bg"></div>
+
+    <!-- Top Bar -->
+    <header class="top-bar">
+        <div class="container">
+            <div class="top-bar-inner">
+                <a href="index.html" class="top-logo">
+                    <img src="assets/img/logo-sub-colorida.webp" alt="Dr. Henrique Leal Rosa">
+                </a>
+                <span class="top-badge">Consultório no Água Verde · Curitiba</span>
+                <a href="https://wa.me/5541988577430?text=Ol%C3%A1%2C+quero+agendar+minha+avalia%C3%A7%C3%A3o+com+o+Dr.+Henrique+Leal." 
+                   class="btn-wpp-commercial" target="_blank" rel="noopener" style="padding: 10px 22px; font-size: 0.88rem;">
+                    <svg class="wpp-svg" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.112.551 4.095 1.517 5.824l-1.617 5.912 6.079-1.595c1.674.914 3.593 1.435 5.632 1.435 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/></svg>
+                    <span>Falar no WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="commercial-hero">
+        <div class="container">
+            <div class="hero-grid">
+                
+                <div class="hero-text-col">
+                    <div class="hero-urgency-pill">
+                        <span class="hero-urgency-dot"></span>
+                        Agenda Aberta · Avaliação Individualizada
+                    </div>
+
+                    <h1 class="hero-main-title">
+                        Harmonização Facial e Rejuvenescimento com <em>Precisão Médica</em>
+                    </h1>
+
+                    <p class="hero-lead-text">
+                        Conquiste traços marcantes, lábios definidos e lifting imediato sem cirurgias plásticas. Procedimentos com <strong>Dr. Henrique Leal</strong> em Curitiba.
+                    </p>
+
+                    <div>
+                        <a href="https://wa.me/5541988577430?text=Ol%C3%A1%2C+quero+agendar+minha+avalia%C3%A7%C3%A3o+de+Harmoniza%C3%A7%C3%A3o+com+o+Dr.+Henrique." 
+                           class="btn-wpp-commercial pulse-anim" target="_blank" rel="noopener">
+                            <svg class="wpp-svg" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.112.551 4.095 1.517 5.824l-1.617 5.912 6.079-1.595c1.674.914 3.593 1.435 5.632 1.435 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/></svg>
+                            <span>Agendar Avaliação no WhatsApp</span>
+                        </a>
+                    </div>
+
+                    <div class="proof-counters-row">
+                        <div class="proof-counter-item">
+                            <strong>+3.000</strong>
+                            <span>Procedimentos</span>
+                        </div>
+                        <div class="proof-counter-item">
+                            <strong>Dupla Formação</strong>
+                            <span>Biomedicina & Odonto</span>
+                        </div>
+                        <div class="proof-counter-item">
+                            <strong>100%</strong>
+                            <span>Sem Cirurgia</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-photo-container">
+                    <div class="photo-aura"></div>
+                    <img src="assets/img/henrique-hero.webp" alt="Dr. Henrique Leal Rosa" class="doctor-hero-cutout">
+                    <div class="floating-social-proof">
+                        <div>
+                            <strong>Dr. Henrique Leal Rosa</strong>
+                            <span>Especialista em Harmonização Facial</span>
+                        </div>
+                        <span style="color: var(--gold); font-weight: 700;">★ 5.0 Google</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROVA VISUAL / CARROSSEL ==================== -->
+    <section class="section-commercial" id="resultados">
+        <div class="container">
+            
+            <div class="section-title-wrap">
+                <span class="section-tag">Casos Clínicos Reais</span>
+                <h2>Resultados Marcados pela <em>Naturalidade</em></h2>
+                <p>Arraste para o lado e veja transformações reais realizadas no consultório.</p>
+            </div>
+
+            <!-- Swiper Carousel -->
+            <div class="swiper results-swiper">
+                <div class="swiper-wrapper">
+                    
+                    <!-- Card 1 -->
+                    <div class="swiper-slide result-commercial-card">
+                        <div class="card-header-flex">
+                            <span class="card-category-label">Rinomodelação</span>
+                            <span class="card-stars">★★★★★</span>
+                        </div>
+                        <div class="result-image-pair-grid">
+                            <div class="result-img-box">
+                                <img src="assets/img/resultados/upnose-antes.webp" alt="Antes">
+                                <span class="time-label">Antes</span>
+                            </div>
+                            <div class="result-img-box">
+                                <img src="assets/img/resultados/upnose-depois.webp" alt="Depois">
+                                <span class="time-label gold">Depois</span>
+                            </div>
+                        </div>
+                        <h3 class="card-case-title">Método UpNose de Precisão</h3>
+                        <p class="card-case-desc">Elevação da ponta nasal e retificação do dorso com ácido hialurônico sem cortes cirúrgicos.</p>
+                        <a href="https://wa.me/5541988577430?text=Ol%C3%A1%2C+vi+o+resultado+de+Rinomodela%C3%A7%C3%A3o+e+quero+uma+avalia%C3%A7%C3%A3o." class="btn-card-wpp" target="_blank" rel="noopener">
+                            <span>Quero um Resultado Assim ↗</span>
+                        </a>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="swiper-slide result-commercial-card">
+                        <div class="card-header-flex">
+                            <span class="card-category-label">Natural Lips</span>
+                            <span class="card-stars">★★★★★</span>
+                        </div>
+                        <div class="result-image-pair-grid">
+                            <div class="result-img-box">
+                                <img src="assets/img/resultados/labio-antes-1.webp" alt="Antes">
+                                <span class="time-label">Antes</span>
+                            </div>
+                            <div class="result-img-box">
+                                <img src="assets/img/resultados/labio-depois-1.webp" alt="Depois">
+                                <span class="time-label gold">Depois</span>
+                            </div>
+                        </div>
+                        <h3 class="card-case-title">Preenchimento Labial Hidratado</h3>
+                        <p class="card-case-desc">Contorno nítido e volume proporcional respeitando a anatomia natural do sorriso.</p>
+                        <a href="https://wa.me/5541988577430?text=Ol%C3%A1%2C+vi+o+resultado+de+Natural+Lips+e+quero+uma+avalia%C3%A7%C3%A3o." class="btn-card-wpp" target="_blank" rel="noopener">
+                            <span>Quero um Resultado Assim ↗</span>
+                        </a>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="swiper-slide result-commercial-card">
+                        <div class="card-header-flex">
+                            <span class="card-category-label">Mandíbula Masculina</span>
+                            <span class="card-stars">★★★★★</span>
+                        </div>
+                        <div class="result-image-pair-grid">
+                            <div class="result-img-box">
+                                <img src="assets/img/resultados/caso-harmonizacao-masculina-2-antes.webp" alt="Antes">
+                                <span class="time-label">Antes</span>
+                            </div>
+                            <div class="result-img-box">
+                                <img src="assets/img/resultados/caso-harmonizacao-masculina-2-depois.webp" alt="Depois">
+                                <span class="time-label gold">Depois</span>
+                            </div>
+                        </div>
+                        <h3 class="card-case-title">Estruturação Mandibular & Queixo</h3>
+                        <p class="card-case-desc">Definição do ângulo goníaco e separação elegante do pescoço com microcânulas.</p>
+                        <a href="https://wa.me/5541988577430?text=Ol%C3%A1%2C+vi+o+resultado+de+Mand%C3%ADbula+Masculina+e+quero+uma+avalia%C3%A7%C3%A3o." class="btn-card-wpp" target="_blank" rel="noopener">
+                            <span>Quero um Resultado Assim ↗</span>
+                        </a>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="swiper-slide result-commercial-card">
+                        <div class="card-header-flex">
+                            <span class="card-category-label">Lifting Feminino</span>
+                            <span class="card-stars">★★★★★</span>
+                        </div>
+                        <div class="result-image-pair-grid">
+                            <div class="result-img-box">
+                                <img src="assets/img/resultados/caso-harmonizacao-feminina-1-antes.webp" alt="Antes">
+                                <span class="time-label">Antes</span>
+                            </div>
+                            <div class="result-img-box">
+                                <img src="assets/img/resultados/caso-harmonizacao-feminina-1-depois.webp" alt="Depois">
+                                <span class="time-label gold">Depois</span>
+                            </div>
+                        </div>
+                        <h3 class="card-case-title">Sustentação Malar & Rejuvenescimento</h3>
+                        <p class="card-case-desc">Lifting não cirúrgico do terço médio com suavização do sulco nasogeniano.</p>
+                        <a href="https://wa.me/5541988577430?text=Ol%C3%A1%2C+vi+o+resultado+de+Lifting+Feminino+e+quero+uma+avalia%C3%A7%C3%A3o." class="btn-card-wpp" target="_blank" rel="noopener">
+                            <span>Quero um Resultado Assim ↗</span>
+                        </a>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="swiper-slide result-commercial-card">
+                        <div class="card-header-flex">
+                            <span class="card-category-label">Botox de Precisão</span>
+                            <span class="card-stars">★★★★★</span>
+                        </div>
+                        <div class="result-image-pair-grid">
+                            <div class="result-img-box">
+                                <img src="assets/img/resultados/botox-testa-antes.webp" alt="Antes">
+                                <span class="time-label">Antes</span>
+                            </div>
+                            <div class="result-img-box">
+                                <img src="assets/img/resultados/botox-testa-depois.webp" alt="Depois">
+                                <span class="time-label gold">Depois</span>
+                            </div>
+                        </div>
+                        <h3 class="card-case-title">Prevenção e Alívio de Linhas</h3>
+                        <p class="card-case-desc">Suavização milimétrica de rugas dinâmicas da testa preservando a expressividade.</p>
+                        <a href="https://wa.me/5541988577430?text=Ol%C3%A1%2C+vi+o+resultado+de+Botox+e+quero+uma+avalia%C3%A7%C3%A3o." class="btn-card-wpp" target="_blank" rel="noopener">
+                            <span>Quero um Resultado Assim ↗</span>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="https://wa.me/5541988577430?text=Ol%C3%A1%2C+gostaria+de+enviar+minha+foto+para+uma+pr%C3%A9-avalia%C3%A7%C3%A3o+no+WhatsApp." 
+                   class="btn-wpp-commercial" target="_blank" rel="noopener">
+                    <svg class="wpp-svg" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.112.551 4.095 1.517 5.824l-1.617 5.912 6.079-1.595c1.674.914 3.593 1.435 5.632 1.435 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/></svg>
+                    <span>Quero Agendar Minha Transformação</span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==================== OS 3 PASSOS DA AVALIAÇÃO VIP ==================== -->
+    <section class="section-commercial" style="background: var(--bg-surface);">
+        <div class="container">
+            
+            <div class="section-title-wrap">
+                <span class="section-tag">Jornada do Paciente</span>
+                <h2>Como Funciona a Sua <em>Avaliação VIP</em></h2>
+                <p>Processo clínico transparente, seguro e sem surpresas.</p>
+            </div>
+
+            <div class="steps-grid">
+                
+                <div class="step-card">
+                    <div class="step-num">01</div>
+                    <h3>Mapeamento Facial 3D</h3>
+                    <p>Análise detalhada das linhas, ângulos e proporções do seu rosto para identificar exatamente onde atuar.</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-num">02</div>
+                    <h3>Plano 100% Sob Medida</h3>
+                    <p>Definição conjunta das técnicas ideais (Ácido Hialurônico, Fios de PDO ou Bioestimuladores) para seu objetivo.</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-num">03</div>
+                    <h3>Aplicação Confortável & Segura</h3>
+                    <p>Procedimento realizado com anestesia local e microcânulas sem dor, permitindo retorno imediato à sua rotina.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==================== DOUTOR AUTORIDADE ==================== -->
+    <section class="doctor-commercial-section">
+        <div class="container">
+            <div class="doctor-commercial-grid">
+                
+                <div class="doctor-portrait-frame">
+                    <img src="assets/img/henrique-portrait.webp" alt="Dr. Henrique Leal Rosa">
+                </div>
+
+                <div class="doctor-commercial-content">
+                    <span class="section-tag">Responsável Técnico</span>
+                    <h2>Dr. Henrique Leal Rosa</h2>
+                    <p class="doctor-specialty-sub">Biomédico & Dentista Especialista em Harmonização Facial</p>
+
+                    <div class="doc-check-list">
+                        <div class="doc-check-item"><strong>Dupla Graduação:</strong> Conhecimento histológico tecidual unido ao refinamento anatômico facial.</div>
+                        <div class="doc-check-item"><strong>Professor e Mentor:</strong> Docente em cursos de pós-graduação e mentor de médicos e injetores.</div>
+                        <div class="doc-check-item"><strong>Insumos Premium:</strong> Apenas produtos aprovados pela ANVISA e FDA com rastreabilidade total.</div>
+                        <div class="doc-check-item"><strong>+3.000 Procedimentos:</strong> Experiência prática com foco absoluto em naturalidade e segurança.</div>
+                    </div>
+
+                    <a href="https://wa.me/5541988577430?text=Ol%C3%A1%2C+gostaria+de+falar+diretamente+com+o+Dr.+Henrique+Leal." 
+                       class="btn-wpp-commercial" target="_blank" rel="noopener">
+                        <svg class="wpp-svg" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.112.551 4.095 1.517 5.824l-1.617 5.912 6.079-1.595c1.674.914 3.593 1.435 5.632 1.435 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/></svg>
+                        <span>Falar com o Dr. Henrique no WhatsApp</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== QUEBRA DE OBJEÇÕES / FAQ ==================== -->
+    <section class="section-commercial">
+        <div class="container">
+            
+            <div class="section-title-wrap">
+                <span class="section-tag">Tire Suas Dúvidas</span>
+                <h2>Perguntas Frequentes</h2>
+                <p>Respostas diretas para quem deseja realizar o procedimento com segurança.</p>
+            </div>
+
+            <div class="faq-commercial-wrap">
+                
+                <div class="faq-card-item">
+                    <button class="faq-question-btn">
+                        <span>O procedimento dói?</span>
+                        <span class="faq-plus-icon">+</span>
+                    </button>
+                    <div class="faq-answer-collapse">
+                        <div class="faq-answer-content">
+                            Não. Aplicamos anestésico tópico e anestesia local confortável. O uso de microcânulas ultrafinas torna o procedimento praticamente indolor e seguro.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-card-item">
+                    <button class="faq-question-btn">
+                        <span>Quanto tempo dura o resultado?</span>
+                        <span class="faq-plus-icon">+</span>
+                    </button>
+                    <div class="faq-answer-collapse">
+                        <div class="faq-answer-content">
+                            O ácido hialurônico dura em média de 12 a 18 meses. Os bioestimuladores e fios de PDO estimulam colágeno natural com efeitos prolongados por até 24 meses.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-card-item">
+                    <button class="faq-question-btn">
+                        <span>Posso trabalhar no mesmo dia?</span>
+                        <span class="faq-plus-icon">+</span>
+                    </button>
+                    <div class="faq-answer-collapse">
+                        <div class="faq-answer-content">
+                            Sim! A maioria dos procedimentos permite retorno imediato às atividades de trabalho, com cuidados simples nas primeiras 24 horas.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-card-item">
+                    <button class="faq-question-btn">
+                        <span>Onde fica o consultório em Curitiba?</span>
+                        <span class="faq-plus-icon">+</span>
+                    </button>
+                    <div class="faq-answer-collapse">
+                        <div class="faq-answer-content">
+                            No Edifício Today's Office, Sala 518 (Av. República Argentina, 1237, Água Verde, Curitiba/PR), com estacionamento rotativo conveniado no local.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==================== BANNER FINAL ==================== -->
+    <section class="final-cta-section">
+        <div class="container">
+            <div class="final-cta-box">
+                <span class="section-tag" style="color: var(--gold-light);">Atendimento Individualizado</span>
+                <h2>Pronto(a) para Valorizar a Sua Beleza?</h2>
+                <p>Toque no botão abaixo e fale diretamente com a equipe do Dr. Henrique Leal no WhatsApp para agendar seu horário.</p>
+                <a href="https://wa.me/5541988577430?text=Ol%C3%A1%2C+quero+agendar+minha+avalia%C3%A7%C3%A3o+com+o+Dr.+Henrique+Leal." 
+                   class="btn-wpp-commercial pulse-anim" target="_blank" rel="noopener">
+                    <svg class="wpp-svg" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.112.551 4.095 1.517 5.824l-1.617 5.912 6.079-1.595c1.674.914 3.593 1.435 5.632 1.435 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/></svg>
+                    <span>Falar no WhatsApp com a Assessoria</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp CTA -->
+    <a href="https://wa.me/5541988577430?text=Ol%C3%A1%2C+quero+agendar+minha+avalia%C3%A7%C3%A3o+com+o+Dr.+Henrique+Leal." 
+       class="floating-wpp-btn pulse-anim" target="_blank" rel="noopener">
+        <svg class="wpp-svg" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.112.551 4.095 1.517 5.824l-1.617 5.912 6.079-1.595c1.674.914 3.593 1.435 5.632 1.435 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/></svg>
+        <span>Agendar Avaliação</span>
+    </a>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- 3D Three.js & Interactions Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // 1. Initialize Swiper
+            const swiper = new Swiper('.results-swiper', {
+                slidesPerView: 1.15,
+                spaceBetween: 20,
+                centeredSlides: false,
+                grabCursor: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                breakpoints: {
+                    768: { slidesPerView: 2.2, spaceBetween: 24 },
+                    1024: { slidesPerView: 3, spaceBetween: 28 }
+                }
+            });
+
+            // 2. FAQ Accordion
+            const faqItems = document.querySelectorAll('.faq-card-item');
+            faqItems.forEach(item => {
+                const btn = item.querySelector('.faq-question-btn');
+                const answer = item.querySelector('.faq-answer-collapse');
+                btn.addEventListener('click', () => {
+                    const isOpen = item.classList.contains('active');
+                    faqItems.forEach(other => {
+                        if (other !== item) {
+                            other.classList.remove('active');
+                            const otherAns = other.querySelector('.faq-answer-collapse');
+                            if (otherAns) otherAns.style.maxHeight = null;
+                        }
+                    });
+                    if (isOpen) {
+                        item.classList.remove('active');
+                        answer.style.maxHeight = null;
+                    } else {
+                        item.classList.add('active');
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                    }
+                });
+            });
+
+            // 3. Three.js 3D WebGL Scene
+            const container = document.getElementById('webgl-bg');
+            if (container && typeof THREE !== 'undefined') {
+                const scene = new THREE.Scene();
+                const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
+                camera.position.z = 32;
+
+                const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+                renderer.setSize(window.innerWidth, window.innerHeight);
+                renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+                container.appendChild(renderer.domElement);
+
+                // Lights
+                const ambLight = new THREE.AmbientLight(0xffffff, 0.5);
+                scene.add(ambLight);
+
+                const keyLight = new THREE.DirectionalLight(0xC5A880, 2.5);
+                keyLight.position.set(20, 20, 20);
+                scene.add(keyLight);
+
+                const group = new THREE.Group();
+
+                // 3D Microcânula Estética
+                const cannulaGeo = new THREE.CylinderGeometry(0.18, 0.18, 14, 32);
+                const cannulaMat = new THREE.MeshStandardMaterial({
+                    color: 0xE8DFD0,
+                    metalness: 0.9,
+                    roughness: 0.15
+                });
+                const cannula = new THREE.Mesh(cannulaGeo, cannulaMat);
+                cannula.position.set(10, -2, 0);
+                cannula.rotation.z = Math.PI / 4.5;
+                group.add(cannula);
+
+                // Golden Collagen Spheres
+                const sphereMat = new THREE.MeshStandardMaterial({
+                    color: 0xC5A880,
+                    metalness: 0.75,
+                    roughness: 0.2,
+                    transparent: true,
+                    opacity: 0.7
+                });
+                const spheres = [];
+                for (let i = 0; i < 20; i++) {
+                    const sph = new THREE.Mesh(new THREE.SphereGeometry(0.5, 20, 20), sphereMat);
+                    const sc = 0.4 + Math.random() * 0.7;
+                    sph.scale.set(sc, sc, sc);
+                    sph.position.set((Math.random() - 0.5) * 40, (Math.random() - 0.5) * 30, (Math.random() - 0.5) * 15);
+                    sph.userData = { origY: sph.position.y, speed: 0.001 + Math.random() * 0.001 };
+                    group.add(sph);
+                    spheres.push(sph);
+                }
+
+                // Starfield particles
+                const partGeo = new THREE.BufferGeometry();
+                const partPos = new Float32Array(150 * 3);
+                for (let i = 0; i < 150 * 3; i += 3) {
+                    partPos[i] = (Math.random() - 0.5) * 50;
+                    partPos[i + 1] = (Math.random() - 0.5) * 40;
+                    partPos[i + 2] = (Math.random() - 0.5) * 25;
+                }
+                partGeo.setAttribute('position', new THREE.BufferAttribute(partPos, 3));
+                const partMat = new THREE.PointsMaterial({ color: 0xE0CEB5, size: 0.18, transparent: true, opacity: 0.5 });
+                const particles = new THREE.Points(partGeo, partMat);
+                group.add(particles);
+
+                scene.add(group);
+
+                let mouseX = 0, mouseY = 0, targetX = 0, targetY = 0, scrollProg = 0;
+                window.addEventListener('mousemove', (e) => {
+                    mouseX = (e.clientX / window.innerWidth - 0.5) * 2;
+                    mouseY = (e.clientY / window.innerHeight - 0.5) * 2;
+                });
+                window.addEventListener('scroll', () => {
+                    const total = document.documentElement.scrollHeight - window.innerHeight;
+                    if (total > 0) scrollProg = window.scrollY / total;
+                });
+
+                function animate() {
+                    requestAnimationFrame(animate);
+                    targetX += (mouseX - targetX) * 0.05;
+                    targetY += (mouseY - targetY) * 0.05;
+                    group.rotation.y = targetX * 0.35 + scrollProg * Math.PI;
+                    group.rotation.x = -targetY * 0.2;
+                    cannula.rotation.y += 0.006;
+                    spheres.forEach((s, idx) => {
+                        s.position.y = s.userData.origY + Math.sin(Date.now() * s.userData.speed + idx) * 0.8;
+                    });
+                    renderer.render(scene, camera);
+                }
+                animate();
+
+                window.addEventListener('resize', () => {
+                    camera.aspect = window.innerWidth / window.innerHeight;
+                    camera.updateProjectionMatrix();
+                    renderer.setSize(window.innerWidth, window.innerHeight);
+                });
+            }
+
+        });
+    </script>
+</body>
+
+</html>

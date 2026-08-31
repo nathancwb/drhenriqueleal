@@ -1,0 +1,231 @@
+- generic [active] [ref=f9e1]:
+  - banner [ref=f9e2]:
+    - generic [ref=f9e3]:
+      - link [ref=f9e4] [cursor=pointer]:
+        - /url: /
+        - img "Neonova Consultoria em Negócios" [ref=f9e5]
+      - navigation [ref=f9e6]:
+        - link "Soluções" [ref=f9e8] [cursor=pointer]:
+          - /url: /solucoes/
+        - link "Time" [ref=f9e11] [cursor=pointer]:
+          - /url: /time/
+        - link "Cases" [ref=f9e12] [cursor=pointer]:
+          - /url: /cases/
+        - link "Quem Somos" [ref=f9e13] [cursor=pointer]:
+          - /url: /quem-somos/
+        - link "Blog" [ref=f9e14] [cursor=pointer]:
+          - /url: /insights/
+        - link "Agendar diagnóstico" [ref=f9e15] [cursor=pointer]:
+          - /url: /diagnostico/
+  - generic [ref=f9e17]:
+    - link "← Voltar para Todas as 8 Soluções" [ref=f9e18] [cursor=pointer]:
+      - /url: /solucoes/
+    - generic [ref=f9e19]:
+      - link "Gestão Empresarial" [ref=f9e20] [cursor=pointer]:
+        - /url: /solucoes/gestao-empresarial/
+      - generic [ref=f9e21]: "|"
+      - link "Canais de Vendas" [ref=f9e22] [cursor=pointer]:
+        - /url: /solucoes/canais-de-vendas/
+      - generic [ref=f9e23]: "|"
+      - link "Financeiro & Caixa" [ref=f9e24] [cursor=pointer]:
+        - /url: /solucoes/financeiro/
+      - generic [ref=f9e25]: "|"
+      - link "RH & Liderança" [ref=f9e26] [cursor=pointer]:
+        - /url: /solucoes/rh/
+      - generic [ref=f9e27]: "|"
+      - link "Marketing & Marca" [ref=f9e28] [cursor=pointer]:
+        - /url: /solucoes/marketing/
+      - generic [ref=f9e29]: "|"
+      - link "Franquias & Redes" [ref=f9e30] [cursor=pointer]:
+        - /url: /solucoes/franquias/
+      - generic [ref=f9e31]: "|"
+      - link "Crédito & Cobrança" [ref=f9e32] [cursor=pointer]:
+        - /url: /solucoes/credito-e-cobranca/
+      - generic [ref=f9e33]: "|"
+      - link "Produção & Indústria" [ref=f9e34] [cursor=pointer]:
+        - /url: /solucoes/producao-e-industrias/
+  - generic [ref=f9e37]:
+    - generic [ref=f9e38]: Jornada Gestão e Performance
+    - heading "Controle Financeiro & Caixa" [level=1] [ref=f9e39]
+    - paragraph [ref=f9e40]: "Clareza absoluta dos números da sua empresa: do fluxo de caixa diário à DRE gerencial preditiva para decisões seguras."
+    - generic [ref=f9e41]:
+      - link "Agendar Diagnóstico Gratuito" [ref=f9e42] [cursor=pointer]:
+        - /url: /diagnostico/
+      - link "Ver Entregáveis da Consultoria" [ref=f9e43] [cursor=pointer]:
+        - /url: "#entregaveis"
+  - generic [ref=f9e45]:
+    - generic [ref=f9e46]:
+      - img "Diagnóstico executivo de gargalos" [ref=f9e47]
+      - generic [ref=f9e49]:
+        - generic [ref=f9e50]: Diagnóstico de Gargalos
+        - heading "Quais sintomas indicam que sua empresa precisa desta atuação?" [level=2] [ref=f9e51]
+        - paragraph [ref=f9e52]: Se a sua empresa vivencia um destes cenários, nossa consultoria sênior atua diretamente na causa raiz.
+    - generic [ref=f9e53]:
+      - generic [ref=f9e54]:
+        - generic [ref=f9e55]: "01"
+        - generic [ref=f9e56]:
+          - heading "Faturamento Alto, Caixa Apertado" [level=3] [ref=f9e57]
+          - paragraph [ref=f9e58]: A empresa vende muito, mas o saldo no banco nunca reflete o esforço comercial e o lucro teórico apurado na contabilidade.
+      - generic [ref=f9e59]:
+        - generic [ref=f9e60]: "02"
+        - generic [ref=f9e61]:
+          - heading "Margens Invisíveis por Produto/Serviço" [level=3] [ref=f9e62]
+          - paragraph [ref=f9e63]: Falta de apuração exata do custo unitário e despesas variáveis, gerando vendas com margem negativa ou nula sem a diretoria perceber.
+      - generic [ref=f9e64]:
+        - generic [ref=f9e65]: "03"
+        - generic [ref=f9e66]:
+          - heading "Descompasso de Prazos Médios" [level=3] [ref=f9e67]
+          - paragraph [ref=f9e68]: Prazos de pagamento a fornecedores menores que os prazos concedidos a clientes, exigindo capital de giro excessivo e juros bancários desnecessários.
+  - generic [ref=f9e70]:
+    - generic [ref=f9e71]:
+      - generic [ref=f9e72]: Entregáveis Práticos
+      - heading "O que a Neonova entrega e implementa na prática" [level=2] [ref=f9e73]
+      - paragraph [ref=f9e74]: Não entregamos relatórios teóricos de gaveta. Entregamos ferramentas, parâmetros, rotinas e capacitação para a sua equipe.
+    - generic [ref=f9e75]:
+      - generic [ref=f9e76]:
+        - generic [ref=f9e77]:
+          - generic [ref=f9e78]: 01 / DRE GERENCIAL
+          - heading "DRE por Regime de Competência" [level=3] [ref=f9e79]
+          - paragraph [ref=f9e80]: Estruturação da Demonstração do Resultado do Exercício separando custos diretos, indiretos e fixos.
+        - list [ref=f9e81]:
+          - listitem [ref=f9e82]: — Margem de contribuição real
+          - listitem [ref=f9e83]: — EBITDA gerencial apurado
+          - listitem [ref=f9e84]: — Visão limpa de lucratividade
+      - generic [ref=f9e85]:
+        - generic [ref=f9e86]:
+          - generic [ref=f9e87]: 02 / FLUXO DE CAIXA
+          - heading "Fluxo Diário e Projetado" [level=3] [ref=f9e88]
+          - paragraph [ref=f9e89]: Ferramenta de projeção para 60 a 90 dias que antecipa necessidades de capital de giro.
+        - list [ref=f9e90]:
+          - listitem [ref=f9e91]: — Previsibilidade de saldos bancários
+          - listitem [ref=f9e92]: — Controle rigoroso de entradas e saídas
+          - listitem [ref=f9e93]: — Gestão preventiva de liquidez
+      - generic [ref=f9e94]:
+        - generic [ref=f9e95]:
+          - generic [ref=f9e96]: 03 / PRECIFICAÇÃO
+          - heading "Margem por SKU & Ponto de Equilíbrio" [level=3] [ref=f9e97]
+          - paragraph [ref=f9e98]: Precificação técnica baseada em mark-up correto e absorção de despesas operacionais.
+        - list [ref=f9e99]:
+          - listitem [ref=f9e100]: — Cálculo do ponto de equilíbrio (R$)
+          - listitem [ref=f9e101]: — Ranking de produtos mais rentáveis
+          - listitem [ref=f9e102]: — Revisão de tabelas de preços
+      - generic [ref=f9e103]:
+        - generic [ref=f9e104]:
+          - generic [ref=f9e105]: 04 / ORÇAMENTO
+          - heading "Planejamento Orçamentário" [level=3] [ref=f9e106]
+          - paragraph [ref=f9e107]: Construção de metas de receitas e limites de gastos por centro de custos para o ano todo.
+        - list [ref=f9e108]:
+          - listitem [ref=f9e109]: — Orçamento matricial anual
+          - listitem [ref=f9e110]: — Acompanhamento Previsto vs Realizado
+          - listitem [ref=f9e111]: — Plano de redução de despesas fixas
+  - generic [ref=f9e114]:
+    - img "Rodrigo Manzini" [ref=f9e116]
+    - generic [ref=f9e117]:
+      - generic [ref=f9e118]: Senioridade Operacional
+      - heading "Rodrigo Manzini" [level=3] [ref=f9e119]
+      - generic [ref=f9e120]: Processos & Finanças · Consultor Sênior
+      - paragraph [ref=f9e121]: Engenheiro de Produção (UFSCar) com Especialização em Gestão Empresarial (FGV). 26 anos de experiência em modelagem financeira e DRE de PMEs. Atendimento presencial direto em São Carlos/SP e região, sem intermediários juniores.
+      - generic [ref=f9e122]:
+        - link "Conhecer o Time Completo →" [ref=f9e123] [cursor=pointer]:
+          - /url: /time/
+        - link "Falar pelo WhatsApp" [ref=f9e124] [cursor=pointer]:
+          - /url: https://wa.me/5516992953211
+  - generic [ref=f9e126]:
+    - generic [ref=f9e127]:
+      - generic [ref=f9e128]: Transformação Real
+      - heading "Resultado Medido Nesta Frente" [level=2] [ref=f9e129]
+      - paragraph [ref=f9e130]: Veja o impacto financeiro mensurável gerado pela nossa consultoria na prática.
+    - generic [ref=f9e131]:
+      - generic [ref=f9e132]:
+        - generic [ref=f9e133]: Estudo de Caso · Indústria e Serviços
+        - heading "Governança de Caixa e Gestão Financeira" [level=3] [ref=f9e134]
+        - paragraph [ref=f9e135]: Implantação de fluxo de caixa projetado a 90 dias, renegociação de prazos médios de fornecedores e conciliação bancária diária no Grupo Marciano & Teca.
+        - link "Ver Estudo de Caso Completo →" [ref=f9e136] [cursor=pointer]:
+          - /url: /cases/extracao-madeira/
+      - generic [ref=f9e137]:
+        - generic [ref=f9e138]: 60 Dias
+        - generic [ref=f9e139]: Reserva de liquidez financeira estabelecida e blindagem definitiva contra juros bancários.
+  - generic [ref=f9e142]:
+    - generic [ref=f9e143]: Próximo Passo
+    - heading "Decidir sem diagnóstico é assumir riscos desnecessários." [level=2] [ref=f9e144]
+    - paragraph [ref=f9e145]: Agende uma reunião inicial de 45 minutos com um dos nossos consultores seniores em São Carlos/SP ou em formato remoto para mapear os gargalos da sua empresa.
+    - generic [ref=f9e146]:
+      - link "Agendar Diagnóstico Gratuito" [ref=f9e147] [cursor=pointer]:
+        - /url: /diagnostico/
+      - link "Falar com Consultor Agora" [ref=f9e148] [cursor=pointer]:
+        - /url: https://wa.me/5516992953211
+  - contentinfo [ref=f9e149]:
+    - generic [ref=f9e150]:
+      - generic [ref=f9e151]:
+        - generic [ref=f9e152]:
+          - img "Neonova" [ref=f9e153]
+          - paragraph [ref=f9e154]: Gestão estruturada e proximidade executiva para empresários e diretores de PMEs em São Carlos/SP e região.
+          - generic [ref=f9e155]: Fundada em 2007 · São Carlos / SP
+        - generic [ref=f9e156]:
+          - heading "Soluções" [level=4] [ref=f9e157]
+          - list [ref=f9e158]:
+            - listitem [ref=f9e159]:
+              - link "Gestão Empresarial" [ref=f9e160] [cursor=pointer]:
+                - /url: /solucoes/gestao-empresarial/
+            - listitem [ref=f9e161]:
+              - link "Financeiro & Caixa" [ref=f9e162] [cursor=pointer]:
+                - /url: /solucoes/financeiro/
+            - listitem [ref=f9e163]:
+              - link "Crédito e Cobrança" [ref=f9e164] [cursor=pointer]:
+                - /url: /solucoes/credito-e-cobranca/
+            - listitem [ref=f9e165]:
+              - link "Canais de Vendas" [ref=f9e166] [cursor=pointer]:
+                - /url: /solucoes/canais-de-vendas/
+            - listitem [ref=f9e167]:
+              - link "Marketing & Posicionamento" [ref=f9e168] [cursor=pointer]:
+                - /url: /solucoes/marketing/
+            - listitem [ref=f9e169]:
+              - link "Franquias & Expansão" [ref=f9e170] [cursor=pointer]:
+                - /url: /solucoes/franquias/
+            - listitem [ref=f9e171]:
+              - link "RH & Liderança" [ref=f9e172] [cursor=pointer]:
+                - /url: /solucoes/rh/
+            - listitem [ref=f9e173]:
+              - link "Produção & Indústrias" [ref=f9e174] [cursor=pointer]:
+                - /url: /solucoes/producao-e-industrias/
+        - generic [ref=f9e175]:
+          - heading "Institucional" [level=4] [ref=f9e176]
+          - list [ref=f9e177]:
+            - listitem [ref=f9e178]:
+              - link "Quem Somos" [ref=f9e179] [cursor=pointer]:
+                - /url: /quem-somos/
+            - listitem [ref=f9e180]:
+              - link "Metodologia" [ref=f9e181] [cursor=pointer]:
+                - /url: /quem-somos/#metodologia
+            - listitem [ref=f9e182]:
+              - link "Time de Consultores" [ref=f9e183] [cursor=pointer]:
+                - /url: /time/
+            - listitem [ref=f9e184]:
+              - link "Cases de Sucesso" [ref=f9e185] [cursor=pointer]:
+                - /url: /cases/
+            - listitem [ref=f9e186]:
+              - link "Insights & Artigos" [ref=f9e187] [cursor=pointer]:
+                - /url: /insights/
+            - listitem [ref=f9e188]:
+              - link "Diagnóstico Gratuito" [ref=f9e189] [cursor=pointer]:
+                - /url: /diagnostico/
+            - listitem [ref=f9e190]:
+              - link "Fale Conosco" [ref=f9e191] [cursor=pointer]:
+                - /url: /contato/
+        - generic [ref=f9e192]:
+          - heading "Contato" [level=4] [ref=f9e193]
+          - paragraph [ref=f9e194]:
+            - strong [ref=f9e195]: São Carlos / SP
+            - text: Atendimento presencial regional e remoto nacional.
+          - link "Falar pelo WhatsApp" [ref=f9e196] [cursor=pointer]:
+            - /url: https://wa.me/5516992953211
+      - generic [ref=f9e197]:
+        - generic [ref=f9e198]: © 2026 Neonova Consultoria em Negócios. Todos os direitos reservados.
+        - generic [ref=f9e199]:
+          - link "Privacidade" [ref=f9e200] [cursor=pointer]:
+            - /url: /politica-de-privacidade/
+          - link "Termos de Uso" [ref=f9e201] [cursor=pointer]:
+            - /url: /termos-de-uso/
+  - link "Falar pelo WhatsApp" [ref=f9e202] [cursor=pointer]:
+    - /url: https://wa.me/5516992953211
+    - generic [ref=f9e205]: Falar com Consultor

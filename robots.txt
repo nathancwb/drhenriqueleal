@@ -1,45 +1,23 @@
 User-agent: *
 Allow: /
-Disallow: /obrigado.html
 
-# Block AI and LLM crawlers from scraping content
+# Allow AI / LLM search crawlers
 User-agent: GPTBot
-Disallow: /
+Allow: /
 
 User-agent: ChatGPT-User
-Disallow: /
+Allow: /
 
 User-agent: ClaudeBot
-Disallow: /
-
-User-agent: Claude-Web
-Disallow: /
-
-User-agent: Google-Extended
-Disallow: /
-
-User-agent: Applebot-Extended
-Disallow: /
-
-User-agent: CCBot
-Disallow: /
-
-User-agent: FacebookBot
-Disallow: /
-
-User-agent: cohere-ai
-Disallow: /
+Allow: /
 
 User-agent: PerplexityBot
-Disallow: /
+Allow: /
 
-User-agent: Omgilibot
-Disallow: /
+User-agent: Google-Extended
+Allow: /
 
-User-agent: Diffbot
-Disallow: /
-
-User-agent: Bytespider
-Disallow: /
+User-agent: Applebot-Extended
+Allow: /
 
 Sitemap: https://drhenriqueleal.com.br/sitemap.xml

@@ -1,0 +1,180 @@
+- generic [active] [ref=f17e1]:
+  - banner [ref=f17e2]:
+    - generic [ref=f17e3]:
+      - link [ref=f17e4] [cursor=pointer]:
+        - /url: /
+        - img "Neonova Consultoria em Negócios" [ref=f17e5]
+      - navigation [ref=f17e6]:
+        - link "Quem Somos" [ref=f17e7] [cursor=pointer]:
+          - /url: /quem-somos/
+        - link "Soluções" [ref=f17e9] [cursor=pointer]:
+          - /url: /solucoes/
+        - link "Time" [ref=f17e12] [cursor=pointer]:
+          - /url: /time/
+        - link "Cases" [ref=f17e13] [cursor=pointer]:
+          - /url: /cases/
+        - link "Blog" [ref=f17e14] [cursor=pointer]:
+          - /url: /insights/
+        - link "Agendar diagnóstico" [ref=f17e15] [cursor=pointer]:
+          - /url: /diagnostico/
+  - generic [ref=f17e17]:
+    - link "← Voltar para a Página Inicial" [ref=f17e18] [cursor=pointer]:
+      - /url: /
+    - generic [ref=f17e19]: Nossos Consultores Seniores
+  - generic [ref=f17e22]:
+    - generic [ref=f17e23]: Senioridade Sem Intermediários
+    - heading "Quatro Consultores Seniores. Zero Analistas Juniores." [level=1] [ref=f17e24]
+    - paragraph [ref=f17e25]: "Acreditamos que empresários de PMEs não precisam de estagiários em treinamento: precisam de veteranos experientes que sentem à mesa quinzenalmente para analisar números, tomar decisões e acompanhar a execução."
+  - generic [ref=f17e28]:
+    - generic [ref=f17e29]:
+      - generic [ref=f17e30]:
+        - img "Marcio Fantini" [ref=f17e31]
+        - generic [ref=f17e33]: Estratégia & Advisory
+      - generic [ref=f17e34]:
+        - generic [ref=f17e35]:
+          - heading "Marcio Fantini" [level=2] [ref=f17e36]
+          - generic [ref=f17e37]: ESPM · 25 anos de experiência
+          - paragraph [ref=f17e38]: Conselheiro de fundadores e conselhos empresariais. Especialista em expansão comercial B2B, estruturação de canais de vendas e formatação de franquias.
+          - generic [ref=f17e39]:
+            - strong [ref=f17e40]: Frentes que Lidera
+            - text: Canais de Vendas · Gestão Empresarial · Franquias
+        - link "Conhecer Bio & Cases →" [ref=f17e41] [cursor=pointer]:
+          - /url: /time/marcio-fantini/
+    - generic [ref=f17e42]:
+      - generic [ref=f17e43]:
+        - img "Rodrigo Manzini" [ref=f17e44]
+        - generic [ref=f17e46]: Processos & Finanças
+      - generic [ref=f17e47]:
+        - generic [ref=f17e48]:
+          - heading "Rodrigo Manzini" [level=2] [ref=f17e49]
+          - generic [ref=f17e50]: UFSCar / FGV · 26 anos de experiência
+          - paragraph [ref=f17e51]: Engenheiro de Produção especialista em DRE Gerencial, fluxo de caixa diário projetado, margem por produto e eficiência operacional fabril (OEE/PCP).
+          - generic [ref=f17e52]:
+            - strong [ref=f17e53]: Frentes que Lidera
+            - text: Controle Financeiro · Crédito & Cobrança · Indústrias
+        - link "Conhecer Bio & Cases →" [ref=f17e54] [cursor=pointer]:
+          - /url: /time/rodrigo-manzini/
+    - generic [ref=f17e55]:
+      - generic [ref=f17e56]:
+        - img "Decio Martinez" [ref=f17e57]
+        - generic [ref=f17e59]: Pessoas & Governança
+      - generic [ref=f17e60]:
+        - generic [ref=f17e61]:
+          - heading "Decio Martinez" [level=2] [ref=f17e62]
+          - generic [ref=f17e63]: FAAP · 30+ anos de experiência
+          - paragraph [ref=f17e64]: Três décadas dedicadas ao desenvolvimento de líderes, organogramas por Matriz RACI, rituais gerenciais e governança para empresas familiares.
+          - generic [ref=f17e65]:
+            - strong [ref=f17e66]: Frentes que Lidera
+            - text: RH & Liderança · Governança Familiar · Matriz RACI
+        - link "Conhecer Bio & Cases →" [ref=f17e67] [cursor=pointer]:
+          - /url: /time/decio-martinez/
+    - generic [ref=f17e68]:
+      - generic [ref=f17e69]:
+        - img "Priscila Casagrande" [ref=f17e70]
+        - generic [ref=f17e72]: Marca & Marketing
+      - generic [ref=f17e73]:
+        - generic [ref=f17e74]:
+          - heading "Priscila Casagrande" [level=2] [ref=f17e75]
+          - generic [ref=f17e76]: +250 marcas · 20 anos de experiência
+          - paragraph [ref=f17e77]: Especialista na construção de Proposta Única de Valor (UVP), pesquisas de percepção de mercado e estratégias de diferenciação para empresas líderes.
+          - generic [ref=f17e78]:
+            - strong [ref=f17e79]: Frentes que Lidera
+            - text: Marketing & Posicionamento · Proposta de Valor
+        - link "Conhecer Bio & Cases →" [ref=f17e80] [cursor=pointer]:
+          - /url: /time/priscila-casagrande/
+  - generic [ref=f17e82]:
+    - generic [ref=f17e83]:
+      - generic [ref=f17e84]: Visão Multidisciplinar Integrada
+      - heading "Como os Quatro Consultores Atuam em Conjunto no Seu Negócio" [level=2] [ref=f17e85]
+      - paragraph [ref=f17e86]: "Empresas não quebram por um único motivo: problemas em vendas afetam o caixa, que desorganiza a produção e sobrecarrega a equipe. Nossos consultores atuam integrados para alinhar todas as pontas."
+    - generic [ref=f17e87]:
+      - generic [ref=f17e88]:
+        - heading "1. Diagnóstico Unificado" [level=3] [ref=f17e89]
+        - paragraph [ref=f17e90]: "Em vez de visões isoladas, os quatro consultores analisam a sua empresa sob as 4 lentes: finanças, mercado, processos e liderança."
+      - generic [ref=f17e91]:
+        - heading "2. Presença Presencial Frequente" [level=3] [ref=f17e92]
+        - paragraph [ref=f17e93]: Reuniões quinzenais presenciais em São Carlos/SP e região para cobrar metas, avaliar a DRE e destravar gargalos reais.
+      - generic [ref=f17e94]:
+        - heading "3. Responsabilidade com o Caixa" [level=3] [ref=f17e95]
+        - paragraph [ref=f17e96]: "Tudo o que planejamos é medido na ponta do lápis: aumento de margem de contribuição, previsibilidade e lucro líquido."
+  - generic [ref=f17e99]:
+    - generic [ref=f17e100]: Próximo Passo
+    - heading "Agende uma reunião estratégica com nossos consultores." [level=2] [ref=f17e101]
+    - paragraph [ref=f17e102]: Conversa executiva de 30 minutos sem compromisso para mapear as prioridades imediatas da sua empresa em São Carlos/SP ou formato remoto.
+    - link "Solicitar Diagnóstico Gratuito" [ref=f17e103] [cursor=pointer]:
+      - /url: /diagnostico/
+  - contentinfo [ref=f17e104]:
+    - generic [ref=f17e105]:
+      - generic [ref=f17e106]:
+        - generic [ref=f17e107]:
+          - img "Neonova" [ref=f17e108]
+          - paragraph [ref=f17e109]: Gestão estruturada e proximidade executiva para empresários e diretores de PMEs em São Carlos/SP e região.
+          - generic [ref=f17e110]: Fundada em 2007 · São Carlos / SP
+        - generic [ref=f17e111]:
+          - heading "Soluções" [level=4] [ref=f17e112]
+          - list [ref=f17e113]:
+            - listitem [ref=f17e114]:
+              - link "Gestão Empresarial" [ref=f17e115] [cursor=pointer]:
+                - /url: /solucoes/gestao-empresarial/
+            - listitem [ref=f17e116]:
+              - link "Financeiro & Caixa" [ref=f17e117] [cursor=pointer]:
+                - /url: /solucoes/financeiro/
+            - listitem [ref=f17e118]:
+              - link "Crédito e Cobrança" [ref=f17e119] [cursor=pointer]:
+                - /url: /solucoes/credito-e-cobranca/
+            - listitem [ref=f17e120]:
+              - link "Canais de Vendas" [ref=f17e121] [cursor=pointer]:
+                - /url: /solucoes/canais-de-vendas/
+            - listitem [ref=f17e122]:
+              - link "Marketing & Posicionamento" [ref=f17e123] [cursor=pointer]:
+                - /url: /solucoes/marketing/
+            - listitem [ref=f17e124]:
+              - link "Franquias & Expansão" [ref=f17e125] [cursor=pointer]:
+                - /url: /solucoes/franquias/
+            - listitem [ref=f17e126]:
+              - link "RH & Liderança" [ref=f17e127] [cursor=pointer]:
+                - /url: /solucoes/rh/
+            - listitem [ref=f17e128]:
+              - link "Produção & Indústrias" [ref=f17e129] [cursor=pointer]:
+                - /url: /solucoes/producao-e-industrias/
+        - generic [ref=f17e130]:
+          - heading "Institucional" [level=4] [ref=f17e131]
+          - list [ref=f17e132]:
+            - listitem [ref=f17e133]:
+              - link "Quem Somos" [ref=f17e134] [cursor=pointer]:
+                - /url: /quem-somos/
+            - listitem [ref=f17e135]:
+              - link "Metodologia" [ref=f17e136] [cursor=pointer]:
+                - /url: /quem-somos/#metodologia
+            - listitem [ref=f17e137]:
+              - link "Time de Consultores" [ref=f17e138] [cursor=pointer]:
+                - /url: /time/
+            - listitem [ref=f17e139]:
+              - link "Cases de Sucesso" [ref=f17e140] [cursor=pointer]:
+                - /url: /cases/
+            - listitem [ref=f17e141]:
+              - link "Insights & Artigos" [ref=f17e142] [cursor=pointer]:
+                - /url: /insights/
+            - listitem [ref=f17e143]:
+              - link "Diagnóstico Gratuito" [ref=f17e144] [cursor=pointer]:
+                - /url: /diagnostico/
+            - listitem [ref=f17e145]:
+              - link "Fale Conosco" [ref=f17e146] [cursor=pointer]:
+                - /url: /contato/
+        - generic [ref=f17e147]:
+          - heading "Contato" [level=4] [ref=f17e148]
+          - paragraph [ref=f17e149]:
+            - strong [ref=f17e150]: São Carlos / SP
+            - text: Atendimento presencial regional e remoto nacional.
+          - link "Falar pelo WhatsApp" [ref=f17e151] [cursor=pointer]:
+            - /url: https://wa.me/5516992953211
+      - generic [ref=f17e152]:
+        - generic [ref=f17e153]: © 2026 Neonova Consultoria em Negócios. Todos os direitos reservados.
+        - generic [ref=f17e154]:
+          - link "Privacidade" [ref=f17e155] [cursor=pointer]:
+            - /url: /politica-de-privacidade/
+          - link "Termos de Uso" [ref=f17e156] [cursor=pointer]:
+            - /url: /termos-de-uso/
+  - link "Falar pelo WhatsApp" [ref=f17e157] [cursor=pointer]:
+    - /url: https://wa.me/5516992953211
+    - generic [ref=f17e160]: Falar com Consultor

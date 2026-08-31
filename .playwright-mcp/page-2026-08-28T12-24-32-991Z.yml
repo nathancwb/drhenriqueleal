@@ -1,0 +1,396 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - link [ref=e5] [cursor=pointer]:
+        - /url: index.html
+        - img "Dr. Henrique Leal Rosa" [ref=e6]
+      - navigation [ref=e7]:
+        - link "Início" [ref=e8] [cursor=pointer]:
+          - /url: index.html
+        - generic [ref=e9]: ·
+        - link "Procedimentos" [ref=e10] [cursor=pointer]:
+          - /url: procedimentos.html
+        - generic [ref=e11]: ·
+        - link "Resultados" [ref=e12] [cursor=pointer]:
+          - /url: resultados.html
+        - generic [ref=e13]: ·
+        - link "O Especialista" [ref=e14] [cursor=pointer]:
+          - /url: "#sobre"
+        - generic [ref=e15]: ·
+        - link "Clínica" [ref=e16] [cursor=pointer]:
+          - /url: "#localizacao"
+      - link "Agendar Consulta ↗" [ref=e18] [cursor=pointer]:
+        - /url: https://wa.me/5541988577430?text=Ol%C3%A1%2C+gostaria+de+agendar+uma+avalia%C3%A7%C3%A3o+com+o+Dr.+Henrique+Leal.
+        - generic [ref=e19]: Agendar Consulta
+        - generic [ref=e20]: ↗
+  - generic [ref=e23]:
+    - generic [ref=e24]:
+      - generic [ref=e25]: Clínica Privativa · Curitiba/PR
+      - heading [level=1] [ref=e26]:
+        - text: A Arte da Harmonia Facial Guiada pela
+        - emphasis [ref=e27]: Precisão Médica
+      - paragraph [ref=e28]:
+        - text: Harmonização facial tridimensional, fios de sustentação de PDO e terapias estéticas avançadas pelo
+        - strong [ref=e29]: Dr. Henrique Leal Rosa
+        - text: . Resultados refinados que preservam a sua identidade com elegância e naturalidade inegociável.
+      - generic [ref=e30]:
+        - link "Agendar Avaliação ↗" [ref=e31] [cursor=pointer]:
+          - /url: https://wa.me/5541988577430?text=Ol%C3%A1%2C+gostaria+de+agendar+uma+avalia%C3%A7%C3%A3o+com+o+Dr.+Henrique+Leal.
+          - generic [ref=e32]: Agendar Avaliação
+          - generic [ref=e33]: ↗
+        - link "Conhecer Tratamentos" [ref=e34] [cursor=pointer]:
+          - /url: procedimentos.html
+      - generic [ref=e36]:
+        - generic [ref=e37]:
+          - generic [ref=e38]: "+3.000"
+          - generic [ref=e39]: Procedimentos Realizados
+        - generic [ref=e40]:
+          - generic [ref=e41]: Dupla Formação
+          - generic [ref=e42]: Biomedicina & Odontologia
+        - generic [ref=e43]:
+          - generic [ref=e44]: 100%
+          - generic [ref=e45]: Individualizado
+    - generic [ref=e46]:
+      - img "Dr. Henrique Leal Rosa em atendimento clínico" [ref=e47]
+      - generic [ref=e48]:
+        - generic [ref=e49]:
+          - strong [ref=e50]: Dr. Henrique Leal Rosa
+          - paragraph [ref=e51]: Especialista em Harmonização Facial
+        - generic [ref=e52]: Edifício Today's Office
+  - generic [ref=e54]:
+    - generic [ref=e55]:
+      - generic [ref=e56]: Nossos Pilares
+      - heading "Filosofia Clínica Fundamentada em Ciência e Proporção" [level=2] [ref=e57]
+      - paragraph [ref=e58]: Uma abordagem que prioriza a segurança, a saúde tecidual e o respeito à anatomia única de cada paciente.
+    - generic [ref=e59]:
+      - generic [ref=e60]:
+        - generic [ref=e61]: "01"
+        - heading "Avaliação Tridimensional" [level=3] [ref=e62]
+        - paragraph [ref=e63]: Mapeamento anatômico detalhado de proporções áureas, dinâmica muscular e vetores de sustentação antes de qualquer intervenção.
+      - generic [ref=e64]:
+        - generic [ref=e65]: "02"
+        - heading "Naturalidade Inegociável" [level=3] [ref=e66]
+        - paragraph [ref=e67]: Trabalhamos para realçar os pontos fortes e rejuvenescer feições sem volumes artificiais ou mudanças caricatas.
+      - generic [ref=e68]:
+        - generic [ref=e69]: "03"
+        - heading "Produtos Padrão Ouro" [level=3] [ref=e70]
+        - paragraph [ref=e71]: Utilização exclusiva de bioestimuladores de colágeno, ácidos hialurônicos e fios de PDO importados e certificados mundialmente.
+      - generic [ref=e72]:
+        - generic [ref=e73]: "04"
+        - heading "Sigilo & Exclusividade" [level=3] [ref=e74]
+        - paragraph [ref=e75]: Atendimento em ambiente privativo no Edifício Today's Office em Curitiba, garantindo conforto, pontualidade e discrição total.
+  - generic [ref=e77]:
+    - generic [ref=e78]:
+      - generic [ref=e79]: Portfólio Clínico
+      - heading "Procedimentos de Alta Performance" [level=2] [ref=e80]
+      - paragraph [ref=e81]: Do refinamento de contornos faciais à medicina regenerativa, conheça os principais tratamentos realizados pelo Dr. Henrique Leal.
+    - generic [ref=e82]:
+      - generic [ref=e83]:
+        - generic [ref=e84]: "01"
+        - generic [ref=e85]:
+          - text: Facial · Preenchimentos
+          - heading "Harmonização Facial & Natural Lips" [level=3] [ref=e86]
+        - paragraph [ref=e88]: Estruturação tridimensional de mandíbula, queixo, maçãs do rosto e lábios com ácido hialurônico de alta tecnologia, respeitando proporções áureas.
+        - link "Ver Detalhes →" [ref=e90] [cursor=pointer]:
+          - /url: procedimentos-detalhes.html?id=preenchimento-acido-hialuronico
+          - generic [ref=e91]: Ver Detalhes
+          - generic [ref=e92]: →
+      - generic [ref=e93]:
+        - generic [ref=e94]: "02"
+        - generic [ref=e95]:
+          - text: Lifting sem Cirurgia
+          - heading "Fios de Sustentação de PDO" [level=3] [ref=e96]
+        - paragraph [ref=e98]: Lifting não cirúrgico que reposiciona tecidos do terço médio e inferior, associado a estímulo biológico contínuo de colágeno novo.
+        - link "Ver Detalhes →" [ref=e100] [cursor=pointer]:
+          - /url: procedimentos-detalhes.html?id=fios-pdo
+          - generic [ref=e101]: Ver Detalhes
+          - generic [ref=e102]: →
+      - generic [ref=e103]:
+        - generic [ref=e104]: "03"
+        - generic [ref=e105]:
+          - text: Firmeza & Neocolagênese
+          - heading "Bioestimuladores de Colágeno" [level=3] [ref=e106]
+        - paragraph [ref=e108]: Tratamento injetável com Radiesse, Sculptra e Elleva para restauração progressiva da densidade, elasticidade e combate à flacidez facial e corporal.
+        - link "Ver Detalhes →" [ref=e110] [cursor=pointer]:
+          - /url: procedimentos-detalhes.html?id=bioestimulador-colageno
+          - generic [ref=e111]: Ver Detalhes
+          - generic [ref=e112]: →
+      - generic [ref=e113]:
+        - generic [ref=e114]: "04"
+        - generic [ref=e115]:
+          - text: Prevenção & Suavização
+          - heading "Toxina Botulínica de Precisão" [level=3] [ref=e116]
+        - paragraph [ref=e118]: Suavização milimétrica de rugas dinâmicas da testa, glabela e olhos, preservando a expressividade, naturalidade e leveza do olhar.
+        - link "Ver Detalhes →" [ref=e120] [cursor=pointer]:
+          - /url: procedimentos-detalhes.html?id=botox
+          - generic [ref=e121]: Ver Detalhes
+          - generic [ref=e122]: →
+      - generic [ref=e123]:
+        - generic [ref=e124]: "05"
+        - generic [ref=e125]:
+          - text: Protocolo de Assinatura
+          - heading "Protocolo Bioforce" [level=3] [ref=e126]
+        - paragraph [ref=e128]: Combinação exclusiva de dois bioestimuladores de colágeno de alta pureza com peptídeos bioativos para regeneração dérmica profunda.
+        - link "Ver Detalhes →" [ref=e130] [cursor=pointer]:
+          - /url: procedimentos-detalhes.html?id=protocolo-bioforce
+          - generic [ref=e131]: Ver Detalhes
+          - generic [ref=e132]: →
+      - generic [ref=e133]:
+        - generic [ref=e134]: "06"
+        - generic [ref=e135]:
+          - text: Regeneração & Oxigenação
+          - heading "Ozonioterapia Estética e Terapêutica" [level=3] [ref=e136]
+        - paragraph [ref=e138]: Aplicação medicinal de ozônio para oxigenação celular intensa, ação anti-inflamatória, combate à acne, celulite e aceleração da recuperação tecidual.
+        - link "Ver Detalhes →" [ref=e140] [cursor=pointer]:
+          - /url: procedimentos-detalhes.html?id=ozonioterapia
+          - generic [ref=e141]: Ver Detalhes
+          - generic [ref=e142]: →
+      - generic [ref=e143]:
+        - generic [ref=e144]: "07"
+        - generic [ref=e145]:
+          - text: Íntimo Masculino & Feminino
+          - heading "Estética Íntima Avançada" [level=3] [ref=e146]
+        - paragraph [ref=e148]: Preenchimento com ácido hialurônico, bioestimuladores, peelings clareadores e toxina botulínica com absoluto sigilo, ética e conforto.
+        - link "Ver Detalhes →" [ref=e150] [cursor=pointer]:
+          - /url: procedimentos-detalhes.html?id=estetica-intima
+          - generic [ref=e151]: Ver Detalhes
+          - generic [ref=e152]: →
+    - link "Ver Catálogo Completo com Todos os Procedimentos →" [ref=e154] [cursor=pointer]:
+      - /url: procedimentos.html
+      - generic [ref=e155]: Ver Catálogo Completo com Todos os Procedimentos
+      - generic [ref=e156]: →
+  - generic [ref=e158]:
+    - generic [ref=e159]:
+      - generic [ref=e160]: Resultados Reais
+      - heading "Transformações Marcadas pela Harmonia" [level=2] [ref=e161]
+      - paragraph [ref=e162]: Casos clínicos planejados individualmente que comprovam a eficácia da técnica com discrição e naturalidade.
+    - generic [ref=e163]:
+      - strong [ref=e164]: "Aviso Legal e Ético:"
+      - text: Os resultados visuais exibidos representam casos clínicos individuais de pacientes reais atendidos na clínica. Cada organismo e estrutura óssea respondem de maneira singular aos tratamentos.
+    - generic [ref=e165]:
+      - generic [ref=e166]:
+        - generic [ref=e167]:
+          - heading "Alinhamento de Dorso & UpNose" [level=4] [ref=e168]
+          - generic [ref=e169]: Rinomodelação
+        - generic [ref=e170]:
+          - generic [ref=e171]:
+            - img "Antes Rinomodelação" [ref=e172]
+            - generic [ref=e173]: Antes
+          - generic [ref=e174]:
+            - img "Depois Rinomodelação" [ref=e175]
+            - generic [ref=e176]: Depois
+        - paragraph [ref=e177]: Correção sutil do perfil nasal e elevação da ponta com ácido hialurônico estrutural sem cirurgia.
+      - generic [ref=e178]:
+        - generic [ref=e179]:
+          - heading "Contorno, Proporção e Hidratação" [level=4] [ref=e180]
+          - generic [ref=e181]: Natural Lips
+        - generic [ref=e182]:
+          - generic [ref=e183]:
+            - img "Antes Lábios" [ref=e184]
+            - generic [ref=e185]: Antes
+          - generic [ref=e186]:
+            - img "Depois Lábios" [ref=e187]
+            - generic [ref=e188]: Depois
+        - paragraph [ref=e189]: Definição do arco do cupido e volumização discreta respeitando a anatomia natural da paciente.
+      - generic [ref=e190]:
+        - generic [ref=e191]:
+          - heading "Definição Mandibular & Mento" [level=4] [ref=e192]
+          - generic [ref=e193]: Full Face Masculino
+        - generic [ref=e194]:
+          - generic [ref=e195]:
+            - img "Antes Harmonização Masculina" [ref=e196]
+            - generic [ref=e197]: Antes
+          - generic [ref=e198]:
+            - img "Depois Harmonização Masculina" [ref=e199]
+            - generic [ref=e200]: Depois
+        - paragraph [ref=e201]: Estruturação de ângulos mandibulares com linhas fortes e perfil marcante sem artificialismos.
+      - generic [ref=e202]:
+        - generic [ref=e203]:
+          - heading "Sustentação Malar & Rejuvenescimento" [level=4] [ref=e204]
+          - generic [ref=e205]: Full Face Feminino
+        - generic [ref=e206]:
+          - generic [ref=e207]:
+            - img "Antes Harmonização Feminina" [ref=e208]
+            - generic [ref=e209]: Antes
+          - generic [ref=e210]:
+            - img "Depois Harmonização Feminina" [ref=e211]
+            - generic [ref=e212]: Depois
+        - paragraph [ref=e213]: Lifting estrutural do terço médio com atenuação de linhas de cansaço e iluminação do olhar.
+    - link "Acessar Galeria Completa com Mais Casos ↗" [ref=e215] [cursor=pointer]:
+      - /url: resultados.html
+      - generic [ref=e216]: Acessar Galeria Completa com Mais Casos
+      - generic [ref=e217]: ↗
+  - generic [ref=e220]:
+    - img "Dr. Henrique Leal Rosa no consultório" [ref=e222]
+    - generic [ref=e223]:
+      - generic [ref=e224]: O Especialista
+      - heading "Dr. Henrique Leal Rosa" [level=2] [ref=e225]
+      - paragraph [ref=e226]: Biomédico & Dentista Especialista em Harmonização Facial e Terapias Injetáveis
+      - generic [ref=e227]:
+        - paragraph [ref=e228]:
+          - text: Com dupla graduação em
+          - strong [ref=e229]: Biomedicina
+          - text: e
+          - strong [ref=e230]: Odontologia
+          - text: ", o Dr. Henrique Leal consolidou sua atuação na estética avançada unindo o conhecimento aprofundado da histologia tecidual ao refinamento estético e anatômico do terço facial."
+        - paragraph [ref=e231]:
+          - text: Atua ativamente como
+          - strong [ref=e232]: professor de pós-graduação
+          - text: e
+          - strong [ref=e233]: mentor clínico de injetores
+          - text: ", participando com frequência de congressos e treinamentos internacionais para trazer a Curitiba o que há de mais moderno e seguro em técnicas injetáveis."
+      - generic [ref=e234]:
+        - generic [ref=e235]:
+          - generic [ref=e236]: ✦
+          - generic [ref=e237]: Dupla formação acadêmica em Biomedicina e Odontologia
+        - generic [ref=e238]:
+          - generic [ref=e239]: ✦
+          - generic [ref=e240]: Certificação Internacional em Fios de Sustentação de PDO
+        - generic [ref=e241]:
+          - generic [ref=e242]: ✦
+          - generic [ref=e243]: Professor e mentor de profissionais da saúde em todo o Brasil
+        - generic [ref=e244]:
+          - generic [ref=e245]: ✦
+          - generic [ref=e246]: Mais de 3.000 procedimentos realizados com foco em naturalidade
+      - link "Agendar Consulta com Dr. Henrique ↗" [ref=e248] [cursor=pointer]:
+        - /url: https://wa.me/5541988577430?text=Ol%C3%A1%2C+gostaria+de+agendar+uma+consulta+com+o+Dr.+Henrique+Leal.
+        - generic [ref=e249]: Agendar Consulta com Dr. Henrique
+        - generic [ref=e250]: ↗
+  - generic [ref=e252]:
+    - generic [ref=e253]:
+      - generic [ref=e254]: Experiência do Paciente
+      - heading "O Que Dizem Nossos Pacientes" [level=2] [ref=e255]
+      - paragraph [ref=e256]: A satisfação de quem confiou no planejamento e conquistou resultados harmônicos e elegantes.
+    - generic [ref=e257]:
+      - generic [ref=e258]:
+        - generic [ref=e259]: ★★★★★
+        - paragraph [ref=e260]: "\"O Dr. Henrique tem uma mão incrivelmente leve e um olhar único para a naturalidade. Fiz o preenchimento labial e a harmonização, e as pessoas só comentam como meu rosto parece descansado, sem ninguém desconfiar que fiz procedimento!\""
+        - generic [ref=e261]:
+          - strong [ref=e262]: Mariana S.
+          - text: Curitiba/PR · Harmonização Facial
+      - generic [ref=e263]:
+        - generic [ref=e264]: ★★★★★
+        - paragraph [ref=e265]: "\"O Protocolo Bioforce e o tratamento com ozônio mudaram a qualidade da minha pele em poucas semanas. A clínica no Today's Office é muito acolhedora e o atendimento é impecável.\""
+        - generic [ref=e266]:
+          - strong [ref=e267]: Carlos E.
+          - text: Curitiba/PR · Protocolos Regenerativos
+      - generic [ref=e268]:
+        - generic [ref=e269]: ★★★★★
+        - paragraph [ref=e270]: "\"Fiz aplicação de fios de PDO e toxina botulínica. A clareza e segurança do Dr. Henrique na avaliação me deixaram totalmente tranquila. O resultado ficou maravilhoso.\""
+        - generic [ref=e271]:
+          - strong [ref=e272]: Fernanda R.
+          - text: Curitiba/PR · Fios de PDO & Botox
+  - generic [ref=e275]:
+    - generic [ref=e276]:
+      - generic [ref=e277]: Localização Privativa
+      - heading "Atendimento Exclusivo no Água Verde" [level=2] [ref=e278]
+      - paragraph [ref=e279]:
+        - strong [ref=e280]: Edifício Today's Office
+        - text: Av. República Argentina, 1237 — Sala 518 (5º andar) Água Verde, Curitiba — PR
+      - generic [ref=e281]:
+        - generic [ref=e282]: Estacionamento rotativo conveniado no próprio edifício
+        - generic [ref=e283]: Ambiente climatizado, privativo e sem salas de espera cheias
+        - generic [ref=e284]: Localização nobre de fácil acesso em Curitiba
+      - generic [ref=e285]:
+        - link "Abrir no Google Maps ↗" [ref=e286] [cursor=pointer]:
+          - /url: https://maps.google.com/?q=Av.+Rep.+Argentina,+1237+-+Sala+518+-+%C3%81gua+Verde,+Curitiba+-+PR
+          - generic [ref=e287]: Abrir no Google Maps
+          - generic [ref=e288]: ↗
+        - link "Falar com a Recepção" [ref=e289] [cursor=pointer]:
+          - /url: https://wa.me/5541988577430
+    - iframe [ref=e292]
+  - generic [ref=e294]:
+    - generic [ref=e295]:
+      - generic [ref=e296]: Dúvidas Frequentes
+      - heading "Perguntas & Esclarecimentos" [level=2] [ref=e297]
+    - generic [ref=e298]:
+      - generic [ref=e299]:
+        - button "Como funciona a consulta de avaliação inicial? +" [ref=e300] [cursor=pointer]:
+          - generic [ref=e301]: Como funciona a consulta de avaliação inicial?
+          - generic [ref=e302]: +
+        - generic: A avaliação inicial é uma consulta minuciosa onde o Dr. Henrique analisa a anatomia tridimensional do seu rosto, histórico de saúde e expectativas. São explicados os tratamentos ideais, materiais biocompatíveis recomendados e o plano de aplicação personalizado.
+      - generic [ref=e304]:
+        - button "Os procedimentos deixam o rosto artificial ou exagerado? +" [ref=e305] [cursor=pointer]:
+          - generic [ref=e306]: Os procedimentos deixam o rosto artificial ou exagerado?
+          - generic [ref=e307]: +
+        - generic [ref=e308]:
+          - text: Não. A diretriz principal da clínica é a
+          - strong [ref=e309]: naturalidade inegociável
+          - text: . O objetivo é restaurar estruturas anatômicas e valorizar a sua beleza nativa com quantidades milimétricas e técnicas com microcânulas, sem artificialismos.
+      - generic [ref=e310]:
+        - button "Qual o tempo de recuperação (downtime)? +" [ref=e311] [cursor=pointer]:
+          - generic [ref=e312]: Qual o tempo de recuperação (downtime)?
+          - generic [ref=e313]: +
+        - generic: A grande maioria dos procedimentos com microcânulas e injetáveis permite retorno imediato às atividades cotidianas. Recomenda-se apenas evitar exercícios físicos pesados e exposição solar direta nas primeiras 24 a 48 horas.
+      - generic [ref=e315]:
+        - button "O que é a Ozonioterapia e quais suas aplicações? +" [ref=e316] [cursor=pointer]:
+          - generic [ref=e317]: O que é a Ozonioterapia e quais suas aplicações?
+          - generic [ref=e318]: +
+        - generic: A Ozonioterapia medicinal utiliza a mistura precisa de oxigênio e ozônio ($O_2/O_3$) para oxigenação celular profunda, potente ação anti-inflamatória e estímulo da microcirculação, sendo aplicada na estética facial, corporal, capilar e na recuperação pós-procedimentos.
+      - generic [ref=e320]:
+        - button "Como realizar o agendamento? +" [ref=e321] [cursor=pointer]:
+          - generic [ref=e322]: Como realizar o agendamento?
+          - generic [ref=e323]: +
+        - generic [ref=e324]:
+          - text: Os agendamentos são realizados diretamente com a assessoria do consultório pelo WhatsApp oficial
+          - strong [ref=e325]: (41) 98857-7430
+          - text: . Nossa equipe passará todas as orientações e horários disponíveis.
+  - generic [ref=e328]:
+    - generic [ref=e329]: Atendimento Privativo em Curitiba
+    - heading "Inicie Seu Planejamento Estético Personalizado" [level=2] [ref=e330]
+    - paragraph [ref=e331]: Agende uma avaliação individual com o Dr. Henrique Leal Rosa no Edifício Today's Office.
+    - generic [ref=e332]:
+      - link "Falar no WhatsApp com a Assessoria ↗" [ref=e333] [cursor=pointer]:
+        - /url: https://wa.me/5541988577430?text=Ol%C3%A1%2C+gostaria+de+agendar+uma+avalia%C3%A7%C3%A3o+com+o+Dr.+Henrique+Leal.
+        - generic [ref=e334]: Falar no WhatsApp com a Assessoria
+        - generic [ref=e335]: ↗
+      - link "Ver Todos os Procedimentos" [ref=e336] [cursor=pointer]:
+        - /url: procedimentos.html
+  - contentinfo [ref=e338]:
+    - generic [ref=e339]:
+      - generic [ref=e340]:
+        - generic [ref=e341]:
+          - img "Dr. Henrique Leal Rosa" [ref=e342]
+          - paragraph [ref=e343]: Clínica de Harmonização Facial e Estética Médica de Alta Performance em Curitiba. Excelência, proporção áurea e respeito à identidade.
+          - paragraph [ref=e344]: Dr. Henrique Leal Rosa · Biomédico & Dentista Esteta
+        - generic [ref=e345]:
+          - heading "Navegação" [level=5] [ref=e346]
+          - list [ref=e347]:
+            - listitem [ref=e348]:
+              - link "Início" [ref=e349] [cursor=pointer]:
+                - /url: index.html
+            - listitem [ref=e350]:
+              - link "Procedimentos" [ref=e351] [cursor=pointer]:
+                - /url: procedimentos.html
+            - listitem [ref=e352]:
+              - link "Resultados" [ref=e353] [cursor=pointer]:
+                - /url: resultados.html
+            - listitem [ref=e354]:
+              - link "O Especialista" [ref=e355] [cursor=pointer]:
+                - /url: "#sobre"
+        - generic [ref=e356]:
+          - heading "Procedimentos" [level=5] [ref=e357]
+          - list [ref=e358]:
+            - listitem [ref=e359]:
+              - link "Harmonização Facial" [ref=e360] [cursor=pointer]:
+                - /url: procedimentos-detalhes.html?id=preenchimento-acido-hialuronico
+            - listitem [ref=e361]:
+              - link "Fios de PDO" [ref=e362] [cursor=pointer]:
+                - /url: procedimentos-detalhes.html?id=fios-pdo
+            - listitem [ref=e363]:
+              - link "Bioestimuladores" [ref=e364] [cursor=pointer]:
+                - /url: procedimentos-detalhes.html?id=bioestimulador-colageno
+            - listitem [ref=e365]:
+              - link "Protocolo Bioforce" [ref=e366] [cursor=pointer]:
+                - /url: procedimentos-detalhes.html?id=protocolo-bioforce
+            - listitem [ref=e367]:
+              - link "Ozonioterapia" [ref=e368] [cursor=pointer]:
+                - /url: procedimentos-detalhes.html?id=ozonioterapia
+        - generic [ref=e369]:
+          - heading "Consultório" [level=5] [ref=e370]
+          - paragraph [ref=e371]: Edifício Today's Office, Sala 518 Av. República Argentina, 1237 — Água Verde, Curitiba/PR
+          - link "(41) 98857-7430" [ref=e372] [cursor=pointer]:
+            - /url: https://wa.me/5541988577430
+      - generic [ref=e373]:
+        - paragraph [ref=e374]: © 2026 Dr. Henrique Leal Rosa. Todos os direitos reservados.
+        - paragraph [ref=e375]: Desenvolvido com sofisticação estética.

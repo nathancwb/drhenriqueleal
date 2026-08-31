@@ -1,0 +1,228 @@
+- generic [active] [ref=f13e1]:
+  - banner [ref=f13e2]:
+    - generic [ref=f13e4]:
+      - link [ref=f13e5] [cursor=pointer]:
+        - /url: index.html
+        - img "Dr. Henrique Leal Rosa" [ref=f13e6]
+      - generic [ref=f13e7]: Atendimento Privativo · Curitiba
+      - link "Falar no WhatsApp" [ref=f13e8] [cursor=pointer]:
+        - /url: https://wa.me/5541988577430?text=Ol%C3%A1%2C+gostaria+de+agendar+uma+avalia%C3%A7%C3%A3o+com+o+Dr.+Henrique+Leal.
+  - generic [ref=f13e14]:
+    - generic [ref=f13e15]:
+      - generic [ref=f13e16]: Estética Médica & Harmonização Avançada
+      - heading [level=1] [ref=f13e18]:
+        - text: Harmonia Facial e Rejuvenescimento com
+        - emphasis [ref=f13e19]: Precisão Médica
+      - paragraph [ref=f13e20]:
+        - text: Procedimentos injetáveis minimamente invasivos planejados sob medida pelo
+        - strong [ref=f13e21]: Dr. Henrique Leal
+        - text: para valorizar seus traços sem artificialidade.
+      - generic [ref=f13e22]:
+        - link "Agendar Avaliação no WhatsApp" [ref=f13e23] [cursor=pointer]:
+          - /url: https://wa.me/5541988577430?text=Ol%C3%A1%2C+quero+agendar+uma+avalia%C3%A7%C3%A3o+de+Harmoniza%C3%A7%C3%A3o+com+o+Dr.+Henrique.
+        - generic [ref=f13e27]: ✓ Atendimento privativo no Edifício Today's Office · Água Verde
+      - generic [ref=f13e28]:
+        - generic [ref=f13e29]:
+          - strong [ref=f13e30]: "+3.000"
+          - text: Procedimentos Realizados
+        - generic [ref=f13e31]:
+          - strong [ref=f13e32]: Dupla Formação
+          - text: Biomedicina & Odontologia
+        - generic [ref=f13e33]:
+          - strong [ref=f13e34]: 100%
+          - text: Planejamento Individual
+    - generic [ref=f13e35]:
+      - img "Dr. Henrique Leal Rosa" [ref=f13e37]
+      - generic [ref=f13e38]:
+        - generic [ref=f13e39]:
+          - strong [ref=f13e40]: Dr. Henrique Leal Rosa
+          - text: Especialista em Terapias Injetáveis
+        - generic [ref=f13e41]: Edifício Today's Office
+  - generic [ref=f13e43]:
+    - generic [ref=f13e44]:
+      - generic [ref=f13e45]: Casos Clínicos Reais
+      - heading [level=2] [ref=f13e46]:
+        - text: Transformações Marcadas pela
+        - emphasis [ref=f13e47]: Naturalidade
+      - paragraph [ref=f13e48]: Arraste para os lados e confira resultados de alta definição realizados pelo Dr. Henrique Leal.
+    - generic [ref=f13e49]:
+      - generic [ref=f13e50]:
+        - generic [ref=f13e51]:
+          - generic [ref=f13e52]:
+            - generic [ref=f13e53]: Rinomodelação
+            - generic [ref=f13e54]: ★ ★ ★ ★ ★
+          - heading "Método UpNose de Precisão" [level=3] [ref=f13e55]
+          - generic [ref=f13e56]:
+            - generic [ref=f13e57]:
+              - img "Antes Rinomodelação" [ref=f13e58]
+              - generic [ref=f13e59]: Antes
+            - generic [ref=f13e60]:
+              - img "Depois Rinomodelação" [ref=f13e61]
+              - generic [ref=f13e62]: Depois
+          - paragraph [ref=f13e63]: Elevação da ponta nasal e retificação do dorso com ácido hialurônico de alta coesividade.
+          - link "Quero um Resultado Assim ↗" [ref=f13e64] [cursor=pointer]:
+            - /url: https://wa.me/5541988577430?text=Ol%C3%A1%2C+vi+o+resultado+de+Rinomodela%C3%A7%C3%A3o+e+quero+uma+avalia%C3%A7%C3%A3o.
+        - generic [ref=f13e66]:
+          - generic [ref=f13e67]:
+            - generic [ref=f13e68]: Natural Lips
+            - generic [ref=f13e69]: ★ ★ ★ ★ ★
+          - heading "Preenchimento Labial Hidratado" [level=3] [ref=f13e70]
+          - generic [ref=f13e71]:
+            - generic [ref=f13e72]:
+              - img "Antes Lábios" [ref=f13e73]
+              - generic [ref=f13e74]: Antes
+            - generic [ref=f13e75]:
+              - img "Depois Lábios" [ref=f13e76]
+              - generic [ref=f13e77]: Depois
+          - paragraph [ref=f13e78]: Definição do contorno e volume equilibrado respeitando a proporção áurea facial.
+          - link "Quero um Resultado Assim ↗" [ref=f13e79] [cursor=pointer]:
+            - /url: https://wa.me/5541988577430?text=Ol%C3%A1%2C+vi+o+resultado+de+Natural+Lips+e+quero+uma+avalia%C3%A7%C3%A3o.
+        - generic [ref=f13e81]:
+          - generic [ref=f13e82]:
+            - generic [ref=f13e83]: Contorno Masculino
+            - generic [ref=f13e84]: ★ ★ ★ ★ ★
+          - heading "Estruturação de Mandíbula & Queixo" [level=3] [ref=f13e85]
+          - generic [ref=f13e86]:
+            - generic [ref=f13e87]:
+              - img "Antes Mandíbula" [ref=f13e88]
+              - generic [ref=f13e89]: Antes
+            - generic [ref=f13e90]:
+              - img "Depois Mandíbula" [ref=f13e91]
+              - generic [ref=f13e92]: Depois
+          - paragraph [ref=f13e93]: Definição do ângulo goníaco e separação nítida do pescoço com técnica segura de microcânulas.
+          - link "Quero um Resultado Assim ↗" [ref=f13e94] [cursor=pointer]:
+            - /url: https://wa.me/5541988577430?text=Ol%C3%A1%2C+vi+o+resultado+de+Mand%C3%ADbula+Masculina+e+quero+uma+avalia%C3%A7%C3%A3o.
+        - generic [ref=f13e96]:
+          - generic [ref=f13e97]:
+            - generic [ref=f13e98]: Lifting Estrutural
+            - generic [ref=f13e99]: ★ ★ ★ ★ ★
+          - heading "Sustentação Malar & Rejuvenescimento" [level=3] [ref=f13e100]
+          - generic [ref=f13e101]:
+            - generic [ref=f13e102]:
+              - img "Antes Lifting" [ref=f13e103]
+              - generic [ref=f13e104]: Antes
+            - generic [ref=f13e105]:
+              - img "Depois Lifting" [ref=f13e106]
+              - generic [ref=f13e107]: Depois
+          - paragraph [ref=f13e108]: Pontos estratégicos de sustentação para suavizar o sulco nasogeniano e devolver o viço facial.
+          - link "Quero um Resultado Assim ↗" [ref=f13e109] [cursor=pointer]:
+            - /url: https://wa.me/5541988577430?text=Ol%C3%A1%2C+vi+o+resultado+de+Lifting+Feminino+e+quero+uma+avalia%C3%A7%C3%A3o.
+        - generic [ref=f13e111]:
+          - generic [ref=f13e112]:
+            - generic [ref=f13e113]: Botox de Precisão
+            - generic [ref=f13e114]: ★ ★ ★ ★ ★
+          - heading "Prevenção e Suavização de Linhas" [level=3] [ref=f13e115]
+          - generic [ref=f13e116]:
+            - generic [ref=f13e117]:
+              - img "Antes Botox" [ref=f13e118]
+              - generic [ref=f13e119]: Antes
+            - generic [ref=f13e120]:
+              - img "Depois Botox" [ref=f13e121]
+              - generic [ref=f13e122]: Depois
+          - paragraph [ref=f13e123]: Alívio milimétrico das rugas de expressão na testa e glabela mantendo o olhar leve e descansado.
+          - link "Quero um Resultado Assim ↗" [ref=f13e124] [cursor=pointer]:
+            - /url: https://wa.me/5541988577430?text=Ol%C3%A1%2C+vi+o+resultado+de+Botox+e+quero+uma+avalia%C3%A7%C3%A3o.
+      - generic [ref=f13e126]:
+        - button "Caso Anterior" [ref=f13e127] [cursor=pointer]: ←
+        - button "Próximo Caso" [ref=f13e128] [cursor=pointer]: →
+    - paragraph [ref=f13e129]: "Aviso: Resultados individuais podem variar. Procedimentos realizados conforme as normas do Conselho de Classe e a legislação brasileira."
+  - generic [ref=f13e131]:
+    - generic [ref=f13e132]:
+      - generic [ref=f13e133]: Metodologia Própria
+      - heading [level=2] [ref=f13e134]:
+        - text: Tratamentos de
+        - emphasis [ref=f13e135]: Alta Performance
+      - paragraph [ref=f13e136]: Procedimentos combinados para rejuvenescer sem cortes, sem dor excessiva e com rápida recuperação.
+    - generic [ref=f13e137]:
+      - generic [ref=f13e138]:
+        - generic [ref=f13e139]: ✦
+        - heading "Harmonização & Natural Lips" [level=3] [ref=f13e140]
+        - paragraph [ref=f13e141]: Restauração de volume e linhas de contorno com ácido hialurônico de alta pureza. O foco é a simetria sutil e lábios hidratados.
+        - list [ref=f13e142]:
+          - listitem [ref=f13e143]: ✦ Definição mandibular e queixo
+          - listitem [ref=f13e144]: ✦ Preenchimento labial refinado
+          - listitem [ref=f13e145]: ✦ Atenuação de olheiras e sulcos
+        - link "Consultar Valores" [ref=f13e146] [cursor=pointer]:
+          - /url: https://wa.me/5541988577430?text=Ol%C3%A1%2C+quero+saber+mais+sobre+Harmoniza%C3%A7%C3%A3o+Facial.
+      - generic [ref=f13e148]:
+        - generic [ref=f13e149]: ✦
+        - heading "Fios de Sustentação de PDO" [level=3] [ref=f13e150]
+        - paragraph [ref=f13e151]: Lifting não cirúrgico imediato com tração tecidual mecânica e produção contínua de colágeno por até 2 anos.
+        - list [ref=f13e152]:
+          - listitem [ref=f13e153]: ✦ Reposicionamento do terço médio
+          - listitem [ref=f13e154]: ✦ Suavização de rugas finas e flacidez
+          - listitem [ref=f13e155]: ✦ Procedimento minimamente invasivo
+        - link "Consultar Valores" [ref=f13e156] [cursor=pointer]:
+          - /url: https://wa.me/5541988577430?text=Ol%C3%A1%2C+quero+saber+mais+sobre+Fios+de+PDO.
+      - generic [ref=f13e158]:
+        - generic [ref=f13e159]: ✦
+        - heading "Bioestimuladores & Bioforce" [level=3] [ref=f13e160]
+        - paragraph [ref=f13e161]: Regeneração celular profunda e firmeza da derme com formulações premium e terapia de ozônio associada.
+        - list [ref=f13e162]:
+          - listitem [ref=f13e163]: ✦ Combate ativo à flacidez dérmica
+          - listitem [ref=f13e164]: ✦ Protocolo Bioforce com peptídeos
+          - listitem [ref=f13e165]: ✦ Ozonioterapia para oxigenação tecidual
+        - link "Consultar Valores" [ref=f13e166] [cursor=pointer]:
+          - /url: https://wa.me/5541988577430?text=Ol%C3%A1%2C+quero+saber+mais+sobre+Bioestimuladores.
+  - generic [ref=f13e170]:
+    - img "Dr. Henrique Leal Rosa" [ref=f13e172]
+    - generic [ref=f13e173]:
+      - generic [ref=f13e174]: Responsável Técnico
+      - heading "Dr. Henrique Leal Rosa" [level=2] [ref=f13e175]
+      - paragraph [ref=f13e176]: Biomédico & Dentista Especialista em Harmonização Facial
+      - list [ref=f13e177]:
+        - listitem [ref=f13e178]:
+          - text: ✦
+          - strong [ref=f13e179]: "Dupla Graduação:"
+          - text: Formação completa em Biomedicina e Odontologia com foco na histologia e proporção áurea facial.
+        - listitem [ref=f13e180]:
+          - text: ✦
+          - strong [ref=f13e181]: "Professor & Mentor:"
+          - text: Docente em pós-graduação e mentor de profissionais injetores em todo o país.
+        - listitem [ref=f13e182]:
+          - text: ✦
+          - strong [ref=f13e183]: "Segurança Absoluta:"
+          - text: Procedimentos realizados exclusivamente com microcânulas e produtos homologados pela ANVISA e FDA.
+        - listitem [ref=f13e184]:
+          - text: ✦
+          - strong [ref=f13e185]: "+3.000 Procedimentos:"
+          - text: Experiência consolidada em casos de alta complexidade anatômica.
+      - link "Falar com o Dr. Henrique" [ref=f13e186] [cursor=pointer]:
+        - /url: https://wa.me/5541988577430?text=Ol%C3%A1%2C+gostaria+de+agendar+uma+consulta+diretamente+com+o+Dr.+Henrique+Leal.
+  - generic [ref=f13e191]:
+    - generic [ref=f13e192]:
+      - generic [ref=f13e193]: Dúvidas Frequentes
+      - heading [level=2] [ref=f13e194]:
+        - text: Perguntas &
+        - emphasis [ref=f13e195]: Esclarecimentos
+      - paragraph [ref=f13e196]: Tudo o que você precisa saber antes de realizar o seu procedimento.
+    - generic [ref=f13e197]:
+      - generic [ref=f13e198]:
+        - button "O procedimento dói? +" [ref=f13e199] [cursor=pointer]:
+          - generic [ref=f13e200]: O procedimento dói?
+          - generic [ref=f13e201]: +
+        - generic: Não. Utilizamos anestésicos tópicos potentes e anestesia infiltrativa local confortável. Além disso, as técnicas modernas com microcânulas não cortam os tecidos, tornando a aplicação praticamente indolor.
+      - generic [ref=f13e203]:
+        - button "Quanto tempo dura o resultado? +" [ref=f13e204] [cursor=pointer]:
+          - generic [ref=f13e205]: Quanto tempo dura o resultado?
+          - generic [ref=f13e206]: +
+        - generic: O ácido hialurônico dura em média de 12 a 18 meses. Os bioestimuladores e fios de PDO proporcionam produção contínua de colágeno novo com benefícios visíveis por até 24 meses.
+      - generic [ref=f13e208]:
+        - button "Posso voltar ao trabalho no mesmo dia? +" [ref=f13e209] [cursor=pointer]:
+          - generic [ref=f13e210]: Posso voltar ao trabalho no mesmo dia?
+          - generic [ref=f13e211]: +
+        - generic: Sim! A maioria dos procedimentos permite retorno imediato às atividades habituais. Pequenos inchaços ou vermelhidão pontual regridem rapidamente nos primeiros dias.
+      - generic [ref=f13e213]:
+        - button "Como funciona a primeira avaliação? +" [ref=f13e214] [cursor=pointer]:
+          - generic [ref=f13e215]: Como funciona a primeira avaliação?
+          - generic [ref=f13e216]: +
+        - generic: Na consulta, o Dr. Henrique analisa as proporções tridimensionais do seu rosto, tira fotos de alta definição e elabora um plano de tratamento 100% individualizado de acordo com o seu objetivo.
+  - generic [ref=f13e220]:
+    - generic [ref=f13e221]: Vagas Limitadas para Avaliação
+    - heading "Pronto(a) para Valorizar a Sua Beleza?" [level=2] [ref=f13e222]
+    - paragraph [ref=f13e223]: Converse agora com nossa assessoria no WhatsApp e reserve o seu horário no Edifício Today's Office em Curitiba.
+    - link "Falar no WhatsApp com a Assessoria" [ref=f13e224] [cursor=pointer]:
+      - /url: https://wa.me/5541988577430?text=Ol%C3%A1%2C+quero+reservar+minha+avalia%C3%A7%C3%A3o+com+o+Dr.+Henrique+Leal.
+  - link "Conversar no WhatsApp" [ref=f13e228] [cursor=pointer]:
+    - /url: https://wa.me/5541988577430?text=Ol%C3%A1%2C+gostaria+de+agendar+uma+avalia%C3%A7%C3%A3o+com+o+Dr.+Henrique+Leal.
+    - generic [ref=f13e231]: Agendar Avaliação
