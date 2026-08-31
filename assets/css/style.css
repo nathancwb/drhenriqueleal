@@ -4418,8 +4418,7 @@ body.splash-active {
         gap: 50px;
     }
     .authority-credentials-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
+        display: none !important;
     }
     .authority-editorial-stamp {
         bottom: 15px;
