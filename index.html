@@ -4,8 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css?v=10.0">
+    <link rel="stylesheet" href="assets/css/style.css?v=11.0">
     <style>
+        html, body {
+            overflow-x: hidden !important;
+            max-width: 100vw !important;
+            width: 100% !important;
+            position: relative !important;
+            margin: 0;
+            padding: 0;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box !important;
+        }
+
+        section, .section, .hero, .footer, .cta-section, .container {
+            max-width: 100% !important;
+            box-sizing: border-box !important;
+        }
+
+        #diferenciais, #diferenciais .container, .diferenciais-layout, .diferenciais-cards, .diferenciais-image {
+            overflow: hidden !important;
+            max-width: 100% !important;
+            box-sizing: border-box !important;
+        }
+
+        #sobre, #sobre .container, .about-authority-editorial, .authority-editorial-media, .authority-editorial-frame, .authority-editorial-content {
+            overflow: hidden !important;
+            max-width: 100% !important;
+            box-sizing: border-box !important;
+        }
+
+        .authority-editorial-frame img {
+            max-width: 100% !important;
+            height: auto !important;
+        }
+
+        .footer, .footer .container, .footer-grid, .footer-brand {
+            overflow: hidden !important;
+            max-width: 100% !important;
+            box-sizing: border-box !important;
+        }
+
         .google-card-logo { width: 22px !important; height: 22px !important; max-width: 22px !important; min-width: 22px !important; flex-shrink: 0 !important; }
         .google-review-card { background: #FFFFFF !important; border: 1px solid rgba(27, 58, 92, 0.08) !important; border-radius: 24px !important; padding: 24px 24px 20px !important; height: 250px !important; min-height: 250px !important; max-height: 250px !important; display: flex !important; flex-direction: column !important; justify-content: space-between !important; box-shadow: 0 4px 20px rgba(27, 58, 92, 0.04) !important; box-sizing: border-box !important; overflow: hidden !important; }
         .google-card-comment { display: -webkit-box !important; -webkit-line-clamp: 4 !important; -webkit-box-orient: vertical !important; overflow: hidden !important; text-overflow: ellipsis !important; }
@@ -13,6 +54,168 @@
         .ba-tab-btn { background: transparent !important; color: #64748b !important; border: none !important; padding: 6px 2px !important; border-radius: 0 !important; font-size: 0.90rem !important; font-weight: 500 !important; cursor: pointer !important; box-shadow: none !important; position: relative !important; flex-shrink: 0 !important; }
         .ba-tab-btn.active { color: var(--color-primary, #1B3A5C) !important; font-weight: 700 !important; background: transparent !important; border: none !important; }
         .ba-tab-btn.active::after { content: '' !important; position: absolute !important; bottom: -11px !important; left: 0 !important; right: 0 !important; height: 2.5px !important; background: var(--color-primary, #1B3A5C) !important; border-radius: 2px !important; }
+
+        @media (max-width: 768px) {
+            .container {
+                padding-left: 16px !important;
+                padding-right: 16px !important;
+            }
+
+            .fade-in-right, .fade-in-left {
+                transform: translateY(20px) scale(0.98) !important;
+            }
+            .fade-in-right.visible, .fade-in-left.visible {
+                transform: translateY(0) scale(1) !important;
+            }
+
+            .diferenciais-layout {
+                display: flex !important;
+                flex-direction: column !important;
+                gap: 30px !important;
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+
+            .diferenciais-cards {
+                width: 100% !important;
+                max-width: 100% !important;
+                box-sizing: border-box !important;
+            }
+
+            .diff-card {
+                width: 100% !important;
+                max-width: 100% !important;
+                box-sizing: border-box !important;
+            }
+
+            .diferenciais-image {
+                width: 100% !important;
+                max-width: 100% !important;
+                box-sizing: border-box !important;
+            }
+
+            .cert-swiper {
+                width: 100% !important;
+                max-width: 290px !important;
+                margin: 0 auto !important;
+                overflow: hidden !important;
+                border-radius: 20px !important;
+            }
+
+            .cert-swiper .swiper-slide {
+                width: 290px !important;
+                max-width: 100% !important;
+                height: 340px !important;
+                border-radius: 20px !important;
+            }
+
+            /* Expandable cards touch carousel on mobile */
+            .expand-cards {
+                display: flex !important;
+                flex-direction: row !important;
+                gap: 16px !important;
+                height: auto !important;
+                overflow-x: auto !important;
+                -webkit-overflow-scrolling: touch !important;
+                scroll-snap-type: x mandatory !important;
+                padding: 10px 16px 25px 16px !important;
+                margin: 0 -16px !important;
+                scrollbar-width: none !important;
+            }
+
+            .expand-cards::-webkit-scrollbar {
+                display: none !important;
+            }
+
+            .expand-card {
+                flex: 0 0 280px !important;
+                width: 280px !important;
+                min-width: 280px !important;
+                height: 380px !important;
+                scroll-snap-align: center !important;
+                border-radius: 20px !important;
+                box-shadow: 0 10px 25px rgba(15, 40, 71, 0.12) !important;
+                border: 1px solid rgba(255, 255, 255, 0.15) !important;
+                position: relative !important;
+            }
+
+            .expand-card.active {
+                flex: 0 0 280px !important;
+                width: 280px !important;
+                height: 380px !important;
+            }
+
+            .expand-card-overlay,
+            .expand-card:not(.active) .expand-card-overlay {
+                background: linear-gradient(to top, 
+                    rgba(15, 40, 71, 0.95) 0%, 
+                    rgba(15, 40, 71, 0.55) 45%, 
+                    rgba(15, 40, 71, 0.1) 75%, 
+                    transparent 100%) !important;
+            }
+
+            .expand-card-content {
+                position: absolute !important;
+                bottom: 0 !important;
+                left: 0 !important;
+                right: 0 !important;
+                padding: 24px 20px !important;
+            }
+
+            .expand-card-title,
+            .expand-card:not(.active) .expand-card-title {
+                writing-mode: horizontal-tb !important;
+                transform: none !important;
+                position: static !important;
+                font-size: 1.25rem !important;
+                color: #FFFFFF !important;
+                margin-bottom: 4px !important;
+                white-space: normal !important;
+            }
+
+            .expand-card-desc,
+            .expand-card:not(.active) .expand-card-desc {
+                display: block !important;
+                opacity: 1 !important;
+                max-height: none !important;
+                font-size: 0.85rem !important;
+                color: rgba(255, 255, 255, 0.88) !important;
+                line-height: 1.45 !important;
+                margin-top: 6px !important;
+            }
+
+            .expand-card-link,
+            .expand-card:not(.active) .expand-card-link {
+                display: inline-flex !important;
+                opacity: 1 !important;
+                pointer-events: auto !important;
+                color: #1B3A5C !important;
+                background: #FFFFFF !important;
+                padding: 8px 16px !important;
+                border-radius: 20px !important;
+                font-weight: 700 !important;
+                font-size: 0.82rem !important;
+                margin-top: 12px !important;
+                width: fit-content !important;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15) !important;
+            }
+
+            .footer-brand .footer-logo-link img:nth-child(1) {
+                height: 36px !important;
+            }
+
+            .footer-brand .footer-logo-link img:nth-child(2) {
+                height: 26px !important;
+                max-width: 190px !important;
+            }
+
+            .ba-marquee-container {
+                overflow: hidden !important;
+                overflow-x: clip !important;
+                max-width: 100vw !important;
+                width: 100% !important;
+            }
+        }
     </style>
     <link rel="icon" type="image/png" href="assets/img/favicon.png?v=3">
     <link rel="apple-touch-icon" href="assets/img/favicon.png?v=3">
