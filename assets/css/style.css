@@ -2896,6 +2896,11 @@ body.splash-active {
         padding-right: 20px;
     }
 
+    .hero {
+        padding-top: 86px !important;
+        padding-bottom: 35px !important;
+    }
+
     .hero .container {
         grid-template-columns: 1fr;
         text-align: center;
@@ -2921,6 +2926,7 @@ body.splash-active {
 
     .hero-label {
         justify-content: center;
+        margin-bottom: 12px !important;
     }
 
     .interactive-ba-tabs {
