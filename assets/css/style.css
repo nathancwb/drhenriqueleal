@@ -2923,6 +2923,24 @@ body.splash-active {
         justify-content: center;
     }
 
+    .interactive-ba-tabs {
+        gap: 4px !important;
+        padding: 4px 0 8px !important;
+        justify-content: space-between !important;
+        overflow-x: hidden !important;
+    }
+
+    .ba-tab-btn {
+        font-size: clamp(0.70rem, 2.7vw, 0.82rem) !important;
+        padding: 4px 2px !important;
+        letter-spacing: -0.2px !important;
+        flex: 1 1 auto !important;
+    }
+
+    .ba-tab-btn.active::after {
+        bottom: -9px !important;
+    }
+
     .grid-3 {
         grid-template-columns: repeat(2, 1fr);
     }
