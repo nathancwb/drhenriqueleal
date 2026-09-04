@@ -627,10 +627,11 @@ body.splash-active {
     gap: 8px;
     font-size: 0.72rem;
     font-weight: 600;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     text-transform: uppercase;
     color: var(--color-accent);
     margin-bottom: 16px;
+    flex-wrap: wrap;
 }
 
 .hero-label::before {
@@ -2927,6 +2928,10 @@ body.splash-active {
     .hero-label {
         justify-content: center;
         margin-bottom: 12px !important;
+        font-size: clamp(0.64rem, 2.4vw, 0.72rem) !important;
+        letter-spacing: 1.2px !important;
+        text-align: center;
+        flex-wrap: wrap;
     }
 
     .interactive-ba-tabs {

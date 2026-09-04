@@ -1,10 +1,25 @@
-# Apache Clean URLs Configuration
+# Apache Clean URLs & Agent Readiness Configuration
 RewriteEngine On
 RewriteBase /
+
+# Custom 404 Error Document
+ErrorDocument 404 /404.html
+
+# MIME Types
+<IfModule mod_mime.c>
+    AddType text/markdown .md
+    AddCharset utf-8 .md
+    AddCharset utf-8 .html
+</IfModule>
 
 # Force HTTPS (optional in production)
 # RewriteCond %{HTTPS} off
 # RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Content Negotiation for Agents: if Accept header contains text/markdown and .md exists
+RewriteCond %{HTTP:Accept} text/markdown [NC]
+RewriteCond %{DOCUMENT_ROOT}/$1.md -f
+RewriteRule ^([^/]+)/?$ $1.md [L]
 
 # Remove .html extension from URL if directly requested
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.html [NC]
@@ -15,9 +30,11 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^([^/]+)/?$ $1.html [L]
 
-# Security and caching headers
+# Security, Cache and Content Negotiation Headers
 <IfModule mod_headers.c>
     Header set X-Content-Type-Options "nosniff"
     Header set X-Frame-Options "SAMEORIGIN"
     Header set X-XSS-Protection "1; mode=block"
+    # Essential for acceptmarkdown.com and CDN caching correctness
+    Header set Vary "Accept, Accept-Encoding"
 </IfModule>
