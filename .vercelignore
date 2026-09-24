@@ -1,0 +1,14 @@
+# Arquivos e pastas locais que não devem ir para a Vercel
+.git/
+.github/
+.playwright-mcp/
+.ffmpeg/
+ffmpeg.zip
+scratch/
+*.py
+*.md
+take_screenshots.js
+download_reel.js
+instagram_reel.mp4
+leader-card-before.png
+.DS_Store
