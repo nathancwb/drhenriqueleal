@@ -5601,38 +5601,98 @@ body.splash-active {
     max-width: none !important;
 }
 
-/* Dividing Line & Handle */
+/* Dividing Line & Video Scanner Handle */
 .ba-compare-handle {
     position: absolute !important;
     top: 0 !important;
     bottom: 0 !important;
     left: 50%;
-    width: 3px !important;
-    background: #ffffff !important;
-    box-shadow: 0 0 14px rgba(0, 0, 0, 0.5) !important;
+    width: 2.5px !important;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 1) 25%, rgba(190, 230, 255, 1) 50%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 0.3) 100%) !important;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.9), 0 0 20px rgba(66, 133, 244, 0.6), -2px 0 12px rgba(66, 133, 244, 0.4) !important;
     z-index: 5 !important;
     transform: translateX(-50%) !important;
     pointer-events: none !important;
     will-change: left;
 }
 
-.ba-handle-button {
+.ba-compare-handle::before,
+.ba-compare-handle::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6px;
+    height: 6px;
+    background: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 1), 0 0 12px rgba(66, 133, 244, 0.8);
+}
+.ba-compare-handle::before { top: 6px; }
+.ba-compare-handle::after { bottom: 6px; }
+
+.ba-scanner-lens {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 42px;
-    height: 42px;
-    background: #ffffff;
+    width: 32px;
+    height: 32px;
+    background: rgba(255, 255, 255, 0.95);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25), 0 0 0 2px rgba(27, 58, 92, 0.12);
-    color: #1B3A5C;
-    font-size: 14px;
-    font-weight: 900;
-    letter-spacing: -2px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25), 0 0 0 2px rgba(255, 255, 255, 0.9), 0 0 14px rgba(66, 133, 244, 0.5);
+    backdrop-filter: blur(6px);
+}
+
+.ba-scanner-lens::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #1B3A5C;
+    border-radius: 50%;
+    box-shadow: 0 0 6px rgba(27, 58, 92, 0.5);
+}
+
+/* Video Effect Live Badge */
+.ba-live-badge {
+    position: absolute;
+    bottom: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(15, 23, 42, 0.76);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: #ffffff;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    z-index: 4;
+    pointer-events: none;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+    white-space: nowrap;
+}
+
+.ba-live-pulse {
+    width: 7px;
+    height: 7px;
+    background: #22c55e;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #22c55e;
+    animation: baLivePulse 1.8s infinite ease-in-out;
+}
+
+@keyframes baLivePulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.35; transform: scale(0.75); }
 }
 
 /* Badges */

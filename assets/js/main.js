@@ -712,7 +712,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ===================================================
-    // INTERACTIVE BEFORE & AFTER SLIDER (Desktop & Mobile)
+    // VIDEO-LIKE AUTOMATED BEFORE & AFTER SCANNER ENGINE
     // ===================================================
     const baContainer = document.getElementById('baCompareContainer');
     const baAfterWrap = document.getElementById('baAfterWrap');
@@ -723,6 +723,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (baContainer && baAfterWrap && baHandle && baImgAntes && baImgDepois) {
         let isPointerActive = false;
+        let isHovered = false;
+        let userInteractedTime = 0;
+        let currentTabIndex = 0;
+        let animationFrameId = null;
+        let isVisible = false;
+        let lastTime = null;
+        let cycleProgress = 0; // 0 to 1 across full cycle (sweep right, pause, sweep left, pause)
+        const cycleDuration = 5600; // ms per complete back & forth scan
 
         function updateOverlayImageSize() {
             const containerWidth = baContainer.offsetWidth;
@@ -739,9 +747,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         window.addEventListener('resize', updateOverlayImageSize);
         window.addEventListener('orientationchange', updateOverlayImageSize);
-        // Also run on load and after short timeout for webfont/layout stabilization
         updateOverlayImageSize();
-        setTimeout(updateOverlayImageSize, 100);
+        setTimeout(updateOverlayImageSize, 120);
 
         // Prevent native browser image drag
         baContainer.querySelectorAll('img').forEach(img => {
@@ -749,36 +756,143 @@ document.addEventListener('DOMContentLoaded', () => {
             img.ondragstart = () => false;
         });
 
-        function setSliderPosition(clientX) {
-            const rect = baContainer.getBoundingClientRect();
-            let x = clientX - rect.left;
-            let percentage = (x / rect.width) * 100;
+        function setSliderPosition(percentage) {
             if (percentage < 0) percentage = 0;
             if (percentage > 100) percentage = 100;
-
             baAfterWrap.style.width = percentage + '%';
             baHandle.style.left = percentage + '%';
         }
 
-        // PointerEvents (Mouse, Touch, Stylus unified)
+        function switchCase(index) {
+            if (index < 0 || index >= baTabs.length) index = 0;
+            currentTabIndex = index;
+
+            baTabs.forEach((t, i) => {
+                if (i === index) {
+                    t.classList.add('active');
+                } else {
+                    t.classList.remove('active');
+                }
+            });
+
+            const targetTab = baTabs[index];
+            if (!targetTab) return;
+
+            const antesSrc = targetTab.getAttribute('data-antes');
+            const depoisSrc = targetTab.getAttribute('data-depois');
+
+            baImgAntes.style.transition = 'opacity 0.25s ease';
+            baImgDepois.style.transition = 'opacity 0.25s ease';
+            baImgAntes.style.opacity = '0.3';
+            baImgDepois.style.opacity = '0.3';
+
+            setTimeout(() => {
+                baImgAntes.src = antesSrc;
+                baImgDepois.src = depoisSrc;
+                updateOverlayImageSize();
+                baImgAntes.style.opacity = '1';
+                baImgDepois.style.opacity = '1';
+            }, 200);
+        }
+
+        // Smooth Video Scanner Motion Curve (0.08 to 0.92 range with cinematic pause at edges)
+        function calculateScanPercentage(normalizedTime) {
+            // normalizedTime is 0..1
+            // 0.00 -> 0.40 : sweep left (8%) to right (92%)
+            // 0.40 -> 0.50 : pause at right (92%) showing DEPOIS
+            // 0.50 -> 0.90 : sweep right (92%) to left (8%)
+            // 0.90 -> 1.00 : pause at left (8%) showing ANTES
+            const minPos = 8;
+            const maxPos = 92;
+
+            if (normalizedTime < 0.40) {
+                const p = normalizedTime / 0.40;
+                // easeInOutSine curve
+                const ease = -(Math.cos(Math.PI * p) - 1) / 2;
+                return minPos + ease * (maxPos - minPos);
+            } else if (normalizedTime < 0.50) {
+                return maxPos;
+            } else if (normalizedTime < 0.90) {
+                const p = (normalizedTime - 0.50) / 0.40;
+                const ease = -(Math.cos(Math.PI * p) - 1) / 2;
+                return maxPos - ease * (maxPos - minPos);
+            } else {
+                return minPos;
+            }
+        }
+
+        // Video Animation Loop
+        function animateScanner(timestamp) {
+            if (!lastTime) lastTime = timestamp;
+            const delta = timestamp - lastTime;
+            lastTime = timestamp;
+
+            const now = Date.now();
+            const userRecentlyInteracted = isPointerActive || (now - userInteractedTime < 2500);
+
+            if (isVisible && !userRecentlyInteracted) {
+                cycleProgress += delta / cycleDuration;
+                if (cycleProgress >= 1) {
+                    cycleProgress = 0;
+                    // Auto-advance to next case like a continuous reel
+                    const nextIndex = (currentTabIndex + 1) % baTabs.length;
+                    switchCase(nextIndex);
+                }
+
+                const currentPercentage = calculateScanPercentage(cycleProgress);
+                setSliderPosition(currentPercentage);
+            }
+
+            if (isVisible) {
+                animationFrameId = requestAnimationFrame(animateScanner);
+            }
+        }
+
+        // Start/Stop scanner animation based on viewport visibility
+        const baObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                isVisible = entry.isIntersecting;
+                if (isVisible) {
+                    lastTime = null;
+                    cancelAnimationFrame(animationFrameId);
+                    animationFrameId = requestAnimationFrame(animateScanner);
+                    updateOverlayImageSize();
+                } else {
+                    cancelAnimationFrame(animationFrameId);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        baObserver.observe(baContainer);
+
+        // Manual interaction handlers (Pointer & Touch unified)
+        function updateFromPointer(clientX) {
+            const rect = baContainer.getBoundingClientRect();
+            let x = clientX - rect.left;
+            let percentage = (x / rect.width) * 100;
+            setSliderPosition(percentage);
+        }
+
         baContainer.addEventListener('pointerdown', (e) => {
             isPointerActive = true;
-            try {
-                baContainer.setPointerCapture(e.pointerId);
-            } catch (err) {}
-            setSliderPosition(e.clientX);
+            userInteractedTime = Date.now();
+            try { baContainer.setPointerCapture(e.pointerId); } catch (err) {}
+            updateFromPointer(e.clientX);
             e.preventDefault();
         });
 
         baContainer.addEventListener('pointermove', (e) => {
-            if (!isPointerActive) return;
-            setSliderPosition(e.clientX);
-            e.preventDefault();
+            if (isPointerActive) {
+                userInteractedTime = Date.now();
+                updateFromPointer(e.clientX);
+                e.preventDefault();
+            }
         });
 
         function stopPointer(e) {
             if (isPointerActive) {
                 isPointerActive = false;
+                userInteractedTime = Date.now();
                 try {
                     if (e && e.pointerId) baContainer.releasePointerCapture(e.pointerId);
                 } catch (err) {}
@@ -789,39 +903,16 @@ document.addEventListener('DOMContentLoaded', () => {
         baContainer.addEventListener('pointercancel', stopPointer);
         baContainer.addEventListener('lostpointercapture', stopPointer);
 
-        // Click anywhere to jump slider
         baContainer.addEventListener('click', (e) => {
-            setSliderPosition(e.clientX);
+            userInteractedTime = Date.now();
+            updateFromPointer(e.clientX);
         });
 
-        // Tab Switching between clinical cases
-        baTabs.forEach(tab => {
+        // Tab click switching
+        baTabs.forEach((tab, index) => {
             tab.addEventListener('click', () => {
-                baTabs.forEach(t => t.classList.remove('active'));
-                tab.classList.add('active');
-
-                const antesSrc = tab.getAttribute('data-antes');
-                const depoisSrc = tab.getAttribute('data-depois');
-
-                baImgAntes.style.opacity = '0.4';
-                baImgDepois.style.opacity = '0.4';
-
-                setTimeout(() => {
-                    baImgAntes.src = antesSrc;
-                    baImgDepois.src = depoisSrc;
-                    updateOverlayImageSize();
-                    baImgAntes.style.opacity = '1';
-                    baImgDepois.style.opacity = '1';
-
-                    baAfterWrap.style.transition = 'width 0.4s cubic-bezier(0.16, 1, 0.3, 1)';
-                    baHandle.style.transition = 'left 0.4s cubic-bezier(0.16, 1, 0.3, 1)';
-                    baAfterWrap.style.width = '50%';
-                    baHandle.style.left = '50%';
-                    setTimeout(() => {
-                        baAfterWrap.style.transition = '';
-                        baHandle.style.transition = '';
-                    }, 400);
-                }, 150);
+                userInteractedTime = Date.now();
+                switchCase(index);
             });
         });
 
