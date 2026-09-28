@@ -416,14 +416,14 @@ body.splash-active {
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 22px;
+    gap: 18px;
 }
 
 .nav-links a {
-    font-size: 0.72rem;
+    font-size: 0.60rem;
     font-weight: 500;
     color: rgba(255, 255, 255, 0.82);
-    letter-spacing: 0.08em;
+    letter-spacing: 0.06em;
     position: relative;
     text-transform: uppercase;
     transition: color 0.25s ease;
@@ -3166,9 +3166,9 @@ body.splash-active {
 
     .nav-links a {
         color: #1B3A5C !important;
-        padding: 16px 0 !important;
-        font-size: 1rem !important;
-        font-weight: 600 !important;
+        padding: 13px 0 !important;
+        font-size: 0.85rem !important;
+        font-weight: 500 !important;
         letter-spacing: 0.04em !important;
         border-bottom: 1px solid rgba(27, 58, 92, 0.08) !important;
         width: 100% !important;
