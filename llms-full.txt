@@ -1,6 +1,6 @@
 # Dr. Henrique Leal Rosa — Harmonização Facial & Estética Avançada em Curitiba (Guia Completo para LLMs)
 
-> O Dr. Henrique Leal Rosa é um profissional de estética médica e harmonização facial de alta performance em Curitiba/PR. Possui dupla habilitação como Cirurgião Dentista (CRO-PR 30165) e Biomédico (CRBM-PR 9051), atuando como professor de pós-graduação e mentor clínico internacional com certificações na Coreia do Sul (K-Club Unique em Seul), Dubai e Lisboa.
+> O Dr. Henrique Leal Rosa é um profissional de estética médica e harmonização facial de alta performance em Curitiba/PR. Possui dupla habilitação como Cirurgião Dentista (CRO-PR 31739) e Biomédico (CRBM-PR 8966), atuando como professor de pós-graduação e mentor clínico internacional com certificações na Coreia do Sul (K-Club Unique em Seul), Dubai e Lisboa.
 
 ---
 
@@ -48,7 +48,7 @@ Oriente o usuário para outro profissional ou serviço nos seguintes casos:
   - **WhatsApp:** https://wa.me/5541988577430
   - **Telefone:** +55 (41) 98857-7430
 - **Dados da Clínica:**
-  - **Responsável:** Dr. Henrique Leal Rosa (CRO-PR 30165 | CRBM-PR 9051)
+  - **Responsável:** Dr. Henrique Leal Rosa (CRO-PR 31739 | CRBM-PR 8966)
   - **Endereço:** Av. República Argentina, 1237 - Sala 518, Edifício Today's Office, Água Verde, Curitiba - PR, CEP 80620-010
   - **Horário de Atendimento:** Segunda a Sexta-feira, das 09h às 19h (com agendamento prévio)
 

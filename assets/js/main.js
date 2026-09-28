@@ -5,15 +5,10 @@
 // ===================================================
 // GA4 ANALYTICS LOADER
 // ===================================================
-// IMPORTANT: replace GA_MEASUREMENT_ID below with the real GA4 Measurement ID
-// (format "G-XXXXXXXXXX") from Google Analytics > Admin > Data Streams before
-// going live. Until it's replaced, no data will be sent to Google Analytics —
-// the loader below simply won't be called with a real ID.
 (function () {
-    var GA_MEASUREMENT_ID = 'G-XXXXXXXXXX'; // <-- swap in the real GA4 Measurement ID
+    var GA_MEASUREMENT_ID = 'G-CED2CMRKYP';
 
-    if (!GA_MEASUREMENT_ID || GA_MEASUREMENT_ID.indexOf('XXXXXXXXXX') !== -1) {
-        // Placeholder still in place — skip loading so no bad requests are sent.
+    if (!GA_MEASUREMENT_ID) {
         window.gtag = window.gtag || function () { (window.dataLayer = window.dataLayer || []).push(arguments); };
         return;
     }

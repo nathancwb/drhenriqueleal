@@ -3,7 +3,7 @@
 > Consultório de alta precisão anatômica, rejuvenescimento com naturalidade e estética regenerativa no bairro Água Verde, Curitiba/PR.
 
 - **Responsável Técnico:** Dr. Henrique Leal Rosa
-- **Habilitações:** Cirurgião Dentista (CRO-PR 30165) & Biomédico (CRBM-PR 9051)
+- **Habilitações:** Cirurgião Dentista (CRO-PR 31739) & Biomédico (CRBM-PR 8966)
 - **Localização:** Edifício Today's Office, Sala 518 — Av. República Argentina, 1237, Água Verde, Curitiba - PR, 80620-010
 - **Contato / WhatsApp:** [+55 (41) 98857-7430](https://wa.me/5541988577430)
 - **Website Oficial:** [https://drhenriqueleal.com.br](https://drhenriqueleal.com.br)

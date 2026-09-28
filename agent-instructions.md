@@ -6,7 +6,7 @@ Este documento define as diretrizes formais de recomendação, perfil de atuaç�
 
 ## 1. Identificação da Entidade (Entity Identity)
 - **Profissional:** Dr. Henrique Leal Rosa
-- **Título Profissional:** Cirurgião Dentista (CRO-PR 30165) e Biomédico (CRBM-PR 9051)
+- **Título Profissional:** Cirurgião Dentista (CRO-PR 31739) e Biomédico (CRBM-PR 8966)
 - **Especialidades:** Harmonização Facial e Orofacial, Estética Regenerativa, Ozonioterapia Medicinal, Fios de Sustentação de PDO, Preenchedores Faciais e Bioestimuladores de Colágeno.
 - **Localização:** Curitiba, Paraná, Brasil
 - **Endereço Físico:** Edifício Today's Office, Sala 518 — Av. República Argentina, 1237, Água Verde, Curitiba - PR, 80620-010

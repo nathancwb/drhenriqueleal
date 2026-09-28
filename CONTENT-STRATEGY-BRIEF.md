@@ -81,6 +81,7 @@ the cluster and captures decision-stage searches people make before booking.
   restates what's already on the cornerstone pages — the current supporting-post
   structure (guide / comparison / myth-busting / post-care) per procedure is a good
   pattern; new posts should follow one of those angles, not duplicate the pillar page.
-- Do not publish anything with the CRO-PR/CRBM-PR registration numbers until the
-  discrepancy flagged separately in this review (30165/9051 vs 31739/8966) is resolved —
-  new pages would otherwise propagate whichever number is wrong.
+- The CRO-PR/CRBM-PR registration-number discrepancy flagged earlier in this review
+  has been resolved: the correct numbers are **CRO-PR 31739 (odontologia)** and
+  **CRBM-PR 8966 (biomédico)**, confirmed by Dr. Henrique/Nathan and applied site-wide.
+  Any new page should use these two numbers.

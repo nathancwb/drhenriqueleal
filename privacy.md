@@ -5,7 +5,7 @@
 ---
 
 ## 1. Data Controller & Technical Representative
-- **Controller:** Dr. Henrique Leal Rosa (CRO-PR 30165 | CRBM-PR 9051)
+- **Controller:** Dr. Henrique Leal Rosa (CRO-PR 31739 | CRBM-PR 8966)
 - **Clinic Address:** Av. República Argentina, 1237 - Suite 518, Edifício Today's Office, Água Verde, Curitiba - PR, 80620-010, Brazil
 - **Contact:** [+55 (41) 98857-7430](https://wa.me/5541988577430)
 

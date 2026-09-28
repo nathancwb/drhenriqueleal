@@ -3,7 +3,7 @@
 > O Dr. Henrique Leal Rosa dedica sua prática clínica à harmonização facial, corporal, íntima e odontologia estética com foco em naturalidade, proporção áurea e medicina regenerativa.
 
 ## Formação Acadêmica & Títulos
-- **Dupla Habilitação na Saúde:** Cirurgião Dentista (CRO-PR 30165) e Biomédico (CRBM-PR 9051).
+- **Dupla Habilitação na Saúde:** Cirurgião Dentista (CRO-PR 31739) e Biomédico (CRBM-PR 8966).
 - **Docência:** Professor de pós-graduação em Harmonização Orofacial e Terapias Injetáveis.
 - **Formação Internacional:** Certificações práticas e avançadas em Seul (Coreia do Sul - K-Club Unique), Dubai (Emirados Árabes Unidos) e Lisboa (Portugal).
 
