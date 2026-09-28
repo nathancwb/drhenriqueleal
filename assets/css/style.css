@@ -5306,7 +5306,25 @@ body.splash-active {
         gap: 28px;
     }
     .clinic-balanced-card {
-        padding: 24px;
+        padding: 28px 22px;
+        border-radius: 24px;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    .clinic-action-buttons {
+        flex-direction: column !important;
+        width: 100% !important;
+        gap: 12px !important;
+    }
+    .clinic-action-buttons .btn {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: none !important;
+        text-align: center !important;
+        justify-content: center !important;
+        white-space: normal !important;
+        padding: 14px 20px !important;
+        box-sizing: border-box !important;
     }
     .clinic-map-balanced {
         min-height: 300px;
@@ -6286,10 +6304,15 @@ html, body {
         margin-bottom: 24px !important;
     }
 
-    /* Buttons */
+    /* Buttons Global Mobile */
     .btn {
-        padding: 12px 20px !important;
-        font-size: 0.85rem !important;
+        padding: 13px 20px !important;
+        font-size: 0.88rem !important;
+        white-space: normal !important;
+        text-align: center !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        word-break: break-word !important;
     }
 
     /* Results Curated Grid */
@@ -6313,27 +6336,59 @@ html, body {
         gap: 16px !important;
     }
 
-    .cta-buttons {
+    .hero-buttons,
+    .cta-buttons,
+    .btn-group,
+    .obrigado-buttons {
         flex-direction: column !important;
         width: 100% !important;
         gap: 12px !important;
     }
 
-    .cta-buttons .btn {
+    .hero-buttons .btn,
+    .cta-buttons .btn,
+    .btn-group .btn,
+    .obrigado-buttons .btn {
         width: 100% !important;
+        max-width: 100% !important;
         justify-content: center !important;
         text-align: center !important;
+        box-sizing: border-box !important;
     }
 
-    .section-editorial div[style*="justify-content: center"] {
+    .section-editorial div[style*="justify-content: center"],
+    .section-editorial div[style*="display: flex"] {
         flex-direction: column !important;
         width: 100% !important;
         gap: 12px !important;
     }
 
-    .section-editorial div[style*="justify-content: center"] .btn {
+    .section-editorial div[style*="justify-content: center"] .btn,
+    .section-editorial div[style*="display: flex"] .btn {
         width: 100% !important;
+        max-width: 100% !important;
         justify-content: center !important;
         text-align: center !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Floating sticky bar for ultra-compact screens */
+    .mobile-sticky-bar {
+        padding: 8px 12px calc(8px + env(safe-area-inset-bottom)) !important;
+        gap: 8px !important;
+    }
+    
+    .mobile-sticky-name {
+        font-size: 0.82rem !important;
+    }
+
+    .mobile-sticky-status {
+        font-size: 0.65rem !important;
+    }
+
+    .mobile-sticky-btn {
+        max-width: 155px !important;
+        padding: 9px 12px !important;
+        font-size: 0.78rem !important;
     }
 }
