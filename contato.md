@@ -21,7 +21,7 @@ Informações de endereço, agendamento de consultas e canais de contato com o D
 ---
 
 ## Horários de Atendimento
-- **Segunda a Sexta-feira:** 09:00 às 19:00
+- **Segunda a Sábado:** 09:00 às 19:00
 - *Atendimento privativo e exclusivo com agendamento prévio.*
 
 ---

@@ -21,5 +21,5 @@ Official contact information, address, and appointment details for Dr. Henrique 
 ---
 
 ## Opening Hours
-- **Monday to Friday:** 09:00 - 19:00 (BRT)
+- **Monday to Saturday:** 09:00 - 19:00 (BRT)
 - *Private and personalized appointments only.*

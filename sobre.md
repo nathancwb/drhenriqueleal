@@ -15,4 +15,4 @@ O Dr. Henrique não adota protocolos padronizados ou exagerados. Cada consulta d
 ## Consultório
 - **Endereço:** Av. República Argentina, 1237 - Sala 518, Edifício Today's Office, Água Verde, Curitiba - PR, 80620-010
 - **WhatsApp Oficial:** [+55 (41) 98857-7430](https://wa.me/5541988577430)
-- **Horário de Atendimento:** Segunda a Sexta, das 09h às 19h (hora marcada)
+- **Horário de Atendimento:** Segunda a Sábado, das 09h às 19h (hora marcada)
