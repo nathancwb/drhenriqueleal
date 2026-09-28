@@ -3,9 +3,9 @@
 // ===================================================
 
 const proceduresData = {
-    // 1. Preenchimento Facial & Natural Lips
+    // 1. Harmonização Facial com Ácido Hialurônico
     "preenchimento-acido-hialuronico": {
-        title: "Preenchimento Facial & Natural Lips",
+        title: "Harmonização Facial com Ácido Hialurônico",
         subtitle: "Harmonização facial com foco em naturalidade, proporções áureas e sustentação.",
         description: "O preenchimento com ácido hialurônico de alta tecnologia é indicado para restaurar volumes perdidos pelo envelhecimento, estruturar contornos ósseos e valorizar os pontos fortes do rosto. O ácido hialurônico é uma substância naturalmente biocompatível, proporcionando hidratação profunda e refinamento imediato.",
         benefitsTitle: "Principais indicações do tratamento:",
