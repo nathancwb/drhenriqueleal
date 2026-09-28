@@ -13,6 +13,6 @@
 O Dr. Henrique não adota protocolos padronizados ou exagerados. Cada consulta de avaliação é individualizada, analisando mímica facial, proporções anatômicas, qualidade dérmica e expectativas do paciente para um plano de tratamento refinado e seguro.
 
 ## Consultório
-- **Endereço:** Av. República Argentina, 1237 - Sala 518, Edifício Today's Office, Água Verde, Curitiba - PR, 80620-010
+- **Endereço:** Av. República Argentina, 1237, Edifício Today's Office, Água Verde, Curitiba - PR, 80620-010
 - **WhatsApp Oficial:** [+55 (41) 98857-7430](https://wa.me/5541988577430)
 - **Horário de Atendimento:** Segunda a Sábado, das 09h às 19h (hora marcada)

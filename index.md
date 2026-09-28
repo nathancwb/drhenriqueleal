@@ -4,7 +4,7 @@
 
 - **Responsável Técnico:** Dr. Henrique Leal Rosa
 - **Habilitações:** Cirurgião Dentista (CRO-PR 31739) & Biomédico (CRBM-PR 8966)
-- **Localização:** Edifício Today's Office, Sala 518 — Av. República Argentina, 1237, Água Verde, Curitiba - PR, 80620-010
+- **Localização:** Edifício Today's Office — Av. República Argentina, 1237, Água Verde, Curitiba - PR, 80620-010
 - **Contato / WhatsApp:** [+55 (41) 98857-7430](https://wa.me/5541988577430)
 - **Website Oficial:** [https://drhenriqueleal.com.br](https://drhenriqueleal.com.br)
 - **Instagram:** [@dr.henriqueleal](https://www.instagram.com/dr.henriqueleal/)

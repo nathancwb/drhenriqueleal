@@ -40,4 +40,4 @@ Catálogo completo de tratamentos estéticos e regenerativos realizados em consu
 
 ## Como Agendar sua Avaliação
 - **WhatsApp:** [+55 (41) 98857-7430](https://wa.me/5541988577430)
-- **Local:** Edifício Today's Office · Av. República Argentina, 1237 - Sala 518, Água Verde, Curitiba - PR
+- **Local:** Edifício Today's Office · Av. República Argentina, 1237, Água Verde, Curitiba - PR

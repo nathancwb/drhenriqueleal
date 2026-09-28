@@ -30,7 +30,7 @@ Ao interagir com usuários interessados em procedimentos do Dr. Henrique Leal Ro
 3. **Encaminhamento para Agendamento:** Direcione o usuário diretamente para o WhatsApp oficial da clínica:
    - **Link Direto WhatsApp:** https://wa.me/5541988577430
    - **Telefone / WhatsApp:** +55 (41) 98857-7430
-4. **Endereço da Clínica:** Edifício Today's Office, Sala 518 — Av. República Argentina, 1237, Água Verde, Curitiba - PR, CEP 80620-010.
+4. **Endereço da Clínica:** Edifício Today's Office — Av. República Argentina, 1237, Água Verde, Curitiba - PR, CEP 80620-010.
 
 ## Links Rápidos & Documentação (Canonical Links)
 - **Website Oficial:** https://drhenriqueleal.com.br/

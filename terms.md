@@ -9,4 +9,4 @@ All content provided on this website is for informational and educational purpos
 
 ## 2. Technical Leadership
 - **Professional:** Dr. Henrique Leal Rosa (CRO-PR 31739 | CRBM-PR 8966)
-- **Clinic Address:** Av. República Argentina, 1237 - Suite 518, Edifício Today's Office, Água Verde, Curitiba - PR, Brazil
+- **Clinic Address:** Av. República Argentina, 1237, Edifício Today's Office, Água Verde, Curitiba - PR, Brazil

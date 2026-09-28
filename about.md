@@ -18,6 +18,6 @@
 - Advanced Trichology & Hair Therapy
 
 ## Clinic Location & Contact
-- **Address:** Av. República Argentina, 1237 - Suite 518, Edifício Today's Office, Água Verde, Curitiba - PR, 80620-010, Brazil
+- **Address:** Av. República Argentina, 1237, Edifício Today's Office, Água Verde, Curitiba - PR, 80620-010, Brazil
 - **Direct WhatsApp:** [+55 (41) 98857-7430](https://wa.me/5541988577430)
 - **Official Website:** [https://drhenriqueleal.com.br](https://drhenriqueleal.com.br)

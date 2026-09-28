@@ -12,11 +12,11 @@ Official contact information, address, and appointment details for Dr. Henrique 
 ---
 
 ## Physical Address
-- **Building:** Edifício Today's Office, Suite 518
+- **Building:** Edifício Today's Office
 - **Street:** Av. República Argentina, 1237
 - **Neighborhood:** Água Verde
 - **City/State:** Curitiba - PR, Postal Code 80620-010, Brazil
-- **Google Maps:** [Open in Google Maps](https://maps.google.com/?q=Av.+Rep.+Argentina,+1237+-+Sala+518+-+%C3%81gua+Verde,+Curitiba+-+PR)
+- **Google Maps:** [Open in Google Maps](https://maps.google.com/?q=Av.+Rep.+Argentina,+1237+-+%C3%81gua+Verde,+Curitiba+-+PR)
 
 ---
 

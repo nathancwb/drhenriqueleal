@@ -11,7 +11,7 @@ As informações contidas neste site possuem objetivo exclusivamente educacional
 - **Dr. Henrique Leal Rosa**
 - Cirurgião Dentista (CRO-PR 31739)
 - Biomédico (CRBM-PR 8966)
-- Endereço: Av. República Argentina, 1237 - Sala 518, Água Verde, Curitiba - PR
+- Endereço: Av. República Argentina, 1237, Água Verde, Curitiba - PR
 
 ## 3. Resultados Clínicos
 A medicina estética e a odontologia são atividades de meio. Os resultados dependem de avaliação anatômica e resposta metabólica individual.

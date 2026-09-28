@@ -19,4 +19,4 @@ Complete catalog of facial harmonization, injectable treatments, and regenerativ
 
 ## Appointments & Consultations
 - **WhatsApp:** [+55 (41) 98857-7430](https://wa.me/5541988577430)
-- **Clinic Address:** Av. República Argentina, 1237 - Suite 518, Edifício Today's Office, Água Verde, Curitiba - PR, Brazil
+- **Clinic Address:** Av. República Argentina, 1237, Edifício Today's Office, Água Verde, Curitiba - PR, Brazil

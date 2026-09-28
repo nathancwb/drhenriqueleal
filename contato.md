@@ -12,11 +12,11 @@ Informações de endereço, agendamento de consultas e canais de contato com o D
 ---
 
 ## Localização da Clínica
-- **Endereço:** Av. República Argentina, 1237 - Sala 518
+- **Endereço:** Av. República Argentina, 1237
 - **Edifício:** Today's Office
 - **Bairro:** Água Verde
 - **Cidade:** Curitiba - PR, CEP 80620-010
-- **Google Maps:** [Abrir Localização no Mapa](https://maps.google.com/?q=Av.+Rep.+Argentina,+1237+-+Sala+518+-+%C3%81gua+Verde,+Curitiba+-+PR)
+- **Google Maps:** [Abrir Localização no Mapa](https://maps.google.com/?q=Av.+Rep.+Argentina,+1237+-+%C3%81gua+Verde,+Curitiba+-+PR)
 
 ---
 
