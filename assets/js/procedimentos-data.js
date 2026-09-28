@@ -82,7 +82,7 @@ const proceduresData = {
 
     // 6. Ozonioterapia (Estética & Integrativa)
     "ozonioterapia": {
-        title: "Ozonioterapia Estética e Terapêutica",
+        title: "Rejuvenescimento Facial e Corporal através da Ozonioterapia",
         subtitle: "Oxigenação celular, regeneração tecidual profunda e ação anti-inflamatória.",
         description: "A Ozonioterapia medicinal utiliza uma mistura altamente precisa de oxigênio e ozônio medicinal (O2/O3) com propriedades biológicas extraordinárias. Atua ativando a microcirculação periférica, estimulando a imunidade local, acelerando processos de cicatrização e regeneração celular, além de combater o estresse oxidativo. Na estética avançada, é indispensável como tratamento regenerativo e como potente potencializador pré e pós-procedimentos.",
         benefitsTitle: "Principais indicações e benefícios:",
