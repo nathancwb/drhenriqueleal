@@ -2,6 +2,68 @@
 // DR. HENRIQUE LEAL ROSA — Main JavaScript
 // ===================================================
 
+// ===================================================
+// GA4 ANALYTICS LOADER
+// ===================================================
+// IMPORTANT: replace GA_MEASUREMENT_ID below with the real GA4 Measurement ID
+// (format "G-XXXXXXXXXX") from Google Analytics > Admin > Data Streams before
+// going live. Until it's replaced, no data will be sent to Google Analytics —
+// the loader below simply won't be called with a real ID.
+(function () {
+    var GA_MEASUREMENT_ID = 'G-XXXXXXXXXX'; // <-- swap in the real GA4 Measurement ID
+
+    if (!GA_MEASUREMENT_ID || GA_MEASUREMENT_ID.indexOf('XXXXXXXXXX') !== -1) {
+        // Placeholder still in place — skip loading so no bad requests are sent.
+        window.gtag = window.gtag || function () { (window.dataLayer = window.dataLayer || []).push(arguments); };
+        return;
+    }
+
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
+    window.gtag('config', GA_MEASUREMENT_ID, { anonymize_ip: true });
+
+    var gaScript = document.createElement('script');
+    gaScript.async = true;
+    gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_MEASUREMENT_ID;
+    document.head.appendChild(gaScript);
+})();
+
+// ===================================================
+// CLICK TRACKING: WhatsApp, phone, and Instagram links
+// ===================================================
+// Delegated (single) listener so it works for every WhatsApp/tel/Instagram
+// link on the page, including ones added dynamically later.
+document.addEventListener('click', function (event) {
+    var link = event.target.closest('a[href]');
+    if (!link) return;
+
+    var href = link.getAttribute('href') || '';
+    var eventName = null;
+    var linkType = null;
+
+    if (href.indexOf('wa.me') !== -1 || href.indexOf('api.whatsapp.com') !== -1) {
+        eventName = 'whatsapp_click';
+        linkType = 'whatsapp';
+    } else if (href.indexOf('tel:') === 0) {
+        eventName = 'phone_click';
+        linkType = 'phone';
+    } else if (href.indexOf('instagram.com') !== -1) {
+        eventName = 'instagram_click';
+        linkType = 'instagram';
+    }
+
+    if (!eventName) return;
+
+    if (typeof window.gtag === 'function') {
+        window.gtag('event', eventName, {
+            link_url: href,
+            link_text: (link.textContent || '').trim().slice(0, 100),
+            page_path: window.location.pathname
+        });
+    }
+}, true);
+
 document.addEventListener('DOMContentLoaded', () => {
 
     // --- Splash Screen FLIP Animation ---
