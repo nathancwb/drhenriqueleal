@@ -12,9 +12,7 @@ ErrorDocument 404 /404.html
     AddCharset utf-8 .html
 </IfModule>
 
-# Force Canonical Host (non-www)
-RewriteCond %{HTTP_HOST} ^www\.drhenriqueleal\.com\.br [NC]
-RewriteRule ^(.*)$ https://drhenriqueleal.com.br/$1 [L,R=301]
+
 
 # Content Negotiation for Agents: if Accept header contains text/markdown and .md exists
 RewriteCond %{HTTP:Accept} text/markdown [NC]

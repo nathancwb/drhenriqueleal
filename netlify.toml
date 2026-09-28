@@ -11,12 +11,6 @@
     Vary = "Accept, Accept-Encoding"
 
 [[redirects]]
-  from = "https://www.drhenriqueleal.com.br/*"
-  to = "https://drhenriqueleal.com.br/:splat"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "/*"
   to = "/:splat.html"
   status = 200
