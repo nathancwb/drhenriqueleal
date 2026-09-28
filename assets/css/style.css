@@ -402,14 +402,14 @@ body.splash-active {
 
 @media (max-width: 768px) {
     .header-logo {
-        gap: 8px;
+        gap: 10px;
     }
     .header-logo .logo-symbol {
-        height: 30px;
+        height: 38px;
     }
     .header-logo .logo-text {
-        height: 19px;
-        max-width: 180px;
+        height: 25px;
+        max-width: 220px;
     }
 }
 
@@ -6134,40 +6134,172 @@ html, body {
 }
 
 @media (max-width: 768px) {
+    /* Header Logo on Mobile - Clear, Legible & Well Sized */
+    .header-logo {
+        gap: 10px !important;
+    }
+    .header-logo .logo-symbol {
+        height: 38px !important;
+    }
+    .header-logo .logo-text {
+        height: 25px !important;
+        max-width: 220px !important;
+    }
+
+    /* Section Editorial Hero Typography on Mobile */
     .section-editorial {
-        padding-top: 110px !important;
-        padding-bottom: 40px !important;
+        padding-top: 105px !important;
+        padding-bottom: 35px !important;
+    }
+
+    .section-editorial span[style*="letter-spacing"] {
+        font-size: 0.72rem !important;
+        letter-spacing: 0.1em !important;
+        margin-bottom: 8px !important;
     }
 
     .section-editorial h1 {
-        font-size: clamp(1.8rem, 5.5vw, 2.4rem) !important;
+        font-size: clamp(1.4rem, 4.8vw, 1.75rem) !important;
         line-height: 1.25 !important;
-        margin-bottom: 14px !important;
+        margin-bottom: 12px !important;
     }
 
     .section-editorial p {
-        font-size: 1rem !important;
+        font-size: 0.92rem !important;
+        line-height: 1.6 !important;
+        margin-bottom: 22px !important;
+    }
+
+    /* Section Spacing on Mobile */
+    .section {
+        padding: 45px 0 !important;
+    }
+
+    .section-alt {
+        padding: 45px 0 !important;
+    }
+
+    /* Section & Grid Headings */
+    .procedure-detail-grid h2,
+    .section-header h2,
+    .section h2,
+    .editorial-proc-cat-header h2 {
+        font-size: 1.35rem !important;
+        line-height: 1.3 !important;
+        margin-bottom: 12px !important;
+    }
+
+    .procedure-detail-grid h3 {
+        font-size: 1.12rem !important;
+        line-height: 1.35 !important;
+        margin-bottom: 16px !important;
+    }
+
+    .procedure-detail-grid p {
+        font-size: 0.90rem !important;
         line-height: 1.6 !important;
         margin-bottom: 24px !important;
     }
 
+    /* Procedure Benefit List Items */
+    .procedure-benefit-item {
+        gap: 12px !important;
+        padding: 12px 0 !important;
+    }
+
+    .procedure-benefit-num {
+        font-size: 0.92rem !important;
+    }
+
+    .procedure-benefit-item strong {
+        font-size: 0.92rem !important;
+        margin-bottom: 2px !important;
+    }
+
+    .procedure-benefit-item span {
+        font-size: 0.84rem !important;
+        line-height: 1.5 !important;
+    }
+
+    /* Procedure Authority Card */
     .procedure-authority-card {
-        padding: 22px 18px !important;
+        padding: 20px 16px !important;
         margin-top: 10px !important;
     }
 
-    .procedure-benefit-item {
-        gap: 12px !important;
-        padding: 14px 0 !important;
+    .procedure-authority-card h4 {
+        font-size: 1.15rem !important;
+        margin-bottom: 6px !important;
     }
 
+    .procedure-authority-card p {
+        font-size: 0.84rem !important;
+        line-height: 1.55 !important;
+        margin-bottom: 16px !important;
+    }
+
+    /* FAQ Section on Mobile */
+    .section-header {
+        margin-bottom: 28px !important;
+    }
+
+    .section-header .label {
+        font-size: 0.72rem !important;
+        margin-bottom: 6px !important;
+    }
+
+    .section-header p {
+        font-size: 0.88rem !important;
+    }
+
+    .faq-item {
+        margin-bottom: 10px !important;
+        border-radius: 12px !important;
+    }
+
+    .faq-question {
+        font-size: 0.90rem !important;
+        padding: 14px 16px !important;
+        line-height: 1.4 !important;
+    }
+
+    .faq-answer-inner {
+        font-size: 0.85rem !important;
+        line-height: 1.6 !important;
+        padding: 0 16px 14px 16px !important;
+    }
+
+    /* CTA Section */
+    .cta-section {
+        padding: 50px 0 !important;
+    }
+
+    .cta-section h2 {
+        font-size: clamp(1.35rem, 4.5vw, 1.7rem) !important;
+        line-height: 1.3 !important;
+        margin-bottom: 12px !important;
+    }
+
+    .cta-section p {
+        font-size: 0.88rem !important;
+        line-height: 1.6 !important;
+        margin-bottom: 24px !important;
+    }
+
+    /* Buttons */
+    .btn {
+        padding: 12px 20px !important;
+        font-size: 0.85rem !important;
+    }
+
+    /* Results Curated Grid */
     .results-curated-grid {
         grid-template-columns: 1fr !important;
         gap: 20px !important;
     }
 
     .image-side img {
-        height: 190px !important;
+        height: 180px !important;
     }
 
     .header-cta-wrapper {
