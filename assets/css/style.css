@@ -372,7 +372,7 @@ body.splash-active {
 .header-logo {
     display: inline-flex;
     align-items: center;
-    gap: 16px;
+    gap: 12px;
     text-decoration: none;
     transition: var(--transition);
     position: relative;
@@ -385,7 +385,7 @@ body.splash-active {
 }
 
 .header-logo .logo-symbol {
-    height: 54px;
+    height: 38px;
     width: auto;
     object-fit: contain;
     filter: brightness(0) invert(1);
@@ -393,7 +393,7 @@ body.splash-active {
 }
 
 .header-logo .logo-text {
-    height: 42px;
+    height: 26px;
     width: auto;
     object-fit: contain;
     filter: brightness(0) invert(1);
@@ -402,28 +402,28 @@ body.splash-active {
 
 @media (max-width: 768px) {
     .header-logo {
-        gap: 12px;
+        gap: 8px;
     }
     .header-logo .logo-symbol {
-        height: 44px;
+        height: 30px;
     }
     .header-logo .logo-text {
-        height: 28px;
-        max-width: 220px;
+        height: 19px;
+        max-width: 180px;
     }
 }
 
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 18px;
+    gap: 22px;
 }
 
 .nav-links a {
-    font-size: 0.60rem;
+    font-size: 0.82rem;
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.82);
-    letter-spacing: 0.06em;
+    color: rgba(255, 255, 255, 0.85);
+    letter-spacing: 0.05em;
     position: relative;
     text-transform: uppercase;
     transition: color 0.25s ease;
@@ -3167,7 +3167,7 @@ body.splash-active {
     .nav-links a {
         color: #1B3A5C !important;
         padding: 13px 0 !important;
-        font-size: 0.85rem !important;
+        font-size: 0.92rem !important;
         font-weight: 500 !important;
         letter-spacing: 0.04em !important;
         border-bottom: 1px solid rgba(27, 58, 92, 0.08) !important;
