@@ -28,5 +28,5 @@ Informações de endereço, agendamento de consultas e canais de contato com o D
 
 ## Responsável Técnico
 - **Dr. Henrique Leal Rosa**
-- Cirurgião Dentista (CRO-PR 30165)
-- Biomédico (CRBM-PR 9051)
+- Cirurgião Dentista (CRO-PR 31739)
+- Biomédico (CRBM-PR 8966)

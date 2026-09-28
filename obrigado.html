@@ -52,6 +52,20 @@
             </div>
         </div>
     </main>
+    <script src="assets/js/main.js?v=6.0"></script>
+    <script>
+        // Reaching this page means a contact form was submitted successfully —
+        // the clearest lead-conversion signal on the site. Fire a GA4 conversion
+        // event once the GA4 Measurement ID in assets/js/main.js is set.
+        document.addEventListener('DOMContentLoaded', function () {
+            if (typeof window.gtag === 'function') {
+                window.gtag('event', 'generate_lead', {
+                    event_category: 'engagement',
+                    event_label: 'form_submission_obrigado_page'
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>

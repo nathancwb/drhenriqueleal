@@ -5,7 +5,7 @@
 ---
 
 ## 1. Controlador dos Dados
-- **Responsável:** Dr. Henrique Leal Rosa (CRO-PR 30165 | CRBM-PR 9051)
+- **Responsável:** Dr. Henrique Leal Rosa (CRO-PR 31739 | CRBM-PR 8966)
 - **Endereço:** Av. República Argentina, 1237 - Sala 518, Água Verde, Curitiba - PR, 80620-010
 - **Contato DPO / WhatsApp:** [+55 (41) 98857-7430](https://wa.me/5541988577430)
 

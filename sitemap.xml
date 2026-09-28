@@ -2,19 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://drhenriqueleal.com.br/</loc>
-    <lastmod>2026-09-04</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://drhenriqueleal.com.br/procedimentos</loc>
-    <lastmod>2026-09-04</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://drhenriqueleal.com.br/sobre</loc>
-    <lastmod>2026-09-04</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -26,7 +26,7 @@
   </url>
   <url>
     <loc>https://drhenriqueleal.com.br/contato</loc>
-    <lastmod>2026-09-04</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -38,13 +38,13 @@
   </url>
   <url>
     <loc>https://drhenriqueleal.com.br/privacidade</loc>
-    <lastmod>2026-09-04</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://drhenriqueleal.com.br/termos</loc>
-    <lastmod>2026-09-04</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -109,15 +109,148 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://drhenriqueleal.com.br/lp-conversao</loc>
-    <lastmod>2026-09-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://drhenriqueleal.com.br/links</loc>
     <lastmod>2026-09-04</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://drhenriqueleal.com.br/harmonizacao-facial-mitos-e-verdades-curitiba</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://drhenriqueleal.com.br/botox-preventivo-quando-comecar-curitiba</loc>
+    <lastmod>2026-08-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://drhenriqueleal.com.br/quanto-tempo-dura-o-botox-curitiba</loc>
+    <lastmod>2026-07-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://drhenriqueleal.com.br/fios-de-pdo-lifting-sem-cirurgia-curitiba</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://drhenriqueleal.com.br/fios-de-pdo-ou-bioestimulador-qual-escolher</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://drhenriqueleal.com.br/sculptra-radiesse-elleva-comparativo-curitiba</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://drhenriqueleal.com.br/como-tratar-flacidez-facial-pescoco-curitiba</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://drhenriqueleal.com.br/preenchimento-labial-natural-lips-curitiba</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://drhenriqueleal.com.br/cuidados-pos-preenchimento-labial-guia</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://drhenriqueleal.com.br/rinomodelacao-com-acido-hialuronico-curitiba</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://drhenriqueleal.com.br/rinomodelacao-doi-cuidados-e-duracao</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://drhenriqueleal.com.br/estetica-intima-preenchimento-acido-hialuronico-curitiba</loc>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://drhenriqueleal.com.br/rejuvenescimento-intimo-beneficios-e-autoestima</loc>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://drhenriqueleal.com.br/protocolo-bioforce-regeneracao-celular-curitiba</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://drhenriqueleal.com.br/peptideos-bioativos-e-antiaging-avancado</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://drhenriqueleal.com.br/ozonioterapia-beneficios-estetica-saude-curitiba</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://drhenriqueleal.com.br/ozonioterapia-para-rejuvenescimento-e-cicatrizacao</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://drhenriqueleal.com.br/terapia-capilar-para-queda-de-cabelo-curitiba</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://drhenriqueleal.com.br/microinfusao-capilar-e-fortalecimento-dos-fios</loc>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://drhenriqueleal.com.br/about</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drhenriqueleal.com.br/contact</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drhenriqueleal.com.br/privacy</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drhenriqueleal.com.br/terms</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>

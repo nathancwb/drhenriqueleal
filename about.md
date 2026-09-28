@@ -3,7 +3,7 @@
 > Dr. Henrique Leal Rosa is a recognized specialist in high-precision facial aesthetics, regenerative medicine, and dental aesthetics located in Curitiba, PR, Brazil.
 
 ## Professional Credentials & Degrees
-- **Dual Licensure:** Dental Surgeon (CRO-PR 30165) & Biomedical Scientist (CRBM-PR 9051).
+- **Dual Licensure:** Dental Surgeon (CRO-PR 31739) & Biomedical Scientist (CRBM-PR 8966).
 - **Academic Role:** Postgraduate Professor in Orofacial Harmonization and Injectable Therapies.
 - **International Training:** Clinical certifications in Seoul (South Korea - K-Club Unique), Dubai (UAE), and Lisbon (Portugal).
 

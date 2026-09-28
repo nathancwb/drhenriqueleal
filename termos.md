@@ -9,8 +9,8 @@ As informações contidas neste site possuem objetivo exclusivamente educacional
 
 ## 2. Responsabilidade Técnica
 - **Dr. Henrique Leal Rosa**
-- Cirurgião Dentista (CRO-PR 30165)
-- Biomédico (CRBM-PR 9051)
+- Cirurgião Dentista (CRO-PR 31739)
+- Biomédico (CRBM-PR 8966)
 - Endereço: Av. República Argentina, 1237 - Sala 518, Água Verde, Curitiba - PR
 
 ## 3. Resultados Clínicos
