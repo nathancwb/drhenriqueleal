@@ -12,15 +12,15 @@
 :root {
     --color-primary: #1B3A5C;
     --color-primary-light: #2A5A8C;
-    --color-accent: #2A7DE1;
-    --color-accent-hover: #1E6BC9;
-    --color-accent-light: rgba(42, 125, 225, 0.08);
-    --color-accent-subtle: rgba(42, 125, 225, 0.05);
+    --color-accent: #1D6BC9;
+    --color-accent-hover: #1554A3;
+    --color-accent-light: rgba(29, 107, 201, 0.08);
+    --color-accent-subtle: rgba(29, 107, 201, 0.05);
     --color-bg: #FFFFFF;
     --color-bg-alt: #F5F8FC;
     --color-bg-dark: #0F2847;
-    --color-text: #2C3E50;
-    --color-text-light: #6B7C8D;
+    --color-text: #1E293B;
+    --color-text-light: #475569;
     --color-white: #FFFFFF;
     --color-border: #E2E8F0;
     --color-overlay: rgba(15, 40, 71, 0.7);

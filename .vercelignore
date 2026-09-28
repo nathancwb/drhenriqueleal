@@ -5,8 +5,8 @@
 .ffmpeg/
 ffmpeg.zip
 scratch/
+docs-internos/
 *.py
-*.md
 take_screenshots.js
 download_reel.js
 instagram_reel.mp4
