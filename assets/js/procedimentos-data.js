@@ -80,63 +80,63 @@ const proceduresData = {
         image: "assets/img/bioestimulador-de-colageno.webp"
     },
 
-    // 6. Ozonioterapia (Estética & Integrativa)
+    // 6. Ozonioterapia Medicinal e Estética
     "ozonioterapia": {
-        title: "Rejuvenescimento Facial e Corporal através da Ozonioterapia",
-        subtitle: "Oxigenação celular, regeneração tecidual profunda e ação anti-inflamatória.",
-        description: "A Ozonioterapia medicinal utiliza uma mistura altamente precisa de oxigênio e ozônio medicinal (O2/O3) com propriedades biológicas extraordinárias. Atua ativando a microcirculação periférica, estimulando a imunidade local, acelerando processos de cicatrização e regeneração celular, além de combater o estresse oxidativo. Na estética avançada, é indispensável como tratamento regenerativo e como potente potencializador pré e pós-procedimentos.",
+        title: "Ozonioterapia Medicinal e Estética",
+        subtitle: "Cuidado respiratório, saúde capilar, rejuvenescimento e desinflamação.",
+        description: "Protocolos com ozônio voltados ao cuidado respiratório, saúde capilar, rejuvenescimento, desinflamação, descontaminação da pele e estímulo de colágeno, conforme indicação individual.",
         benefitsTitle: "Principais indicações e benefícios:",
         benefits: [
-            "<strong>Estética Facial & Rejuvenescimento:</strong> Oxigenação dos tecidos, estímulo de colágeno e viço imediato",
-            "<strong>Ação Anti-inflamatória e Cicatrizante:</strong> Redução acelerada de edemas e recuperação de tecidos pós-injetáveis",
-            "<strong>Tratamento de Acne e Manchas:</strong> Potente ação bactericida, fungicida e purificadora natural",
-            "<strong>Terapia Capilar com Ozônio:</strong> Desobstrução folicular, combate à queda e estímulo ao crescimento dos fios",
-            "<strong>Estética Corporal:</strong> Auxílio no combate à celulite, gordura localizada e melhora da microcirculação"
+            "<strong>Cuidado Respiratório & Imunidade:</strong> Oxigenação sistêmica e ação antioxidante",
+            "<strong>Saúde Capilar com Ozônio:</strong> Desobstrução folicular e fortalecimento dos fios",
+            "<strong>Rejuvenescimento & Colágeno:</strong> Estímulo celular e viço profundo da pele",
+            "<strong>Ação Anti-inflamatória e Cicatrizante:</strong> Descontaminação e recuperação tecidual acelerada",
+            "<strong>Estética Corporal & Celulite:</strong> Melhora da microcirculação e auxílio no contorno"
         ],
         image: "assets/img/henrique-clinic.webp"
     },
 
-    // 7. Estética Íntima Avançada
+    // 7. Estética Íntima Avançada (Feminina & Masculina)
     "estetica-intima": {
-        title: "Estética Íntima Masculina e Feminina",
-        subtitle: "Rejuvenescimento, conforto, funcionalidade e autoestima.",
-        description: "Procedimentos médicos especializados voltados para a harmonização, clareamento e rejuvenescimento da região íntima. Realizados com absoluto sigilo, ética, conforto e protocolos científicos modernos para homens e mulheres.",
+        title: "Harmonização Íntima Feminina e Masculina",
+        subtitle: "Contorno, volume, qualidade da pele, conforto e rejuvenescimento.",
+        description: "Protocolos médicos personalizados para harmonização, ganho de volume, hidratação, qualidade da pele e rejuvenescimento da região íntima feminina e masculina, realizados com discrição absoluta.",
         benefitsTitle: "Protocolos especializados:",
         benefits: [
-            "<strong>Preenchimento Íntimo com Ácido Hialurônico:</strong> Restauração de volume e contorno com máxima biocompatibilidade",
-            "<strong>Bioestimulador de Colágeno Íntimo:</strong> Recuperação da firmeza e textura da pele",
-            "<strong>Peelings Íntimos Clareadores:</strong> Uniformização do tom nas regiões pubiana, inguinal e perianal",
-            "<strong>Botox Anal (Antox):</strong> Relaxamento da musculatura anal para alívio de tensões e conforto funcional",
-            "<strong>Botox Escrotal:</strong> Relaxamento muscular, melhora estética e controle de sudorese"
+            "<strong>Harmonização Íntima Feminina:</strong> Melhora de contorno, volume, hidratação, firmeza e rejuvenescimento",
+            "<strong>Harmonização Íntima Masculina:</strong> Ganho de volume e calibre, melhora de contorno, proporções e qualidade da pele (ácido hialurônico, peelings, enzimas e peptídeos)",
+            "<strong>Toxina Botulínica Peniana:</strong> Relaxamento muscular e melhora da função/estética da região",
+            "<strong>Antox (Região Perianal):</strong> Controle de sudorese e relaxamento muscular local",
+            "<strong>Escrotox (Região Escrotal):</strong> Redução da sudorese, maior conforto e melhora estética"
         ],
         image: "assets/img/intimos-nova.webp"
     },
 
     // 8. Estética Corporal & Harmonização Glútea
     "estetica-corporal": {
-        title: "Harmonização & Volumização Glútea",
-        subtitle: "Alta performance no contorno, flacidez e definição corporal.",
-        description: "Abordagem completa para tratar flacidez, remodelar contornos corporais e reduzir gordura localizada resistente. Utilizamos bioestimuladores de última geração para harmonização glútea e enzimas lipolíticas de alta pureza.",
+        title: "Harmonização Glútea e Estética Corporal",
+        subtitle: "Contorno, projeção, firmeza e qualidade da pele.",
+        description: "Estratégias avançadas para contorno, projeção, firmeza e qualidade da pele, associando bioestimuladores de colágeno de alta performance, peptídeos regenerativos, ativos voltados ao suporte de massa muscular localizada e Plasma Gel, conforme avaliação.",
         benefitsTitle: "Nossos protocolos corporais incluem:",
         benefits: [
-            "<strong>Harmonização e Volumização Glútea:</strong> Projeção, correção de depressão trocantérica e firmeza",
-            "<strong>Bioestimulação Corporal:</strong> Tratamento de flacidez em braços, abdômen, coxas e glúteos",
-            "<strong>Lipo Enzimática de Alta Performance:</strong> Redução de gordura localizada com enzimas purificadas",
-            "<strong>Regeneração Dérmica:</strong> Tratamento estético de estrias, manchas e cicatrizes"
+            "<strong>Harmonização Glútea Avançada:</strong> Contorno, projeção, firmeza e bioestimulação de alta performance",
+            "<strong>Qualidade e Firmeza da Pele:</strong> Tratamentos personalizados para flacidez dérmica e textura",
+            "<strong>Suporte Muscular & Peptídeos:</strong> Ativos regenerativos para sustentação e contorno corporal",
+            "<strong>Plasma Gel & Bioestimuladores:</strong> Reestruturação tecidual e melhora global da aparência"
         ],
         image: "assets/img/bioestimulador-de-colageno.webp"
     },
 
-    // 9. Terapias Capilares
+    // 9. Saúde Capilar
     "terapias-capilares": {
-        title: "Tricologia e Terapias Capilares",
-        subtitle: "Saúde, densidade e fortalecimento dos fios e do couro cabeludo.",
-        description: "Protocolos clínicos integrados voltados para a recuperação do couro cabeludo, controle da queda capilar e estímulo do crescimento de fios mais espessos e saudáveis.",
-        benefitsTitle: "Nossos protocolos capilares incluem:",
+        title: "Saúde Capilar",
+        subtitle: "Fortalecimento, vitalidade e qualidade dos fios.",
+        description: "Protocolos personalizados para fortalecimento, vitalidade e qualidade dos fios, com ativos e tecnologias direcionadas à saúde do couro cabeludo.",
+        benefitsTitle: "Nossos protocolos de saúde capilar incluem:",
         benefits: [
-            "<strong>Microinfusão de Medicamentos e Ativos (MMP):</strong> Entrega direta de fatores de crescimento",
-            "<strong>Ozonioterapia Capilar:</strong> Oxigenação celular e combate à inflamação folicular",
-            "<strong>Nutrição e Fortalecimento:</strong> Estímulo biológico para controle de eflúvio e alopecia"
+            "<strong>Fortalecimento e Vitalidade:</strong> Nutrição e estímulo folicular com ativos de alta performance",
+            "<strong>Saúde do Couro Cabeludo:</strong> Tecnologias direcionadas contra rarefação e afinamento",
+            "<strong>Ozonioterapia Capilar:</strong> Oxigenação, desobstrução e fortalecimento da raiz"
         ],
         image: "assets/img/henrique-clinic.webp"
     },
