@@ -56,6 +56,16 @@ document.addEventListener('click', function (event) {
             link_text: (link.textContent || '').trim().slice(0, 100),
             page_path: window.location.pathname
         });
+
+        // Fire standard GA4 conversion event for WhatsApp leads
+        if (linkType === 'whatsapp') {
+            window.gtag('event', 'generate_lead', {
+                event_category: 'engagement',
+                event_label: 'whatsapp_lead_click',
+                link_url: href,
+                page_path: window.location.pathname
+            });
+        }
     }
 }, true);
 
@@ -659,7 +669,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 opacity: 0;
                 pointer-events: none;
                 text-align: center;
-                border-left: 4px solid #2A7DE1; /* Gold accent */
+                border-left: 4px solid #1D6BC9; /* Gold accent */
                 border-right: 1px solid rgba(42, 125, 225, 0.15);
                 border-top: 1px solid rgba(42, 125, 225, 0.15);
                 border-bottom: 1px solid rgba(42, 125, 225, 0.15);

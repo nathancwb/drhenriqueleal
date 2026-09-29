@@ -1,3 +1,13 @@
 **/.DS_Store
 scratch/
+docs-internos/
 .playwright-mcp/
+.ffmpeg/
+ffmpeg.zip
+*.py
+take_screenshots.js
+download_reel.js
+instagram_reel.mp4
+leader-card-before.png
+server.js
+server.py
