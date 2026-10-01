@@ -100,14 +100,15 @@ const proceduresData = {
     "estetica-intima": {
         title: "Harmonização Íntima Feminina e Masculina",
         subtitle: "Contorno, volume, qualidade da pele, conforto e rejuvenescimento.",
-        description: "Protocolos médicos personalizados para harmonização, ganho de volume, hidratação, qualidade da pele e rejuvenescimento da região íntima feminina e masculina, realizados com discrição absoluta.",
+        description: "Protocolos médicos personalizados para harmonização, ganho de volume, hidratação, qualidade da pele e rejuvenescimento da região íntima feminina e masculina, realizados com discrição absoluta e atendimento privativo.",
         benefitsTitle: "Protocolos especializados:",
         benefits: [
             "<strong>Harmonização Íntima Feminina:</strong> Melhora de contorno, volume, hidratação, firmeza e rejuvenescimento",
             "<strong>Harmonização Íntima Masculina:</strong> Ganho de volume e calibre, melhora de contorno, proporções e qualidade da pele (ácido hialurônico, peelings, enzimas e peptídeos)",
             "<strong>Toxina Botulínica Peniana:</strong> Relaxamento muscular e melhora da função/estética da região",
             "<strong>Antox (Região Perianal):</strong> Controle de sudorese e relaxamento muscular local",
-            "<strong>Escrotox (Região Escrotal):</strong> Redução da sudorese, maior conforto e melhora estética"
+            "<strong>Escrotox (Região Escrotal):</strong> Redução da sudorese, maior conforto e melhora estética",
+            "<strong>Avaliação VIP & Atendimento Privativo:</strong> Atendimento com horário agendado e período reservado para máxima privacidade, sem contato com outros pacientes."
         ],
         image: "assets/img/intimos-nova.webp"
     },

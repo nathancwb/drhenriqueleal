@@ -28,5 +28,18 @@
         }
       ]
     }
+  ],
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.drhenriqueleal.com.br"
+        }
+      ],
+      "destination": "https://drhenriqueleal.com.br/:path*",
+      "permanent": true
+    }
   ]
 }
