@@ -40,6 +40,11 @@
       ],
       "destination": "https://drhenriqueleal.com.br/:path*",
       "permanent": true
+    },
+    {
+      "source": "/quanto-custa-harmonizacao-facial-curitiba",
+      "destination": "/harmonizacao-facial-curitiba#quanto-custa",
+      "permanent": false
     }
   ]
 }
