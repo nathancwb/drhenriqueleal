@@ -1571,68 +1571,310 @@
         </div>
     </section>
 
-    <!-- ==================== DEPOIMENTOS ==================== -->
+<!-- ==================== DEPOIMENTOS ==================== -->
     <section class="section" id="depoimentos">
         <div class="container">
             <div class="section-header fade-in">
-                <h2>Depoimentos</h2>
+                <h2>Depoimentos & Experiências</h2>
                 <p>A experiência e a satisfação de quem confiou no Dr. Henrique para transformar sua autoestima e bem-estar.</p>
             </div>
 
-            <div class="carousel-wrapper">
-                <div class="depoimentos-carousel">
-                    <!-- Feedback 1 -->
-                    <div class="video-testimonial-card fade-in">
-                        <div class="video-wrapper">
-                            <video controls playsinline preload="none" poster="assets/img/posters/feedback-paciente-1-poster.webp">
-                                <source src="assets/videos/feedback-paciente-1.mp4" type="video/mp4">
-                                Seu navegador não suporta vídeos HTML5.
-                            </video>
-                        </div>
-                    </div>
-
-                    <!-- Feedback 2 -->
-                    <div class="video-testimonial-card fade-in">
-                        <div class="video-wrapper">
-                            <video controls playsinline preload="none" poster="assets/img/posters/feedback-paciente-2-poster.webp">
-                                <source src="assets/videos/feedback-paciente-2.mp4" type="video/mp4">
-                                Seu navegador não suporta vídeos HTML5.
-                            </video>
-                        </div>
-                    </div>
-
-                    <div class="video-testimonial-card fade-in">
-                        <div class="video-wrapper">
-                            <video controls playsinline preload="none" poster="assets/img/posters/depoimento-4.webp">
-                                <source src="assets/videos/depoimento-4.mp4#t=1.0" type="video/mp4">
-                                Seu navegador não suporta vídeos HTML5.
-                            </video>
-                        </div>
-                    </div>
-
-                    <div class="video-testimonial-card fade-in">
-                        <div class="video-wrapper">
-                            <video controls playsinline preload="none" poster="assets/img/posters/depoimento-5.webp">
-                                <source src="assets/videos/depoimento-5.mp4#t=1.0" type="video/mp4">
-                                Seu navegador não suporta vídeos HTML5.
-                            </video>
-                        </div>
-                    </div>
-
-                    <div class="video-testimonial-card fade-in">
-                        <div class="video-wrapper">
-                            <video controls playsinline preload="none" poster="assets/img/posters/depoimento-6.webp">
-                                <source src="assets/videos/depoimento-6.mp4#t=1.0" type="video/mp4">
-                                Seu navegador não suporta vídeos HTML5.
-                            </video>
-                        </div>
-                    </div>
-
-
+            <!-- Tabs: Áudios no WhatsApp vs Vídeos no Consultório -->
+            <div class="depoimentos-tabs-wrapper fade-in">
+                <div class="depoimentos-tabs-nav" role="tablist">
+                    <button type="button" class="depo-tab-btn active" data-tab="audios" role="tab" aria-selected="true">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5-3c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/></svg>
+                        <span>Áudios no WhatsApp</span>
+                    </button>
+                    <button type="button" class="depo-tab-btn" data-tab="videos" role="tab" aria-selected="false">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/></svg>
+                        <span>Vídeos no Consultório</span>
+                    </button>
                 </div>
-                <!-- Navigation Buttons -->
-                <button class="carousel-nav prev" aria-label="Anterior">&#10094;</button>
-                <button class="carousel-nav next" aria-label="Próximo">&#10095;</button>
+            </div>
+
+            <!-- Panel 1: Áudios de WhatsApp -->
+            <div class="depo-panel" id="panel-audios">
+                <div class="whatsapp-audio-grid">
+                    <!-- Audio 1: Mariana S. -->
+                    <div class="whatsapp-audio-card fade-in">
+                        <div class="wa-card-header">
+                            <div class="wa-header-left">
+                                <div class="wa-avatar-box">
+                                    MS
+                                    <span class="wa-status-dot" title="Mensagem de áudio recebida"></span>
+                                </div>
+                                <div class="wa-patient-info">
+                                    <div class="wa-patient-name-row">
+                                        <span class="wa-patient-name">Mariana S.</span>
+                                        <span class="wa-verified-badge">
+                                            <svg viewBox="0 0 24 24" width="12" height="12" fill="#10B981"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                                            WhatsApp
+                                        </span>
+                                    </div>
+                                    <div class="wa-procedure-tag">Harmonização Facial • Naturalidade</div>
+                                </div>
+                            </div>
+                            <div class="wa-stars">★★★★★</div>
+                        </div>
+
+                        <blockquote class="wa-quote">
+                            “O pós foi super tranquilo, não senti dor nem antes nem depois... Os resultados ficaram bem naturais e harmoniosos, era bem aquilo que eu esperava!”
+                        </blockquote>
+
+                        <div class="wa-player">
+                            <audio src="assets/audio/depoimento-audio-1.mp3" preload="metadata"></audio>
+                            <button class="wa-play-btn" type="button" aria-label="Ouvir áudio">
+                                <svg class="play-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                                <svg class="pause-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                            </button>
+                            <div class="wa-waveform-wrap" title="Clique para avançar/retroceder">
+                                <div class="wa-waveform-bg">
+                                    <span style="height: 35%"></span><span style="height: 60%"></span><span style="height: 45%"></span><span style="height: 80%"></span><span style="height: 100%"></span><span style="height: 65%"></span><span style="height: 40%"></span><span style="height: 75%"></span><span style="height: 90%"></span><span style="height: 55%"></span><span style="height: 35%"></span><span style="height: 70%"></span><span style="height: 85%"></span><span style="height: 45%"></span><span style="height: 60%"></span><span style="height: 95%"></span><span style="height: 75%"></span><span style="height: 50%"></span><span style="height: 80%"></span><span style="height: 65%"></span><span style="height: 40%"></span><span style="height: 70%"></span><span style="height: 85%"></span><span style="height: 50%"></span><span style="height: 30%"></span><span style="height: 60%"></span><span style="height: 40%"></span><span style="height: 25%"></span>
+                                </div>
+                                <div class="wa-waveform-prog">
+                                    <span style="height: 35%"></span><span style="height: 60%"></span><span style="height: 45%"></span><span style="height: 80%"></span><span style="height: 100%"></span><span style="height: 65%"></span><span style="height: 40%"></span><span style="height: 75%"></span><span style="height: 90%"></span><span style="height: 55%"></span><span style="height: 35%"></span><span style="height: 70%"></span><span style="height: 85%"></span><span style="height: 45%"></span><span style="height: 60%"></span><span style="height: 95%"></span><span style="height: 75%"></span><span style="height: 50%"></span><span style="height: 80%"></span><span style="height: 65%"></span><span style="height: 40%"></span><span style="height: 70%"></span><span style="height: 85%"></span><span style="height: 50%"></span><span style="height: 30%"></span><span style="height: 60%"></span><span style="height: 40%"></span><span style="height: 25%"></span>
+                                </div>
+                            </div>
+                            <div class="wa-time-box">
+                                <span class="wa-current-time">0:00</span>
+                            </div>
+                            <button class="wa-speed-btn" type="button" title="Velocidade">1x</button>
+                        </div>
+
+                        <div class="wa-card-footer">
+                            <span class="wa-footer-note">
+                                <svg viewBox="0 0 24 24" width="13" height="13" fill="#25D366"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+                                Áudio espontâneo • 0:53
+                            </span>
+                            <span class="wa-verified-text">Identidade preservada</span>
+                        </div>
+                    </div>
+
+                    <!-- Audio 2: Carlos E. -->
+                    <div class="whatsapp-audio-card fade-in">
+                        <div class="wa-card-header">
+                            <div class="wa-header-left">
+                                <div class="wa-avatar-box">
+                                    CE
+                                    <span class="wa-status-dot" title="Mensagem de áudio recebida"></span>
+                                </div>
+                                <div class="wa-patient-info">
+                                    <div class="wa-patient-name-row">
+                                        <span class="wa-patient-name">Carlos E.</span>
+                                        <span class="wa-verified-badge">
+                                            <svg viewBox="0 0 24 24" width="12" height="12" fill="#10B981"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                                            WhatsApp
+                                        </span>
+                                    </div>
+                                    <div class="wa-procedure-tag">Harmonização Facial Masculina</div>
+                                </div>
+                            </div>
+                            <div class="wa-stars">★★★★★</div>
+                        </div>
+
+                        <blockquote class="wa-quote">
+                            “O Dr. Henrique é atencioso e explica tudo nos mínimos detalhes. Já no dia seguinte deu pra ver a mudança e a autoestima foi lá em cima. Super recomendo!”
+                        </blockquote>
+
+                        <div class="wa-player">
+                            <audio src="assets/audio/depoimento-audio-2.mp3" preload="metadata"></audio>
+                            <button class="wa-play-btn" type="button" aria-label="Ouvir áudio">
+                                <svg class="play-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                                <svg class="pause-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                            </button>
+                            <div class="wa-waveform-wrap" title="Clique para avançar/retroceder">
+                                <div class="wa-waveform-bg">
+                                    <span style="height: 40%"></span><span style="height: 70%"></span><span style="height: 50%"></span><span style="height: 85%"></span><span style="height: 95%"></span><span style="height: 60%"></span><span style="height: 45%"></span><span style="height: 80%"></span><span style="height: 100%"></span><span style="height: 65%"></span><span style="height: 40%"></span><span style="height: 75%"></span><span style="height: 90%"></span><span style="height: 50%"></span><span style="height: 65%"></span><span style="height: 85%"></span><span style="height: 70%"></span><span style="height: 55%"></span><span style="height: 75%"></span><span style="height: 60%"></span><span style="height: 45%"></span><span style="height: 80%"></span><span style="height: 70%"></span><span style="height: 50%"></span><span style="height: 35%"></span><span style="height: 65%"></span><span style="height: 45%"></span><span style="height: 30%"></span>
+                                </div>
+                                <div class="wa-waveform-prog">
+                                    <span style="height: 40%"></span><span style="height: 70%"></span><span style="height: 50%"></span><span style="height: 85%"></span><span style="height: 95%"></span><span style="height: 60%"></span><span style="height: 45%"></span><span style="height: 80%"></span><span style="height: 100%"></span><span style="height: 65%"></span><span style="height: 40%"></span><span style="height: 75%"></span><span style="height: 90%"></span><span style="height: 50%"></span><span style="height: 65%"></span><span style="height: 85%"></span><span style="height: 70%"></span><span style="height: 55%"></span><span style="height: 75%"></span><span style="height: 60%"></span><span style="height: 45%"></span><span style="height: 80%"></span><span style="height: 70%"></span><span style="height: 50%"></span><span style="height: 35%"></span><span style="height: 65%"></span><span style="height: 45%"></span><span style="height: 30%"></span>
+                                </div>
+                            </div>
+                            <div class="wa-time-box">
+                                <span class="wa-current-time">0:00</span>
+                            </div>
+                            <button class="wa-speed-btn" type="button" title="Velocidade">1x</button>
+                        </div>
+
+                        <div class="wa-card-footer">
+                            <span class="wa-footer-note">
+                                <svg viewBox="0 0 24 24" width="13" height="13" fill="#25D366"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+                                Áudio espontâneo • 1:03
+                            </span>
+                            <span class="wa-verified-text">Identidade preservada</span>
+                        </div>
+                    </div>
+
+                    <!-- Audio 3: Áquino Lombardi -->
+                    <div class="whatsapp-audio-card fade-in">
+                        <div class="wa-card-header">
+                            <div class="wa-header-left">
+                                <div class="wa-avatar-box">
+                                    AL
+                                    <span class="wa-status-dot" title="Mensagem de áudio recebida"></span>
+                                </div>
+                                <div class="wa-patient-info">
+                                    <div class="wa-patient-name-row">
+                                        <span class="wa-patient-name">Áquino Lombardi</span>
+                                        <span class="wa-verified-badge">
+                                            <svg viewBox="0 0 24 24" width="12" height="12" fill="#10B981"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                                            WhatsApp
+                                        </span>
+                                    </div>
+                                    <div class="wa-procedure-tag">Contorno Mandibular • Primeira Experiência</div>
+                                </div>
+                            </div>
+                            <div class="wa-stars">★★★★★</div>
+                        </div>
+
+                        <blockquote class="wa-quote">
+                            “Foi minha primeira experiência estética facial e tinha receio de agulha. O acolhimento me passou total confiança e o resultado na mandíbula superou as expectativas!”
+                        </blockquote>
+
+                        <div class="wa-player">
+                            <audio src="assets/audio/depoimento-audio-3.mp3" preload="metadata"></audio>
+                            <button class="wa-play-btn" type="button" aria-label="Ouvir áudio">
+                                <svg class="play-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                                <svg class="pause-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                            </button>
+                            <div class="wa-waveform-wrap" title="Clique para avançar/retroceder">
+                                <div class="wa-waveform-bg">
+                                    <span style="height: 30%"></span><span style="height: 65%"></span><span style="height: 50%"></span><span style="height: 80%"></span><span style="height: 100%"></span><span style="height: 70%"></span><span style="height: 40%"></span><span style="height: 85%"></span><span style="height: 90%"></span><span style="height: 60%"></span><span style="height: 45%"></span><span style="height: 80%"></span><span style="height: 75%"></span><span style="height: 55%"></span><span style="height: 70%"></span><span style="height: 90%"></span><span style="height: 65%"></span><span style="height: 50%"></span><span style="height: 85%"></span><span style="height: 60%"></span><span style="height: 45%"></span><span style="height: 75%"></span><span style="height: 80%"></span><span style="height: 45%"></span><span style="height: 30%"></span><span style="height: 60%"></span><span style="height: 40%"></span><span style="height: 25%"></span>
+                                </div>
+                                <div class="wa-waveform-prog">
+                                    <span style="height: 30%"></span><span style="height: 65%"></span><span style="height: 50%"></span><span style="height: 80%"></span><span style="height: 100%"></span><span style="height: 70%"></span><span style="height: 40%"></span><span style="height: 85%"></span><span style="height: 90%"></span><span style="height: 60%"></span><span style="height: 45%"></span><span style="height: 80%"></span><span style="height: 75%"></span><span style="height: 55%"></span><span style="height: 70%"></span><span style="height: 90%"></span><span style="height: 65%"></span><span style="height: 50%"></span><span style="height: 85%"></span><span style="height: 60%"></span><span style="height: 45%"></span><span style="height: 75%"></span><span style="height: 80%"></span><span style="height: 45%"></span><span style="height: 30%"></span><span style="height: 60%"></span><span style="height: 40%"></span><span style="height: 25%"></span>
+                                </div>
+                            </div>
+                            <div class="wa-time-box">
+                                <span class="wa-current-time">0:00</span>
+                            </div>
+                            <button class="wa-speed-btn" type="button" title="Velocidade">1x</button>
+                        </div>
+
+                        <div class="wa-card-footer">
+                            <span class="wa-footer-note">
+                                <svg viewBox="0 0 24 24" width="13" height="13" fill="#25D366"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+                                Áudio espontâneo • 1:44
+                            </span>
+                            <span class="wa-verified-text">Identidade autorizada</span>
+                        </div>
+                    </div>
+
+                    <!-- Audio 4: Luís M. -->
+                    <div class="whatsapp-audio-card fade-in">
+                        <div class="wa-card-header">
+                            <div class="wa-header-left">
+                                <div class="wa-avatar-box">
+                                    LM
+                                    <span class="wa-status-dot" title="Mensagem de áudio recebida"></span>
+                                </div>
+                                <div class="wa-patient-info">
+                                    <div class="wa-patient-name-row">
+                                        <span class="wa-patient-name">Luís M., 55 anos</span>
+                                        <span class="wa-verified-badge">
+                                            <svg viewBox="0 0 24 24" width="12" height="12" fill="#10B981"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                                            WhatsApp
+                                        </span>
+                                    </div>
+                                    <div class="wa-procedure-tag">Estética & Harmonização Íntima</div>
+                                </div>
+                            </div>
+                            <div class="wa-stars">★★★★★</div>
+                        </div>
+
+                        <blockquote class="wa-quote">
+                            “Havia muita insegurança em procurar um profissional... Me encantei com o atendimento e técnica do Dr. Henrique. 100% de objetivo alcançado, hoje me sinto outro homem!”
+                        </blockquote>
+
+                        <div class="wa-player">
+                            <audio src="assets/audio/depoimento-audio-4.mp3" preload="metadata"></audio>
+                            <button class="wa-play-btn" type="button" aria-label="Ouvir áudio">
+                                <svg class="play-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                                <svg class="pause-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                            </button>
+                            <div class="wa-waveform-wrap" title="Clique para avançar/retroceder">
+                                <div class="wa-waveform-bg">
+                                    <span style="height: 35%"></span><span style="height: 60%"></span><span style="height: 45%"></span><span style="height: 75%"></span><span style="height: 95%"></span><span style="height: 65%"></span><span style="height: 40%"></span><span style="height: 80%"></span><span style="height: 100%"></span><span style="height: 70%"></span><span style="height: 50%"></span><span style="height: 75%"></span><span style="height: 85%"></span><span style="height: 55%"></span><span style="height: 65%"></span><span style="height: 90%"></span><span style="height: 70%"></span><span style="height: 50%"></span><span style="height: 80%"></span><span style="height: 65%"></span><span style="height: 45%"></span><span style="height: 70%"></span><span style="height: 85%"></span><span style="height: 50%"></span><span style="height: 35%"></span><span style="height: 60%"></span><span style="height: 45%"></span><span style="height: 30%"></span>
+                                </div>
+                                <div class="wa-waveform-prog">
+                                    <span style="height: 35%"></span><span style="height: 60%"></span><span style="height: 45%"></span><span style="height: 75%"></span><span style="height: 95%"></span><span style="height: 65%"></span><span style="height: 40%"></span><span style="height: 80%"></span><span style="height: 100%"></span><span style="height: 70%"></span><span style="height: 50%"></span><span style="height: 75%"></span><span style="height: 85%"></span><span style="height: 55%"></span><span style="height: 65%"></span><span style="height: 90%"></span><span style="height: 70%"></span><span style="height: 50%"></span><span style="height: 80%"></span><span style="height: 65%"></span><span style="height: 45%"></span><span style="height: 70%"></span><span style="height: 85%"></span><span style="height: 50%"></span><span style="height: 35%"></span><span style="height: 60%"></span><span style="height: 45%"></span><span style="height: 30%"></span>
+                                </div>
+                            </div>
+                            <div class="wa-time-box">
+                                <span class="wa-current-time">0:00</span>
+                            </div>
+                            <button class="wa-speed-btn" type="button" title="Velocidade">1x</button>
+                        </div>
+
+                        <div class="wa-card-footer">
+                            <span class="wa-footer-note">
+                                <svg viewBox="0 0 24 24" width="13" height="13" fill="#25D366"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+                                Áudio espontâneo • 2:41
+                            </span>
+                            <span class="wa-verified-text">Identidade preservada</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Panel 2: Vídeos no Consultório -->
+            <div class="depo-panel hidden" id="panel-videos">
+                <div class="carousel-wrapper">
+                    <div class="depoimentos-carousel">
+                        <!-- Feedback 1 -->
+                        <div class="video-testimonial-card fade-in">
+                            <div class="video-wrapper">
+                                <video controls playsinline preload="none" poster="assets/img/posters/feedback-paciente-1-poster.webp">
+                                    <source src="assets/videos/feedback-paciente-1.mp4" type="video/mp4">
+                                    Seu navegador não suporta vídeos HTML5.
+                                </video>
+                            </div>
+                        </div>
+
+                        <!-- Feedback 2 -->
+                        <div class="video-testimonial-card fade-in">
+                            <div class="video-wrapper">
+                                <video controls playsinline preload="none" poster="assets/img/posters/feedback-paciente-2-poster.webp">
+                                    <source src="assets/videos/feedback-paciente-2.mp4" type="video/mp4">
+                                    Seu navegador não suporta vídeos HTML5.
+                                </video>
+                            </div>
+                        </div>
+
+                        <div class="video-testimonial-card fade-in">
+                            <div class="video-wrapper">
+                                <video controls playsinline preload="none" poster="assets/img/posters/depoimento-4.webp">
+                                    <source src="assets/videos/depoimento-4.mp4#t=1.0" type="video/mp4">
+                                    Seu navegador não suporta vídeos HTML5.
+                                </video>
+                            </div>
+                        </div>
+
+                        <div class="video-testimonial-card fade-in">
+                            <div class="video-wrapper">
+                                <video controls playsinline preload="none" poster="assets/img/posters/depoimento-5.webp">
+                                    <source src="assets/videos/depoimento-5.mp4#t=1.0" type="video/mp4">
+                                    Seu navegador não suporta vídeos HTML5.
+                                </video>
+                            </div>
+                        </div>
+
+                        <div class="video-testimonial-card fade-in">
+                            <div class="video-wrapper">
+                                <video controls playsinline preload="none" poster="assets/img/posters/depoimento-6.webp">
+                                    <source src="assets/videos/depoimento-6.mp4#t=1.0" type="video/mp4">
+                                    Seu navegador não suporta vídeos HTML5.
+                                </video>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!-- Navigation Buttons -->
+                    <button class="carousel-nav prev" aria-label="Anterior">&#10094;</button>
+                    <button class="carousel-nav next" aria-label="Próximo">&#10095;</button>
+                </div>
             </div>
         </div>
     </section>
@@ -2520,6 +2762,7 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js?v=6.0"></script>
+    <script src="assets/js/audio-testimonials.js?v=1.0" defer></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const certSwiper = new Swiper('.cert-swiper', {

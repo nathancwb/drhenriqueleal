@@ -6392,3 +6392,397 @@ html, body {
         font-size: 0.78rem !important;
     }
 }
+/* ===================================================
+   DEPOIMENTOS TABS & WHATSAPP AUDIO CARDS
+   =================================================== */
+.depoimentos-tabs-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 24px 0 36px;
+}
+
+.depoimentos-tabs-nav {
+    display: inline-flex;
+    background: #F1F5F9;
+    padding: 6px;
+    border-radius: 50px;
+    border: 1px solid #E2E8F0;
+    gap: 8px;
+    max-width: 100%;
+}
+
+.depo-tab-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 22px;
+    border-radius: 40px;
+    border: none;
+    background: transparent;
+    color: #475569;
+    font-size: 0.92rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.depo-tab-btn:hover {
+    color: var(--color-primary);
+}
+
+.depo-tab-btn.active {
+    background: #FFFFFF;
+    color: var(--color-primary);
+    box-shadow: 0 4px 12px rgba(15, 40, 71, 0.08);
+}
+
+.depo-tab-badge {
+    background: rgba(37, 211, 102, 0.15);
+    color: #128C7E;
+    font-size: 0.72rem;
+    padding: 3px 9px;
+    border-radius: 12px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.depo-panel {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.depo-panel.hidden {
+    display: none;
+    opacity: 0;
+    transform: translateY(8px);
+}
+
+.depo-panel:not(.hidden) {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    animation: fadeInDepo 0.35s ease;
+}
+
+@keyframes fadeInDepo {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* WhatsApp Audio Grid */
+.whatsapp-audio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.whatsapp-audio-card {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 18px;
+    padding: 24px;
+    box-shadow: 0 8px 24px rgba(15, 40, 71, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+}
+
+.whatsapp-audio-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 34px rgba(15, 40, 71, 0.09);
+    border-color: rgba(29, 107, 201, 0.3);
+}
+
+.wa-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+    gap: 12px;
+}
+
+.wa-header-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 1;
+    min-width: 0;
+}
+
+.wa-avatar-box {
+    position: relative;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #1B3A5C 0%, #1D6BC9 100%);
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 0.92rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 10px rgba(29, 107, 201, 0.25);
+}
+
+.wa-status-dot {
+    position: absolute;
+    bottom: -1px;
+    right: -1px;
+    width: 12px;
+    height: 12px;
+    background: #25D366;
+    border: 2.5px solid #FFFFFF;
+    border-radius: 50%;
+}
+
+.wa-patient-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.wa-patient-name-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.wa-patient-name {
+    font-weight: 700;
+    font-size: 0.98rem;
+    color: var(--color-primary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.wa-verified-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.70rem;
+    color: #0F766E;
+    background: #ECFDF5;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-weight: 600;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.wa-procedure-tag {
+    font-size: 0.78rem;
+    color: #64748B;
+    margin-top: 2px;
+    font-weight: 500;
+}
+
+.wa-stars {
+    color: #F59E0B;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+}
+
+.wa-quote {
+    font-style: italic;
+    font-size: 0.91rem;
+    line-height: 1.55;
+    color: #334155;
+    background: #F8FAFC;
+    border-left: 3px solid #1D6BC9;
+    padding: 12px 14px;
+    border-radius: 0 10px 10px 0;
+    margin: 0 0 16px 0;
+    position: relative;
+}
+
+/* WhatsApp Voice Player */
+.wa-player {
+    background: #F8FAFC;
+    border: 1px solid #E2E8F0;
+    border-radius: 14px;
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.wa-play-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #1D6BC9;
+    border: none;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+    box-shadow: 0 4px 10px rgba(29, 107, 201, 0.25);
+}
+
+.wa-play-btn:hover {
+    background: #1554A3;
+    transform: scale(1.05);
+}
+
+.wa-waveform-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 32px;
+    cursor: pointer;
+    flex: 1;
+    min-width: 80px;
+    padding: 0 4px;
+}
+
+.wa-waveform-bg,
+.wa-waveform-prog {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 4px;
+    pointer-events: none;
+}
+
+.wa-waveform-bg span {
+    display: inline-block;
+    width: 3px;
+    background: #CBD5E1;
+    border-radius: 2px;
+    flex-shrink: 0;
+}
+
+.wa-waveform-prog {
+    width: 0%;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: width 0.1s linear;
+}
+
+.wa-waveform-prog span {
+    display: inline-block;
+    width: 3px;
+    min-width: 3px;
+    background: #1D6BC9;
+    border-radius: 2px;
+    flex-shrink: 0;
+}
+
+.wa-time-box {
+    font-size: 0.74rem;
+    font-weight: 600;
+    color: #64748B;
+    min-width: 34px;
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+    flex-shrink: 0;
+}
+
+.wa-speed-btn {
+    background: rgba(29, 107, 201, 0.08);
+    border: 1px solid rgba(29, 107, 201, 0.2);
+    color: #1D6BC9;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 4px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+}
+
+.wa-speed-btn:hover {
+    background: #1D6BC9;
+    color: #FFFFFF;
+}
+
+.wa-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.72rem;
+    color: #64748B;
+    padding-top: 4px;
+    border-top: 1px solid #F1F5F9;
+}
+
+.wa-footer-note {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: #15803D;
+    font-weight: 600;
+}
+
+.wa-verified-text {
+    color: #94A3B8;
+}
+
+/* Mobile responsive for WhatsApp Audio Testimonials */
+@media (max-width: 768px) {
+    .depoimentos-tabs-nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .depo-tab-btn {
+        flex: 1;
+        justify-content: center;
+        padding: 9px 12px;
+        font-size: 0.82rem;
+    }
+
+    .depo-tab-badge {
+        display: none;
+    }
+
+    .whatsapp-audio-grid {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        gap: 16px;
+        padding-bottom: 16px;
+        margin: 0 -16px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .whatsapp-audio-grid::-webkit-scrollbar {
+        height: 6px;
+        display: block;
+    }
+
+    .whatsapp-audio-grid::-webkit-scrollbar-thumb {
+        background-color: #CBD5E1;
+        border-radius: 4px;
+    }
+
+    .whatsapp-audio-card {
+        flex: 0 0 88%;
+        min-width: 290px;
+        max-width: 360px;
+        scroll-snap-align: center;
+        padding: 20px 16px;
+    }
+
+    .wa-patient-name {
+        font-size: 0.92rem;
+    }
+
+    .wa-quote {
+        font-size: 0.86rem;
+    }
+}
